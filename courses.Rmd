@@ -1,0 +1,62 @@
+---
+title: "MEDS Course Timeline and Descriptions"
+description: |
+  Course descriptions for required MEDS courses
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(googlesheets4)
+library(kableExtra)
+library(tidyverse)
+
+courses <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1uVKAYahg0z07gcafI7Gcb7ClOrJg0abuOGHrpyy_7BE/edit#gid=0") # Request access from Allison or Jamie to update this sheet
+
+summer <- courses %>% 
+  filter(quarter == "Summer") %>% 
+  select(-quarter)
+
+fall <- courses %>% 
+  filter(quarter == "Fall") %>% 
+  select(-quarter)
+
+winter <- courses %>% 
+  filter(quarter == "Winter") %>% 
+  select(-quarter)
+
+spring <- courses %>% 
+  filter(quarter == "Spring") %>% 
+  select(-quarter)
+```
+
+## Summer Intensive Courses
+
+```{r, echo = FALSE}
+summer %>% 
+  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor")) %>% 
+  kableExtra::kable_styling(bootstrap_options = "striped")
+```
+
+## Fall Quarter
+
+```{r, echo = FALSE}
+fall %>% 
+  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor")) %>% 
+  kableExtra::kable_styling()
+```
+
+## Winter Quarter
+
+```{r, echo = FALSE}
+winter %>% 
+  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor")) %>% 
+  kableExtra::kable_styling()
+```
+
+## Spring Quarter
+
+```{r, echo = FALSE}
+spring %>% 
+  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor")) %>% 
+  kableExtra::kable_styling()
+```
