@@ -1,7 +1,7 @@
 name: "site"
 title: "MEDS"
 description: |
-  MEDS Website
+  UCSB MEDS Website
 output_dir: "docs"
 navbar:
   right:
