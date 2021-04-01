@@ -5,16 +5,14 @@
       "title": "About this site",
       "description": "Some additional details about the website",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-04-01T09:01:34-07:00"
+      "contents": "\n\n\n\n"
     },
     {
       "path": "index.html",
       "title": "My Website",
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-04-01T09:01:35-07:00"
+      "contents": "\n\n\n\n"
     }
   ],
   "collections": []
