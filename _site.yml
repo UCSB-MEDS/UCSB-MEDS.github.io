@@ -1,7 +1,7 @@
 name: "site"
-title: "Master of Environmental Data Science"
+title: "MEDS"
 description: |
-  My Website
+  MEDS Website
 output_dir: "docs"
 navbar:
   right:
