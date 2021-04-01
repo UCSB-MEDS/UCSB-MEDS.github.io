@@ -9,24 +9,34 @@ knitr::opts_chunk$set(echo = TRUE)
 library(googlesheets4)
 library(kableExtra)
 library(tidyverse)
+library(here)
 
 courses <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1uVKAYahg0z07gcafI7Gcb7ClOrJg0abuOGHrpyy_7BE/edit#gid=0") # Request access from Allison or Jamie to update this sheet
 
-summer <- courses %>% 
-  filter(quarter == "Summer") %>% 
-  select(-quarter)
+# summer <- courses %>% 
+#   filter(quarter == "Summer") %>% 
+#   select(-quarter) %>% 
+#   write_csv(here("course_description_files", "summer.csv"))
+# 
+# fall <- courses %>% 
+#   filter(quarter == "Fall") %>% 
+#   select(-quarter) %>% 
+#   write_csv(here("course_description_files", "fall.csv"))
+# 
+# winter <- courses %>% 
+#   filter(quarter == "Winter") %>% 
+#   select(-quarter) %>% 
+#   write_csv(here("course_description_files", "winter.csv"))
+# 
+# spring <- courses %>% 
+#    filter(quarter == "Spring") %>% 
+#    select(-quarter) %>% 
+#    write_csv(here("course_description_files", "spring.csv"))
 
-fall <- courses %>% 
-  filter(quarter == "Fall") %>% 
-  select(-quarter)
-
-winter <- courses %>% 
-  filter(quarter == "Winter") %>% 
-  select(-quarter)
-
-spring <- courses %>% 
-  filter(quarter == "Spring") %>% 
-  select(-quarter)
+summer <- read_csv(here("course_description_files", "summer.csv"))
+fall <- read_csv(here("course_description_files", "fall.csv"))
+winter <- read_csv(here("course_description_files", "winter.csv"))
+spring <- read_csv(here("course_description_files", "spring.csv"))
 ```
 
 ## Summer Intensive Courses
