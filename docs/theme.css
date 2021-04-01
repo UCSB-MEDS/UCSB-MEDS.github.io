@@ -118,10 +118,10 @@ d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article 
 }
 
 /* Formatting tables (can update here or individually) */
-table, td, tr {
+table, td, tr, th {
+  border-collapse: collapse;
   font-family: Nunito Sans;
   border: 1px solid gainsboro;
-  border-bottom: 1px solid gainsboro;
   vertical-align: top;
 }
 

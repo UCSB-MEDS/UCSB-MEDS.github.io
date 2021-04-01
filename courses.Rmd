@@ -43,8 +43,7 @@ spring <- read_csv(here("course_description_files", "spring.csv"))
 
 ```{r, echo = FALSE}
 summer %>% 
-  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor")) %>% 
-  kableExtra::kable_styling(bootstrap_options = "striped")
+  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"))
 ```
 
 ## Fall Quarter
