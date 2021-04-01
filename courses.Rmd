@@ -6,12 +6,12 @@ description: |
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(googlesheets4)
+# library(googlesheets4)
 library(kableExtra)
 library(tidyverse)
 library(here)
 
-courses <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1uVKAYahg0z07gcafI7Gcb7ClOrJg0abuOGHrpyy_7BE/edit#gid=0") # Request access from Allison or Jamie to update this sheet
+# courses <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1uVKAYahg0z07gcafI7Gcb7ClOrJg0abuOGHrpyy_7BE/edit#gid=0") # Request access from Allison or Jamie to update this sheet
 
 # summer <- courses %>% 
 #   filter(quarter == "Summer") %>% 
