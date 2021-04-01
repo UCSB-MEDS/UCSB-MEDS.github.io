@@ -1,10 +1,17 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "About the MEDS program"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+# About the program
+
+The Master's of Environmental Data Science is a professional degree program administered by the [Bren School of Environmental Science & Management](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) in partnership with the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/). The 11-month program is designed to train environmental professionals in data science skills. Coursework includes scientific programming, machine learning, remote sensing, spatial analysis, data visualization and more. The program ends with a 6-month group Capstone project. These projects provide students with the opportunity to gain experience applying data science skills to solving real-world environmental problems. In the program students:
+
+- learn multiple programming languages (R, Python, SQL)
+- are trained on how to work collaboratively with GitHub
+- taught open science methods with a focus on reproducibility
+
 
