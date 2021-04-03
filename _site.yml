@@ -13,5 +13,9 @@ navbar:
           href: courses.html
         - text: "CAPSTONES"
           href: capstones.html
+    - text: "RESOURCES"
+      href: resources.html
+    - text: "OFFICIAL SITE"
+      href: "https://bren.ucsb.edu/masters-programs/master-environmental-data-science"
 output: distill::distill_article
 theme: theme.css
