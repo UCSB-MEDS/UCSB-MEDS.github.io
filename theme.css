@@ -21,7 +21,7 @@
 
 html {
   /*-- Main font sizes --*/
-  --title-size:      40px;
+  --title-size:      60px;
   --title-weight:    400;
   --body-size:       1.06rem;
   --code-size:       14px;
@@ -102,14 +102,6 @@ d-article h3 {
 
 a.title {
   font-weight: 600;
-}
-
-d-title h1 {
-    grid-column: text;
-    font-size: 45px;
-    font-weight: 550;
-    line-height: 1.1em;
-    margin: 0 0 0.5rem;
 }
 
 /* Set colors for headers */

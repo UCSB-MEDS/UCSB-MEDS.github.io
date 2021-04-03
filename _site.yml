@@ -1,19 +1,17 @@
 name: "site"
-title: "Masters of EDS"
+title: "UCSB MEDS"
 description: |
   UCSB MEDS Website
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
+    - text: "HOME"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "Program"
+    - text: "PROGRAM"
       menu:
-        - text: "Courses"
+        - text: "COURSES"
           href: courses.html
-        - text: "Capstones"
+        - text: "CAPSTONES"
           href: capstones.html
 output: distill::distill_article
 theme: theme.css

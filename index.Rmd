@@ -1,7 +1,5 @@
 ---
-title: "MEDS"
-description: |
-  Welcome to the website. I hope you enjoy it!
+title: "Master of Environmental Data Science"
 site: distill::distill_website
 ---
 

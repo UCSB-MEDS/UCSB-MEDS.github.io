@@ -1,0 +1,15 @@
+---
+title: "MEDS Capstone Projects"
+---
+
+## Overview
+
+All MEDS students will work in groups of 3-4 students to design, develop and share a deliverable that helps a client to gain insights, answer questions, and/or create communication materials using environmental data. 
+
+## Goal
+
+The goal of the MEDS Capstone is to help students build real-world data science and professional skills while working with a client to complete a project using environmental data. 
+
+\
+
+
