@@ -104,7 +104,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Course Timeline and Descriptions"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Course Timeline and Descriptions"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2221,7 +2221,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       color: rgba(4, 124, 145, 0.8);
   }
 
-
   /* Formatting tables (can update here or individually) */
   table, td, tr, th {
     border-collapse: collapse;
@@ -2246,6 +2245,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+  }
+
+  /* Update toc list font */
+  .d-contents nav ul li {
+      font-size: 20px;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2466,6 +2470,17 @@ PROGRAM
 
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#summer-intensive-courses">Summer Intensive Courses</a></li>
+<li><a href="#fall-quarter">Fall Quarter</a></li>
+<li><a href="#winter-quarter">Winter Quarter</a></li>
+<li><a href="#spring-quarter">Spring Quarter</a></li>
+</ul>
+</nav>
+</div>
 <h2 id="summer-intensive-courses">Summer Intensive Courses</h2>
 <p>All MEDS students will complete 12 units of intensive coursework (early August through mid-September) to start the program. Summer courses will be held at the National Center for Ecological Analysis and Synthesis (NCEAS) in downtown Santa Barbara.</p>
 <div class="layout-chunk" data-layout="l-body">

@@ -113,7 +113,6 @@ d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article 
     color: rgba(4, 124, 145, 0.8);
 }
 
-
 /* Formatting tables (can update here or individually) */
 table, td, tr, th {
   border-collapse: collapse;
@@ -138,4 +137,9 @@ d-title h1 {
     font-weight: 400;
     line-height: 1.1em;
     margin: 0 0 0.5rem;
+}
+
+/* Update toc list font */
+.d-contents nav ul li {
+    font-size: 20px;
 }
