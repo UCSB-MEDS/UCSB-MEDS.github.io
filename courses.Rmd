@@ -1,7 +1,9 @@
 ---
 title: "MEDS Course Timeline and Descriptions"
-description: |
-  Course descriptions for required MEDS courses
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}

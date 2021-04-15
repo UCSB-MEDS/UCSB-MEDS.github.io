@@ -1,19 +1,23 @@
 name: "site"
-title: "MEDS"
+title: "UCSB MEDS"
 description: |
   UCSB MEDS Website
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
+    - text: "HOME"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "Program"
+    - text: "PROGRAM"
       menu:
-        - text: "Courses"
+        - text: "COURSES"
           href: courses.html
-        - text: "Capstones"
+        - text: "CAPSTONES"
           href: capstones.html
+    - text: "BLOG"
+      href: blog.html
+    - text: "RESOURCES"
+      href: resources.html
+    - text: "OFFICIAL SITE"
+      href: "https://bren.ucsb.edu/masters-programs/master-environmental-data-science"
 output: distill::distill_article
 theme: theme.css

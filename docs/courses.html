@@ -85,29 +85,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>MEDS: MEDS Course Timeline and Descriptions</title>
+  <title>UCSB MEDS: MEDS Course Timeline and Descriptions</title>
 
-  <meta property="description" itemprop="description" content="Course descriptions for required MEDS courses"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="MEDS: MEDS Course Timeline and Descriptions"/>
+  <meta property="og:title" content="UCSB MEDS: MEDS Course Timeline and Descriptions"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Course descriptions for required MEDS courses"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="MEDS"/>
+  <meta property="og:site_name" content="UCSB MEDS"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="MEDS: MEDS Course Timeline and Descriptions"/>
-  <meta property="twitter:description" content="Course descriptions for required MEDS courses"/>
+  <meta property="twitter:title" content="UCSB MEDS: MEDS Course Timeline and Descriptions"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Course Timeline and Descriptions"]},{"type":"character","attributes":{},"value":["Course descriptions for required MEDS courses"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Course Timeline and Descriptions"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2122,8 +2119,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Optional: embed custom fonts here with `@import`          */
   /* This must remain at the top of this file.                 */
 
-  /* Font options: Aleo (headers / serif), Nunito Sans (body / sans-serif) */
-  @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&display=swap');
+  /* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
+  @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
   @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
 
@@ -2132,7 +2129,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   html {
     /*-- Main font sizes --*/
-    --title-size:      40px;
+    --title-size:      50px;
     --title-weight:    400;
     --body-size:       1.06rem;
     --code-size:       14px;
@@ -2140,13 +2137,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
     --title-color:     #003660;
-    --title-weight:    550;
+    --title-weight:    400;
     --header-color:    rgba(4, 124, 145, 1);
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    Aleo;
+    --heading-font:    Sanchez;
     --mono-font:       Roboto Mono;
     --body-font:       Nunito Sans;
     --navbar-font:     Nunito Sans;  /* websites + blogs only */
@@ -2198,7 +2195,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article h2 {
       grid-column: text;
       font-size: 32px;
-      font-weight: 400;
+      font-weight: 200;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
   }
@@ -2212,15 +2209,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   a.title {
-    font-weight: 600;
+    font-style: bold;
   }
 
-  d-title h1 {
-      grid-column: text;
-      font-size: 45px;
-      font-weight: 550;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
+  a, .nav-dropdown .nav-dropbtn {
+    font-weight: 500;
   }
 
   /* Set colors for headers */
@@ -2241,9 +2234,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   .distill-site-header a, .distill-site-header .title {
-      display: inline-block;
       text-align: left;
       padding: 14px 14px 14px 14px;
+  }
+
+  d-title h1 {
+      grid-column: text;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 1.1em;
+      margin: 0 0 0.5rem;
+  }
+
+  /* Update toc list font */
+  .d-contents nav ul li {
+      font-size: 20px;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2422,7 +2427,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"MEDS Course Timeline and Descriptions","description":"Course descriptions for required MEDS courses","authors":[]}
+{"title":"MEDS Course Timeline and Descriptions","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2430,22 +2435,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">MEDS</a>
+<a href="index.html" class="title">UCSB MEDS</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
+<a href="index.html">HOME</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-Program
+PROGRAM
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="courses.html">Courses</a>
-<a href="capstones.html">Capstones</a>
+<a href="courses.html">COURSES</a>
+<a href="capstones.html">CAPSTONES</a>
 </div>
 </div>
+<a href="blog.html">BLOG</a>
+<a href="resources.html">RESOURCES</a>
+<a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">OFFICIAL SITE</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2458,11 +2466,22 @@ Program
 <h1>MEDS Course Timeline and Descriptions</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Course descriptions for required MEDS courses</p></p>
+
 </div>
 
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#summer-intensive-courses">Summer Intensive Courses</a></li>
+<li><a href="#fall-quarter">Fall Quarter</a></li>
+<li><a href="#winter-quarter">Winter Quarter</a></li>
+<li><a href="#spring-quarter">Spring Quarter</a></li>
+</ul>
+</nav>
+</div>
 <h2 id="summer-intensive-courses">Summer Intensive Courses</h2>
 <p>All MEDS students will complete 12 units of intensive coursework (early August through mid-September) to start the program. Summer courses will be held at the National Center for Ecological Analysis and Synthesis (NCEAS) in downtown Santa Barbara.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2873,7 +2892,16 @@ Allison Horst
 <div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+<p>
+<a href="https://bren.ucsb.edu/"><img src="img/bren_white_logo.png" alt="Bren School logo" style="width:350px;" /></a>
+</p>
+<p>
+  This website was made with <u><a href="https://rstudio.github.io/distill/">distill by RStudio</a></u>.
+</p>
+</div>
 <!--/radix_placeholder_navigation_after_body-->
+
 
 </body>
 

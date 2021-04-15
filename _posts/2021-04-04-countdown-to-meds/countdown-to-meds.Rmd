@@ -1,0 +1,55 @@
+---
+title: "Countdown to MEDS"
+description: |
+  What we're up to with 4 months to go
+author:
+  - name: Allison Horst 
+    url: {https://www.allisonhorst.com/}
+  - name: Jamie Montgomery
+    url: {https://www.jamiecmontgomery.com/}
+date: 2021-04-04
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+With less than four months until orientation for our first ever cohort of [Master of Environmental Data Science](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) students, we're full speed ahead with MEDS! Covid-19 has changed how we work together (so much Zoom), but hasn't lessened how much love and energy we're putting into the program. Here's a little bit about what we've been up to.
+
+## Expanding the MEDS team
+
+Since October we've been doing a LOT of building - building courses, building cohesion *across* courses, building websites, and even building new classrooms. So yeah...a lot happening around here. Thankfully, we've also been building our MEDS team, and have recently welcomed exciting new team members dedicated specifically to the MEDS program. 
+
+### Jamie Montgomery - MEDS Program Coordinator 
+
+<p>
+  <img src="images/jamie.jpg" alt="Jamie Montgomery" style="float:left; width:250px; padding: 5px 25px 0px 5px;">
+In January we were thrilled to welcome our amazing MEDS Program Coordinator [Jamie Montgomery](https://www.jamiecmontgomery.com/), alum of the [Bren School Master of Environmental Science and Management](https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management) program (Class of 2013), who for the past 8 years has been working as a Marine Data Scientist with the [National Center for Ecological Analysis and Synthesis (NCEAS)](https://www.nceas.ucsb.edu/). Whether leading the Ocean Health Index's US Northeast analysis, organizing (and teaching in) our world-famous [Eco-Data-Science](https://eco-data-science.github.io/) learning group, working to support diverse R-users through [R-Ladies Santa Barbara](https://twitter.com/RLadiesSB), or doing special projects like analyzing tweets to evaluate where locals versus tourists tend to visit in SB, Jamie is a leader in Santa Barbara and R data science communities. We are so lucky to have her leading our trailblazing MEDS program! 
+</p>
+
+### Kimberly Yom - MEDS Admissions & Student Affairs Coordinator
+
+<p>
+  <img src="images/kimberly.png" alt="Kimberly Yom" style="float:right; width:250px; padding: 5px 5px 0px 25px;">
+We also recently welcomed [Kimberly Yom](https://bren.ucsb.edu/people/kimberly-yom), our MEDS Admissions and Student Affairs Coordinator. Well, technically we welcomed her *back* to the Bren School - Kimberly previously worked at Bren as the MESM Academic Programs Assistant where she learned about Bren's collaborative, mission-driven focus! After working in contract administration for the UCSB Design & Construction department, she is back at Bren as the MEDS Admissions and Student Affairs Coordinator. We are really grateful to have a person with so much knowledge about the inner workings of both the Bren School and UCSB in this role in MEDS!
+
+As the Admissions and Student Affairs Coordinator, Kimberly recruits admitted students, helps organize the admissions process, evaluates applications, and hosts meetings with prospective and admitted students to answer questions about the MEDS program and provide campus resources. Kimberly is "thrilled about the advent of the MEDS program as it supplies students with the data science skills needed to develop informed solutions to the world's complex environmental issues." For any questions regarding admissions or MEDS program logistics, she can be reached at kyom@bren.ucsb.edu.
+
+</p>
+
+## NCEAS on the move
+
+One really exciting things about the MEDS program is that it's a Bren School degree program, but led in partnership with NCEAS. That means that MEDS courses and activities will be hosted at Bren (on the beautiful UCSB campus) *and* at NCEAS (in downtown Santa Barbara). Just a 15 minute drive (~ 11 mile flat-ish bike ride) apart, the two locations for the dual-campus program are not only stunning, but are also home to **communities of expert environmental data scientists, teachers, and researchers**. 
+
+```{r}
+knitr::include_graphics(path = "images/bren_nceas.png")
+```
+
+
+
+
+
