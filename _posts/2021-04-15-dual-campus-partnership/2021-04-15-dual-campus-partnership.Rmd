@@ -1,0 +1,27 @@
+---
+title: "Bren + NCEAS = MEDS"
+description: |
+  Highlighting the dual-campus nature of the MEDS program
+author:
+  - name: Allison Horst 
+    url: {https://www.allisonhorst.com/}
+  - name: Jamie Montgomery
+    url: {https://www.jamiecmontgomery.com/}
+date: 2021-04-15
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+One really exciting things about the MEDS program is that it's a Bren School degree program, but led in partnership with NCEAS. That means that MEDS courses and activities will be hosted at Bren (on the beautiful UCSB campus) *and* at NCEAS (in downtown Santa Barbara). Just a 15 minute drive (~ 11 mile flat-ish bike ride) apart, the two locations for the dual-campus program are not only stunning, but are also home to **communities of expert environmental data scientists, teachers, and researchers**. 
+
+```{r}
+knitr::include_graphics(path = "images/bren_nceas.png")
+```
+
+

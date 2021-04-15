@@ -55,7 +55,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #20794d; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +76,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,26 +85,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>UCSB MEDS: Overview</title>
+  <title>UCSB MEDS: Program Overview</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="UCSB MEDS: Overview"/>
+  <meta property="og:title" content="UCSB MEDS: Program Overview"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="UCSB MEDS"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="UCSB MEDS: Overview"/>
+  <meta property="twitter:title" content="UCSB MEDS: Program Overview"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Overview"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Program Overview"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1858,10 +1858,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refs = $(this).attr('data-cites').split(" ");
-        var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
-        }).join("\n");
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2428,7 +2425,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Overview","authors":[]}
+{"title":"Program Overview","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2465,7 +2462,7 @@ PROGRAM
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Overview</h1>
+<h1>Program Overview</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2473,17 +2470,29 @@ PROGRAM
 
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#summer">Summer</a></li>
+<li><a href="#fall">Fall</a></li>
+<li><a href="#winter">Winter</a></li>
+<li><a href="#spring">Spring</a></li>
+</ul>
+</nav>
+</div>
 <p>Here, we share a bit more information about what students can expect during the MEDS program.</p>
+<h1 id="summer">Summer</h1>
 <h2 id="orientation">Orientation</h2>
-<p>Each student should plan to attend a 2-day orientation on the Thursday and Friday before the first day of MEDS classes. During orientation, incoming MEDS students will:</p>
+<p>Each student should plan to attend a 2-day MEDS orientation on the Thursday and Friday before the first day of summer classes. This orientation will be held at NCEAS. During orientation, incoming MEDS students will:</p>
 <ul>
 <li>Meet our full MEDS team</li>
-<li>Make sure you’re set up with all necessary accounts, tools &amp; software</li>
+<li>Get set up with all necessary computer accounts, tools &amp; software</li>
 <li>Get to know your peers</li>
-<li>Visit both MEDS Campuses (UCSB &amp; NCEAS)</li>
+<li>Become familiar with the NCEAS space</li>
 </ul>
 <p>…and more!</p>
-<h2 id="summer-session">Summer Session</h2>
+<h2 id="summer-intensive-courses">Summer Intensive Courses</h2>
 <p>During the first 6 weeks of the MEDS program (August through mid-September), students will take 5 intensive courses:</p>
 <ul>
 <li><strong>Week 1:</strong> EDS 212: Essential Math in Environmental Data Science (2 units)</li>
@@ -2492,9 +2501,9 @@ PROGRAM
 <li><strong>Week 5:</strong> EDS 215: Introduction to Data Storage &amp; Management (2 units)</li>
 <li><strong>Week 6:</strong> EDS 215: Meta-analysis and Systematic Reviews (2 units)</li>
 </ul>
-<p>For more detailed descriptions of the summer courses, see our Courses page.</p>
-<h3 id="summer-session-location-information">Summer Session location &amp; information</h3>
-<p>All Summer courses will be held at the new <a href="https://www.nceas.ucsb.edu/">NCEAS</a> building (and new designated MEDS learning space!) in downtown Santa Barbara.</p>
+<p>For more detailed descriptions of the summer courses, see our <a href="https://ucsb-meds.github.io/courses.html">Courses</a> page.</p>
+<h3 id="location">Location</h3>
+<p>All Summer courses will be held at the new <a href="https://www.nceas.ucsb.edu/">NCEAS</a> building (and new designated MEDS learning space!) in downtown Santa Barbara. The address is 1021 Anacapa Street.</p>
 <p>NCEAS is ~11 miles (a 15 minute drive, without traffic) from the UC Santa Barbara campus, or a ~35 minute bus ride on the <a href="https://sbmtd.gov/routes/route-24x/">24x line</a>. The transit center downtown is ~3 blocks from NCEAS (a &lt;10 minute walk).</p>
 <h3 id="a-day-in-a-summer-course">A day in a Summer course</h3>
 <p>During intensive Summer courses, students should plan to arrive at NCEAS by 7:45am daily, ready for full days of learning (usually 8am - 5pm PST, M - F). Students generally should <strong>not expect</strong> additional assignments or MEDS-related work outside of those hours. In other words, courses will be structured so that all course requirements can be completed within the 8am - 5pm window while at NCEAS.</p>
@@ -2545,19 +2554,18 @@ PROGRAM
 </tbody>
 </table>
 <p>With built-in breaks for coffee and lunch, interactive sessions for hands-on learning, and flex time for activities that change daily, we on the MEDS Team are working to make these days dynamic and fun while you build fundamental skills in environmental data science.</p>
-<h3 id="additional-activities-during-summer-session">Additional activities during Summer Session</h3>
-<p>We will occasionally plan other activities during Summer Session to welcome MEDS students…</p>
-<p>[Examples here? Fiesta? NCOS walk? Trivia?]</p>
-<h2 id="fall-quarter">Fall Quarter</h2>
+<h3 id="class-activities">Class activities</h3>
+<p>Summer is a special time for our MEDS students to bond both in and outside of class. You will be spending 6 weeks together from 8am to 5 pm each day. While the coursework will be rigorous, we will also have dedicated breaks and events for relaxing, mingling and socializing. <em>As we work to get events confirmed we will update those here</em></p>
+<h1 id="fall">Fall</h1>
 <p>In Fall Quarter, MEDS students will complete 16 units of coursework. There are two 2-unit courses (EDS 213 and EDS 211) that only span 5 weeks, so in any week of the quarter students will be taking a total of 4 required courses.</p>
 <ul>
-<li><strong>EDS 213:</strong> Metadata Standards, Data Modeling and Data Semantics (2 units) - first 5 weeks of quarter</li>
-<li><strong>EDS 211:</strong> Team Science, Collaborative Analysis and Project Management (2 units) - second 5 weeks of quarter</li>
+<li><strong>EDS 213:</strong> Metadata Standards, Data Modeling and Data Semantics (2 units) - first 5 weeks</li>
+<li><strong>EDS 211:</strong> Team Science, Collaborative Analysis and Project Management (2 units) - second 5 weeks</li>
 <li><strong>EDS 220:</strong> Remote Sensing and Environmental Data (4 units)</li>
 <li><strong>EDS 222:</strong> Statistics for Environmental Data Science (4 units)</li>
 <li><strong>EDS 223:</strong> Spatial Analysis for Environmental Data Science (4 units)</li>
 </ul>
-<h3 id="fall-quarter-location-information">Fall Quarter location &amp; information</h3>
+<h3 id="schedule">Schedule</h3>
 <p>In Fall, Winter and Spring quarters, MEDS courses will be held at both the Bren School (UCSB campus) and downtown at NCEAS. Students will <em>only have required courses / events at a single campus on any given day</em> - i.e., to minimize travel, we will not schedule required MEDS events at both campuses on the same day.</p>
 <p>For example, a week in Fall Quarter might look something like this:</p>
 <table>
@@ -2577,55 +2585,64 @@ PROGRAM
 <tr class="odd">
 <td>Monday</td>
 <td><ul>
-<li><p>EDS 213 (8am - 9:15am)</p></li>
-<li><p>EDS 220 (9:30am - 10:45am)</p></li>
-<li><p>Career development workshop (11am - 12:15pm)</p></li>
+<li><p>EDS 213 (8am - 9:15am) (weeks 1-5)</p></li>
+<li><p>EDS 211 (8am - 9:15am) (weeks 6-10)</p></li>
+<li><p>EDS 220 (9:30 am - 10:45 am)</p></li>
+<li><p>Livestream Bren Seminar (11:00am - 12:00 pm)</p></li>
 </ul></td>
-<td>UCSB</td>
+<td>NCEAS</td>
 </tr>
 <tr class="even">
 <td>Tuesday</td>
 <td><ul>
 <li><p>EDS 222 (8am - 9:15am)</p></li>
 <li><p>EDS 223 (9:30am - 10:45am)</p></li>
-<li><p>Visiting speaker (11am - 12pm)</p></li>
 </ul></td>
-<td>NCEAS</td>
+<td>Bren Hall</td>
 </tr>
 <tr class="odd">
 <td>Wednesday</td>
 <td><ul>
-<li><p>EDS 213 (8am - 9:15am)</p></li>
-<li><p>EDS 220 (9:30am - 10:45am)</p></li>
+<li><p>EDS 213 (8am - 9:15am) (weeks 1-5)</p></li>
+<li><p>EDS 211 (8am - 9:15am) (weeks 6-10)</p></li>
+<li><p>EDS 220 (9:30 am - 10:45 am)</p></li>
+<li><p>NCEAS Roundtable (12:15-1:00)</p></li>
 </ul></td>
-<td>UCSB</td>
+<td>NCEAS</td>
 </tr>
 <tr class="even">
 <td>Thursday</td>
 <td><ul>
 <li><p>EDS 222 (8am - 9:15am)</p></li>
 <li><p>EDS 223 (9:30am - 10:45am)</p></li>
-<li><p>Panel discussion (1pm - 2pm)</p></li>
+<li><p>Career workshop (12:30 - 1:30 pm)</p></li>
 </ul></td>
-<td>NCEAS</td>
+<td>Bren Hall</td>
 </tr>
 <tr class="odd">
 <td>Friday</td>
 <td><ul>
 <li>EDS 223 Lab (12pm - 3pm)</li>
 </ul></td>
-<td>UCSB</td>
+<td>Bren Hall</td>
 </tr>
 </tbody>
 </table>
-<h3 id="capstone-proposal-review-and-selection">Capstone proposal review and selection</h3>
-<h2 id="winter-quarter">Winter Quarter</h2>
-<h3 id="courses">Courses</h3>
-<h3 id="capstone-expectations">Capstone expectations</h3>
-<h2 id="spring-quarter">Spring Quarter</h2>
-<h3 id="courses-1">Courses</h3>
-<h3 id="capstone-expectations-1">Capstone expectations</h3>
-<h3 id="final-presentation-info">Final presentation info</h3>
+<h1 id="winter">Winter</h1>
+<p>In Winter Quarter, students will complete 16 units of coursework, three traditional academic courses and one 4 unit capstone project course.</p>
+<ul>
+<li><strong>EDS 232:</strong> Machine Learning in Environmental Science (4 units)</li>
+<li><strong>EDS 240:</strong> Data Visualization and Communication (4 units)</li>
+<li><strong>EDS 241:</strong> Environmental Policy Evaluation (4 units)</li>
+<li><strong>EDS 411A:</strong> Capstone Group Project A (4 units)</li>
+</ul>
+<h1 id="spring">Spring</h1>
+<p>In Spring Quarter, students will complete 12 units of coursework, two traditional academic courses and one 4 unit capstone project course.</p>
+<ul>
+<li><strong>EDS 230:</strong> Modeling Environmental Systems (4 units)</li>
+<li><strong>EDS 231:</strong> Text and Sentiment Analysis for Environmental Problems (4 units)</li>
+<li><strong>EDS 411B:</strong> Capstone Group Project B (4 units)</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
