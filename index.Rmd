@@ -1,5 +1,7 @@
 ---
-title: "Master of Environmental Data Science"
+title: "UCSB's Master's of Environmental Data Science (MEDS)"
+description: |
+  This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science).
 site: distill::distill_website
 ---
 
@@ -7,7 +9,7 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-The Master's of Environmental Data Science is a professional degree program administered by the [Bren School of Environmental Science & Management](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) in partnership with the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/). The 11-month program is designed to train environmental professionals in data science skills. Coursework includes scientific programming, machine learning, remote sensing, spatial analysis, data visualization and much more. The program ends with a 6-month group Capstone project. These projects are proposed by real clients with real environmental problems looking for data science solutions. Students work in groups of 3-4 The Capstone projects provide students with the opportunity to gain experience applying data science skills to solving real-world environmental problems. 
+The Master's of Environmental Data Science (MEDS) is a professional degree program administered by the [Bren School of Environmental Science & Management](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) in partnership with the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/). The 11-month program is designed to train environmental professionals in data science skills. Coursework includes scientific programming, machine learning, remote sensing, spatial analysis, data visualization and much more. The program ends with a 6-month group Capstone project. These projects are proposed by clients with a need for data science solutions to solve their environmental problems or answer environmentally-related questions. Students work in groups of 3-4 during the Winter and Spring quarter and present final results at the end of the year. 
 
 In the program students will:
 

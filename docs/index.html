@@ -55,7 +55,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #20794d; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +76,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,26 +85,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>UCSB MEDS: Master of Environmental Data Science</title>
+  <title>UCSB MEDS: UCSB's Master's of Environmental Data Science (MEDS)</title>
 
+  <meta property="description" itemprop="description" content="This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="UCSB MEDS: Master of Environmental Data Science"/>
+  <meta property="og:title" content="UCSB MEDS: UCSB&#39;s Master&#39;s of Environmental Data Science (MEDS)"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="UCSB MEDS"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="UCSB MEDS: Master of Environmental Data Science"/>
+  <meta property="twitter:title" content="UCSB MEDS: UCSB&#39;s Master&#39;s of Environmental Data Science (MEDS)"/>
+  <meta property="twitter:description" content="This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science)."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["Master of Environmental Data Science"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["UCSB's Master's of Environmental Data Science (MEDS)"]},{"type":"character","attributes":{},"value":["This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science).\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1858,10 +1861,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refs = $(this).attr('data-cites').split(" ");
-        var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
-        }).join("\n");
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2428,7 +2428,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Master of Environmental Data Science","authors":[]}
+{"title":"UCSB's Master's of Environmental Data Science (MEDS)","description":"This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science).","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2464,15 +2464,15 @@ PROGRAM
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Master of Environmental Data Science</h1>
+<h1>UCSB’s Master’s of Environmental Data Science (MEDS)</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren website</a>.</p></p>
 </div>
 
 
 <div class="d-article">
-<p>The Master’s of Environmental Data Science is a professional degree program administered by the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren School of Environmental Science &amp; Management</a> in partnership with the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis</a>. The 11-month program is designed to train environmental professionals in data science skills. Coursework includes scientific programming, machine learning, remote sensing, spatial analysis, data visualization and much more. The program ends with a 6-month group Capstone project. These projects are proposed by real clients with real environmental problems looking for data science solutions. Students work in groups of 3-4 The Capstone projects provide students with the opportunity to gain experience applying data science skills to solving real-world environmental problems.</p>
+<p>The Master’s of Environmental Data Science (MEDS) is a professional degree program administered by the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren School of Environmental Science &amp; Management</a> in partnership with the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis</a>. The 11-month program is designed to train environmental professionals in data science skills. Coursework includes scientific programming, machine learning, remote sensing, spatial analysis, data visualization and much more. The program ends with a 6-month group Capstone project. These projects are proposed by clients with a need for data science solutions to solve their environmental problems or answer environmentally-related questions. Students work in groups of 3-4 during the Winter and Spring quarter and present final results at the end of the year.</p>
 <p>In the program students will:</p>
 <ul>
 <li>learn multiple programming languages (R, Python, SQL)</li>
