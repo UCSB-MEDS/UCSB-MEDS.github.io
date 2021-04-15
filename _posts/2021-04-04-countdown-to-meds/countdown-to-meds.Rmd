@@ -1,5 +1,5 @@
 ---
-title: "Countdown to MEDS"
+title: "Countdown to MEDS: 105 days out"
 description: |
   What we're up to with 4 months to go
 author:
@@ -7,11 +7,11 @@ author:
     url: {https://www.allisonhorst.com/}
   - name: Jamie Montgomery
     url: {https://www.jamiecmontgomery.com/}
-date: 2021-04-04
+date: 2021-04-15
 output:
   distill::distill_article:
     self_contained: false
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}
@@ -19,6 +19,12 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 With less than four months until orientation for our first ever cohort of [Master of Environmental Data Science](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) students, we're full speed ahead with MEDS! Covid-19 has changed how we work together (so much Zoom), but hasn't lessened how much love and energy we're putting into the program. Here's a little bit about what we've been up to.
+
+## Building this website
+
+Welcome to our MEDS website! We are building this website primarily as a place for our MEDS students to use as a resource for what's happening in the program. It will contain links to course websites, information about daily schedules, career workshop schedules, capstone project timelines, and more! 
+
+We have big dreams for what this site will include - student blog posts! Interactive data visualizations! Capstone project highlights! Stay tuned as we build out the site with all things MEDS.
 
 ## Expanding the MEDS team
 
@@ -41,13 +47,22 @@ As the Admissions and Student Affairs Coordinator, Kimberly recruits admitted st
 
 </p>
 
+### Miya Scheble - MEDS Career Development Program Manager
+
+<p>
+  <img src="images/MiyaScheble-2.jpeg" alt="Kimberly Yom" style="float:right; width:250px; padding: 5px 5px 0px 25px;">
+[Miya Scheble](https://bren.ucsb.edu/people/miya-scheble) joined the renowned Bren Career Team as the MEDS Career Development Program Manager. Prior to joining the Career Development team, Miya worked as a project coordinator and marketing assistant at a marketing, branding, and design company. She brings project management, customer relations, and marketing experience to Bren.
+
+As the MEDS Career Development Program Manager, Miya oversees the day-to-day operations of the MEDS Career Development Program and helps students develop lifelong career skills that will help them secure desirable jobs and advance successfully throughout their entire career. With a background in environmental science and a strong interest in data science herself, Miya agrees with the NCEAS [statement](https://www.nceas.ucsb.edu/news/next-generation-environmental-scientists-are-data-scientists) that “the next generation of environmental scientists are data scientists.” Miya is “very excited to welcome the first cohort of MEDS students and support them throughout their career journeys.” For more information about career development and advising services at Bren, she can be reached at: miya@bren.ucsb.edu.
+
+</p>
+
 ## NCEAS on the move
 
-One really exciting things about the MEDS program is that it's a Bren School degree program, but led in partnership with NCEAS. That means that MEDS courses and activities will be hosted at Bren (on the beautiful UCSB campus) *and* at NCEAS (in downtown Santa Barbara). Just a 15 minute drive (~ 11 mile flat-ish bike ride) apart, the two locations for the dual-campus program are not only stunning, but are also home to **communities of expert environmental data scientists, teachers, and researchers**. 
+The National Center for Ecological Analysis & Synthesis (NCEAS), which will be hosting the program part time, is moving! NCEAS has been located on State Street in downtown Santa Barbara for over 25 years. This year NCEAS is moving just a couple blocks away to 1021 Anacapa Street. Before we move, and while we are all still working from home, the building is undergoing some renovations. The first floor of the building will host the MEDS program and will have a brand new classroom that holds 90 students. In addition there will be a student lounge, private meeting room, kitchen, and dedicated work stations. We are so excited about this brand new space for our students, keep an eye out for pictures of the new space in July!
 
-```{r}
-knitr::include_graphics(path = "images/bren_nceas.png")
-```
+
+
 
 
 
