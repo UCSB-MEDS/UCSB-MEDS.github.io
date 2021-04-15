@@ -13,6 +13,8 @@ navbar:
           href: courses.html
         - text: "CAPSTONES"
           href: capstones.html
+    - text: "OVERVIEW"
+      href: overview.html
     - text: "BLOG"
       href: blog.html
     - text: "RESOURCES"
