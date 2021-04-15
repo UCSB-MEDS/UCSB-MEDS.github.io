@@ -6,3 +6,122 @@ title: "Overview"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Here, we share a bit more information about what students can expect during the MEDS program.
+
+## Orientation
+
+Each student should plan to attend a 2-day orientation on the Thursday and Friday before the first day of MEDS classes. During orientation, incoming MEDS students will:
+
+-   Meet our full MEDS team
+-   Make sure you're set up with all necessary accounts, tools & software
+-   Get to know your peers
+-   Visit both MEDS Campuses (UCSB & NCEAS)
+
+...and more!
+
+## Summer Session
+
+During the first 6 weeks of the MEDS program (August through mid-September), students will take 5 intensive courses:
+
+-   **Week 1:** EDS 212: Essential Math in Environmental Data Science (2 units)
+-   **Weeks 2 & 3:** EDS 221: Scientific Programming Essentials (4 units)
+-   **Week 4:** EDS 214: Analytical Workflows & Scientific Reproducibility (2 units)
+-   **Week 5:** EDS 215: Introduction to Data Storage & Management (2 units)
+-   **Week 6:** EDS 215: Meta-analysis and Systematic Reviews (2 units)
+
+For more detailed descriptions of the summer courses, see our Courses page.
+
+### Summer Session location & information
+
+All Summer courses will be held at the new [NCEAS](https://www.nceas.ucsb.edu/) building (and new designated MEDS learning space!) in downtown Santa Barbara.
+
+NCEAS is \~11 miles (a 15 minute drive, without traffic) from the UC Santa Barbara campus, or a \~35 minute bus ride on the [24x line](https://sbmtd.gov/routes/route-24x/). The transit center downtown is \~3 blocks from NCEAS (a \<10 minute walk).
+
+### A day in a Summer course
+
+During intensive Summer courses, students should plan to arrive at NCEAS by 7:45am daily, ready for full days of learning (usually 8am - 5pm PST, M - F). Students generally should **not expect** additional assignments or MEDS-related work outside of those hours. In other words, courses will be structured so that all course requirements can be completed within the 8am - 5pm window while at NCEAS.
+
+That doesn't mean you'll be watching lectures from 8am - 5pm! Summer session days will be active, varied, and flexible, and students can expect a combination of course content (e.g. lectures, computational labs, individual and group tasks) and built-in "flex time" for community-building, professional & career development activities, and more.
+
+For example, a day during a Summer course might look like this:
+
+|                   |                                                         |
+|-------------------|---------------------------------------------------------|
+| **Time (PST)**    | **Activity**                                            |
+| 8:00am - 9:00am   | *Lecture 1 (60 min)*                                    |
+| 9:00am - 9:15am   | *Coffee Break (15 min)*                                 |
+| 9:15am - 10:15am  | *Coding Lab 1 (60 min)*                                 |
+| 10:15am - 11:00am | *Build your website in R! (45 min)*                     |
+| 11:00am - 12:15pm | *Lunch Break (75 min)*                                  |
+| 12:15pm - 1:15pm  | *Lecture 2 (60 min)*                                    |
+| 1:15pm - 2:15pm   | *Coding Lab 2 (60 min)*                                 |
+| 2:15pm - 3:15pm   | *Cohort-building: collaborative art with code (60 min)* |
+| 3:15pm - 5:00pm   | *Group tasks & challenge puzzles (105 min)*             |
+
+With built-in breaks for coffee and lunch, interactive sessions for hands-on learning, and flex time for activities that change daily, we on the MEDS Team are working to make these days dynamic and fun while you build fundamental skills in environmental data science.
+
+### Additional activities during Summer Session
+
+We will occasionally plan other activities during Summer Session to welcome MEDS students...
+
+[Examples here? Fiesta? NCOS walk? Trivia?]
+
+## Fall Quarter
+
+In Fall Quarter, MEDS students will complete 16 units of coursework. There are two 2-unit courses (EDS 213 and EDS 211) that only span 5 weeks, so in any week of the quarter students will be taking a total of 4 required courses.
+
+-   **EDS 213:** Metadata Standards, Data Modeling and Data Semantics (2 units) - first 5 weeks of quarter
+-   **EDS 211:** Team Science, Collaborative Analysis and Project Management (2 units) - second 5 weeks of quarter
+-   **EDS 220:** Remote Sensing and Environmental Data (4 units)
+-   **EDS 222:** Statistics for Environmental Data Science (4 units)
+-   **EDS 223:** Spatial Analysis for Environmental Data Science (4 units)
+
+### Fall Quarter location & information
+
+In Fall, Winter and Spring quarters, MEDS courses will be held at both the Bren School (UCSB campus) and downtown at NCEAS. Students will *only have required courses / events at a single campus on any given day* - i.e., to minimize travel, we will not schedule required MEDS events at both campuses on the same day.
+
+For example, a week in Fall Quarter might look something like this:
+
++-------------+--------------------------------------------------+------------+
+| **Day**     | Activities                                       | **Campus** |
++=============+==================================================+============+
+| Monday      | -   EDS 213 (8am - 9:15am)                       | UCSB       |
+|             |                                                  |            |
+|             | -   EDS 220 (9:30am - 10:45am)                   |            |
+|             |                                                  |            |
+|             | -   Career development workshop (11am - 12:15pm) |            |
++-------------+--------------------------------------------------+------------+
+| Tuesday     | -   EDS 222 (8am - 9:15am)                       | NCEAS      |
+|             |                                                  |            |
+|             | -   EDS 223 (9:30am - 10:45am)                   |            |
+|             |                                                  |            |
+|             | -   Visiting speaker (11am - 12pm)               |            |
++-------------+--------------------------------------------------+------------+
+| Wednesday   | -   EDS 213 (8am - 9:15am)                       | UCSB       |
+|             |                                                  |            |
+|             | -   EDS 220 (9:30am - 10:45am)                   |            |
++-------------+--------------------------------------------------+------------+
+| Thursday    | -   EDS 222 (8am - 9:15am)                       | NCEAS      |
+|             |                                                  |            |
+|             | -   EDS 223 (9:30am - 10:45am)                   |            |
+|             |                                                  |            |
+|             | -   Panel discussion (1pm - 2pm)                 |            |
++-------------+--------------------------------------------------+------------+
+| Friday      | -   EDS 223 Lab (12pm - 3pm)                     | UCSB       |
++-------------+--------------------------------------------------+------------+
+
+### Capstone proposal review and selection
+
+## Winter Quarter
+
+### Courses
+
+### Capstone expectations
+
+## Spring Quarter
+
+### Courses
+
+### Capstone expectations
+
+### Final presentation info
