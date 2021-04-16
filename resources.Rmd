@@ -4,7 +4,7 @@ title: "MEDS Resources"
 
 Incoming students often ask "What can I do **before** I start the MEDS program to prepare?" 
 
-There are **no required tasks** that accepted students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, here are some **completely optional** things you can do.  
+There are **no required tasks** that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, here are some **completely optional** things you can do.  
 
 ## 1. Join supportive communities
 
@@ -34,6 +34,10 @@ The [Santa Barbara R-Users Group](https://www.meetup.com/Santa-Barbara-R-Users-G
 
 - [Join the Santa Barbara R-Users Group](https://www.meetup.com/Santa-Barbara-R-Users-Group/)
 
+### R4DS - Online Learning Community
+
+The [R4DS (R for Data Science) Online Community] is a supportive
+
 ### Twitter
 
 We know, it seems like a weird suggestion - but Twitter is *the* place where the R community members get and share information. It is a treasure trove of resources, support, and direct access to data scientists across fields. Many data scientists use Twitter as a professional tool to share their work, ask questions, request feedback, and build collaborations. Give it a try! 
@@ -41,9 +45,9 @@ We know, it seems like a weird suggestion - but Twitter is *the* place where the
 - Make a twitter account
 - Follow a few groups & people Twitter: 
 
-  - R for Data Science Learning Community: [\@R4DScommunity](https://twitter.com/R4DScommunity)
-  - WeAreRLadies (rotating curator, R-Ladies): [\@WeAreRLadies](https://twitter.com/WeAreRLadies)
-  - Mi-R (a space of belonging and support for people who identify as underrepresented minority R users): [\@miR_Commmunity](https://twitter.com/miR_community)
+  - R for Data Science Learning Community: [\@R4DScommunity](https://twitter.com/R4DScommunity). 
+  - WeAreRLadies (rotating curator, R-Ladies): [\@WeAreRLadies](https://twitter.com/WeAreRLadies). 
+  - Mi-R (a space of belonging and support for people who identify as underrepresented minority R users): [\@miR_Commmunity](https://twitter.com/miR_community). 
   - PyLadies: [\@pyladies](https://twitter.com/pyladies)
   - Real Python: [\@realpython](https://twitter.com/realpython)
   - UCSB Eco-Data-Science: [\@ecodatasci](https://twitter.com/ecodatasci)
@@ -56,11 +60,11 @@ We know, it seems like a weird suggestion - but Twitter is *the* place where the
 
 In this intensive 11-month Master's program, you will start working with our Bren Career Team right away to start building your application materials, focusing your job search energy, and honing your professional and career skills.
 
-We **do not expect** MEDS students to know exactly what job you're aiming for post-graduation. However, we encourage you to start perusing postings to find positions (or aspects of them) that you feel excited about. You'll be getting a LOT of guidance and mentorship from the Bren Career Team once you arrive, but in the meantime here are some things you can start doing: 
+We **do not expect** MEDS students to know exactly what job you're aiming for post-graduation. However, we encourage you to start perusing postings to find positions (or aspects of them) that you feel excited about. You'll be getting a LOT of guidance and mentorship from the Bren Career Team once you arrive, but in the meantime here are some things you can start doing: [Add Miya's text here]
 
-## 3. Warm-up your quantitative brain
+## 3. Consider stretching your quantitative brain
 
-If your brain is feeling a bit rusty on numbers & equations, you can stretch out your math muscles a bit before MEDS starts. **Again:** this is absolutely **not** required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you'll take in MEDS. However, if you're really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in [Khan Academy's Algebra 1 module](https://www.khanacademy.org/math/algebra)).
+If your brain is feeling a bit rusty on numbers & equations, you may want to stretch out your math muscles a bit before MEDS starts. **Again:** this is absolutely **not** required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you'll take in MEDS. However, if you're really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in [Khan Academy's Algebra 1 module](https://www.khanacademy.org/math/algebra)).
 
 We will do *all of this* in EDS 212, but if you're feeling especially nervous about math in the MEDS program, bringing algebra basics back to the forefront of your brain is a good place to start. 
 
@@ -68,24 +72,40 @@ We will do *all of this* in EDS 212, but if you're feeling especially nervous ab
 
 Here, we'll keep a living list of useful resources and learning materials in Environmental Data Science. 
 
-## Programming / tools resources
+### General R resources
 
-### R resources
+- "One-stop-shop" for R resources: [The Big Book of R](https://www.bigbookofr.com/) by [Oscar Baruffa](https://twitter.com/OscarBaruffa)
 
-- [The Big Book of R](https://www.bigbookofr.com/) by [Oscar Baruffa](https://twitter.com/OscarBaruffa)
-- 
+- [R for Data Science](https://r4ds.had.co.nz/) by [Garrett Grolemund](https://github.com/garrettgman) and [Hadley Wickham](http://hadley.nz/)
 
-### Python resources
+- [Advanced R](http://adv-r.had.co.nz/) by [Hadley Wickham](http://hadley.nz/)
+
+- [RStudio Education](https://education.rstudio.com/)
+
+### General Python resources
+
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by [Jake VanderPlas](http://vanderplas.com/)
+
+- ["Getting Started" resources from Python.org](https://www.python.org/about/gettingstarted/)
 
 ### GIS resources
 
+- [Geocomputation in R](https://geocompr.robinlovelace.net/intro.html) by [Robin Lovelace](https://www.robinlovelace.net/)
+
+*More coming soon*
+
 ### SQL resources
+
+*More coming soon*
 
 ### git/GitHub resources
 
-## Professional development and career resources
+- [Happy git and GitHub for the R user](https://happygitwithr.com/) by [Jenny Bryan](https://jennybryan.org/about/)
+ UBC Stat 545 TAs, and [Jim Hester](https://www.jimhester.com/)
+ 
+ *More coming soon*
+ 
 
-## EDS 
 
 
 
