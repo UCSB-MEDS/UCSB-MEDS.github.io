@@ -24,7 +24,7 @@ The Master's of Environmental Data Science (MEDS) is a professional degree progr
 - Use open science methods and tools for reproducible data science
 - Access, clean, explore, and analyze a range of common environmental data formats
 - Understand and employ modern standards for data management, storage, and archiving
-- Work with a team to complete a capstone projects
+- Work with a team to complete a capstone project
 - Think critically about and incorporate ethics, bias, and data justice into data science projects
 - Communicate effectively with diverse stakeholders
 
