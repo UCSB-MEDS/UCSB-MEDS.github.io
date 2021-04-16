@@ -41,8 +41,7 @@ In January we were thrilled to welcome our amazing MEDS Program Coordinator [Jam
 
 <p>
   <img src="images/kimberly.png" alt="Kimberly Yom" style="float:right; width:250px; padding: 5px 5px 0px 25px;">
-We also recently welcomed [Kimberly Yom](https://bren.ucsb.edu/people/kimberly-yom), our MEDS Admissions and Student Affairs Coordinator. Well, technically we welcomed her *back* to the Bren School - Kimberly previously worked at Bren as the MESM Academic Programs Assistant where she learned about Bren's collaborative, mission-driven focus! After working in contract administration for the UCSB Design & Construction department, she is back at Bren as the MEDS Admissions and Student Affairs Coordinator. We are really grateful to have a person with so much knowledge about the inner workings of both the Bren School and UCSB in this role in MEDS!
-
+We also recently welcomed [Kimberly Yom](https://bren.ucsb.edu/people/kimberly-yom), our MEDS Admissions and Student Affairs Coordinator. Well, technically we welcomed her *back* to the Bren School - Kimberly previously worked at Bren as the MESM Academic Programs Assistant where she learned about Bren's collaborative, mission-driven focus! After working in contract administration for the UCSB Design & Construction department, she is back at Bren as the MEDS Admissions and Student Affairs Coordinator. We are really grateful to have a person with so much knowledge about the inner workings of both the Bren School and UCSB in this role in MEDS!    
 As the Admissions and Student Affairs Coordinator, Kimberly recruits admitted students, helps organize the admissions process, evaluates applications, and hosts meetings with prospective and admitted students to answer questions about the MEDS program and provide campus resources. Kimberly is "thrilled about the advent of the MEDS program as it supplies students with the data science skills needed to develop informed solutions to the world's complex environmental issues." For any questions regarding admissions or MEDS program logistics, she can be reached at kyom@bren.ucsb.edu.
 
 </p>
@@ -50,9 +49,8 @@ As the Admissions and Student Affairs Coordinator, Kimberly recruits admitted st
 ### Miya Scheble - MEDS Career Development Program Manager
 
 <p>
-  <img src="images/MiyaScheble-2.jpeg" alt="Kimberly Yom" style="float:right; width:250px; padding: 5px 5px 0px 25px;">
-[Miya Scheble](https://bren.ucsb.edu/people/miya-scheble) joined the renowned Bren Career Team as the MEDS Career Development Program Manager. Prior to joining the Career Development team, Miya worked as a project coordinator and marketing assistant at a marketing, branding, and design company. She brings project management, customer relations, and marketing experience to Bren.
-
+  <img src="images/MiyaScheble-2.jpeg" alt="Kimberly Yom" style="float:left; width:250px; padding: 5px 25px 0px 5px;">
+[Miya Scheble](https://bren.ucsb.edu/people/miya-scheble) joined the renowned Bren Career Team in November as the MEDS Career Development Program Manager. Prior to joining the Career Development team, Miya worked as a project coordinator and marketing assistant at a marketing, branding, and design company. She brings project management, customer relations, and marketing experience to Bren.    
 As the MEDS Career Development Program Manager, Miya oversees the day-to-day operations of the MEDS Career Development Program and helps students develop lifelong career skills that will help them secure desirable jobs and advance successfully throughout their entire career. With a background in environmental science and a strong interest in data science herself, Miya agrees with the NCEAS [statement](https://www.nceas.ucsb.edu/news/next-generation-environmental-scientists-are-data-scientists) that “the next generation of environmental scientists are data scientists.” Miya is “very excited to welcome the first cohort of MEDS students and support them throughout their career journeys.” For more information about career development and advising services at Bren, she can be reached at: miya@bren.ucsb.edu.
 
 </p>
