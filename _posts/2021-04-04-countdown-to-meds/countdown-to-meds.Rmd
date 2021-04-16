@@ -12,11 +12,15 @@ output:
   distill::distill_article:
     self_contained: false
 draft: false
+preview: images/toy_truck.jpg
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+<p style="font-size:12px; color: gray"><i>Thumbnail photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/tractor-toy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i></p>
+  
 
 With less than four months until orientation for our first ever cohort of [Master of Environmental Data Science](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) students, we're full speed ahead with MEDS! Covid-19 has changed how we work together (so much Zoom), but hasn't lessened how much love and energy we're putting into the program. Here's a little bit about what we've been up to.
 
