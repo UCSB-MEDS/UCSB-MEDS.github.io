@@ -34,9 +34,9 @@ The [Santa Barbara R-Users Group](https://www.meetup.com/Santa-Barbara-R-Users-G
 
 - [Join the Santa Barbara R-Users Group](https://www.meetup.com/Santa-Barbara-R-Users-Group/)
 
-### R4DS - Online Learning Community
+### R for Data Science Online Learning Community
 
-The [R4DS (R for Data Science) Online Community] is a supportive
+The [R for Data Science Online Learning Community](https://www.rfordatasci.com/) is a supportive place where you can join groups, ask for help, learn about events and jobs, and network with other learners, teachers, and practitioners in the R community.
 
 ### Twitter
 
