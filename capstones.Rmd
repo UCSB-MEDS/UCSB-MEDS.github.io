@@ -2,9 +2,9 @@
 title: "MEDS Capstone Projects"
 ---
 
-<h2><center>This page is under construction</center></h2>
+<h2><center>This page is under construction.</center></h2>
 
-<p><center>For more information, visit the Bren School [MEDS Capstone Projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects) page.</center></p>
+<p><center>For more information while we work on it, please visit the Bren School [MEDS Capstone Projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects) page.</center></p>
 
 ```{r, echo = FALSE, fig.align = "center", out.width = "60%"}
 
@@ -12,7 +12,7 @@ knitr::include_graphics("img/nguyen-bui-construction.jpg")
 
 ```
 
-<p style="color:gray; font-size: 15px; style: italic;"><center><i>Photo: toy bulldozer in sand, by <a href="https://unsplash.com/@renichinguyen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nguyen Bui</a> on <a href="https://unsplash.com/s/photos/toy-bulldozer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i></center></p>
+<p style="color:gray; font-size: 15px; style: italic;"><center><i>Photo: toy construction truck moving a building block, by <a href="https://unsplash.com/@renichinguyen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nguyen Bui</a> on <a href="https://unsplash.com/s/photos/toy-bulldozer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i></center></p>
 
 
 ## Overview
