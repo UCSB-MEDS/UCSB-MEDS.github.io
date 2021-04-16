@@ -2,6 +2,7 @@ name: "site"
 title: "UCSB MEDS"
 description: |
   UCSB MEDS Website
+favicon: img/meds_hex.png
 output_dir: "docs"
 navbar:
   right:
