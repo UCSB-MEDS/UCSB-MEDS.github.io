@@ -87,38 +87,33 @@ In Fall, Winter and Spring quarters, MEDS courses will be held at both the Bren 
 
 For example, a week in Fall Quarter might look something like this:
 
-+-------------+--------------------------------------------------+------------+
-| **Day**     | Activities                                       | **Campus** |
-+=============+==================================================+============+
-| Monday      | -   EDS 213 (8am - 9:15am) (weeks 1-5)           | NCEAS      |
-|             |                                                  |            |
-|             | -   EDS 211 (8am - 9:15am) (weeks 6-10)          |            |
-|             |                                                  |            |
-|             | -   EDS 220 (9:30 am - 10:45 am)                 |            |
-|             |                                                  |            |
-|             | -   Livestream Bren Seminar (11:00am - 12:00 pm) |            |
-+-------------+--------------------------------------------------+------------+
-| Tuesday     | -   EDS 222 (8am - 9:15am)                       | Bren Hall  |
-|             |                                                  |            |
-|             | -   EDS 223 (9:30am - 10:45am)                   |            |
-|             |                                                  |            | 
-+-------------+--------------------------------------------------+------------+
-| Wednesday   | -   EDS 213 (8am - 9:15am) (weeks 1-5)           | NCEAS      |
-|             |                                                  |            |
-|             | -   EDS 211 (8am - 9:15am) (weeks 6-10)          |            |
-|             |                                                  |            |
-|             | -   EDS 220 (9:30 am - 10:45 am)                 |            |
-|             |                                                  |            |
-|             | -   NCEAS Roundtable (12:15-1:00)                |            |
-+-------------+--------------------------------------------------+------------+
-| Thursday    | -   EDS 222 (8am - 9:15am)                       | Bren Hall  |
-|             |                                                  |            |
-|             | -   EDS 223 (9:30am - 10:45am)                   |            |
-|             |                                                  |            |
-|             | -   Career workshop (12:30 - 1:30 pm)            |            |
-+-------------+--------------------------------------------------+------------+
-| Friday      | -   EDS 223 Lab (12pm - 3pm)                     | Bren Hall  |
-+-------------+--------------------------------------------------+------------+
++-----------+------------------------------------------------------------------+------------+
+| **Day**   | Activities                                                       | **Campus** |
++===========+==================================================================+============+
+| Monday    | -   8:00am - 9:15am: EDS 213 (weeks 1-5) or EDS 211 (weeks 6-10) | NCEAS      |
+|           |                                                                  |            |
+|           | -   9:30am - 10:45am: EDS 220                                    |            |
+|           |                                                                  |            |
+|           | -   11:00am - 12:00pm: Livestream Bren Seminar                   |            |
++-----------+------------------------------------------------------------------+------------+
+| Tuesday   | -   8:00am - 9:15am: EDS 222                                     | Bren Hall  |
+|           |                                                                  |            |
+|           | -   9:30am - 10:45am: EDS 223                                    |            |
++-----------+------------------------------------------------------------------+------------+
+| Wednesday | -   8:00am - 9:15am: EDS 213 (weeks 1-5) or EDS 211 (weeks 6-10) | NCEAS      |
+|           |                                                                  |            |
+|           | -   9:30am - 10:45am: EDS 220                                    |            |
+|           |                                                                  |            |
+|           | -   12:15pm - 1:00pm: NCEAS Roundtable                           |            |
++-----------+------------------------------------------------------------------+------------+
+| Thursday  | -   8:00am - 9:15am: EDS 222                                     | Bren Hall  |
+|           |                                                                  |            |
+|           | -   9:30am - 10:45am: EDS 223                                    |            |
+|           |                                                                  |            |
+|           | -   12:30pm - 1:30pm: Career workshop                            |            |
++-----------+------------------------------------------------------------------+------------+
+| Friday    | -   12:00pm - 3:00pm: EDS 223 Lab                                | Bren Hall  |
++-----------+------------------------------------------------------------------+------------+
 
 # Winter
 
@@ -129,14 +124,10 @@ In Winter Quarter, students will complete 16 units of coursework, three traditio
 -   **EDS 241:** Environmental Policy Evaluation (4 units)
 -   **EDS 411A:** Capstone Group Project A (4 units)
 
-
 # Spring
 
-In Spring Quarter, students will complete 12 units of coursework, two traditional academic courses and one 4 unit capstone project course. 
+In Spring Quarter, students will complete 12 units of coursework, two traditional academic courses and one 4 unit capstone project course.
 
 -   **EDS 230:** Modeling Environmental Systems (4 units)
 -   **EDS 231:** Text and Sentiment Analysis for Environmental Problems (4 units)
 -   **EDS 411B:** Capstone Group Project B (4 units)
-
-
-

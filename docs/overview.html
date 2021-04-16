@@ -2195,12 +2195,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
 
+  d-article h1 {
+      grid-column: text;
+      font-size: 40px;
+      font-weight: 360;
+      line-height: 1.1em;
+      margin: 0 0 0.5rem;
+      padding-top: 30px;
+  }
+
+
   d-article h2 {
       grid-column: text;
       font-size: 32px;
       font-weight: 200;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+      padding-top: 30px;
   }
 
   d-article h3 {
@@ -2209,6 +2220,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+      padding-top: 20px;
   }
 
   a.title {
@@ -2219,10 +2231,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 500;
   }
 
-  /* Set colors for headers */
-  d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
-      color: rgba(4, 124, 145, 0.8);
-  }
 
   /* Formatting tables (can update here or individually) */
   table, td, tr, th {
@@ -2230,6 +2238,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-family: Nunito Sans;
     border: 1px solid gainsboro;
     vertical-align: top;
+  }
+
+  d-article table th, d-article table td {
+      font-size: 15px;
+      padding: 2px 8px;
+      border: 1px solid gainsboro;
   }
 
   code {
@@ -2247,6 +2261,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+      color: #003660;
   }
 
   /* Update toc list font */
@@ -2591,9 +2606,9 @@ PROGRAM
 <p>For example, a week in Fall Quarter might look something like this:</p>
 <table>
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 65%" />
-<col style="width: 16%" />
+<col style="width: 13%" />
+<col style="width: 72%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -2606,44 +2621,42 @@ PROGRAM
 <tr class="odd">
 <td>Monday</td>
 <td><ul>
-<li><p>EDS 213 (8am - 9:15am) (weeks 1-5)</p></li>
-<li><p>EDS 211 (8am - 9:15am) (weeks 6-10)</p></li>
-<li><p>EDS 220 (9:30 am - 10:45 am)</p></li>
-<li><p>Livestream Bren Seminar (11:00am - 12:00 pm)</p></li>
+<li><p>8:00am - 9:15am: EDS 213 (weeks 1-5) or EDS 211 (weeks 6-10)</p></li>
+<li><p>9:30am - 10:45am: EDS 220</p></li>
+<li><p>11:00am - 12:00pm: Livestream Bren Seminar</p></li>
 </ul></td>
 <td>NCEAS</td>
 </tr>
 <tr class="even">
 <td>Tuesday</td>
 <td><ul>
-<li><p>EDS 222 (8am - 9:15am)</p></li>
-<li><p>EDS 223 (9:30am - 10:45am)</p></li>
+<li><p>8:00am - 9:15am: EDS 222</p></li>
+<li><p>9:30am - 10:45am: EDS 223</p></li>
 </ul></td>
 <td>Bren Hall</td>
 </tr>
 <tr class="odd">
 <td>Wednesday</td>
 <td><ul>
-<li><p>EDS 213 (8am - 9:15am) (weeks 1-5)</p></li>
-<li><p>EDS 211 (8am - 9:15am) (weeks 6-10)</p></li>
-<li><p>EDS 220 (9:30 am - 10:45 am)</p></li>
-<li><p>NCEAS Roundtable (12:15-1:00)</p></li>
+<li><p>8:00am - 9:15am: EDS 213 (weeks 1-5) or EDS 211 (weeks 6-10)</p></li>
+<li><p>9:30am - 10:45am: EDS 220</p></li>
+<li><p>12:15pm - 1:00pm: NCEAS Roundtable</p></li>
 </ul></td>
 <td>NCEAS</td>
 </tr>
 <tr class="even">
 <td>Thursday</td>
 <td><ul>
-<li><p>EDS 222 (8am - 9:15am)</p></li>
-<li><p>EDS 223 (9:30am - 10:45am)</p></li>
-<li><p>Career workshop (12:30 - 1:30 pm)</p></li>
+<li><p>8:00am - 9:15am: EDS 222</p></li>
+<li><p>9:30am - 10:45am: EDS 223</p></li>
+<li><p>12:30pm - 1:30pm: Career workshop</p></li>
 </ul></td>
 <td>Bren Hall</td>
 </tr>
 <tr class="odd">
 <td>Friday</td>
 <td><ul>
-<li>EDS 223 Lab (12pm - 3pm)</li>
+<li>12:00pm - 3:00pm: EDS 223 Lab</li>
 </ul></td>
 <td>Bren Hall</td>
 </tr>

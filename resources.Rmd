@@ -64,7 +64,7 @@ If your brain is feeling a bit rusty on numbers & equations, you can stretch out
 
 We will do *all of this* in EDS 212, but if you're feeling especially nervous about math in the MEDS program, bringing algebra basics back to the forefront of your brain is a good place to start. 
 
-# Living list: open EDS resources
+## Living list: open EDS resources
 
 Here, we'll keep a living list of useful resources and learning materials in Environmental Data Science. 
 

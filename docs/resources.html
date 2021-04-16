@@ -2195,12 +2195,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
 
+  d-article h1 {
+      grid-column: text;
+      font-size: 40px;
+      font-weight: 360;
+      line-height: 1.1em;
+      margin: 0 0 0.5rem;
+      padding-top: 30px;
+  }
+
+
   d-article h2 {
       grid-column: text;
       font-size: 32px;
       font-weight: 200;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+      padding-top: 30px;
   }
 
   d-article h3 {
@@ -2209,6 +2220,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+      padding-top: 20px;
   }
 
   a.title {
@@ -2219,10 +2231,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 500;
   }
 
-  /* Set colors for headers */
-  d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6 {
-      color: rgba(4, 124, 145, 0.8);
-  }
 
   /* Formatting tables (can update here or individually) */
   table, td, tr, th {
@@ -2230,6 +2238,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-family: Nunito Sans;
     border: 1px solid gainsboro;
     vertical-align: top;
+  }
+
+  d-article table th, d-article table td {
+      font-size: 15px;
+      padding: 2px 8px;
+      border: 1px solid gainsboro;
   }
 
   code {
@@ -2247,6 +2261,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       font-weight: 400;
       line-height: 1.1em;
       margin: 0 0 0.5rem;
+      color: #003660;
   }
 
   /* Update toc list font */
@@ -2537,7 +2552,7 @@ PROGRAM
 <h2 id="warm-up-your-quantitative-brain">3. Warm-up your quantitative brain</h2>
 <p>If your brain is feeling a bit rusty on numbers &amp; equations, you can stretch out your math muscles a bit before MEDS starts. <strong>Again:</strong> this is absolutely <strong>not</strong> required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you’ll take in MEDS. However, if you’re really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in <a href="https://www.khanacademy.org/math/algebra">Khan Academy’s Algebra 1 module</a>).</p>
 <p>We will do <em>all of this</em> in EDS 212, but if you’re feeling especially nervous about math in the MEDS program, bringing algebra basics back to the forefront of your brain is a good place to start.</p>
-<h1 id="living-list-open-eds-resources">Living list: open EDS resources</h1>
+<h2 id="living-list-open-eds-resources">Living list: open EDS resources</h2>
 <p>Here, we’ll keep a living list of useful resources and learning materials in Environmental Data Science.</p>
 <h2 id="programming-tools-resources">Programming / tools resources</h2>
 <h3 id="r-resources">R resources</h3>
