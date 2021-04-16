@@ -142,3 +142,21 @@ d-title h1 {
 .d-contents nav ul li {
     font-size: 20px;
 }
+
+
+/* Update overall layout (body width) */
+@media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 0.5fr [page-start kicker-start] 30px [middle-start] 50px [text-start kicker-end] 100px 100px 100px 100px 100px 100px 100px 100px [text-end gutter-start] 30px [middle-end] 50px [page-end gutter-end] 0.5fr [screen-end];
+      grid-column-gap: 20px;
+    }
