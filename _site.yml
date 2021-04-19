@@ -8,7 +8,7 @@ navbar:
   right:
     - text: "HOME"
       href: index.html
-    - text: "PROGRAM"
+    - text: "MEDS CURRICULUM"
       menu:
         - text: "OVERVIEW"
           href: overview.html
@@ -16,11 +16,11 @@ navbar:
           href: courses.html
         - text: "CAPSTONES"
           href: capstones.html
-    - text: "BLOG"
+    - text: "COMMUNITY BLOG"
       href: blog.html
     - text: "RESOURCES"
       href: resources.html
-    - text: "OFFICIAL SITE"
+    - image: "img/bren_white_icon.png"
       href: "https://bren.ucsb.edu/masters-programs/master-environmental-data-science"
 output: distill::distill_article
 theme: theme.css
