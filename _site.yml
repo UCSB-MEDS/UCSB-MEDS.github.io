@@ -4,7 +4,7 @@ description: |
   UCSB MEDS Website
 favicon: img/meds_hex.png
 output_dir: "docs"
-google_analytics: "269673741"
+google_analytics: "UA-88745704-3"
 navbar:
   right:
     - text: "HOME"
