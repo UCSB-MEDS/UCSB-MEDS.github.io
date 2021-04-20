@@ -1871,10 +1871,7 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refs = $(this).attr('data-cites').split(" ");
-      var refHtml = refs.map(function(ref) {
-        return "<p>" + $('#ref-' + ref).html() + "</p>";
-      }).join("\n");
+      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2472,6 +2469,13 @@ d-appendix d-footnote-list a.footnote-backlink {
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+<script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=269673741"></script>
+<script type="text/javascript" cookie-consent="tracking">
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '269673741');
+</script>
 <!--/radix_placeholder_site_in_header-->
 
 
