@@ -5,18 +5,19 @@ title: "Computer requirements & recommendations"
 The MEDS program requires all students to have a personal laptop to use during the program. Our curriculum is designed to work across different operating systems and computers, but there are some important requirements.   
 
 ### Your computer should:  
-- not be more than 4 years old. It should also be supported by the manufacturer. For example, Apple does not support devices 7 years or older.  
-- be running Windows, Mac OS or Linux. Please note that we have limited support for Linux.  
-- have 50 GB disk space available. 
-- have at least 8 GB of RAM (The more the better). 
-- use a 64-bit CPU. 
+- not be more than 4 years old. It should also be supported by the manufacturer. For example, Apple [does not support](https://support.apple.com/en-us/HT201624) devices 7 years or older   
+- be running Windows, Mac OS or Linux. Please note that we have limited support for Linux  
+- have 50 GB disk space available   
+- have at least 8 GB of RAM (the more the better!)  
+- use a 64-bit CPU  
 
 If you have a Mac, make sure your operating system is the most recently supported version. Currently this is [Big Sur](https://www.apple.com/macos/big-sur/) 11.2.3.   
-If you have a PC, you should have Windows 10 installed. You can purchase Windows 10 Education for $14.99 from UCSB here. 
+
+If you have a PC, you should have Windows 10 installed. You can purchase Windows 10 Education for $14.99 from UCSB [here](https://ucsb.onthehub.com/WebStore/OfferingDetails.aspx?o=14f7e678-4731-e511-940e-b8ca3a5db7a1). 
 
 If you are purchasing a new computer, our recommended setup would be a computer with 16GB Memory (RAM) and 512 GB SSD. Also make sure to buy a 3-year warranty (at least)! If you are trying to decide between Mac and Windows we would recommend a Mac, but if you purchase or have a Windows PC don’t worry that will be just fine as long as it has the minimum requirements.
   
-You can purchase a low end Macbook Air using the HIED discount for \$899 before tax and Applecare. A PC can cost between \$500 - $3,000 but you generally get what you pay for.
+You can purchase a low end Macbook Air using the [higher education discount](https://www.apple.com/us-hed/shop) for \$899 before tax and Applecare. A PC can cost between \$500 - $3,000 but you generally get what you pay for.
 
 ### Home setup
 At home you may want to have a dedicated computer setup that includes an external monitor (or 2!), keyboard, and mouse. 
