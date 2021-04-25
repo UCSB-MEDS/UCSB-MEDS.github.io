@@ -2,6 +2,8 @@
 title: "MEDS Resources"
 ---
 
+[Computer requirements and recommendations](https://ucsb-meds.github.io/computer_reqs.html)
+
 Incoming students often ask "What can I do **before** I start the MEDS program to prepare?" 
 
 There are **no required tasks** that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, here are some **completely optional** things you can do.  
