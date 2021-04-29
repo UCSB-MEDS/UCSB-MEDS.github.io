@@ -98,7 +98,7 @@ The Career Team has provided a list of books you can read to gain more knowledge
 
 -	[The 2-Hour Job Search](https://2hourjobsearch.com/) by Steve Dalton
 - [The 20-Minute Networking Meeting (Graduate Edition)](https://20mnm.com/#graduate) by Nathan A. Perez and Marcia Ballinger, PhD
-<!-- - [Build a Career in Data Science](https://www.manning.com/books/build-a-career-in-data-science) by Emily Robinson and Jacqueline Nolis -->
+- [Build a Career in Data Science](https://www.manning.com/books/build-a-career-in-data-science) by Emily Robinson and Jacqueline Nolis
 
 **Additional books to explore if you have more time:**
 
