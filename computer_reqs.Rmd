@@ -2,25 +2,33 @@
 title: "Computer requirements & recommendations"
 ---
 
-The MEDS program requires all students to have a personal laptop to use during the program. Our curriculum is designed to work across different operating systems and computers, but there are some important requirements.   
+The MEDS program requires all students to have a personal laptop to use during the program. Our curriculum is designed to work across different operating systems and computers, as long as they meet some minimum requirements.  
 
-### Your computer should:  
-- not be more than 4 years old. It should also be supported by the manufacturer. For example, Apple [does not support](https://support.apple.com/en-us/HT201624) devices 7 years or older   
-- be running Windows, Mac OS or Linux. Please note that we have limited support for Linux  
-- have 50 GB disk space available   
+### Specifically, your computer should:  
+- be no more than 4 years old, and in any case be fully supported by the manufacturer. For example, [Apple won't repair anything that's more than 7 years old](https://support.apple.com/en-us/HT201624)   
+- be running Windows, macOS or Linux. (Please note that we offer limited support for Linux)  
+- have at least 50 GB storage space available for MEDS applications and coursework  
 - have at least 8 GB of RAM (the more the better!)  
-- use a 64-bit CPU  
+- have a 64-bit CPU  
 
-If you have a Mac, make sure your operating system is the most recently supported version. Currently this is [Big Sur](https://www.apple.com/macos/big-sur/) 11.2.3.   
+If you have a Mac, be sure to update macOS to the newest supported version, as indicated by *System Preferences&rarr;Software Update*.   
 
-If you have a PC, you should have Windows 10 installed. You can purchase Windows 10 Education for $14.99 from UCSB [here](https://ucsb.onthehub.com/WebStore/OfferingDetails.aspx?o=14f7e678-4731-e511-940e-b8ca3a5db7a1). 
+If you have a PC, you should have Windows 10 installed. If you don't, you can [purchase Windows 10 Education for $14.99 from UCSB](https://ucsb.onthehub.com/WebStore/OfferingDetails.aspx?o=14f7e678-4731-e511-940e-b8ca3a5db7a1). 
 
-If you are purchasing a new computer, our recommended setup would be a computer with 16GB Memory (RAM) and 512 GB SSD. Also make sure to buy a 3-year warranty (at least)! If you are trying to decide between Mac and Windows we would recommend a Mac, but if you purchase or have a Windows PC don’t worry that will be just fine as long as it has the minimum requirements.
+### New Computers 
+
+If you are purchasing a new computer, we recommend:
+
+- at least 16 GB of RAM 
+- at least 512 GB of SSD (not "disk"!) storage 
+- the manucafturer's extended warranty or service plan (e.g., [AppleCare+](https://www.apple.com/support/products/mac/)). 
+
+If you are trying to decide between Mac and Windows we would recommend a Mac, but if you purchase or already have a Windows PC, don’t worry that will be just fine as long as it meets our minimum requirements.
   
-You can purchase a low end Macbook Air using the [higher education discount](https://www.apple.com/us-hed/shop) for \$899 before tax and Applecare. A PC can cost between \$500 - $3,000 but you generally get what you pay for.
+You can [purchase a Macbook Air using the higher education discount](https://www.apple.com/us-hed/shop) for \$899 before tax and AppleCare. A PC can cost anywhere from \$500 to more than $3,000; you generally get what you pay for.
+
+### Loaner equipment   
+If your computer breaks or dies, we can usually loan you a Windows laptop for up to a month, which should be long enough to have your computer repaired or buy a new one.
 
 ### Home setup
 At home you may want to have a dedicated computer setup that includes an external monitor (or 2!), keyboard, and mouse. 
-
-### Loaner equipment 
-It is inevitable that some of our students will have computers that break, die, or get spilled on throughout the year. We have a small stockpile of Windows PC laptops that we can loan to you for 1 month. This should be enough time for you to have your computer repaired or buy a new one. 
