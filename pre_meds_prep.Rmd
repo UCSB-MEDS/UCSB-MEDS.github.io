@@ -2,9 +2,9 @@
 title: "What can I do before I start?"
 ---
 
-Incoming students often ask "What can I do **before** I start the MEDS program to prepare?" 
+Incoming students often ask "What can I do before I start the MEDS program to prepare?" 
 
-There are **no required tasks** that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, here are some **completely optional** things you can do.  
+There are **no required tasks** that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, here are some completely optional things you can do.  
 
 ## 1. Join supportive communities
 
@@ -56,52 +56,52 @@ We know, it seems like a weird suggestion - but Twitter is *the* place where the
         
 - Not sure how to engage on Twitter? We know it can be weird & overwhelming at first! Check out the free book [Twitter for R Programmers](https://www.t4rstats.com/) by [Oscar Baruffa](https://twitter.com/OscarBaruffa) and [Veerle van Son](https://twitter.com/veerlevanson) for useful guidance.
 
-## 2. Start exploring jobs
+## 2. Consider stretching your quantitative brain
 
-In this intensive 11-month Master's program, you will start working with our Bren Career Team right away to start building your application materials, focusing your job search energy, and honing your professional and career skills.
-
-We **do not expect** MEDS students to know exactly what job you're aiming for post-graduation. However, we encourage you to start perusing postings to find positions (or aspects of them) that you feel excited about. You'll be getting a LOT of guidance and mentorship from the Bren Career Team once you arrive, but in the meantime here are some things you can start doing: [Add Miya's text here]
-
-## 3. Consider stretching your quantitative brain
-
-If your brain is feeling a bit rusty on numbers & equations, you may want to stretch out your math muscles a bit before MEDS starts. **Again:** this is absolutely **not** required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you'll take in MEDS. However, if you're really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in [Khan Academy's Algebra 1 module](https://www.khanacademy.org/math/algebra)).
+If your brain is feeling a bit rusty on numbers & equations, you may want to stretch out your math muscles a bit before MEDS starts. Again: this is absolutely **not** required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you'll take in MEDS. However, if you're really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in [Khan Academy's Algebra 1 module](https://www.khanacademy.org/math/algebra)).
 
 We will do *all of this* in EDS 212, but if you're feeling especially nervous about math in the MEDS program, bringing algebra basics back to the forefront of your brain is a good place to start. 
 
-## Living list: open EDS resources
+## 3. Get a jump on career development brainstorming & tasks
 
-Here, we'll keep a living list of useful resources and learning materials in Environmental Data Science. 
+During this 11-month master’s program, you will start formally working with our Bren Career Team
+during Fall Quarter as you start refining your marketing documents, designing your online platforms, putting a job search process in place, and honing your professional and career skills.
 
-### General R resources
+While we understand you might not be 100% sure what jobs you would like to pursue, you will need to make your job search (career development) a priority if you want to land a job prior to graduation. The Career Team will work closely with you from Fall to Spring. But they have also created a summer assignment so you can hit the ground running once Fall arrives. 
 
-- "One-stop-shop" for R resources: [The Big Book of R](https://www.bigbookofr.com/) by [Oscar Baruffa](https://twitter.com/OscarBaruffa)
+Following orientation, the Career Team will assign you a “Career Path and Job Search Skills Summer Assignment” to complete by the end of your summer courses. This assignment will ask you to reflect and answer some questions and explore some resources. Since this is an 11-month graduate program, the goal is to get you thinking the right way from the start. You will have the entire summer to work on these tasks, but the Career Team has shared them now so you can get a head start.
 
-- [R for Data Science](https://r4ds.had.co.nz/) by [Garrett Grolemund](https://github.com/garrettgman) and [Hadley Wickham](http://hadley.nz/)
+### Create a career vision: Where you want to go, and where you should begin?
 
-- [Advanced R](http://adv-r.had.co.nz/) by [Hadley Wickham](http://hadley.nz/)
+Start to design a career path that will take you from where you are to where you want to go. Answering the following questions will help you get on the right path.
 
-- [RStudio Education](https://education.rstudio.com/)
+- Why did you decide to attend the Bren School?
+- Looking into the future, what job(s) do you see yourself working when you have fulfilled your career goals and aspirations?
+- What job do you plan to pursue following graduation that will start you on a path toward fulfilling your career aspirations? The job you would like to pursue after graduation is your “ideal job.”
+- Identify 5 people who are working in a job that most closely aligns with your career aspirations (your future self).
 
-### General Python resources
+    - Ask your contacts about their career path, how they started achieving their career goals, and how they came to realize their overall career aspirations.
+    - Ask your contacts where they would recommend you start your career (job and companies).
+    
+- What is your ideal job after graduation? (Type of work, sector, geographic location)
+- Make a list of the companies/organizations that interest you and where you would like to work to put your skills and passions to use. These are your “target organizations.”
+- Make a list of the people you know or connections you have at each of your target organizations.
 
-- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by [Jake VanderPlas](http://vanderplas.com/)
+### Explore job search resources
 
-- ["Getting Started" resources from Python.org](https://www.python.org/about/gettingstarted/)
+The Career Team has provided a list of books you can read to gain more knowledge on job search strategies, relationship building tactics, and interviewing skills.  
 
-### GIS resources
+**Book recommendations:**
 
-- [Geocomputation in R](https://geocompr.robinlovelace.net/intro.html) by [Robin Lovelace](https://www.robinlovelace.net/)
+-	[The 2-Hour Job Search](https://2hourjobsearch.com/) by Steve Dalton
+- [The 20-Minute Networking Meeting (Graduate Edition)](https://20mnm.com/#graduate) by Nathan A. Perez and Marcia Ballinger, PhD
+- [Build a Career in Data Science](https://www.manning.com/books/build-a-career-in-data-science) by Emily Robinson and Jacqueline Nolis 
 
-*More coming soon*
+**Additional books to explore if you have more time:**
 
-### SQL resources
+-	[The 7 Habits of Highly Effective People](https://www.franklincovey.com/the-7-habits/) by Stephen Covey
+- [No-Nonsense Job Interviews]() by Arnold G. Boldt
+- [Captivate: The Science of Succeeding with People](https://www.scienceofpeople.com/captivate/) by Vanessa Van Edwards
+- [Never Eat Alone](https://www.penguinrandomhouse.com/books/227558/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-and-tahl-raz/) by Keith Ferrazzi
 
-*More coming soon*
 
-### git/GitHub resources
-
-- [Happy git and GitHub for the R user](https://happygitwithr.com/) by [Jenny Bryan](https://jennybryan.org/about/)
- UBC Stat 545 TAs, and [Jim Hester](https://www.jimhester.com/)
- 
- *More coming soon*
- 

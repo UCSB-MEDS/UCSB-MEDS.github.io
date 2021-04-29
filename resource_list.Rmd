@@ -1,0 +1,43 @@
+---
+title: "Living resources list"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Here, we'll keep a living list of useful resources and learning materials in Environmental Data Science. 
+
+### General R resources
+
+- "One-stop-shop" for R resources: [The Big Book of R](https://www.bigbookofr.com/) by [Oscar Baruffa](https://twitter.com/OscarBaruffa)
+
+- [R for Data Science](https://r4ds.had.co.nz/) by [Garrett Grolemund](https://github.com/garrettgman) and [Hadley Wickham](http://hadley.nz/)
+
+- [Advanced R](http://adv-r.had.co.nz/) by [Hadley Wickham](http://hadley.nz/)
+
+- [RStudio Education](https://education.rstudio.com/)
+
+### General Python resources
+
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by [Jake VanderPlas](http://vanderplas.com/)
+
+- ["Getting Started" resources from Python.org](https://www.python.org/about/gettingstarted/)
+
+### GIS resources
+
+- [Geocomputation in R](https://geocompr.robinlovelace.net/intro.html) by [Robin Lovelace](https://www.robinlovelace.net/)
+
+*More coming soon*
+
+### SQL resources
+
+*More coming soon*
+
+### git/GitHub resources
+
+- [Happy git and GitHub for the R user](https://happygitwithr.com/) by [Jenny Bryan](https://jennybryan.org/about/)
+ UBC Stat 545 TAs, and [Jim Hester](https://www.jimhester.com/)
+ 
+ *More coming soon*
+ 

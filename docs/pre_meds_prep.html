@@ -55,7 +55,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +76,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -1859,7 +1859,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2123,7 +2126,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
   @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;900&display=swap');
 
   /* Code font (Roboto Mono) */
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
@@ -2138,7 +2141,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
     --title-color:     #003660;
-    --title-weight:    400;
+    --title-weight:    300;
     --header-color:    rgba(4, 124, 145, 1);
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
@@ -2290,7 +2293,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .nav-dropdown-content a:hover {
       background-color: #047C91;
       color: black;
-  }</style>
+  }
+
+  </style>
   <style type="text/css">
   /* base style */
 
@@ -2520,8 +2525,8 @@ MEDS CURRICULUM
 
 
 <div class="d-article">
-<p>Incoming students often ask “What can I do <strong>before</strong> I start the MEDS program to prepare?”</p>
-<p>There are <strong>no required tasks</strong> that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, here are some <strong>completely optional</strong> things you can do.</p>
+<p>Incoming students often ask “What can I do before I start the MEDS program to prepare?”</p>
+<p>There are <strong>no required tasks</strong> that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, here are some completely optional things you can do.</p>
 <h2 id="join-supportive-communities">1. Join supportive communities</h2>
 <p>Yes, you should feel welcome to join even before you start MEDS, and even if you’ve never written a line of code before!</p>
 <p>Joining and engaging with data science communities is a great way to build your Environmental Data Science network, stay up to date on new tools, methods, events, and initiatives, learn about professional opportunities, and to get support of all flavors (technical, emotional, etc.).</p>
@@ -2562,38 +2567,43 @@ MEDS CURRICULUM
 </ul></li>
 <li><p>Not sure how to engage on Twitter? We know it can be weird &amp; overwhelming at first! Check out the free book <a href="https://www.t4rstats.com/">Twitter for R Programmers</a> by <a href="https://twitter.com/OscarBaruffa">Oscar Baruffa</a> and <a href="https://twitter.com/veerlevanson">Veerle van Son</a> for useful guidance.</p></li>
 </ul>
-<h2 id="start-exploring-jobs">2. Start exploring jobs</h2>
-<p>In this intensive 11-month Master’s program, you will start working with our Bren Career Team right away to start building your application materials, focusing your job search energy, and honing your professional and career skills.</p>
-<p>We <strong>do not expect</strong> MEDS students to know exactly what job you’re aiming for post-graduation. However, we encourage you to start perusing postings to find positions (or aspects of them) that you feel excited about. You’ll be getting a LOT of guidance and mentorship from the Bren Career Team once you arrive, but in the meantime here are some things you can start doing: [Add Miya’s text here]</p>
-<h2 id="consider-stretching-your-quantitative-brain">3. Consider stretching your quantitative brain</h2>
-<p>If your brain is feeling a bit rusty on numbers &amp; equations, you may want to stretch out your math muscles a bit before MEDS starts. <strong>Again:</strong> this is absolutely <strong>not</strong> required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you’ll take in MEDS. However, if you’re really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in <a href="https://www.khanacademy.org/math/algebra">Khan Academy’s Algebra 1 module</a>).</p>
+<h2 id="consider-stretching-your-quantitative-brain">2. Consider stretching your quantitative brain</h2>
+<p>If your brain is feeling a bit rusty on numbers &amp; equations, you may want to stretch out your math muscles a bit before MEDS starts. Again: this is absolutely <strong>not</strong> required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you’ll take in MEDS. However, if you’re really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in <a href="https://www.khanacademy.org/math/algebra">Khan Academy’s Algebra 1 module</a>).</p>
 <p>We will do <em>all of this</em> in EDS 212, but if you’re feeling especially nervous about math in the MEDS program, bringing algebra basics back to the forefront of your brain is a good place to start.</p>
-<h2 id="living-list-open-eds-resources">Living list: open EDS resources</h2>
-<p>Here, we’ll keep a living list of useful resources and learning materials in Environmental Data Science.</p>
-<h3 id="general-r-resources">General R resources</h3>
+<h2 id="get-a-jump-on-career-development-brainstorming-tasks">3. Get a jump on career development brainstorming &amp; tasks</h2>
+<p>During this 11-month master’s program, you will start formally working with our Bren Career Team during Fall Quarter as you start refining your marketing documents, designing your online platforms, putting a job search process in place, and honing your professional and career skills.</p>
+<p>While we understand you might not be 100% sure what jobs you would like to pursue, you will need to make your job search (career development) a priority if you want to land a job prior to graduation. The Career Team will work closely with you from Fall to Spring. But they have also created a summer assignment so you can hit the ground running once Fall arrives.</p>
+<p>Following orientation, the Career Team will assign you a “Career Path and Job Search Skills Summer Assignment” to complete by the end of your summer courses. This assignment will ask you to reflect and answer some questions and explore some resources. Since this is an 11-month graduate program, the goal is to get you thinking the right way from the start. You will have the entire summer to work on these tasks, but the Career Team has shared them now so you can get a head start.</p>
+<h3 id="create-a-career-vision-where-you-want-to-go-and-where-you-should-begin">Create a career vision: Where you want to go, and where you should begin?</h3>
+<p>Start to design a career path that will take you from where you are to where you want to go. Answering the following questions will help you get on the right path.</p>
 <ul>
-<li><p>“One-stop-shop” for R resources: <a href="https://www.bigbookofr.com/">The Big Book of R</a> by <a href="https://twitter.com/OscarBaruffa">Oscar Baruffa</a></p></li>
-<li><p><a href="https://r4ds.had.co.nz/">R for Data Science</a> by <a href="https://github.com/garrettgman">Garrett Grolemund</a> and <a href="http://hadley.nz/">Hadley Wickham</a></p></li>
-<li><p><a href="http://adv-r.had.co.nz/">Advanced R</a> by <a href="http://hadley.nz/">Hadley Wickham</a></p></li>
-<li><p><a href="https://education.rstudio.com/">RStudio Education</a></p></li>
-</ul>
-<h3 id="general-python-resources">General Python resources</h3>
+<li><p>Why did you decide to attend the Bren School?</p></li>
+<li><p>Looking into the future, what job(s) do you see yourself working when you have fulfilled your career goals and aspirations?</p></li>
+<li><p>What job do you plan to pursue following graduation that will start you on a path toward fulfilling your career aspirations? The job you would like to pursue after graduation is your “ideal job.”</p></li>
+<li><p>Identify 5 people who are working in a job that most closely aligns with your career aspirations (your future self).</p>
 <ul>
-<li><p><a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a> by <a href="http://vanderplas.com/">Jake VanderPlas</a></p></li>
-<li><p><a href="https://www.python.org/about/gettingstarted/">“Getting Started” resources from Python.org</a></p></li>
+<li>Ask your contacts about their career path, how they started achieving their career goals, and how they came to realize their overall career aspirations.</li>
+<li>Ask your contacts where they would recommend you start your career (job and companies).</li>
+</ul></li>
+<li><p>What is your ideal job after graduation? (Type of work, sector, geographic location)</p></li>
+<li><p>Make a list of the companies/organizations that interest you and where you would like to work to put your skills and passions to use. These are your “target organizations.”</p></li>
+<li><p>Make a list of the people you know or connections you have at each of your target organizations.</p></li>
 </ul>
-<h3 id="gis-resources">GIS resources</h3>
+<h3 id="explore-job-search-resources">Explore job search resources</h3>
+<p>The Career Team has provided a list of books you can read to gain more knowledge on job search strategies, relationship building tactics, and interviewing skills.</p>
+<p><strong>Book recommendations:</strong></p>
 <ul>
-<li><a href="https://geocompr.robinlovelace.net/intro.html">Geocomputation in R</a> by <a href="https://www.robinlovelace.net/">Robin Lovelace</a></li>
+<li><a href="https://2hourjobsearch.com/">The 2-Hour Job Search</a> by Steve Dalton</li>
+<li><a href="https://20mnm.com/#graduate">The 20-Minute Networking Meeting (Graduate Edition)</a> by Nathan A. Perez and Marcia Ballinger, PhD</li>
+<li><a href="https://www.manning.com/books/build-a-career-in-data-science">Build a Career in Data Science</a> by Emily Robinson and Jacqueline Nolis</li>
 </ul>
-<p><em>More coming soon</em></p>
-<h3 id="sql-resources">SQL resources</h3>
-<p><em>More coming soon</em></p>
-<h3 id="gitgithub-resources">git/GitHub resources</h3>
+<p><strong>Additional books to explore if you have more time:</strong></p>
 <ul>
-<li><a href="https://happygitwithr.com/">Happy git and GitHub for the R user</a> by <a href="https://jennybryan.org/about/">Jenny Bryan</a> UBC Stat 545 TAs, and <a href="https://www.jimhester.com/">Jim Hester</a></li>
+<li><a href="https://www.franklincovey.com/the-7-habits/">The 7 Habits of Highly Effective People</a> by Stephen Covey</li>
+<li><a href="">No-Nonsense Job Interviews</a> by Arnold G. Boldt</li>
+<li><a href="https://www.scienceofpeople.com/captivate/">Captivate: The Science of Succeeding with People</a> by Vanessa Van Edwards</li>
+<li><a href="https://www.penguinrandomhouse.com/books/227558/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-and-tahl-raz/">Never Eat Alone</a> by Keith Ferrazzi</li>
 </ul>
-<p><em>More coming soon</em></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

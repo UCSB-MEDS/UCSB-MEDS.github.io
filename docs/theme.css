@@ -14,7 +14,7 @@
 /* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;900&display=swap');
 
 /* Code font (Roboto Mono) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
@@ -29,7 +29,7 @@ html {
   --fig-cap-size:    13px;
   /*-- Main font colors --*/
   --title-color:     #003660;
-  --title-weight:    400;
+  --title-weight:    300;
   --header-color:    rgba(4, 124, 145, 1);
   --body-color:      rgba(0, 0, 0, 0.8);
   --aside-color:     rgba(0, 0, 0, 0.6);
@@ -182,3 +182,5 @@ d-title h1 {
     background-color: #047C91;
     color: black;
 }
+
+

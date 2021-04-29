@@ -6,9 +6,9 @@ This page provides resources for our incoming and current students
 
 ### Before starting the program
 
-[Computer requirements and recommendations](https://ucsb-meds.github.io/computer_reqs.html)
+[Computer requirements and recommendations](computer_reqs.html)
 
-[Optional things to do before starting MEDS](https://ucsb-meds.github.io/pre_meds_prep.html)
+[Optional things to do before starting MEDS](pre_meds_prep.html)
 
 
 
