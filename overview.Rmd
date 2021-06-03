@@ -17,12 +17,12 @@ Here, we share a bit more information about what students can expect during the 
 
 ## Orientation
 
-Each student should plan to attend a 2-day MEDS orientation on the Thursday and Friday before the first day of summer classes. This orientation will be held at NCEAS. During orientation, incoming MEDS students will:
+Each student should plan to attend a 2-day MEDS orientation on the Thursday and Friday before the first day of summer classes. This orientation will be held at Bren Hall (July 29th) and NCEAS (July 30th). During orientation, incoming MEDS students will:
 
 -   Meet our full MEDS team
 -   Get set up with all necessary computer accounts, tools & software
 -   Get to know your peers
--   Become familiar with the NCEAS space
+-   Become familiar with the Bren & NCEAS space
 
 ...and more!
 
@@ -96,9 +96,7 @@ For example, a week in Fall Quarter might look something like this:
 |           |                                                                  |            |
 |           | -   11:00am - 12:00pm: Livestream Bren Seminar                   |            |
 +-----------+------------------------------------------------------------------+------------+
-| Tuesday   | -   8:00am - 9:15am: EDS 222                                     | Bren Hall  |
-|           |                                                                  |            |
-|           | -   9:30am - 10:45am: EDS 223                                    |            |
+| Tuesday   | -   9:30am - 10:45am: EDS 222                                    | Bren Hall  |
 +-----------+------------------------------------------------------------------+------------+
 | Wednesday | -   8:00am - 9:15am: EDS 213 (weeks 1-5) or EDS 211 (weeks 6-10) | NCEAS      |
 |           |                                                                  |            |
@@ -106,13 +104,11 @@ For example, a week in Fall Quarter might look something like this:
 |           |                                                                  |            |
 |           | -   12:15pm - 1:00pm: NCEAS Roundtable                           |            |
 +-----------+------------------------------------------------------------------+------------+
-| Thursday  | -   8:00am - 9:15am: EDS 222                                     | Bren Hall  |
+| Thursday  | -   8:15am - 9:15am: Career workshop                             | Bren Hall  |
 |           |                                                                  |            |
-|           | -   9:30am - 10:45am: EDS 223                                    |            |
-|           |                                                                  |            |
-|           | -   12:30pm - 1:30pm: Career workshop                            |            |
+|           | -   9:30am - 10:45am: EDS 222                                    |            |
 +-----------+------------------------------------------------------------------+------------+
-| Friday    | -   12:00pm - 3:00pm: EDS 223 Lab                                | Bren Hall  |
+| Friday    | -   9:00am - 12:00pm: EDS 223                                    | Bren Hall  |
 +-----------+------------------------------------------------------------------+------------+
 
 # Winter

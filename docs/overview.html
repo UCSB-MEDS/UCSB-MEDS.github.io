@@ -55,7 +55,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #20794d; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +76,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -1859,10 +1859,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refs = $(this).attr('data-cites').split(" ");
-        var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
-        }).join("\n");
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2546,12 +2543,12 @@ MEDS CURRICULUM
 <p>Here, we share a bit more information about what students can expect during the MEDS program.</p>
 <h1 id="summer">Summer</h1>
 <h2 id="orientation">Orientation</h2>
-<p>Each student should plan to attend a 2-day MEDS orientation on the Thursday and Friday before the first day of summer classes. This orientation will be held at NCEAS. During orientation, incoming MEDS students will:</p>
+<p>Each student should plan to attend a 2-day MEDS orientation on the Thursday and Friday before the first day of summer classes. This orientation will be held at Bren Hall (July 29th) and NCEAS (July 30th). During orientation, incoming MEDS students will:</p>
 <ul>
 <li>Meet our full MEDS team</li>
 <li>Get set up with all necessary computer accounts, tools &amp; software</li>
 <li>Get to know your peers</li>
-<li>Become familiar with the NCEAS space</li>
+<li>Become familiar with the Bren &amp; NCEAS space</li>
 </ul>
 <p>…and more!</p>
 <h2 id="summer-intensive-courses">Summer Intensive Courses</h2>
@@ -2656,8 +2653,7 @@ MEDS CURRICULUM
 <tr class="even">
 <td>Tuesday</td>
 <td><ul>
-<li><p>8:00am - 9:15am: EDS 222</p></li>
-<li><p>9:30am - 10:45am: EDS 223</p></li>
+<li>9:30am - 10:45am: EDS 222</li>
 </ul></td>
 <td>Bren Hall</td>
 </tr>
@@ -2673,16 +2669,15 @@ MEDS CURRICULUM
 <tr class="even">
 <td>Thursday</td>
 <td><ul>
-<li><p>8:00am - 9:15am: EDS 222</p></li>
-<li><p>9:30am - 10:45am: EDS 223</p></li>
-<li><p>12:30pm - 1:30pm: Career workshop</p></li>
+<li><p>8:15am - 9:15am: Career workshop</p></li>
+<li><p>9:30am - 10:45am: EDS 222</p></li>
 </ul></td>
 <td>Bren Hall</td>
 </tr>
 <tr class="odd">
 <td>Friday</td>
 <td><ul>
-<li>12:00pm - 3:00pm: EDS 223 Lab</li>
+<li>9:00am - 12:00pm: EDS 223</li>
 </ul></td>
 <td>Bren Hall</td>
 </tr>
