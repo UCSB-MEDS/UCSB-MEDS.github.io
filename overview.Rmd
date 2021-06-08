@@ -122,8 +122,9 @@ In Winter Quarter, students will complete 16 units of coursework, three traditio
 
 # Spring
 
-In Spring Quarter, students will complete 12 units of coursework, two traditional academic courses and one 4 unit capstone project course.
+In Spring Quarter, students will complete 12 units of coursework, three traditional academic courses and one 4 unit capstone project course.
 
 -   **EDS 230:** Modeling Environmental Systems (4 units)
--   **EDS 231:** Text and Sentiment Analysis for Environmental Problems (4 units)
+-   **EDS 231:** Text and Sentiment Analysis for Environmental Problems (2 units)
+-   **EDS 242:** Ethics & Bias in Environmental Data Science (2 units)
 -   **EDS 411B:** Capstone Group Project B (4 units)
