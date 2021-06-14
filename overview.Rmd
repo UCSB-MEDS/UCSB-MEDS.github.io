@@ -34,7 +34,7 @@ During the first 6 weeks of the MEDS program (August through mid-September), stu
 -   **Weeks 2 & 3:** EDS 221: Scientific Programming Essentials (4 units)
 -   **Week 4:** EDS 214: Analytical Workflows & Scientific Reproducibility (2 units)
 -   **Week 5:** EDS 215: Introduction to Data Storage & Management (2 units)
--   **Week 6:** EDS 215: Meta-analysis and Systematic Reviews (2 units)
+-   **Week 6:** EDS 216: Meta-analysis and Systematic Reviews (2 units)
 
 For more detailed descriptions of the summer courses, see our [Courses](https://ucsb-meds.github.io/courses.html) page.
 
