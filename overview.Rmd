@@ -19,31 +19,27 @@ Here, we share a bit more information about what students can expect during the 
 
 Each student should plan to attend a 1.5-day MEDS orientation on the Thursday and Friday before the first day of summer classes. Orientation for the MEDS Class of 2022 will be held at Bren Hall (July 29th) and NCEAS (July 30th). During orientation, incoming MEDS students will:
 
--   Meet our full MEDS team
+-   Meet the MEDS staff
 -   Get set up with all necessary computer accounts, tools & software
 -   Get to know your peers
 -   Become familiar with the Bren & NCEAS space, + more!
 
-### Orientation Schedule
+[Click here](https://ucsb.app.box.com/s/y1j1vvkgkvxfh8umjr3hpv0rw9kx0562) for a detailed orientation agenda.
 
 #### Thursday, July 29^th^ - Bren Hall
 
 +-------------------+--------------------------------------------------+
 | Time (PST)        | Activity                                         |
 +===================+==================================================+
+| 9:00am - 9:30am   | Check-in & Breakfast                             |
++-------------------+--------------------------------------------------+
 | 9:30am - 10:00am  | Welcome & Introductions                          |
 +-------------------+--------------------------------------------------+
 | 10:00am - 11:00am | Bren 101 Presentation                            |
 +-------------------+--------------------------------------------------+
 | 11:00am - 12:15pm | Team Building Exercise                           |
 +-------------------+--------------------------------------------------+
-| 12:15pm - 1:00pm  | Bren Hall Tour                                   |
-+-------------------+--------------------------------------------------+
-| 1:00pm - 2:00pm   | Lunch                                            |
-+-------------------+--------------------------------------------------+
 | 2:00pm - 4:00pm   | Mutual Respect Workshop                          |
-+-------------------+--------------------------------------------------+
-| 4:00pm - 5:30pm   | MEDS Faculty Flash Talks and Mixer               |
 +-------------------+--------------------------------------------------+
 
 #### Friday, July 30^th^ - NCEAS
@@ -59,7 +55,7 @@ Each student should plan to attend a 1.5-day MEDS orientation on the Thursday an
 +--------------------+-------------------------------------------------+
 | 12:00pm - 12:30pm  | Capstone Project Overview                       |
 +--------------------+-------------------------------------------------+
-| 12:30pm - 2:00pm   | NCEAS Scientist Flash Talks and Terrace Lunch   |
+| 12:30pm - 2:00pm   | Lunch Mixer with NCEAS Scientists on the Terrace|
 +--------------------+-------------------------------------------------+
 
 ## Summer Intensive Courses
@@ -74,13 +70,13 @@ During the first 6 weeks of the MEDS program (August through mid-September), stu
 
 For more detailed descriptions of the summer courses, see our [Courses](https://ucsb-meds.github.io/courses.html) page.
 
-### Location
+## Location
 
 All Summer courses will be held at the new [NCEAS](https://www.nceas.ucsb.edu/) building (and new designated MEDS learning space!) in downtown Santa Barbara. The address is 1021 Anacapa Street.
 
 NCEAS is \~11 miles (a 15 minute drive, without traffic) from the UC Santa Barbara campus, or a \~35 minute bus ride on the [24x line](https://sbmtd.gov/routes/route-24x/). The transit center downtown is \~3 blocks from NCEAS (a \<10 minute walk).
 
-### A day in a Summer course
+## A day in a Summer course
 
 During intensive Summer courses, students should plan to arrive at NCEAS by 7:45am daily, ready for full days of learning (usually 8am - 5pm PST, M - F). Students generally should **not expect** additional assignments or MEDS-related work outside of those hours. In other words, courses will be structured so that all course requirements can be completed within the 8am - 5pm window while at NCEAS.
 
@@ -103,7 +99,7 @@ For example, a day during a Summer course might look like this:
 
 With built-in breaks for coffee and lunch, interactive sessions for hands-on learning, and flex time for activities that change daily, we on the MEDS Team are working to make these days dynamic and fun while you build fundamental skills in environmental data science.
 
-### Class activities
+## Class activities
 
 Summer is a special time for our MEDS students to bond both in and outside of class. You will be spending 6 weeks together from 8 am to 5 pm each day. While the coursework will be rigorous, we will also have dedicated breaks and events for relaxing, mingling and socializing. *As we work to get events confirmed we will update those here*
 
@@ -117,7 +113,7 @@ In Fall Quarter, MEDS students will complete 16 units of coursework. There are t
 -   **EDS 222:** Statistics for Environmental Data Science (4 units)
 -   **EDS 223:** Spatial Analysis for Environmental Data Science (4 units)
 
-### Schedule
+## Schedule
 
 In Fall, Winter and Spring quarters, MEDS courses will be held at both the Bren School (UCSB campus) and downtown at NCEAS. Students will *only have required courses / events at a single campus on any given day* - i.e., to minimize travel, we will not schedule required MEDS events at both campuses on the same day.
 
