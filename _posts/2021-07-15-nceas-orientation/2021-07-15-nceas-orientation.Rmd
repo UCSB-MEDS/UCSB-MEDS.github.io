@@ -1,0 +1,48 @@
+---
+title: "Orientation Logistics"
+description: |
+  How to Get to NCEAS
+author:
+  - name: Kimberly Yom
+date: 2021-07-15
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+In the last blog post, we mentioned that we had been busy building all kinds of things, e.g. courses, websites, even actual buildings! It’s finally time to use these newly-built objects. Only 13 days left until MEDS Orientation begins and we couldn’t be more excited to meet all of you!
+
+# Orientation
+
+The MEDS orientation will be a hybrid (in-person and remote) two-day event with Day 1 at Bren Hall and Day 2 at NCEAS (see instructions). During orientation, students will get up to speed on the necessary hardware and software, learn more about the program’s requirements and courses, and - of course - get to know one another! Students can view the [schedule here](https://ucsb.account.box.com/login?redirect_url=https%3A%2F%2Fucsb.app.box.com%2Fs%2Fy1j1vvkgkvxfh8umjr3hpv0rw9kx0562) using their NetID and password. Be sure to check your inboxes as we’ll be sending additional information you need to know!
+
+# Getting to NCEAS
+
+As you may already know, NCEAS recently moved from State Street to 1021 Anacapa St. In addition to hosting leading-edge research, this brand new building has a classroom and work stations for the MEDS students. Entering the building is a little tricky as the entrance to the MEDS space is off of the parking lot, not Anacapa - see photo below. 
+
+```{r, out.width = "50%", fig.align = "center"}
+knitr::include_graphics(path = "images/1021 Anacapa.jpg")
+```
+
+## Parking
+
+There is a city lot attached to the building. It is free for the first 75 minutes and $1.50 per hour after that. There is free street parking a few blocks away, just make sure to look for street sweeping restrictions.
+
+There is limited bike parking available nearby on the sidewalk.
+
+
+## Bus
+
+If you live in on-campus housing, or in Isla Vista, the Santa Barbara [MTD 24X line](https://sbmtd.gov/routes/route-24x/) is the most efficient bus route between NCEAS and the University. Hop on at the closest stop to your home, and get off at the transit center on Carillo and Chapala, which is just 2 blocks from NCEAS. **Be sure to check the schedule so you arrive before Orientation and classes begin**
+ 
+If you have any questions, we can be reached at academics@bren.ucsb.edu.
+
+
+
+
+
