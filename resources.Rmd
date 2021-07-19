@@ -11,7 +11,9 @@ This page provides resources for our incoming and current students
 [Optional things to do before starting MEDS](pre_meds_prep.html)
 
 
+### During the program
 
+[MEDS Slack](meds-slack.html)
 
 
 
