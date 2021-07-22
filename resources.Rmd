@@ -4,6 +4,8 @@ title: "MEDS Resources"
 
 This page provides resources for our incoming and current students
 
+[**MEDS Google Calendar**](https://calendar.google.com/calendar/embed?src=c_1886ai526iqschc9mnpj6cu753n60%40resource.calendar.google.com&ctz=America%2FLos_Angeles)
+
 ### Before starting the program
 
 [Computer requirements and recommendations](computer_reqs.html)
