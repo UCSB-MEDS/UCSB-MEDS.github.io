@@ -17,5 +17,6 @@ This page provides resources for our incoming and current students
 
 [MEDS Slack](meds-slack.html)
 
+[NCEAS Building Policies](nceas-building-policies.html)
 
 
