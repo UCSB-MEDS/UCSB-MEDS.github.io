@@ -99,7 +99,7 @@ With built-in breaks for coffee and lunch, interactive sessions for hands-on lea
 
 ## Class activities
 
-Summer is a special time for our MEDS students to bond both in and outside of class. You will be spending 6 weeks together from 8 am to 5 pm each day. While the coursework will be rigorous, we will also have dedicated breaks and events for relaxing, mingling and socializing. *As we work to get events confirmed we will update those here*
+Summer is a special time for our MEDS students to bond both in and outside of class. You will be spending 6 weeks together from 8 am to 5 pm each day. While the coursework will be rigorous, we will also have dedicated breaks and events for relaxing, mingling and socializing.
 
 # Fall
 
@@ -132,7 +132,7 @@ For example, a week in Fall Quarter might look something like this:
 |           |                                                                  |            |
 |           | -   9:30am - 10:45am: EDS 220                                    |            |
 |           |                                                                  |            |
-|           | -   12:15pm - 1:00pm: NCEAS Roundtable                           |            |
+|           | -   12:00pm - 12:45 pm: NCEAS Roundtable                           |            |
 +-----------+------------------------------------------------------------------+------------+
 | Thursday  | -   8:15am - 9:15am: Career workshop                             | Bren Hall  |
 |           |                                                                  |            |
