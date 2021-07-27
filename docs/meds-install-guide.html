@@ -86,27 +86,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>UCSB MEDS: What can I do before I start?</title>
+  <title>UCSB MEDS: MEDS Installation Guide</title>
 
 
   <link rel="icon" type="image/png" href="img/meds_hex.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="UCSB MEDS: What can I do before I start?"/>
+  <meta property="og:title" content="UCSB MEDS: MEDS Installation Guide"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="UCSB MEDS"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="UCSB MEDS: What can I do before I start?"/>
+  <meta property="twitter:title" content="UCSB MEDS: MEDS Installation Guide"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["What can I do before I start?"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Installation Guide"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2494,7 +2494,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"What can I do before I start?","authors":[]}
+{"title":"MEDS Installation Guide","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2533,7 +2533,7 @@ MEDS CURRICULUM
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>What can I do before I start?</h1>
+<h1>MEDS Installation Guide</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2541,96 +2541,231 @@ MEDS CURRICULUM
 
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
+<p><strong>Note:</strong> There is an installation session during MEDS orientation to test and troubleshoot installations.</p>
+<p><strong>Computing requirements:</strong> See the <a href="computer_reqs.html">MEDS Computing Requirements</a> for minimum device needs. If you do not have a device that meets the minimum requirements, we may be unable to help troubleshoot some installation issues. Please submit issues here.</p>
+<h2 id="necessary-software">Necessary software:</h2>
 <ul>
-<li><a href="#join-communities">1. Join communities</a></li>
-<li><a href="#stretch-your-quantitative-brain">2. Stretch your quantitative brain</a></li>
-<li><a href="#career-development-brainstorming-learning">3. Career development brainstorming &amp; learning</a></li>
+<li>R</li>
+<li>RStudio</li>
+<li>git (configured)</li>
+<li>GitHub account (with PAT setup)</li>
+<li>Anaconda</li>
+<li>Slack</li>
+<li>Docker</li>
 </ul>
-</nav>
+<p><strong>Note:</strong> All of these are free at the level you’ll need them at for MEDS. If you are asked to pay for something, you’re choosing the wrong option.</p>
+<h4 align="center">
+Choose your operating system:
+</h4>
+<h2 align="center">
+<a href="#macos">MacOS</a> | <a href="#windows">Windows</a>
+</h2>
+<h2 id="macos">MacOS</h2>
+<h4 id="install-or-update-r">1. Install or update R</h4>
+<p>To install R, visit <a href="https://www.r-project.org/">r-project.org</a> to learn more, then choose a CRAN mirror (for example, the Oregon State University CRAN mirror) to download the most recent version of R for your operating system. You should have at least version 4.1.0 (released 2021-05-19) running when you start MEDS.</p>
+<h4 id="install-or-update-rstudio">2. Install or update RStudio</h4>
+<ul>
+<li><p><strong>New install:</strong> To install RStudio, visit <a href="https://www.rstudio.com/products/rstudio/">rstudio.com/products/rstudio/</a>. Download the free (“Open Source Edition”) Desktop version for your operating system. You should have at least version 1.4 (early 2021) installed to start MEDS.</p></li>
+<li><p><strong>Update:</strong> If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.</p></li>
+<li><p>Open RStudio (logo you’ll click on shown below): <strong>If upon opening RStudio you are prompted to install Command Line Tools, do it.</strong></p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/rstudio-logo.png" width="211" style="display: block; margin: auto;" /></p>
 </div>
-<p>Incoming students often ask “What can I do before I start the MEDS program to prepare?”</p>
-<p>There are <strong>no required tasks</strong> that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, here are some completely optional things you can do.</p>
-<h2 id="join-communities">1. Join communities</h2>
-<p>Yes, you should feel welcome to join even before you start MEDS, and even if you’ve never written a line of code before!</p>
-<p>Joining and engaging with data science communities is a great way to build your Environmental Data Science network, stay up to date on new tools, methods, events, and initiatives, learn about professional opportunities, and to get support of all flavors (technical, emotional, etc.).</p>
-<p>Here are some places to start:</p>
-<h3 class="unlisted unnumbered" id="eco-data-science">Eco-Data-Science</h3>
-<p><a href="https://eco-data-science.github.io/">Eco-Data-Science</a>, founded by MEDS Coordinator <a href="https://www.jamiecmontgomery.com/">Jamie Montgomery</a> in 2015, is a volunteer-driven learning group that has become a model for coding clubs and communities around the world. During the academic year, Eco-Data-Science offers monthly workshops on wide-ranging topics in environmental data science topics from text analysis to high performance computing to basic data wrangling in R and Python.</p>
 <ul>
-<li><a href="https://eco-data-science.github.io/">Join Eco-Data-Science</a> - click ‘Talk to Us!’ to join the Google group to receive updates, session alerts, and more</li>
-<li>Join the <a href="ecodatascience.slack.com">Eco-Data-Science Slack workspace</a> - a great place to meet other members, see shared job postings, learn about upcoming events in Environmental Data Science, etc.</li>
-</ul>
-<h3 class="unlisted unnumbered" id="santa-barbara-r-ladies">Santa Barbara R-Ladies</h3>
-<p><a href="https://www.meetup.com/rladies-santa-barbara/">Santa Barbara R-Ladies</a> is our local chapter of <a href="https://rladies.org/">R-Ladies</a>, “a world-wide organization to promote gender diversity in the R community.” SB R-Ladies hosts ~5 - 6 events per year, including skill-building workshops, guest speakers, networking events, and more. All are welcome to join and participate, with the understanding that this group prioritizes supporting members from underrepresented genders in the R community.</p>
+<li><p>Note: you may need to install command line tools and XQuartz.</p>
 <ul>
-<li><a href="https://www.meetup.com/rladies-santa-barbara/">Join SB R-Ladies Meetup group</a></li>
-<li>Follow <a href="https://twitter.com/RLadiesSB">SB R-Ladies on Twitter</a></li>
-</ul>
-<h3 class="unlisted unnumbered" id="santa-barbara-r-users-group">Santa Barbara R-Users Group</h3>
-<p>The <a href="https://www.meetup.com/Santa-Barbara-R-Users-Group/">Santa Barbara R-Users Group</a> is a local group that hosts sessions throughout the year to “bring Santa Barbara R users together to exchange information and ideas.” Users and learners of all levels are welcome to join! Past sessions have included guest speakers and visitors, lightning talks, active coding lessons, and much more!</p>
-<ul>
-<li><a href="https://www.meetup.com/Santa-Barbara-R-Users-Group/">Join the Santa Barbara R-Users Group</a></li>
-</ul>
-<h3 class="unlisted unnumbered" id="r-for-data-science-online-learning-community">R for Data Science Online Learning Community</h3>
-<p>The <a href="https://www.rfordatasci.com/">R for Data Science Online Learning Community</a> is a supportive place where you can join groups, ask for help, learn about events and jobs, and network with other learners, teachers, and practitioners in the R community.</p>
-<h3 class="unlisted unnumbered" id="twitter">Twitter</h3>
-<p>We know, it seems like a weird suggestion - but Twitter is <em>the</em> place where the R community members get and share information. It is a treasure trove of resources, support, and direct access to data scientists across fields. Many data scientists use Twitter as a professional tool to share their work, ask questions, request feedback, and build collaborations. Give it a try!</p>
-<ul>
-<li><p>Make a twitter account</p></li>
-<li><p>Follow a few groups &amp; people Twitter:</p>
-<ul>
-<li>R for Data Science Learning Community: <a href="https://twitter.com/R4DScommunity">@R4DScommunity</a>.</li>
-<li>WeAreRLadies (rotating curator, R-Ladies): <a href="https://twitter.com/WeAreRLadies">@WeAreRLadies</a>.</li>
-<li>Mi-R (a space of belonging and support for people who identify as underrepresented minority R users): <a href="https://twitter.com/miR_community">@miR_Commmunity</a>.</li>
-<li>PyLadies: <a href="https://twitter.com/pyladies">@pyladies</a></li>
-<li>Real Python: <a href="https://twitter.com/realpython">@realpython</a></li>
-<li>UCSB Eco-Data-Science: <a href="https://twitter.com/ecodatasci">@ecodatasci</a></li>
-<li>R-Ladies Santa Barbara: <a href="https://twitter.com/RLadiesSB">@RLadiesSB</a></li>
-<li>National Center for Ecological Analysis and Synthesis: <a href="https://twitter.com/nceas">@nceas</a></li>
+<li>To install command line tools (if you’re not automatically prompted), run in the Terminal tab in RStudio: <code>xcode-select --install</code></li>
+<li>Visit <a href="https://www.xquartz.org/">xquartz.org</a> to download &amp; install XQuartz</li>
 </ul></li>
-<li><p>Not sure how to engage on Twitter? We know it can be weird &amp; overwhelming at first! Check out the free book <a href="https://www.t4rstats.com/">Twitter for R Programmers</a> by <a href="https://twitter.com/OscarBaruffa">Oscar Baruffa</a> and <a href="https://twitter.com/veerlevanson">Veerle van Son</a> for useful guidance.</p></li>
 </ul>
-<h2 id="stretch-your-quantitative-brain">2. Stretch your quantitative brain</h2>
-<p>If your brain is feeling a bit rusty on numbers &amp; equations, you may want to stretch out your math muscles a bit before MEDS starts. Again: this is absolutely <strong>not</strong> required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you’ll take in MEDS. However, if you’re really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in <a href="https://www.khanacademy.org/math/algebra">Khan Academy’s Algebra 1 module</a>).</p>
-<p>We will do <em>all of this</em> in EDS 212, but if you’re feeling especially nervous about math in the MEDS program, bringing algebra basics back to the forefront of your brain is a good place to start.</p>
-<h2 id="career-development-brainstorming-learning">3. Career development brainstorming &amp; learning</h2>
-<p>During this 11-month master’s program, you will start formally working with our Bren Career Team during Fall Quarter as you start refining your marketing documents, designing your online platforms, putting a job search process in place, and honing your professional and career skills.</p>
-<p>While we understand you might not be 100% sure what jobs you would like to pursue, you will need to make your job search (career development) a priority if you want to land a job prior to graduation. The Career Team will work closely with you from Fall to Spring. But they have also created a summer assignment so you can hit the ground running once Fall arrives.</p>
-<p>Following orientation, the Career Team will assign you a “Career Path and Job Search Skills Summer Assignment” to complete by the end of your summer courses. This assignment will ask you to reflect and answer some questions and explore some resources. Since this is an 11-month graduate program, the goal is to get you thinking the right way from the start. You will have the entire summer to work on these tasks, but the Career Team has shared them now so you can get a head start.</p>
-<h3 class="unlisted unnumbered" id="create-a-career-vision-where-you-want-to-go-and-where-you-should-begin">Create a career vision: Where you want to go, and where you should begin?</h3>
-<p>Start to design a career path that will take you from where you are to where you want to go. Answering the following questions will help you get on the right path.</p>
+<h4 id="check-for-git">3. Check for git</h4>
+<p>You should already have git on your device, but let’s check for it anyway.</p>
 <ul>
-<li><p>Why did you decide to attend the Bren School?</p></li>
-<li><p>Looking into the future, what job(s) do you see yourself working when you have fulfilled your career goals and aspirations?</p></li>
-<li><p>What job do you plan to pursue following graduation that will start you on a path toward fulfilling your career aspirations? The job you would like to pursue after graduation is your “ideal job.”</p></li>
-<li><p>Identify 5 people who are working in a job that most closely aligns with your career aspirations (your future self).</p>
-<ul>
-<li>Ask your contacts about their career path, how they started achieving their career goals, and how they came to realize their overall career aspirations.</li>
-<li>Ask your contacts where they would recommend you start your career (job and companies).</li>
-</ul></li>
-<li><p>What is your ideal job after graduation? (Type of work, sector, geographic location)</p></li>
-<li><p>Make a list of the companies/organizations that interest you and where you would like to work to put your skills and passions to use. These are your “target organizations.”</p></li>
-<li><p>Make a list of the people you know or connections you have at each of your target organizations.</p></li>
+<li><p>Open RStudio</p></li>
+<li><p>In the Terminal, run the following command:</p>
+<p><code>which git</code></p></li>
+<li><p>If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): <code>/usr/local/bin/git</code>. If you instead get no response at all, you should download &amp; install git from here: <a href="https://git-scm.com/downloads">git-scm.com/downloads</a></p></li>
 </ul>
-<h3 class="unlisted unnumbered" id="explore-job-search-resources">Explore job search resources</h3>
-<p>The Career Team has provided a list of books you can read to gain more knowledge on job search strategies, relationship building tactics, and interviewing skills.</p>
-<p><strong>Book recommendations:</strong></p>
+<h4 id="create-a-github-account">4. Create a GitHub account</h4>
 <ul>
-<li><a href="https://2hourjobsearch.com/">The 2-Hour Job Search</a> by Steve Dalton</li>
-<li><a href="https://20mnm.com/#graduate">The 20-Minute Networking Meeting (Graduate Edition)</a> by Nathan A. Perez and Marcia Ballinger, PhD</li>
-<li><a href="https://www.manning.com/books/build-a-career-in-data-science">Build a Career in Data Science</a> by Emily Robinson and Jacqueline Nolis</li>
+<li>If you don’t already have a GitHub account, go to github.com and create one. Here are helpful considerations for choosing a username: <a href="https://happygitwithr.com/github-acct.html">happygitwithr.com/github-acct.html</a>.</li>
 </ul>
-<p><strong>Additional books to explore if you have more time:</strong></p>
+<h4 id="configure-git">5. Configure git</h4>
 <ul>
-<li><a href="https://www.franklincovey.com/the-7-habits/">The 7 Habits of Highly Effective People</a> by Stephen Covey</li>
-<li><a href="https://www.amazon.com/No-Nonsense-Job-Interviews-Prospective-Employers-ebook/dp/B07HZTPLKH">No-Nonsense Job Interviews</a> by Arnold G. Boldt</li>
-<li><a href="https://www.scienceofpeople.com/captivate/">Captivate: The Science of Succeeding with People</a> by Vanessa Van Edwards</li>
-<li><a href="https://www.penguinrandomhouse.com/books/227558/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-and-tahl-raz/">Never Eat Alone</a> by Keith Ferrazzi</li>
+<li><p>In RStudio, open the Terminal. Run the following commands (by pressing Enter after each line), replacing the username (keep the quotation marks!) and email with your username and email used for your GitHub account.</p>
+<p><code>git config --global user.name "Jane Doe"</code> <code>git config --global user.email janedoe@example.com</code></p></li>
+<li><p>Then, in the Terminal run the following, carefully checking that the name and email returned match your GitHub information:</p>
+<p><code>git config --list --global</code></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h4 id="store-your-github-personal-access-token-pat">6. Store your GitHub personal access token (PAT)</h4>
+<ul>
+<li><p>Once you have git configured successfully, install the <code>usethis</code> package in R by running the following in the RStudio Console:</p>
+<p><code>install.packages(“usethis”)</code></p></li>
+</ul>
+<p>A lot of scary looking red text will show up while this is installing - don’t panic. If you get to the end and see something like below (with no error) it’s installed successfully.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/install-pkg-success.png" width="644" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>Run the following in the RStudio Console which should open a browser window with a page that looks like this:</p>
+<p><code>usethis::create_github_token()</code></p></li>
+<li><p>Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this, with reasonable options already selected for you:</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/new-pat.png" width="1000" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li>Do not change anything. Just scroll down to the bottom of that page and click the green ‘Generate token’ button:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/generate-token.png" width="615" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>Copy the generated PAT to your clipboard</p></li>
+<li><p>Back in RStudio, in the console run <code>gitcreds::gitcreds_set()</code>. This will prompt you to paste the PAT you just copied from GitHub. Paste the PAT, press Enter to run. You should see something like this show up if all is well so far (you’ll have pasted your PAT where mine says “REDACTED”):</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/gitcreds-set.png" width="489" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>In the RStudio Console, run:</p>
+<p><code>usethis::git_sitrep()</code></p></li>
+</ul>
+<p>Does it return information about your connected GitHub account that looks something like below? Great! You’ve configured git and successfully stored your PAT.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/git_sitrep.png" width="469" style="display: block; margin: auto;" /></p>
+</div>
+<h4 id="install-anaconda">7. Install Anaconda</h4>
+<ul>
+<li><a href="https://repo.anaconda.com/archive/Anaconda3-2021.05-MacOSX-x86_64.pkg">Click here to download 64-bit Graphical Installer</a>. This might pop open a new tab with a “redirecting you to…” phrase, but Anaconda should be downloading at the same time. It might take a couple minutes. After it’s downloaded, click it and hit Allow if you see the following:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/allow-program.png" width="264" style="display: block; margin: auto;" /></p>
+</div>
+<p>Follow the installation steps to complete Anaconda installation.</p>
+<h4 id="create-your-slack-account-and-join-meds">8. Create your Slack account and join MEDS</h4>
+<ul>
+<li><p>Click <a href="https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw">here</a> to join our UCSB-MEDS Slack Workspace</p></li>
+<li><p>Customize your profile with your name and photo.</p></li>
+<li><p>Join the summer course channels (#eds-212, #eds-221, #eds-214)</p></li>
+<li><p>Read through the <a href="https://ucsb-meds.github.io/meds-slack.html">Slack Resource Guide</a></p></li>
+</ul>
+<h4 id="install-docker">9. Install Docker</h4>
+<ul>
+<li>Visit <a href="https://www.docker.com/get-started">docker.com/get-started</a> and install Docker Desktop for your operating system. <strong>Note: If you have a Mac, you must select either the Intel Chip or the more recent computers will have the Apple chip.</strong> Once installed, drag &amp; drop into Applications.</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/drag-docker.png" width="608" style="display: block; margin: auto;" /></p>
+</div>
+<h2 id="windows">Windows</h2>
+<h4 id="install-or-update-r-1">1. Install or update R</h4>
+<p>To install R, visit <a href="https://www.r-project.org/">r-project.org</a> to learn more, then choose a CRAN mirror (for example, the Oregon State University CRAN mirror) to download the most recent version of R for your operating system. You should have at least version 4.1.0 (released 2021-05-19) running when you start MEDS.</p>
+<h4 id="install-or-update-rstudio-1">2. Install or update RStudio</h4>
+<ul>
+<li><p>New install: To install RStudio, visit <a href="https://www.rstudio.com/products/rstudio/">rstudio.com/products/rstudio/</a>. Download the free Desktop version for your operating system. You should have at least version 1.4 (early 2021) installed to start MEDS.</p></li>
+<li><p>Update: If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.</p></li>
+<li><p>Open RStudio (logo you’ll click on shown below). <strong>If you are prompted to install Command Line Tools, do it.</strong></p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/rstudio-logo.png" width="211" style="display: block; margin: auto;" /></p>
+</div>
+<h4 id="check-for-git-1">3. Check for git</h4>
+<p>You should already have git on your device, but let’s check for it anyway.</p>
+<ul>
+<li><p>Open RStudio</p></li>
+<li><p>In the Terminal, run the following command:</p>
+<p><code>where git</code></p></li>
+<li><p>If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): <code>/usr/local/bin/git</code>. If you instead get no response at all, you should download &amp; install git from here: <a href="https://git-scm.com/downloads">git-scm.com/downloads</a></p></li>
+</ul>
+<h4 id="create-a-github-account-1">4. Create a GitHub account</h4>
+<ul>
+<li>If you don’t already have a GitHub account, go to github.com and create one. Here are helpful considerations for choosing a username: <a href="https://happygitwithr.com/github-acct.html">happygitwithr.com/github-acct.html</a>.</li>
+</ul>
+<h4 id="configure-git-1">5. Configure git</h4>
+<ul>
+<li><p>In RStudio, open the Terminal. Run the following commands (by pressing Enter after each line), replacing the username (keep the quotation marks!) and email with your username and email used for your GitHub account.</p>
+<p><code>git config --global user.name "Jane Doe"</code> <code>git config --global user.email janedoe@example.com</code></p></li>
+<li><p>Then, in the Terminal run the following, carefully checking that the name and email returned match your GitHub information:</p>
+<p><code>git config --list --global</code></p></li>
+</ul>
+<h4 id="store-your-github-personal-access-token-pat-1">6. Store your GitHub personal access token (PAT)</h4>
+<ul>
+<li><p>Once you have git configured successfully, install the <code>usethis</code> package in R by running the following in the RStudio Console:</p>
+<p><code>install.packages(“usethis”)</code></p></li>
+</ul>
+<p>A lot of scary looking red text will show up while this is installing - don’t panic. If you get to the end and see something like below (with no error) it’s installed successfully.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/install-pkg-success.png" width="644" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>Run the following in the RStudio Console which should open a browser window with a page that looks like this:</p>
+<p><code>usethis::create_github_token()</code></p></li>
+<li><p>Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this, with reasonable options already selected for you:</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/new-pat.png" width="1000" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li>Do not change anything. Just scroll down to the bottom of that page and click the green ‘Generate token’ button:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/generate-token.png" width="615" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>Copy the generated PAT to your clipboard</p></li>
+<li><p>Back in RStudio, in the console run <code>gitcreds::gitcreds_set()</code>. This will prompt you to paste the PAT you just copied from GitHub. Paste the PAT, press Enter to run. You should see something like this show up if all is well so far (you’ll have pasted your PAT where mine says “REDACTED”):</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/gitcreds-set.png" width="489" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>In the RStudio Console, run:</p>
+<p><code>usethis::git_sitrep()</code></p></li>
+</ul>
+<p>Does it return information about your connected GitHub account that looks something like below? Great! You’ve configured git and successfully stored your PAT.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/git_sitrep.png" width="469" style="display: block; margin: auto;" /></p>
+</div>
+<h4 id="install-anaconda-1">7. Install Anaconda</h4>
+<ul>
+<li><a href="https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe">Click here to download 64-bit Graphical Installer</a>. This might pop open a new tab with a “redirecting you to…” phrase, but Anaconda should be downloading at the same time. It might take a couple minutes. After it’s downloaded, click it and hit Allow if you see the following:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/allow-program.png" width="264" style="display: block; margin: auto;" /></p>
+</div>
+<p>Follow the installation steps to complete Anaconda installation.</p>
+<h4 id="create-your-slack-account-and-join-meds-1">8. Create your Slack account and join MEDS</h4>
+<ul>
+<li><p>Click <a href="https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw">here</a> to join our UCSB-MEDS Slack Workspace</p></li>
+<li><p>Customize your profile with your name and photo.</p></li>
+<li><p>Join the summer course channels (#eds-212, #eds-221, #eds-214)</p></li>
+<li><p>Read through the <a href="https://ucsb-meds.github.io/meds-slack.html">Slack Resource Guide</a></p></li>
+</ul>
+<h4 id="install-docker-1">9. Install Docker</h4>
+<p>Visit <a href="https://www.docker.com/get-started">docker.com/get-started</a> and install Docker Desktop for your operating system.</p>
+<p><em>You made need to go through the following steps to install Docker on a PC.</em></p>
+<p><strong>Enabling virtualization in BIOS</strong></p>
+<ul>
+<li><p>Windows Start Menu &gt; Settings &gt; Update &amp; Security &gt; Recovery &gt; “Restart Now” under Advanced Startup &gt; Troubleshoot &gt; Advanced options &gt; UEFI Firmware Settings &gt; Restart</p></li>
+<li><p>Once it’s loaded, use arrow keys to go to Configuration and enable “Intel Virtual Technology”</p></li>
+<li><p>Once enabled, press F10 to save and exit</p></li>
+<li><p>You can check if virtualization is enabled by going to your Task Manager page, select “More Details”, select “Performance” tab, then look at Virtualization to see the status</p></li>
+</ul>
+<p><strong>To download WSL2</strong></p>
+<ul>
+<li><p>Open up Windows PowerShell and make sure you’re running it as an administrator</p></li>
+<li><p>Run this code:</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>“Enable<span class="sc">-</span>WindowsOptionalFeature <span class="sc">-</span>Online <span class="sc">-</span>FeatureName <span class="sc">$</span>(“VirtualMachinePlatform”, “Microsoft<span class="sc">-</span>Windows<span class="sc">-</span>Subsystem<span class="sc">-</span>Linux”)</span></code></pre></div>
+</div>
+<ul>
+<li><p>Follow <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">this link to download Linux kernel update package</a>:</p></li>
+<li><p>Restart then open up Docker</p></li>
+</ul>
+<h3 id="end-meds-installation-guide">End MEDS Installation Guide</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
