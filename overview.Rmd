@@ -113,7 +113,7 @@ In Fall Quarter, MEDS students will complete 16 units of coursework. There are t
 
 ## Schedule
 
-In Fall, Winter and Spring quarters, MEDS courses will be held at both the Bren School (UCSB campus) and downtown at NCEAS. Students will *only have required courses / events at a single campus on any given day* - i.e., to minimize travel, we will not schedule required MEDS events at both campuses on the same day.
+In Fall, Winter and Spring quarters, MEDS courses will be held at both the Bren School (UCSB campus) and downtown at NCEAS. Students will *only have required courses / events at a single campus on any given day* - i.e., to minimize travel, we will not schedule required MEDS events at both campuses on the same day. **You can add the MEDS [google calendar here](https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&ctz=America/Los_Angeles)**.
 
 For example, a week in Fall Quarter might look something like this:
 
@@ -132,7 +132,7 @@ For example, a week in Fall Quarter might look something like this:
 |           |                                                                  |            |
 |           | -   9:30am - 10:45am: EDS 220                                    |            |
 |           |                                                                  |            |
-|           | -   12:00pm - 12:45 pm: NCEAS Roundtable                           |            |
+|           | -   12:00pm - 12:45 pm: NCEAS Roundtable                         |            |
 +-----------+------------------------------------------------------------------+------------+
 | Thursday  | -   8:15am - 9:15am: Career workshop                             | Bren Hall  |
 |           |                                                                  |            |
