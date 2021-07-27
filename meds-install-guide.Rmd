@@ -282,7 +282,7 @@ Follow the installation steps to complete Anaconda installation.
 
 Visit [docker.com/get-started](https://www.docker.com/get-started) and install Docker Desktop for your operating system.
 
-*You made need to go through the following steps to install Docker on a PC.*
+*You may need to go through the following steps to install Docker on a PC.*
 
 **Enabling virtualization in BIOS**
 
