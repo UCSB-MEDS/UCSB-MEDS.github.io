@@ -94,7 +94,7 @@ knitr::include_graphics("img/install-guide-images/install-pkg-success.png")
 ```
 
 
-- Run the following in the RStudio Console which should open a browser window with a page that looks like this: 
+- Run the following in the RStudio Console: 
 
     `usethis::create_github_token()`      
 
@@ -221,7 +221,7 @@ knitr::include_graphics("img/install-guide-images/install-pkg-success.png")
 ```
 
 
-- Run the following in the RStudio Console which should open a browser window with a page that looks like this: 
+- Run the following in the RStudio Console: 
 
     `usethis::create_github_token()`      
 
