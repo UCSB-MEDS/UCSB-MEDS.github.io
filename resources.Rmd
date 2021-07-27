@@ -15,7 +15,13 @@ The [**MEDS Google Calendar**](https://calendar.google.com/calendar/embed?src=c_
 
 ### During the program
 
+[MEDS Installation Guide](meds-install-guide.html)
+
+**Note**: you are not expected to work through this installation guide before orientation. There is an installation & troubleshooting session during orientation you will attend.
+
+
 [Bren School Organizations & Committees](https://bren.ucsb.edu/bren-student-activities)
+
 There are multiple student clubs, organizations and committees that MEDS students can be a part of.
 
 [MEDS Slack](meds-slack.html)
