@@ -147,6 +147,8 @@ Follow the installation steps to complete Anaconda installation.
 
 - Customize your profile with your name and photo.
 
+- Introduce yourself on the #welcome channel!
+
 - Join the summer course channels (#eds-212, #eds-221, #eds-214)
 
 - Read through the [Slack Resource Guide](https://ucsb-meds.github.io/meds-slack.html)
@@ -272,6 +274,8 @@ Follow the installation steps to complete Anaconda installation.
 - Click [here](https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw) to join our UCSB-MEDS Slack Workspace
 
 - Customize your profile with your name and photo.
+
+- Introduce yourself on the #welcome channel!
 
 - Join the summer course channels (#eds-212, #eds-221, #eds-214)
 
