@@ -86,27 +86,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>UCSB MEDS: MEDS Installation Guide</title>
+  <title>UCSB MEDS: MEDS Installation: Windows</title>
 
 
   <link rel="icon" type="image/png" href="img/meds_hex.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="UCSB MEDS: MEDS Installation Guide"/>
+  <meta property="og:title" content="UCSB MEDS: MEDS Installation: Windows"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="UCSB MEDS"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="UCSB MEDS: MEDS Installation Guide"/>
+  <meta property="twitter:title" content="UCSB MEDS: MEDS Installation: Windows"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Installation Guide"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Installation: Windows"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2494,7 +2494,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"MEDS Installation Guide","authors":[]}
+{"title":"MEDS Installation: Windows","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2533,7 +2533,7 @@ MEDS CURRICULUM
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>MEDS Installation Guide</h1>
+<h1>MEDS Installation: Windows</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2541,26 +2541,113 @@ MEDS CURRICULUM
 
 
 <div class="d-article">
-<p><strong>Note:</strong> There is an installation session during MEDS orientation to test and troubleshoot installations.</p>
-<p><strong>Computing requirements:</strong> See the <a href="computer_reqs.html">MEDS Computing Requirements</a> for minimum device needs. If you do not have a device that meets the minimum requirements, we may be unable to help troubleshoot some installation issues. Please submit issues here.</p>
-<h2 id="necessary-software">Necessary software:</h2>
+<h4 id="install-or-update-r">1. Install or update R</h4>
+<p>To install R, visit <a href="https://cloud.r-project.org/">cloud.r-project.org</a> to download the most recent version for your operating system. You should have at least version 4.1.0 (released 2021-05-19) running when you start MEDS.</p>
+<h4 id="install-or-update-rstudio">2. Install or update RStudio</h4>
 <ul>
-<li>R</li>
-<li>RStudio</li>
-<li>git (configured)</li>
-<li>GitHub account (with PAT setup)</li>
-<li>Anaconda</li>
-<li>Slack</li>
-<li>Docker</li>
+<li><p>New install: To install RStudio, visit <a href="https://www.rstudio.com/products/rstudio/">rstudio.com/products/rstudio/</a>. Download the free Desktop version for your operating system. You should have at least version 1.4 (early 2021) installed to start MEDS.</p></li>
+<li><p>Update: If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.</p></li>
+<li><p>Open RStudio (logo you’ll click on shown below). <strong>If you are prompted to install Command Line Tools, do it.</strong></p></li>
 </ul>
-<p><strong>Note:</strong> All of these are free at the level you’ll need them at for MEDS. If you are asked to pay for something, you’re choosing the wrong option.</p>
-<h4 align="center">
-Choose your operating system:
-</h4>
-<h2 align="center">
-<a href="meds-install-mac.html">MacOS</a> | <a href="meds-install-windows.html">Windows</a>
-</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/rstudio-logo.png" width="211" style="display: block; margin: auto;" /></p>
+</div>
+<h4 id="check-for-git">3. Check for git</h4>
+<p>You should already have git on your device, but let’s check for it anyway.</p>
+<ul>
+<li><p>Open RStudio</p></li>
+<li><p>In the Terminal, run the following command:</p>
+<p><code>where git</code></p></li>
+<li><p>If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): <code>/usr/local/bin/git</code>. If you instead get no response at all, you should download &amp; install git from here: <a href="https://git-scm.com/downloads">git-scm.com/downloads</a></p></li>
+</ul>
+<h4 id="create-a-github-account">4. Create a GitHub account</h4>
+<ul>
+<li>If you don’t already have a GitHub account, go to github.com and create one. Here are helpful considerations for choosing a username: <a href="https://happygitwithr.com/github-acct.html">happygitwithr.com/github-acct.html</a>.</li>
+</ul>
+<h4 id="configure-git">5. Configure git</h4>
+<ul>
+<li><p>In RStudio, open the Terminal. Run the following commands (by pressing Enter after each line), replacing the username (keep the quotation marks!) and email with your username and email used for your GitHub account.</p>
+<p><code>git config --global user.name "Jane Doe"</code> <code>git config --global user.email janedoe@example.com</code></p></li>
+<li><p>Then, in the Terminal run the following, carefully checking that the name and email returned match your GitHub information:</p>
+<p><code>git config --list --global</code></p></li>
+</ul>
+<h4 id="store-your-github-personal-access-token-pat">6. Store your GitHub personal access token (PAT)</h4>
+<ul>
+<li><p>Once you have git configured successfully, install the <code>usethis</code> package in R by running the following in the RStudio Console:</p>
+<p><code>install.packages(“usethis”)</code></p></li>
+</ul>
+<p>A lot of scary looking red text will show up while this is installing - don’t panic. If you get to the end and see something like below (with no error) it’s installed successfully.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/install-pkg-success.png" width="520" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>Run the following in the RStudio Console:</p>
+<p><code>usethis::create_github_token()</code></p></li>
+<li><p>Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this, with reasonable options already selected for you:</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/new-pat.png" width="1000" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li>Do not change anything. Just scroll down to the bottom of that page and click the green ‘Generate token’ button:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/generate-token.png" width="615" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>Copy the generated PAT to your clipboard</p></li>
+<li><p>Back in RStudio, in the console run <code>gitcreds::gitcreds_set()</code>. This will prompt you to paste the PAT you just copied from GitHub. Paste the PAT, press Enter to run. You should see something like this show up if all is well so far (you’ll have pasted your PAT where mine says “REDACTED”):</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/gitcreds-set.png" width="489" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li><p>In the RStudio Console, run:</p>
+<p><code>usethis::git_sitrep()</code></p></li>
+</ul>
+<p>Does it return information about your connected GitHub account that looks something like below? Great! You’ve configured git and successfully stored your PAT.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/git_sitrep.png" width="469" style="display: block; margin: auto;" /></p>
+</div>
+<h4 id="install-anaconda">7. Install Anaconda</h4>
+<ul>
+<li><a href="https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe">Click here to download 64-bit Graphical Installer</a>. This might pop open a new tab with a “redirecting you to…” phrase, but Anaconda should be downloading at the same time. It might take a couple minutes. After it’s downloaded, click it and hit Allow if you see the following:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/install-guide-images/allow-program.png" width="264" style="display: block; margin: auto;" /></p>
+</div>
+<p>Follow the installation steps to complete Anaconda installation.</p>
+<h4 id="create-your-slack-account-and-join-meds">8. Create your Slack account and join MEDS</h4>
+<ul>
+<li><p>Click <a href="https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw">here</a> to join our UCSB-MEDS Slack Workspace</p></li>
+<li><p>Customize your profile with your name and photo.</p></li>
+<li><p>Join the summer course channels (#eds-212, #eds-221, #eds-214)</p></li>
+<li><p>Read through the <a href="https://ucsb-meds.github.io/meds-slack.html">Slack Resource Guide</a></p></li>
+</ul>
+<h4 id="install-docker">9. Install Docker</h4>
+<p>Visit <a href="https://www.docker.com/get-started">docker.com/get-started</a> and install Docker Desktop for your operating system.</p>
+<p><em>You may need to go through the following steps to install Docker on a PC.</em></p>
+<p><strong>Enabling virtualization in BIOS</strong></p>
+<ul>
+<li><p>Windows Start Menu &gt; Settings &gt; Update &amp; Security &gt; Recovery &gt; “Restart Now” under Advanced Startup &gt; Troubleshoot &gt; Advanced options &gt; UEFI Firmware Settings &gt; Restart</p></li>
+<li><p>Once it’s loaded, use arrow keys to go to Configuration and enable “Intel Virtual Technology”</p></li>
+<li><p>Once enabled, press F10 to save and exit</p></li>
+<li><p>You can check if virtualization is enabled by going to your Task Manager page, select “More Details”, select “Performance” tab, then look at Virtualization to see the status</p></li>
+</ul>
+<p><strong>To download WSL2</strong></p>
+<ul>
+<li><p>Open up Windows PowerShell and make sure you’re running it as an administrator</p></li>
+<li><p>Run this code:</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>“Enable<span class="sc">-</span>WindowsOptionalFeature <span class="sc">-</span>Online <span class="sc">-</span>FeatureName <span class="sc">$</span>(“VirtualMachinePlatform”, “Microsoft<span class="sc">-</span>Windows<span class="sc">-</span>Subsystem<span class="sc">-</span>Linux”)</span></code></pre></div>
+</div>
+<ul>
+<li><p>Follow <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">this link to download Linux kernel update package</a>:</p></li>
+<li><p>Restart then open up Docker</p></li>
+</ul>
+<h3 id="end-meds-installation-guide">End MEDS Installation Guide</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
