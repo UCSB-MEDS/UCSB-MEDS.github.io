@@ -46,8 +46,16 @@ spring <- read_csv(here("course_description_files", "spring.csv"))
 All MEDS students will complete 12 units of intensive coursework (early August through mid-September) to start the program. Summer courses will be held at the National Center for Ecological Analysis and Synthesis (NCEAS) in downtown Santa Barbara.
 
 ```{r, echo = FALSE}
+
+# Update 212 title cell (w/ link)
+summer[1,2] <- cell_spec("Essential Math for Environmental Data Science",  "html", link = "https://allisonhorst.github.io/EDS_212_essential-math/")
+
+# Update 221 title cell (w/ link)
+summer[2,2] <- cell_spec("Scientific Programming Essentials",  "html", link = "https://allisonhorst.github.io/EDS_221_programming-essentials/")
+
+
 summer %>% 
-  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor")) %>% 
+  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = "striped") %>% 
   kableExtra::row_spec(1:5, extra_css = "border-bottom: 1px solid gainsboro") %>% 
   scroll_box(width = "100%", height = "600px")
