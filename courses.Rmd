@@ -55,6 +55,8 @@ summer[1,2] <- cell_spec("Essential Math for Environmental Data Science",  "html
 # Update 221 title cell (w/ link)
 summer[2,2] <- cell_spec("Scientific Programming Essentials",  "html", link = "https://allisonhorst.github.io/EDS_221_programming-essentials/")
 
+# Update 212 title cell (w/ link)
+summer[3,2] <- cell_spec("Analytical Workflows and Scientific Reproducibility",  "html", link = "https://brunj7.github.io/EDS-214-analytical-workflows/")
 
 summer %>% 
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
