@@ -58,6 +58,9 @@ summer[2,2] <- cell_spec("Scientific Programming Essentials",  "html", link = "h
 # Update 212 title cell (w/ link)
 summer[3,2] <- cell_spec("Analytical Workflows and Scientific Reproducibility",  "html", link = "https://brunj7.github.io/EDS-214-analytical-workflows/")
 
+# Update 215 title cell (w/ link)
+summer[4,2] <- cell_spec("Introduction to Data Storage and Management",  "html", link = "https://jamesfrew.github.io/EDS_215_data_management/")
+
 summer %>% 
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = "striped") %>% 
