@@ -2,27 +2,31 @@
 title: "MEDS Capstone Projects"
 ---
 
-<h2><center>This page is under construction.</center></h2>
+The MEDS program ends with a group Capstone project where students work in teams of 3-4 to design, develop and share a deliverable that helps a client to gain insights, answer questions, and/or create communication materials using environmental data. The goal of the MEDS Capstone is to help students build real-world data science and professional skills while working with a client to complete a project using environmental data. 
 
-<p><center>For more information while we work on it, please visit the Bren School [MEDS Capstone Projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects) page.</center></p>
+The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/request-proposals-meds) is live and proposals are due October 15! For more information about Capstone projects please visit the Bren School [MEDS Capstone Projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects).
 
-```{r, echo = FALSE, fig.align = "center", out.width = "60%"}
-
-knitr::include_graphics("img/nguyen-bui-construction.jpg")
-
-```
-
-<p style="color:gray; font-size: 15px; style: italic;"><center><i>Photo: toy construction truck moving a building block, by <a href="https://unsplash.com/@renichinguyen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nguyen Bui</a> on <a href="https://unsplash.com/s/photos/toy-bulldozer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i></center></p>
+## Student Capstone Timeline
 
 
-## Overview
-
-All MEDS students will work in groups of 3-4 students to design, develop and share a deliverable that helps a client to gain insights, answer questions, and/or create communication materials using environmental data. 
-
-## Goal
-
-The goal of the MEDS Capstone is to help students build real-world data science and professional skills while working with a client to complete a project using environmental data. 
-
+|Summer 2021        | Activity                |
+|-------------------|-------------------------|
+| August 9          | [Capstone project kickoff](https://docs.google.com/presentation/d/e/2PACX-1vR-gEjOhtKUQy3_QjzrwXMm_5m-XZ32XshM700BIF2GWUwtNm4TabxmEpcdJv73WShIV8gQDMjnC3A9/pub?start=false&loop=false&delayms=3000)  |
+| August 26         | [Writing a capstone project proposal](https://docs.google.com/presentation/d/e/2PACX-1vSHw6u3DZ0okI3GD4NBsoeFRkqA5MhHI9rY3cEc9CnG2Y-6MAUq-KppcPBFkTbc1Aq2rkfLYMm-Ss07/pub?start=false&loop=false&delayms=3000&slide=id.ge6b7f452cd_0_6982) |
+| Week 5            | Student nominations for capstone committee  |
+| Week 6            | Student elections for capstone committee  |
+| **Fall 2021**
+| October 15        | Proposals Due           |
+| November 17       | Capstone Project Reveal & voting begins |
+| December 1        | Capstone project assignments announced |
+| **Winter 2022**
+| February 11       | Draft Design & Implementation plan due   |
+| March 3           | Design Plan Presentation |
+| March 11          | Final Design & Implementation plan due |
+| **Spring 2022**
+| April 29          | Draft technical documentation & repository due |
+| May 26            | Final Presentations |
+| June 3            | Final project materials due |
 
 
 
