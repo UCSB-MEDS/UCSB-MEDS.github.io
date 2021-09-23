@@ -84,7 +84,7 @@ fall[3,2] <- cell_spec("Remote Sensing and Environmental Data",  "html", link = 
 fall[4,2] <- cell_spec("Statistics for Environmental Data Science",  "html", link = "https://tcarleton.github.io/EDS-222-stats/")
 
 # Update 223 title cell (w/ link)
-fall[5,2] <- cell_spec("SSpatial Analysis for Environmental Data Science",  "html", link = "https://jamesfrew.github.io/EDS_223_spatial_analysis/")
+fall[5,2] <- cell_spec("Spatial Analysis for Environmental Data Science",  "html", link = "https://jamesfrew.github.io/EDS_223_spatial_analysis/")
 
 
 fall %>% 
