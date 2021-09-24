@@ -85,636 +85,36 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>UCSB MEDS: MEDS Blog</title>
+  <title>A Summer-y Summary of MEDS Quarter 1</title>
 
 
-  <link rel="icon" type="image/png" href="img/meds_hex.png"/>
 
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-09-24"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-09-24"/>
+  <meta name="article:author" content="Juliet Cohen and Scout Leonard"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="UCSB MEDS: MEDS Blog"/>
+  <meta property="og:title" content="A Summer-y Summary of MEDS Quarter 1"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="UCSB MEDS"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="UCSB MEDS: MEDS Blog"/>
+  <meta property="twitter:title" content="A Summer-y Summary of MEDS Quarter 1"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Blog"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["A Summer-y Summary of MEDS Quarter 1"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Juliet Cohen and Scout Leonard"]}]}]},{"type":"character","attributes":{},"value":["2021-09-24"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["data/MEDS Summer Reflection Survey (Responses) - Responses Clean.csv","data/sb_activities_data.csv","pics/group_photo.jpeg","pics/pic_1_NCEAS.jpg","pics/pic_2_downtown.jpg","summer_blog_draft_files/anchor-4.2.2/anchor.min.js","summer_blog_draft_files/bowser-1.9.3/bowser.min.js","summer_blog_draft_files/distill-2.2.21/template.v2.js","summer_blog_draft_files/figure-html5/unnamed-chunk-10-1.png","summer_blog_draft_files/figure-html5/unnamed-chunk-9-1.png","summer_blog_draft_files/header-attrs-2.7/header-attrs.js","summer_blog_draft_files/jquery-1.11.3/jquery.min.js","summer_blog_draft_files/popper-2.6.0/popper.min.js","summer_blog_draft_files/tippy-6.2.7/tippy-bundle.umd.min.js","summer_blog_draft_files/tippy-6.2.7/tippy-light-border.css","summer_blog_draft_files/tippy-6.2.7/tippy.css","summer_blog_draft_files/tippy-6.2.7/tippy.umd.min.js","summer_blog_draft_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2029,710 +1429,252 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </script>
 
-  <style type="text/css">
-  /* base variables */
-
-  /* Edit the CSS properties in this file to create a custom
-     Distill theme. Only edit values in the right column
-     for each row; values shown are the CSS defaults.
-     To return any property to the default,
-     you may set its value to: unset
-     All rows must end with a semi-colon.                      */
-
-  /* Optional: embed custom fonts here with `@import`          */
-  /* This must remain at the top of this file.                 */
-
-
-
-  html {
-    /*-- Main font sizes --*/
-    --title-size:      50px;
-    --body-size:       1.06rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
-    /*-- Main font colors --*/
-    --title-color:     #000000;
-    --header-color:    rgba(0, 0, 0, 0.8);
-    --body-color:      rgba(0, 0, 0, 0.8);
-    --aside-color:     rgba(0, 0, 0, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
-    /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    sans-serif;
-    --mono-font:       monospace;
-    --body-font:       sans-serif;
-    --navbar-font:     sans-serif;  /* websites + blogs only */
-  }
-
-  /*-- ARTICLE METADATA --*/
-  d-byline {
-    --heading-size:    0.6rem;
-    --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
-    --body-color:      rgba(0, 0, 0, 0.8);
-  }
-
-  /*-- ARTICLE TABLE OF CONTENTS --*/
-  .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
-  }
-
-  /*-- ARTICLE APPENDIX --*/
-  d-appendix {
-    --heading-size:    15px;
-    --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
-    --text-color:      rgba(0, 0, 0, 0.5);
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  /* These properties only apply to Distill sites and blogs  */
-
-  .distill-site-header {
-    --title-size:       18px;
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
-  }
-
-  .distill-site-footer {
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
-  }
-
-  /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
-  </style>
-  <style type="text/css">
-  /* base variables */
-
-  /* Edit the CSS properties in this file to create a custom
-     Distill theme. Only edit values in the right column
-     for each row; values shown are the CSS defaults.
-     To return any property to the default,
-     you may set its value to: unset
-     All rows must end with a semi-colon.                      */
-
-  /* Optional: embed custom fonts here with `@import`          */
-  /* This must remain at the top of this file.                 */
-
-  /* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
-  @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
-
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;900&display=swap');
-
-  /* Code font (Roboto Mono) */
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
-
-  html {
-    /*-- Main font sizes --*/
-    --title-size:      50px;
-    --title-weight:    400;
-    --body-size:       1.06rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
-    /*-- Main font colors --*/
-    --title-color:     #003660;
-    --title-weight:    300;
-    --header-color:    rgba(4, 124, 145, 1);
-    --body-color:      rgba(0, 0, 0, 0.8);
-    --aside-color:     rgba(0, 0, 0, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
-    /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    Sanchez;
-    --mono-font:       Roboto Mono;
-    --body-font:       Nunito Sans;
-    --navbar-font:     Nunito Sans;  /* websites + blogs only */
-  }
-
-  /*-- ARTICLE METADATA --*/
-  d-byline {
-    --heading-size:    0.6rem;
-    --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
-    --body-color:      rgba(0, 0, 0, 0.8);
-  }
-
-  /*-- ARTICLE TABLE OF CONTENTS --*/
-  .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
-  }
-
-  /*-- ARTICLE APPENDIX --*/
-  d-appendix {
-    --heading-size:    15px;
-    --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
-    --text-color:      rgba(0, 0, 0, 0.5);
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  /* These properties only apply to Distill sites and blogs  */
-
-  .distill-site-header {
-    --title-size:       20px;
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        18px;
-    --hover-color:      white;
-    --bkgd-color:       #003660;
-  }
-
-  .distill-site-footer {
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #003660;
-  }
-
-  /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
-
-  d-article h1 {
-      grid-column: text;
-      font-size: 40px;
-      font-weight: 360;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
-      padding-top: 30px;
-  }
-
-
-  d-article h2 {
-      grid-column: text;
-      font-size: 32px;
-      font-weight: 200;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
-      padding-top: 30px;
-  }
-
-  d-article h3 {
-      grid-column: text;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
-      padding-top: 20px;
-      padding-bottom: 15px;
-  }
-
-  d-article h4 {
-      grid-column: text;
-      font-size: 18px;
-      font-family: Nunito Sans;
-      text-transform: uppercase;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
-      padding-top: 20px;
-      padding-bottom: 15px;
-  }
-
-  a.title {
-    font-style: bold;
-  }
-
-  a, .nav-dropdown .nav-dropbtn {
-    font-weight: 500;
-  }
-
-
-  /* Formatting tables (can update here or individually) */
-  table, td, tr, th {
-    border-collapse: collapse;
-    font-family: Nunito Sans;
-    border: 1px solid gainsboro;
-    vertical-align: top;
-  }
-
-  d-article table th, d-article table td {
-      font-size: 15px;
-      padding: 2px 8px;
-      border: 1px solid gainsboro;
-  }
-
-  code {
-    font-family: Roboto Mono;
-  }
-
-  .distill-site-header a, .distill-site-header .title {
-      text-align: left;
-      padding: 14px 14px 14px 14px;
-  }
-
-  d-title h1 {
-      grid-column: text;
-      font-size: 40px;
-      font-weight: 400;
-      line-height: 1.1em;
-      margin: 0 0 0.5rem;
-      color: #003660;
-  }
-
-  /* Update toc list font */
-  .d-contents nav ul li {
-      font-size: 24px;
-  }
-
-
-  /* Update overall layout (body width) */
-  @media(min-width: 1180px) {
-      .base-grid,
-      distill-header,
-      d-title,
-      d-abstract,
-      d-article,
-      d-appendix,
-      distill-appendix,
-      d-byline,
-      d-footnote-list,
-      d-citation-list,
-      distill-footer {
-        grid-template-columns: [screen-start] 0.5fr [page-start kicker-start] 30px [middle-start] 50px [text-start kicker-end] 100px 100px 100px 100px 100px 100px 100px 100px [text-end gutter-start] 30px [middle-end] 50px [page-end gutter-end] 0.5fr [screen-end];
-        grid-column-gap: 20px;
-      }
-
-  /* Change navbar dropdown menu bg color */
-  .nav-dropdown-content a:hover {
-      background-color: #047C91;
-      color: black;
-  }
-
-
-  .d-contents nav > ul > li > a {
-      font-weight: 400;
-  }
-
-  .d-contents nav a {
-      font-size: 16px;
-  }</style>
-  <style type="text/css">
-  /* base style */
-
-  /* FONT FAMILIES */
-
-  :root {
-    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  }
-
-  body,
-  .posts-list .post-preview p,
-  .posts-list .description p {
-    font-family: var(--body-font), var(--body-default);
-  }
-
-  h1, h2, h3, h4, h5, h6,
-  .posts-list .post-preview h2,
-  .posts-list .description h2 {
-    font-family: var(--heading-font), var(--heading-default);
-  }
-
-  d-article div.sourceCode code,
-  d-article pre code {
-    font-family: var(--mono-font), var(--mono-default);
-  }
-
-
-  /*-- TITLE --*/
-  d-title h1,
-  .posts-list > h1 {
-    color: var(--title-color, black);
-  }
-
-  d-title h1 {
-    font-size: var(--title-size, 50px);
-  }
-
-  /*-- HEADERS --*/
-  d-article h1,
-  d-article h2,
-  d-article h3,
-  d-article h4,
-  d-article h5,
-  d-article h6 {
-    color: var(--header-color, rgba(0, 0, 0, 0.8));
-  }
-
-  /*-- BODY --*/
-  d-article > p,  /* only text inside of <p> tags */
-  d-article > ul, /* lists */
-  d-article > ol {
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-    font-size: var(--body-size, 1.06rem);
-  }
-
-
-  /*-- CODE --*/
-  d-article div.sourceCode code,
-  d-article pre code {
-    font-size: var(--code-size, 14px);
-  }
-
-  /*-- ASIDE --*/
-  d-article aside {
-    font-size: var(--aside-size, 12px);
-    color: var(--aside-color, rgba(0, 0, 0, 0.6));
-  }
-
-  /*-- FIGURE CAPTIONS --*/
-  figure .caption,
-  figure figcaption,
-  .figure .caption {
-    font-size: var(--fig-cap-size, 13px);
-    color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
-  }
-
-  /*-- METADATA --*/
-  d-byline h3 {
-    font-size: var(--heading-size, 0.6rem);
-    color: var(--heading-color, rgba(0, 0, 0, 0.5));
-  }
-
-  d-byline {
-    font-size: var(--body-size, 0.8rem);
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-  }
-
-  d-byline a,
-  d-article d-byline a {
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-  }
-
-  /*-- TABLE OF CONTENTS --*/
-  .d-contents nav h3 {
-    font-size: var(--heading-size, 18px);
-  }
-
-  .d-contents nav a {
-    font-size: var(--contents-size, 13px);
-  }
-
-  /*-- APPENDIX --*/
-  d-appendix h3 {
-    font-size: var(--heading-size, 15px);
-    color: var(--heading-color, rgba(0, 0, 0, 0.65));
-  }
-
-  d-appendix {
-    font-size: var(--text-size, 0.8em);
-    color: var(--text-color, rgba(0, 0, 0, 0.5));
-  }
-
-  d-appendix d-footnote-list a.footnote-backlink {
-    color: var(--text-color, rgba(0, 0, 0, 0.5));
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  .distill-site-header .title {
-    font-size: var(--title-size, 18px);
-    font-family: var(--navbar-font), var(--heading-default);
-  }
-
-  .distill-site-header a,
-  .nav-dropdown .nav-dropbtn {
-    font-family: var(--navbar-font), var(--heading-default);
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    font-size: var(--text-size, 15px);
-  }
-
-  .distill-site-header a:hover,
-  .nav-dropdown:hover .nav-dropbtn {
-    color: var(--hover-color, white);
-  }
-
-  .distill-site-header {
-    font-size: var(--text-size, 15px);
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    background-color: var(--bkgd-color, #0F2E3D);
-  }
-
-  .distill-site-footer {
-    font-size: var(--text-size, 15px);
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    background-color: var(--bkgd-color, #0F2E3D);
-  }
-
-  .distill-site-footer a:hover {
-    color: var(--hover-color, white);
-  }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="summer_blog_draft_files/header-attrs-2.7/header-attrs.js"></script>
+  <script src="summer_blog_draft_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="summer_blog_draft_files/popper-2.6.0/popper.min.js"></script>
+  <link href="summer_blog_draft_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="summer_blog_draft_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="summer_blog_draft_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="summer_blog_draft_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="summer_blog_draft_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="summer_blog_draft_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="summer_blog_draft_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-88745704-3"></script>
-  <script type="text/javascript" cookie-consent="tracking">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-88745704-3');
-  </script>
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"MEDS Blog","authors":[]}
+{"title":"A Summer-y Summary of MEDS Quarter 1","authors":[{"author":"Juliet Cohen and Scout Leonard","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-09-24T00:00:00.000-07:00","citationText":"Leonard, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">UCSB MEDS</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">HOME</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-MEDS CURRICULUM
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="overview.html">OVERVIEW</a>
-<a href="courses.html">COURSES</a>
-<a href="capstones.html">CAPSTONES</a>
-</div>
-</div>
-<a href="blog.html">COMMUNITY BLOG</a>
-<a href="resources.html">RESOURCES</a>
-<a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science" class="nav-image">
-<img src="img/bren_white_icon.png"/>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="MEDS Blog">MEDS Blog</h1>
-<a href="posts/2021-09-24-summery-summary/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Sept. 24, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Juliet Cohen and Scout Leonard</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-09-24-summery-summary/summer_blog_draft_files/figure-html5/unnamed-chunk-9-1.png"/>
-</div>
-<div class="description">
-<h2>A Summer-y Summary of MEDS Quarter 1</h2>
-<div class="dt-tags"></div>
-<p></p>
-</div>
-</a>
-<a href="posts/2021-07-15-nceas-orientation/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">July 15, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Kimberly Yom</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Orientation Logistics</h2>
-<div class="dt-tags"></div>
-<p>How to Get to NCEAS</p>
-</div>
-</a>
-<a href="posts/2021-04-04-countdown-to-meds/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 15, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Allison Horst</div>
-<div class="dt-author">Jamie Montgomery</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-04-04-countdown-to-meds/images/toy_truck.jpg"/>
-</div>
-<div class="description">
-<h2>Countdown to MEDS: 105 days out</h2>
-<div class="dt-tags"></div>
-<p>What we're up to with 4 months to go</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>MEDS Blog</h1>
+<h1>A Summer-y Summary of MEDS Quarter 1</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
 </div>
 
+<div class="d-byline">
+  Juliet Cohen and Scout Leonard  
+  
+<br/>2021-09-24
+</div>
 
 <div class="d-article">
+<p>Hi there! This post is coming to you from Juliet Cohen and Scout Leonard! We are both students at UCSB’s Bren School of Environmental Science &amp; Management in the inaugural cohort of the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Masters of Environmental Data Science (MEDS) Program</a>.</p>
+<h2 id="about-us">About us</h2>
+<p>Scout is interested in growing as an environmental data scientist after having worked with large datasets through food system and food security work in Oakland, California. Already, she is so pleased with the emphasis her MEDS courses have placed on <em>responsible</em> data science, as she hopes to use her MEDS toolkit to influence food security and resource use policy that builds sustainable, equitable food systems. You can learn more about her previous and ongoing work at her website: <a href="https://scoutcleonard.github.io/">scoutcleonard.github.io</a>.</p>
+<p>Juliet is interested in applying environmental data science to wildlife biology and the interaction between humans and endangered species’ natural habitats. Juliet was inspired by her experience serving as a field technician in California and Hawaii. Throughout the MEDS summer curriculum, Juliet strengthened her collaborative programming skills and looks forward to learning about spatial analysis and modeling large, dynamic data sets. She hopes to contribute to open-source projects in the future.</p>
+<h2 id="meds-summer-session">MEDS Summer Session</h2>
+<p>For the first 6 weeks of our degree, we embarked on a whirlwind introduction to data science. From 9 AM to 5 PM we sat in the newly constructed MEDS classroom at the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis (NCEAS)</a> in downtown Santa Barbara, learning the basics to jumpstart our data science degrees. These week-long classes consisted not only of lectures, but oalso coding labs, collaborative team science projects, individual and group presentations. We also had “flex sessions” for non-course content, like panels from various data scientists at NCEAS and representatives from local groups of R users, such as <a href="https://www.meetup.com/rladies-santa-barbara/">Santa Barbara R Ladies</a> and <a href="https://eco-data-science.github.io/">EcoDataScience</a>. Our summer term laid the foundation not only for the code we’ll write this year, but also for how we create workflows and collaborate as budding environmental data scientists. These courses included:</p>
+<ul>
+<li>EDS 212: Essential Math in Environmental Data Science</li>
+<li>EDS 221: Scientific Programming Essentials</li>
+<li>EDS 214: Analytical Workflows and Scientific Reproducibility</li>
+<li>EDS 215: Introduction to Data Storage and Management</li>
+<li>EDS 216: Meta-Analysis and Systematic Reviews</li>
+</ul>
+<p>After this intense MEDS summer we took some time to relax before fall quarter, but we also took this blog-post-writing opportunity to showcase some of what our class has learned so far.</p>
+<p>As we reflected on the first quarter of our degree, we decided it may be more interesting to show, rather than tell, some of the skills we’ve learned. We also thought it might be fun to share reflections from our whole cohort to truly represent the student experience of this fast-paced, learning-filled summer.</p>
+<h2 id="what-did-meds-students-think-about-summer-courses">What did MEDS students think about summer courses?</h2>
+<h3 id="survey-development">Survey Development</h3>
+<p>We developed a Google Form survey for our classmates to gather data about their perspectives on these first six weeks. We had two main questions:</p>
+<ol type="1">
+<li>what did the cohort think of our classes?<br />
+</li>
+<li>what kinds of fun things has the group been up to in our delightful home of Santa Barbara?</li>
+</ol>
+<p>Our questions were developed with data tidying and visualization in mind and when we got some unexpected answers, we developed perspective about how our survey could have been better to help us with a bit less wrangling. MEDS students, however, do not shy away from problematic data, so we persisted with the problems that arose :)</p>
+<h3 id="analysis">Analysis</h3>
+<p>The following is a step-by-step description of how we wrangled and visualized the most interesting survey responses including neat graphics describing our MEDS summer, from tidying data to surfing after class. We hope you find it insightful, but also fun :)</p>
+<h4 id="our-data">Our Data</h4>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'>#load libraries</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/sfirke/janitor'>janitor</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://here.r-lib.org/'>here</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://blog.fellstat.com/?cat=11'>wordcloud</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>RColorBrewer</span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://patchwork.data-imaginist.com'>patchwork</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/lepennec/ggwordcloud'>ggwordcloud</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/EmilHvitfeldt/paletteer'>paletteer</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>First, we read the data from our Google form survey, which we were able to download as a .csv file, into the R project we made for this blog project.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>data</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>"data/MEDS Summer Reflection Survey (Responses) - Responses Clean.csv"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h4 id="data-tidying">Data Tidying</h4>
+<p>Next, we renamed the columns. Google forms does this frustrating, but understandable thing where the names of the columns of data are the questions we asked participants. This makes for super long names that are not fun to write code with. We instead named the columns of interest with the corresponding order of our coursework, i.e. column 1 is our first course, EDS 212.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'>#colnames(data) renames the columns</span>
+
+<span class='va'>data_clean</span> <span class='op'>&lt;-</span> <span class='va'>data</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span><span class='st'>"1"</span> <span class='op'>=</span>  <span class='st'>"Write 3 words to describe or represent week 1 (EDS212 w/ Allison) here:"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span><span class='st'>"2_3"</span> <span class='op'>=</span>  <span class='st'>"Write 3 words to describe or represent weeks 2 &amp; 3 (EDS221 w/ Allison) here:"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span><span class='st'>"4"</span> <span class='op'>=</span>  <span class='st'>"Write 3 words to describe or represent week 4 (EDS214 w/ Julien) here:"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span><span class='st'>"5"</span> <span class='op'>=</span>  <span class='st'>"Write 3 words to describe or represent week 5 (EDS215 w/ Frew) here:"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span><span class='st'>"6"</span> <span class='op'>=</span>  <span class='st'>"Write 3 words to describe or represent week 1 (EDS216 w/ Scott) here:"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h4 id="data-wrangling">Data Wrangling</h4>
+<p>The Google form format included five questions (one for each summer course) where students wrote in three words to describe how they felt about the course. In the .csv of the survey data, the three words submitted by a participant were grouped together in one cell per course.</p>
+<p>To visualize how often certain descriptors for each summer course appear, we first needed to separate the three terms submitted for each course into separate observations. We executed this using the <code>separate_rows()</code> function. This expanded the terms into three separate observations per student in each class column.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># separate the columns into rows by parsing the 3 words in each observation into 3 different observations</span>
+<span class='co'># select certain cols because our first data viz is only using certain cols </span>
+<span class='va'>data_clean_1</span> <span class='op'>&lt;-</span> <span class='va'>data_clean</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>separate_rows</span><span class='op'>(</span><span class='st'>"1"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='st'>"Email Address"</span>,<span class='st'>"1"</span><span class='op'>)</span>
+
+<span class='va'>data_clean_2_3</span> <span class='op'>&lt;-</span> <span class='va'>data_clean</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>separate_rows</span><span class='op'>(</span><span class='st'>"2_3"</span><span class='op'>)</span><span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='st'>"Email Address"</span>,<span class='st'>"2_3"</span><span class='op'>)</span>
+
+<span class='va'>data_clean_4</span> <span class='op'>&lt;-</span> <span class='va'>data_clean</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>separate_rows</span><span class='op'>(</span><span class='st'>"4"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='st'>"Email Address"</span>,<span class='st'>"4"</span><span class='op'>)</span>
+
+<span class='va'>data_clean_5</span> <span class='op'>&lt;-</span> <span class='va'>data_clean</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>separate_rows</span><span class='op'>(</span><span class='st'>"5"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='st'>"Email Address"</span>,<span class='st'>"5"</span><span class='op'>)</span>
+
+<span class='va'>data_clean_6</span> <span class='op'>&lt;-</span> <span class='va'>data_clean</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>separate_rows</span><span class='op'>(</span><span class='st'>"6"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='st'>"Email Address"</span>,<span class='st'>"6"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>Then, to observe the frequency of words used to describe each course, we used the <code>table</code> function. This creates a table that has two columns: one for each distint descriptive word students used and the frequency with which the words occur for the class. Then, we converted that table to a data frame.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># use the table() function to take counts of each "factor" (words) and use the data.frame() function to convert these tables to data frames</span>
+
+<span class='va'>course_1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>data_clean_1</span><span class='op'>$</span><span class='st'>"1"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>course_1_df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame.matrix</a></span><span class='op'>(</span><span class='va'>course_1</span><span class='op'>)</span>
+
+<span class='va'>course_2_3</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>data_clean_2_3</span><span class='op'>$</span><span class='st'>"2_3"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>course_2_3_df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame.matrix</a></span><span class='op'>(</span><span class='va'>course_2_3</span><span class='op'>)</span>
+
+<span class='va'>course_4</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>data_clean_4</span><span class='op'>$</span><span class='st'>"4"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>course_4_df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame.matrix</a></span><span class='op'>(</span><span class='va'>course_4</span><span class='op'>)</span>
+
+<span class='va'>course_5</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>data_clean_5</span><span class='op'>$</span><span class='st'>"5"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>course_5_df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame.matrix</a></span><span class='op'>(</span><span class='va'>course_5</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='va'>Var1</span> <span class='op'>==</span> <span class='st'>"tangent"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='va'>Var1</span> <span class='op'>==</span> <span class='st'>"tangents"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='va'>Var1</span> <span class='op'>==</span> <span class='st'>"dry"</span><span class='op'>)</span>
+
+<span class='va'>course_6</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>data_clean_6</span><span class='op'>$</span><span class='st'>"6"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>course_6_df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame.matrix</a></span><span class='op'>(</span><span class='va'>course_6</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h4 id="data-visualizing">Data Visualizing</h4>
+<p>After this, we wanted to <strong>visualize</strong> the frequency of words for each class. We used ggplot to create word clouds which represented the frequency of class descriptors. The word clouds display the descriptive words submitted by our classmates in sizes proportional to the frequency the words were used. The ggplot plot we used is called <code>ggwordcloud</code>. We updated the colors by adding an aesthetic feature where each class descriptor is represented by a different color. We also updated the word size so that the cloud was easier to read.</p>
+<p>Since we used <code>ggplot</code> quite a bit in EDS 221, we opted for this method for generating word clouds over another package called <code>wordcloud,</code> which is specifically for word clouds. We found that we wanted to showcase our visualization skills by stacking visualizations and adding titles and colors, and it was easier to do this in a ggplot version of word clouds, since we had so much practice with other plots in ggplot.</p>
+<p>The code chunk below is where we tried the <code>wordcloud</code> package. It made the correct visualizations, but we found it more difficult to make them as nice as some of the ggplots we made in class. It was a relief to learn that there is a word cloud feature in <code>ggplot</code>!</p>
+<p>And finally, the <code>ggplot</code> word clouds!</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># for each cloud, specify the background color within the theme to match the background color of the blog This same code was repeated for all word clouds.</span>
+
+<span class='va'>cloud_1</span> <span class='op'>&lt;-</span> <span class='fu'>ggplot</span><span class='op'>(</span><span class='va'>course_1_df</span>, <span class='fu'>aes</span><span class='op'>(</span>label <span class='op'>=</span> <span class='va'>Var1</span>, size <span class='op'>=</span> <span class='va'>Freq</span>, color <span class='op'>=</span> <span class='va'>Var1</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://lepennec.github.io/ggwordcloud/reference/geom_text_wordcloud.html'>geom_text_wordcloud</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>scale_size_area</span><span class='op'>(</span>max_size <span class='op'>=</span> <span class='fl'>25</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>theme</span><span class='op'>(</span>plot.title <span class='op'>=</span> <span class='fu'>element_text</span><span class='op'>(</span>size <span class='op'>=</span> <span class='fl'>25</span><span class='op'>)</span>,
+        panel.background <span class='op'>=</span> <span class='fu'>element_rect</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"white"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>labs</span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Week 1 EDS 212: Essential Math in Environmental Data Science"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># use patchwork to stack the graphs</span>
+
+<span class='va'>cloud_1</span> <span class='op'>/</span> <span class='va'>cloud_2_3</span> <span class='op'>/</span> <span class='va'>cloud_4</span> <span class='op'>/</span> <span class='va'>cloud_5</span> <span class='op'>/</span> <span class='va'>cloud_6</span>
+</code></pre>
+</div>
+<p><img src="summer_blog_draft_files/figure-html5/unnamed-chunk-9-1.png" width="1440" /></p>
+</div>
+<hr />
+<h2 id="what-do-meds-students-do-outside-of-class">What do MEDS students do outside of class?</h2>
+<p>Our full-day classes kept us busy during the week, but since they were designed without additional assignments outside of class we were able to take advantage of our evenings and weekends. The most popular activities were surfing, going to the beach, and biking.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># download cvs for SB activities</span>
+<span class='va'>data_activities</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>"data/sb_activities_data.csv"</span><span class='op'>)</span>
+
+<span class='co'># make data.frame for SB activities histogram</span>
+
+<span class='va'>activities_clean</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>data_activities</span><span class='op'>$</span><span class='st'>"sb_activities"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>SB_activities</span> <span class='op'>&lt;-</span> <span class='fu'>ggplot</span><span class='op'>(</span><span class='va'>activities_clean</span>, <span class='fu'>aes</span><span class='op'>(</span>y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/reorder.factor.html'>reorder</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='op'>+</span><span class='va'>Freq</span><span class='op'>)</span>, x <span class='op'>=</span> <span class='va'>Freq</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_histogram</span><span class='op'>(</span>stat <span class='op'>=</span> <span class='st'>'identity'</span>, <span class='fu'>aes</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>Var1</span>, color <span class='op'>=</span> <span class='st'>"blue"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/paletteer/man/ggplot2-scales-discrete.html'>scale_fill_paletteer_d</a></span><span class='op'>(</span><span class='st'>"dutchmasters::milkmaid"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>theme</span><span class='op'>(</span>legend.position <span class='op'>=</span> <span class='st'>"none"</span>,
+        panel.grid <span class='op'>=</span> <span class='fu'>element_blank</span><span class='op'>(</span><span class='op'>)</span>,
+        panel.background <span class='op'>=</span> <span class='fu'>element_rect</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"white"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>labs</span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"MEDS Favorite Santa Barbara Activities"</span>,
+       y <span class='op'>=</span> <span class='st'>"Activity"</span>,
+       x <span class='op'>=</span> <span class='st'>"Total Votes"</span><span class='op'>)</span>
+
+<span class='va'>SB_activities</span>
+</code></pre>
+</div>
+<p><img src="summer_blog_draft_files/figure-html5/unnamed-chunk-10-1.png" title="Histogram representing the MEDS students' favorite activities in Santa Barbara." alt="Histogram representing the MEDS students' favorite activities in Santa Barbara." width="624" /></p>
+</div>
+<hr />
+<h2 id="what-are-the-meds-students-excited-for-in-fall-quarter">What are the MEDS students excited for in Fall quarter?</h2>
+<blockquote>
+<p>“Expanding my coding fundamentals, tidy Tuesday’s, building a portfolio and updating my website, and working collaboratively on the capstone project.”</p>
+</blockquote>
+<blockquote>
+<p>“I’m excited to build on the foundation we created this summer!”</p>
+</blockquote>
+<blockquote>
+<p>“Excited to work with some spatial data in Frew’s next class!”</p>
+</blockquote>
+<blockquote>
+<p>“I’m looking forward to learning more skills in data science and be able to apply them to assignments and projects in our classes. I’m also looking forward to learning more about potential future careers in environmental data science.”</p>
+</blockquote>
+<hr />
+<h2 id="meet-the-meds-cohort">Meet the MEDS cohort!</h2>
+<figure>
+<img src="pics/group_photo.jpeg" alt="Class photo on our first day of Orientation at Bren Hall" /><figcaption aria-hidden="true"><strong>Class photo on our first day of Orientation at Bren Hall</strong></figcaption>
+</figure>
+<p><img src="pics/pic_1_NCEAS.jpg" alt="The MEDS 2022 cohort gathered at NCEAS downtown after class during summer session." /> <strong>The MEDS 2022 cohort gathered at NCEAS after class during summer session.</strong></p>
+<p><img src="pics/pic_2_downtown.jpg" alt="Members of the MEDS cohort in downtown Santa Barbara celebrating completing the first half of summer session classes with faculty and their pets." /> <strong>Members of the MEDS cohort in downtown Santa Barbara celebrating completing the first half of summer session classes with faculty and their pets.</strong></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2748,16 +1690,7 @@ function init_posts_list() {
 <div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
-<div class="distill-site-nav distill-site-footer">
-<p>
-<a href="https://bren.ucsb.edu/"><img src="img/bren_white_logo.png" alt="Bren School logo" style="width:350px;" /></a>
-</p>
-<p>
-  This website was made with <u><a href="https://rstudio.github.io/distill/">distill by RStudio</a></u>, and with inspiration from the <u><a href="https://ubc-mds.github.io/">UBC Master of Data Science website</a></u>.
-</p>
-</div>
 <!--/radix_placeholder_navigation_after_body-->
-
 
 </body>
 
