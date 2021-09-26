@@ -17,6 +17,8 @@ navbar:
           href: courses.html
         - text: "CAPSTONES"
           href: capstones.html
+        - text: "WORKSHOPS"
+          href: workshops.html
     - text: "COMMUNITY BLOG"
       href: blog.html
     - text: "RESOURCES"

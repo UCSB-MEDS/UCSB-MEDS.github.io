@@ -27,9 +27,3 @@ There are multiple student clubs, organizations and committees that MEDS student
 [MEDS Slack](meds-slack.html)
 
 [NCEAS Building Policies](nceas-building-policies.html)
-
-### MEDS open source workshop materials
-
-We are actively developing data science workshops, which are meant to supplement MEDS curriculum and teach additional skills. You can access workshop materials [here](workshops.html).
-
-
