@@ -20,12 +20,14 @@ library(here)
 # load in google sheets - REQUEST ACCESS FROM SAM TO UPDATE THESE SHEETS
 ##############################
 
+summer_workshops <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1E1nthyyhUTu2GX4Q7xlw4V1P1riZQtR8ypV__p3DxSk/edit?usp=sharing") 
+
 fall_workshops <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1C3YARs0diRMo2FF0VguO1B8uPByP7lNCkxLym-APV_0/edit?usp=sharing") 
 ```
 
 We are actively developing data science workshops, which are meant to supplement the MEDS curriculum and teach additional skills. Find links to our teaching materials below.
 
-## Fall Workshops
+## Summer Workshops
 
 ```{r, echo = FALSE}
 ##############################
@@ -33,14 +35,35 @@ We are actively developing data science workshops, which are meant to supplement
 ##############################
 
 # CSS
-fall_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/customizing-websites-css/#1")
-fall_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/customizing-websites-css")
+summer_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/customizing-websites-css/#1")
+summer_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/customizing-websites-css")
+
+##############################
+# build table 
+##############################
+
+summer_workshops %>% 
+  kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
+  kable_styling(bootstrap_options = "striped") %>% 
+  kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
+  #scroll_box(width = "100%", height = "400px") 
+```
+
+
+## Fall Workshops
+
+```{r, echo = FALSE}
+##############################
+# add links
+##############################\
 
 # Blog
-fall_workshops[2,5] <- cell_spec("link",  "html", link = "https://samanthacsik.github.io/posts/2021-09-21-my-first-test-post/")
-fall_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/writing-blogposts")
+fall_workshops[1,5] <- cell_spec("link",  "html", link = "https://samanthacsik.github.io/posts/2021-09-21-my-first-test-post/")
+fall_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/writing-blogposts")
 
 # Google
+fall_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/teach-me-how-to-google/#1")
+fall_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/teach-me-how-to-google")
 
 ##############################
 # build table 
@@ -49,6 +72,6 @@ fall_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCS
 fall_workshops %>% 
   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = "striped") %>% 
-  kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") %>% 
-  scroll_box(width = "100%", height = "400px") 
+  kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
+  #scroll_box(width = "100%", height = "400px") 
 ```
