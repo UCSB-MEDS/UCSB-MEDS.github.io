@@ -120,7 +120,7 @@ For example, a week in Fall Quarter might look something like this:
 |           |                                                                  |            |
 |           | -   9:30am - 10:45am: EDS 220                                    |            |
 |           |                                                                  |            |
-|           | -   12:00pm - 12:45 pm: NCEAS Roundtable                         |            |
+|           | -   11:30pm - 12:30 pm: NCEAS Roundtable                         |            |
 +-----------+------------------------------------------------------------------+------------+
 | Thursday  | -   8:15am - 9:15am: Career workshop                             | Bren Hall  |
 |           |                                                                  |            |
