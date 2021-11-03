@@ -79,6 +79,9 @@ summer %>%
 # Update 213 title cell (w/ link)
 fall[1,2] <- cell_spec("Metadata Standards, Data Modeling and Data Semantics",  "html", link = "https://brunj7.github.io/EDS-213-metadata/")
 
+# Update 211 title cell (w/ link)
+fall[2,2] <- cell_spec("Team Science, Collaborative Analysis and Project Management",  "html", link = "https://bbest.github.io/eds211-team/")
+
 # Update 220 title cell (w/ link)
 fall[3,2] <- cell_spec("Remote Sensing and Environmental Data",  "html", link = "https://samanthastevenson.github.io/EDS220_site/")
 
