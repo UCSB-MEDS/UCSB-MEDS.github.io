@@ -11,7 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 # load packages
 ##############################
 
-# library(googlesheets4)
+library(googledrive)
+library(googlesheets4)
 library(kableExtra)
 library(tidyverse)
 library(here)
@@ -64,6 +65,10 @@ fall_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCS
 # Google
 fall_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/teach-me-how-to-google/#1")
 fall_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/teach-me-how-to-google")
+
+# RStudio Tips & Tricks
+fall_workshops[3,5] <- cell_spec("link", "html", link = "https://ucsb-meds.github.io/R-tips-and-tricks/#1")
+fall_workshops[3,6] <- cell_spec("link", "html", link = "https://github.com/UCSB-MEDS/R-tips-and-tricks")
 
 ##############################
 # build table 
