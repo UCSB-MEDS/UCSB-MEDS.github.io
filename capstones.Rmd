@@ -4,10 +4,9 @@ title: "MEDS Capstone Projects"
 
 The MEDS program ends with a group Capstone project where students work in teams of 3-4 to design, develop and share a deliverable that helps a client to gain insights, answer questions, and/or create communication materials using environmental data. The goal of the MEDS Capstone is to help students build real-world data science and professional skills while working with a client to complete a project using environmental data. 
 
-The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/request-proposals-meds) is live and proposals are due October 15! For more information about Capstone projects please visit the Bren School [MEDS Capstone Projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects).
+The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/request-proposals-meds) oens in the Spring for the following year. For more information about Capstone projects please visit the Bren School [MEDS Capstone Projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects).
 
-## Student Capstone Timeline
-
+## Timeline
 
 |Summer 2021        | Activity                |
 |-------------------|-------------------------|
@@ -21,7 +20,7 @@ The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/requ
 | December 1        | Capstone project assignments announced |
 | **Winter 2022**
 | February 11       | Draft Design & Implementation plan due   |
-| March 3           | Design Plan Presentation |
+| March 2           | Design Plan Presentation |
 | March 11          | Final Design & Implementation plan due |
 | **Spring 2022**
 | April 29          | Draft technical documentation & repository due |
@@ -29,4 +28,9 @@ The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/requ
 | June 3            | Final project materials due |
 
 
+## Resources
+
+[Capstone Project Guidelines](https://bren.ucsb.edu/media/3557/download)  
+[Peer & Self Evaluation Form](https://bren.ucsb.edu/media/3556/download)  
+[EDS 411A/B Website](https://allisonhorst.github.io/EDS_411AB_meds-capstone/)  
 

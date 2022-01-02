@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>UCSB MEDS: MEDS Capstone Projects</title>
@@ -453,7 +454,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1860,7 +1861,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2467,7 +2471,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2543,8 +2547,8 @@ MEDS CURRICULUM
 
 <div class="d-article">
 <p>The MEDS program ends with a group Capstone project where students work in teams of 3-4 to design, develop and share a deliverable that helps a client to gain insights, answer questions, and/or create communication materials using environmental data. The goal of the MEDS Capstone is to help students build real-world data science and professional skills while working with a client to complete a project using environmental data.</p>
-<p>The <a href="https://bren.ucsb.edu/research/masters-research/request-proposals-meds">Request for Proposals</a> is live and proposals are due October 15! For more information about Capstone projects please visit the Bren School <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects">MEDS Capstone Projects</a>.</p>
-<h2 id="student-capstone-timeline">Student Capstone Timeline</h2>
+<p>The <a href="https://bren.ucsb.edu/research/masters-research/request-proposals-meds">Request for Proposals</a> oens in the Spring for the following year. For more information about Capstone projects please visit the Bren School <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects">MEDS Capstone Projects</a>.</p>
+<h2 id="timeline">Timeline</h2>
 <table>
 <thead>
 <tr class="header">
@@ -2594,7 +2598,7 @@ MEDS CURRICULUM
 <td>Draft Design &amp; Implementation plan due</td>
 </tr>
 <tr class="odd">
-<td>March 3</td>
+<td>March 2</td>
 <td>Design Plan Presentation</td>
 </tr>
 <tr class="even">
@@ -2619,6 +2623,10 @@ MEDS CURRICULUM
 </tr>
 </tbody>
 </table>
+<h2 id="resources">Resources</h2>
+<p><a href="https://bren.ucsb.edu/media/3557/download">Capstone Project Guidelines</a><br />
+<a href="https://bren.ucsb.edu/media/3556/download">Peer &amp; Self Evaluation Form</a><br />
+<a href="https://allisonhorst.github.io/EDS_411AB_meds-capstone/">EDS 411 A Website</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

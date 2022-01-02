@@ -103,6 +103,12 @@ fall %>%
 ## Winter Quarter
 
 ```{r, echo = FALSE}
+
+#winter[1,2] <- cell_spec("Machine Learning in Environmental Science",  "html", link = "")
+
+winter[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
+
+
 winter %>% 
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor")) %>% 
   kableExtra::kable_styling() %>% 
