@@ -104,7 +104,7 @@ fall %>%
 
 ```{r, echo = FALSE}
 
-#winter[1,2] <- cell_spec("Machine Learning in Environmental Science",  "html", link = "")
+winter[1,2] <- cell_spec("Machine Learning in Environmental Science",  "html", link = "https://bbest.github.io/eds232-ml/")
 
 winter[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
 
