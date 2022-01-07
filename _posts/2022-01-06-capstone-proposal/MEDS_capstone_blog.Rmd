@@ -2,7 +2,7 @@
 title: "Capstone Reflections Part 1: Writing a Proposal"
 preview: j-kelly-brito-PeUJyoylfe4-unsplash.jpeg
 author: 
-- name: Halina Dol-Linh and Clarissa Boyajian
+- name: Halina Do-Linh and Clarissa Boyajian
 date: 2022-01-06
 output:
   distill::distill_article:
@@ -76,7 +76,7 @@ We won't deny that writing a proposal can be a daunting task -- it takes time an
 
 - We approached our client the second week of the summer and started brainstorming ideas soon after. By starting early, this gave us time to really sit with the information, the data, and the overall question we wanted to answer. When it comes to writing a proposal, **time to sit and reflect about your proposal idea is part of the process.**
 
-- Not sure where to start your research? Have too many topics you're interested in? Talk to a librarian! Each department at UCSB has their own dedicated librarian. Check out the [Subject Guides webpage](https://guides.library.ucsb.edu/) on the library's website for resources and contact information to subject experts. You might also want to check out the [Zoetro Workshop](https://guides.library.ucsb.edu/zotero-workshop/home) so you can start organizing your background research right away. 
+- Not sure where to start your research? Have too many topics you're interested in? Talk to a librarian! Each department at UCSB has their own dedicated librarian. Check out the [Subject Guides webpage](https://guides.library.ucsb.edu/) on the library's website for resources and contact information to subject experts. You might also want to check out the [Zotero Workshop](https://guides.library.ucsb.edu/zotero-workshop/home) so you can start organizing your background research right away. 
 
 - Something else you've probably heard is **don't reinvent the wheel**. Many functions and solutions you need already exist thanks to the many amazing and talented individuals within the data science field. The same goes for project proposals. If you're getting writer's block look at the [Master's Project Directory on the Bren website](https://bren.ucsb.edu/projects) to see proposals from previous years for inspiration (Bren students have been doing capstone projects since 1999!). 
 
