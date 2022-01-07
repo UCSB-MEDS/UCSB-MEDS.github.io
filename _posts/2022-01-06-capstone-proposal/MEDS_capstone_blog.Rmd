@@ -1,6 +1,6 @@
 ---
 title: "Capstone Reflections Part 1: Writing a Proposal"
-preview: 
+preview: j-kelly-brito-PeUJyoylfe4-unsplash.jpeg
 author: 
 - name: Halina Dol-Linh and Clarissa Boyajian
 date: 2022-01-06
@@ -58,7 +58,7 @@ Major shout out to [Kaitlyn Gaynor](http://www.kaitlyngaynor.com/wil) and [Will 
 
 ## Tips, thoughts, and recommendations
 
-Now that our proposal has been submitted (and selected!), we're waiting to begin work in January 2022. While we wait, we've taken some time to reflect on the proposal process. There's a lot we've learned and we've compiled our most essential thoughts below.
+Now that our proposal has been submitted (and selected!), we're just getting started. We've taken some time to reflect on the proposal process. There's a lot we've learned and we've compiled our most essential thoughts below.
 
 ### Why you should write a proposal (even if you think you shouldn't or can't)
 
@@ -93,27 +93,11 @@ Writing a proposal is doable and we're *all* capable of writing one! For us, des
 
 Environmental Justice (EJ) has multiple definitions that changes with context. One framework we'd like to share with you is [intersectional environmentalism](https://www.intersectionalenvironmentalist.com/), coined by [Leah Thomas](https://www.greengirlleah.com/). Intersectional enviornmentalism focuses on the interconnections between injustices that harm people (especially frontline communities or those who have been historically discriminated against) and the environment. This is a crucial lens to maintain while you are writing your proposal because the solutions we write about are not solutions unless it works for everyone involved. We have found this lens to be challenging at times because it forces us to think differently and tests assumptions we've grown up with, but ultimately it makes use better data scientists. 
 
-Here are some EJ themes and questions to think about while writing your proposal. These questions use **Justice Analysis** to identify environmental injustices and come from Bren's [Equity and the Environment course](https://bren.ucsb.edu/courses/esm-296-1f-0) (highly recommend taking!).
+Here are some EJ themes and questions to think about while writing your proposal. These questions use **Justice Analysis** to identify environmental injustices and come from Bren's Equity and the Environment course (highly recommend taking!).
 
-<style>
-  .col1 {
-    float: left;
-    width: 50%;
-    text-align: left;
-  }
-  .col2 {
-    float: right;
-    width: 50%;
-    text-align: left;
-  }
-</style>
-
-<div class="col1">
 #### Power
 
-- Who has the power in the situation? 
-- Who has privilege?
-- How does power and privilege play into communication, representation, access to resources, or decision-making?
+- Who has the power in the situation? Who has privilege? How does power and privilege play into communication, representation, access to resources, or decision-making?
 
 #### Distribution of Harm
  
@@ -121,38 +105,26 @@ Here are some EJ themes and questions to think about while writing your proposal
 
 #### Anthropocentrism / Species-ism
 
-- What aspects of the environment are being systematically overlooked and why? 
-- How is excessive self-centeredness playing into this - \
-on the part of the humans? 
-- What can we do to overcome it? 
-</div>
+- What aspects of the environment are being systematically overlooked and why? How is excessive self-centeredness playing into this - on the part of the humans? What can we do to overcome it? 
 
-<div class="col2">
 #### Racism & Xenophobia
  
-- How is this factoring into the situation? 
-- Does someone have less power or privilege because of their race or ethnicity? 
+- How is this factoring into the situation? Does someone have less power or privilege because of their race or ethnicity? 
 
 #### Ways of Knowing
  
-- Whose 'way of knowing' are privileged? 
-- Is there a type of evidence or data that is privileged over others? 
-- Is the world view of the dominant group causing harm? 
+- Whose 'way of knowing' are privileged? Is there a type of evidence or data that is privileged over others? Is the world view of the dominant group causing harm? 
  
 #### Exclusionary Solutions
  
-- Does what is offered make sense for all potential parties involved? 
-- Is the solution reasonable and accessible? 
+- Does what is offered make sense for all potential parties involved? Is the solution reasonable and accessible? 
 
 #### Burden of Evidence
 
-- Who is responsible for showing there is environmental harm? 
-- Is this appropriate? What would an alternative be?
-</div>
-
-</div>
+- Who is responsible for showing there is environmental harm? Is this appropriate? What would an alternative be?
 
 
-### It's only week 1 of Winter quarter and we're just getting started! Come back for more Capstone updates over the next 6 months.
+
+## It's only week 1 of Winter quarter and we're just getting started! Come back for more Capstone updates over the next 6 months.
 
 
