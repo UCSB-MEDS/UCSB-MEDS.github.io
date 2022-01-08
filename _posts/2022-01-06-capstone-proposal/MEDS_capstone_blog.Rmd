@@ -3,7 +3,7 @@ title: "Capstone Reflections Part 1: Writing a Proposal"
 preview: j-kelly-brito-PeUJyoylfe4-unsplash.jpeg
 author: 
 - name: Halina Do-Linh and Clarissa Boyajian
-date: 2022-01-06
+date: 2022-01-07
 output:
   distill::distill_article:
     self_contained: false
