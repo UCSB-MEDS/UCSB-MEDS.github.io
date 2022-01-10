@@ -33,4 +33,4 @@ The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/requ
 [Capstone Project Guidelines](https://bren.ucsb.edu/media/3557/download)  
 [Peer & Self Evaluation Form](https://bren.ucsb.edu/media/3556/download)  
 [EDS 411A/B Website](https://allisonhorst.github.io/EDS_411AB_meds-capstone/)  
-
+[Compute guide for your google group](https://bren.zendesk.com/hc/en-us/articles/4415068315156-Google-Group-Guide-for-Capstone-Projects)
