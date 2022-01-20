@@ -1,0 +1,28 @@
+---
+title: "Student Websites"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Students learned how to build their own personal websites during summer session using the [`{distill}` package](https://rstudio.github.io/distill/), by RStudio. They have been customizing and growing their online profiles ever since. Learn a bit more about who they are and what they've been up to by exploring their websites, below!
+
+### MEDS Class of 2022
+
+```{r, echo = FALSE, out.width = "80%", out.height = "80%", fig.align = 'left'}
+knitr::include_graphics("img/cohort_2022.jpg")
+```
+
+- [Paloma Cartwright](https://palomacartwright.github.io/)
+- [Juliet Cohen](https://julietcohen.github.io/)
+- [Halina Do-Linh](https://hdolinh.github.io/)
+- [Jake Eisaguirre](https://jake-eisaguirre.github.io/)
+- [Mia Forsline](https://miaforsline.github.io/)
+- [Scout Leonard](https://scoutcleonard.github.io/)
+- [Peter Menzies](https://petermenzies.github.io/)
+- [Julia Parish](https://juliaparish.github.io/)
+- [Marie Rivers](https://marierivers.github.io/)
+
