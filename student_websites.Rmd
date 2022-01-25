@@ -16,8 +16,11 @@ Students learned how to build their own personal websites during summer session 
 knitr::include_graphics("img/cohort_2022.jpg")
 ```
 
+- [Clarissa Boyajian](https://cboyajian.github.io/)
 - [Paloma Cartwright](https://palomacartwright.github.io/)
 - [Juliet Cohen](https://julietcohen.github.io/)
+- [Felicia Cruz](https://fmcruz23.github.io/)
+- [Joe DeCesaro](https://joedecesaro.github.io/)
 - [Halina Do-Linh](https://hdolinh.github.io/)
 - [Jake Eisaguirre](https://jake-eisaguirre.github.io/)
 - [Mia Forsline](https://miaforsline.github.io/)
