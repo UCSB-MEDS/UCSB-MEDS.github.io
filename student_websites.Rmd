@@ -26,6 +26,7 @@ knitr::include_graphics("img/cohort_2022.jpg")
 - [Mia Forsline](https://miaforsline.github.io/)
 - [Scout Leonard](https://scoutcleonard.github.io/)
 - [Peter Menzies](https://petermenzies.github.io/)
+- [Cullen Molitor](https://cullen-molitor.github.io/)
 - [Julia Parish](https://juliaparish.github.io/)
 - [Marie Rivers](https://marierivers.github.io/)
 
