@@ -107,6 +107,10 @@ fall_workshops %>%
 winter_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsbcarpentry.github.io/2022-01-04-ucsb-python/")
 winter_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSBCarpentry/2022-01-04-ucsb-python")
 
+# SQL (by Data Carpentries)
+winter_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsbcarpentry.github.io/2022-02-04-ucsb-sql-online/")
+winter_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSBCarpentry/2022-02-04-ucsb-sql-online")
+
 ##############################
 # build table 
 ##############################
