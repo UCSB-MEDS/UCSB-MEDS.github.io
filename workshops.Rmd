@@ -111,6 +111,10 @@ winter_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/U
 winter_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsbcarpentry.github.io/2022-02-04-ucsb-sql-online/")
 winter_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSBCarpentry/2022-02-04-ucsb-sql-online")
 
+# Intro to Shiny
+winter_workshops[3,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/shiny-workshop/#1")
+winter_workshops[3,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/shiny-workshop")
+
 ##############################
 # build table 
 ##############################
