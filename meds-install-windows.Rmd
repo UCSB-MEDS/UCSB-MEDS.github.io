@@ -110,18 +110,7 @@ knitr::include_graphics("img/install-guide-images/allow-program.png")
 
 Follow the installation steps to complete Anaconda installation.
 
-#### 8. Create your Slack account and join MEDS 
-
-- Click [here](https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw) to join our UCSB-MEDS Slack Workspace
-
-- Customize your profile with your name and photo.
-
-- Join the summer course channels (#eds-212, #eds-221, #eds-214)
-
-- Read through the [Slack Resource Guide](https://ucsb-meds.github.io/meds-slack.html)
-
-
-#### 9. Install Docker
+#### 8. Install Docker
 
 Visit [docker.com/get-started](https://www.docker.com/get-started) and install Docker Desktop for your operating system.
 
@@ -151,5 +140,21 @@ Visit [docker.com/get-started](https://www.docker.com/get-started) and install D
 - Follow [this link to download Linux kernel update package](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi): 
 
 - Restart then open up Docker
+
+#### 9. Create your Slack account and join MEDS 
+
+- Click [here](https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw) to join our UCSB-MEDS Slack Workspace
+
+- Customize your profile with your name and photo.
+
+- Join the summer course channels (#eds-212, #eds-221, #eds-214)
+
+- Read through the [Slack Resource Guide](https://ucsb-meds.github.io/meds-slack.html)
+
+#### 10. Access Google apps through your ucsb.edu account
+
+Once enrolled and your UCSBnetID is activated, you will have access to your [UCSB Connect Account](https://www.connect.ucsb.edu/usage) which provides email, calendaring, and collaboration services. *You must use this account (UCSBnetID@ucsb.edu) to log in and access all of your Google Apps (including Google Calendar, Google Drive, etc.).*
+  
+The [**MEDS Google Calendar**](https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&ctz=America/Los_Angeles) contains all classes and events relevant for our MEDS students. Feel free to add this to your calendar if you find it helpful. To do so, log in to [Google Calendar](https://www.google.com/calendar) using your @ucsb.edu credentials > Click on the `+` next to "Other calendars" on the left-hand side of your screen and choose "Browse resources" > Click the drop down arrow next to "bren" and check the box next to "bren-calendar-meds"
 
 ### End MEDS Installation Guide

@@ -26,7 +26,19 @@ navbar:
         - text: "COMMUNITY BLOG"
           href: blog.html
     - text: "RESOURCES"
-      href: resources.html
+      menu:
+        - text: "PREPARING FOR MEDS"
+          href: pre_meds_prep.html
+        - text: "COMPUTER REQUIREMENTS & RECOMMENDATIONS"
+          href: computer_reqs.html
+        - text: "SOFTWARE INSTALLATION & ACCOUNT SETUP"
+          href: meds-install-guide.html
+        - text: "NCEAS BUILDING POLICIES"
+          href: nceas-building-policies.html
+        - text: "MEDS STAFF & CONTACTS"
+          href: meds-contacts.html
+        - text: "BREN ORGANIZATIONS & COMMITTEES"
+          href: bren-committees.html
     - image: "img/bren_white_icon.png"
       href: "https://bren.ucsb.edu/masters-programs/master-environmental-data-science"
 output: distill::distill_article

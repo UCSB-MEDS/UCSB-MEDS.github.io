@@ -7,7 +7,7 @@ output:
     toc_depth: 1
 ---
 
-**Note:** There is an installation session during MEDS orientation to test and troubleshoot installations.
+**Note:** You are not expected to work through this installation guide before orientation. You will attend an installation & troubleshooting session during orientation.
 
 **Computing requirements:** See the [MEDS Computing Requirements](computer_reqs.html) for minimum device needs. If you do not have a device that meets the minimum requirements, we may be unable to help troubleshoot some installation issues. Please submit issues [here](https://bren.zendesk.com/hc/en-us/requests/new). 
 
@@ -18,8 +18,9 @@ output:
 - git (configured)
 - GitHub account (with PAT setup)
 - Anaconda
-- Slack
 - Docker
+- Slack
+- Google Apps (Drive, Gmail, Calendar, Docs, Sheets, Slides, etc.)
 
 **Note:** All of these are free at the level you’ll need them at for MEDS. If you are asked to pay for something, you’re choosing the wrong option. 
 
