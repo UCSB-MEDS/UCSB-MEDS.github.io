@@ -1,5 +1,77 @@
 ---
 title: "MEDS Staff & Contacts"
+editor_options: 
+  chunk_output_type: console
 ---
 
-*Coming soon!*
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+##############################
+# load packages
+##############################
+
+library(googlesheets4)
+library(kableExtra)
+library(tidyverse)
+
+##############################
+# load in google sheet - REQUEST ACCESS FROM SAM TO UPDATE THIS SHEET
+##############################
+
+contacts <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1LsjjR2DaPFgWfDqCJudNmkyNQqV9LIWbXXLm-s10PsA/edit?usp=sharing")
+
+```
+
+It takes a team to run any academic program smoothly, and we are grateful for ours! Get to know a bit more about our core MEDS staff and find their contact information below.
+
+For a complete list of staff and faculty, please see the [Bren](https://bren.ucsb.edu/people/staff) and [NCEAS](https://www.nceas.ucsb.edu/about-us/our-people) websites.
+
+### MEDS Staff & Faculty
+
+```{r, echo = FALSE}
+##############################
+# subset
+##############################
+
+# programmatic_training <- contacts %>% 
+#   filter(Department == "training_programmatic") %>% 
+#   select(-Department)
+
+##############################
+# add links
+##############################
+
+# programmatic & training
+contacts[1,2] <- cell_spec("Jamie Montgomery (she/her)",  "html", link = "https://www.jamiecmontgomery.com/")
+contacts[2,2] <- cell_spec("Allison Horst (she/her)",  "html", link = "https://www.allisonhorst.com/")
+contacts[3,2] <- cell_spec("Sam Csik (she/her)",  "html", link = "https://samanthacsik.github.io/")
+
+##############################
+# build table 
+##############################
+
+contacts %>% 
+  kable(col.names = c("Department", "Name (pronouns)", "Position", "Bio", "Office & Email"), format = "html", escape = FALSE) %>% 
+  kable_styling(bootstrap_options = "striped") %>% 
+  kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
+  #scroll_box(width = "100%", height = "400px") 
+```
+
+### Email Request Queues
+
+Have a question about MEDS/Bren? The Bren School has established request queues for help, repairs, and frequently needed services. Please use the appropriate email queue so that your question/request can be properly directed and handled. The most commonly used request queues are listed below. For a full list, please visit Bren's [Administrative Services page](https://bren.ucsb.edu/administrative-services-current-students).
+
+* **academics@bren.ucsb.edu**: For current students to obtain information and/or request assistance in regards to registering for classes, grade reporting, book orders, approval codes, and other instructional support issues.*This is the most commonly used queue for current students and a great place to start if you don't know where to direct your request.*
+
+* **admissions@bren.ucsb.edu**: To obtain information about our academic programs, applying to one of our programs, open houses, and visiting the Bren School.
+ 
+* **brenhall@bren.ucsb.edu**: To submit trouble tickets for operational and building-related issues.
+
+* **medscareer@bren.ucsb.edu**: For current students to obtain information and/or request assistance from the career development staff, to submit a job opening for alumni.
+
+* **compute@bren.ucsb.edu**: To report issues relating to networks or computers or other hardware/software problems at the Bren school.
+
+* **finance@bren.ucsb.edu**: For inquiries related to accounts, budgets, late payments, general finance issues, etc.
+
+* **scheduling@bren.ucsb.edu**: For assistance booking/scheduling rooms and meeting spaces beyond what can be booked through booking.bren.ucsb.edu for Bren students, staff, and faculty. 

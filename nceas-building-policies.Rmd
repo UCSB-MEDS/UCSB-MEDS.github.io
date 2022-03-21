@@ -28,5 +28,7 @@ The building’s third floor is home to many of the NCEAS staff and scientists, 
 
 The terrace has an occupancy limit of just 49 people. This unfortunately limits the access we can provide our MEDS students to invited events only.
 
+### Room Reservations
 
+The Sequoia Room (first floor, NCEAS) may be reserved via the Bren Scheduling system. Please visit **booking.bren.ucsb.edu** and sign in using your UCSBnetID credentials. For more information, check out this [Bren zendesk article](https://bren.zendesk.com/hc/en-us/articles/4407675987092-Bren-Scheduling-System-Instructions-RobinPowered-).
 
