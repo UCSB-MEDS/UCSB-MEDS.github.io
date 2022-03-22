@@ -27,7 +27,42 @@ It takes a team to run any academic program smoothly, and we are grateful for ou
 
 For a complete list of staff and faculty, please see the [Bren](https://bren.ucsb.edu/people/staff) and [NCEAS](https://www.nceas.ucsb.edu/about-us/our-people) websites.
 
-### MEDS Staff & Faculty
+## MEDS Staff & Faculty
+
+#### `r fontawesome::fa("code", fill = "#047C90", a11y = "sem")` Programmatic & Training
+
+* [Jamie Montgomery](https://www.jamiecmontgomery.com/) (*she/her*) | **MEDS Program Coordinator** | NCEAS 103 & Bren Hall 4402  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` jmontgomery@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*As coordinator, Jamie oversees all aspects of the program and works closely with other Bren staff to guide admissions, recruitment, student affairs, academic programs and career development.*</span>
+
+* [Allison Horst](https://www.allisonhorst.com/) (*she/her*) | **Assistant Teaching Professor** | Bren Hall 4406  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` ahorst@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*Allison teaches Essential Math for Environmental Data Science, Scientific Programming Essentials, and the MEDS Capstone course to facilitate student progress on their 6-month group capstone project as a faculty advisor. She actively works to contribute open educational resources, including software for data science education, and artwork for data science & stats teachers and learners.*</span>
+
+* [Sam Csik](https://samanthacsik.github.io/) (*she/her*) | **Data Training Coordinator** | NCEAS 103  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` scsik@ucsb.edu  
+<span style = 'font-size:95%;'>*Sam develops and teaches data science workshops for MEDS students, which are meant to supplement the MEDS curriculum. She was once named one of the three “kooky data science aunts” (along with Jamie Montgomery and Allison Horst) by an anonymous MEDS student and she wears that title proudly. You will be seeing lots of her around NCEAS helping out where needed throughout the program. If you ever have any questions about data science, ecology, grad school, life in SB, etc. or have an idea for a workshop, stop by her office or send her an email at any time!*</span>
+
+#### `r fontawesome::fa("laptop", fill = "#047C90", a11y = "sem")` Compute  
+* [Kat Le](https://bren.ucsb.edu/people/kat-le) (*she/her*) | **Science Programming & Technical Support Analyst** | Bren Hall 3516  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` kat@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*coming soon*</span>
+
+#### `r fontawesome::fa("pencil-alt", fill = "#047C90", a11y = "sem")` Capstone  
+* [Emily Case](https://bren.ucsb.edu/people/emily-case) (*she/her*) | **Academic Programs & Capstone Coordinator**| Bren Hall 2439  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` ecase@bren.ucsb.edu   
+<span style = 'font-size:95%;'>*As the Academic Programs and Capstone Coordinator for the Bren School, Emily is responsible for supporting academic programs, curriculum planning, Capstone and Master’s Group Projects, academic requirements, and various programmatic initiatives. She works closely with the Assistant Dean, as well as faculty and staff, in order to ensure educational effectiveness and program competitiveness.*</span>
+
+#### `r fontawesome::fa("handshake", fill = "#047C90", a11y = "sem")` Career
+* [Miya Scheble](https://bren.ucsb.edu/people/miya-scheble) (*she/her*) | **MEDS Career Development Program Manager** | Bren Hall 2522  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` miya@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*Miya manages the Master of Environmental Data Science (MEDS) Career Development Program. She oversees day-to-day operations and provides career development advising services within a variety of areas, including career direction support, job search strategy, networking opportunities, and document review for both MEDS and MESM students.*</span>
+
+#### `r fontawesome::fa("graduation-cap", fill = "#047C90", a11y = "sem")` Admissions & Student Affairs
+* [Kimberly Yom](https://bren.ucsb.edu/people/kimberly-yom) (*she/her*) | **MEDS Admissions and Student Affairs Coordinator**  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` kyom@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*As the Master of Environmental Data Science (MEDS) Admissions and Student Affairs Coordinator, Kimberly provides ancillary services for the MEDS program, handling outreach efforts for prospective students, managing applications and analyzing their data, and advising students on matters involving admissions, program logistics, course enrollment, and degree requirements.*</span>
+
 
 ```{r, echo = FALSE}
 ##############################
@@ -43,22 +78,22 @@ For a complete list of staff and faculty, please see the [Bren](https://bren.ucs
 ##############################
 
 # programmatic & training
-contacts[1,2] <- cell_spec("Jamie Montgomery (she/her)",  "html", link = "https://www.jamiecmontgomery.com/")
-contacts[2,2] <- cell_spec("Allison Horst (she/her)",  "html", link = "https://www.allisonhorst.com/")
-contacts[3,2] <- cell_spec("Sam Csik (she/her)",  "html", link = "https://samanthacsik.github.io/")
+# contacts[1,2] <- cell_spec("Jamie Montgomery (she/her)",  "html", link = "https://www.jamiecmontgomery.com/")
+# contacts[2,2] <- cell_spec("Allison Horst (she/her)",  "html", link = "https://www.allisonhorst.com/")
+# contacts[3,2] <- cell_spec("Sam Csik (she/her)",  "html", link = "https://samanthacsik.github.io/")
 
 ##############################
 # build table 
 ##############################
 
-contacts %>% 
-  kable(col.names = c("Department", "Name (pronouns)", "Position", "Bio", "Office & Email"), format = "html", escape = FALSE) %>% 
-  kable_styling(bootstrap_options = "striped") %>% 
-  kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
+# contacts %>% 
+#   kable(col.names = c("Department", "Name (pronouns)", "Position", "Bio", "Office & Email"), format = "html", escape = FALSE) %>% 
+#   kable_styling(bootstrap_options = "striped") %>% 
+  # kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
   #scroll_box(width = "100%", height = "400px") 
 ```
 
-### Email Request Queues
+## Email Request Queues
 
 Have a question about MEDS/Bren? The Bren School has established request queues for help, repairs, and frequently needed services. Please use the appropriate email queue so that your question/request can be properly directed and handled. The most commonly used request queues are listed below. For a full list, please visit Bren's [Administrative Services page](https://bren.ucsb.edu/administrative-services-current-students).
 
