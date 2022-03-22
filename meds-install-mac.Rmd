@@ -60,6 +60,12 @@ You should already have git on your device, but let’s check for it anyway.
 
 #### 6. Store your GitHub personal access token (PAT)
 
+**First:** What even is a personal access token? From GitHub's documentation:
+
+> Personal access tokens (PATs) are an alternative to using passwords for authentication to GitHub when using the [GitHub API](https://docs.github.com/en/rest/overview/other-authentication-methods#via-oauth-and-personal-access-tokens) or the [command line](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#using-a-token-on-the-command-line).
+
+This means that in order to push your work (files, scripts, etc.) from your laptop (or any other computer) to GitHub, you'll need to first to generate a PAT. **Importantly, you'll need to generate a PAT for each computer you wish to work from.** For example, we will complete the following steps to create a PAT for your personal laptop, but you'll also need to create a PAT if/when you choose to work on any of the Bren servers. Good news is that you can follow these same steps when you're ready to set up additional PATs on other machines. For now, let's get a PAT our personal laptop squared away:  
+
 - Once you have git configured successfully, install the `usethis` package in R by running the following in the RStudio Console: 
 
     `install.packages(“usethis”)`
@@ -75,13 +81,15 @@ knitr::include_graphics("img/install-guide-images/install-pkg-success.png")
 
     `usethis::create_github_token()`      
 
-- Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this, with reasonable options already selected for you: 
+- Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this:
 
 ```{r, echo = FALSE, fig.out="60%", fig.align="center"}
 knitr::include_graphics("img/install-guide-images/new-pat.png")
 ```
 
-- Do not change anything. Just scroll down to the bottom of that page and click the green ‘Generate token’ button:
+- In the **Note** field, you should see some autopopulated text: `R:GITHUB_PAT`. We suggest changing this to something that signifies what machine it's being used for. For example, if you are generating a PAT for your laptop, you might choose to rename it, `my_laptop`.
+
+- Next, you'll see a section called **Select scopes** with reasonable options already selected for you. Do not change anything. Just scroll down to the bottom of that page and click the green ‘Generate token’ button:
 
 ```{r, echo = FALSE, fig.out="80%", fig.align="center"}
 knitr::include_graphics("img/install-guide-images/generate-token.png")
@@ -95,7 +103,6 @@ knitr::include_graphics("img/install-guide-images/generate-token.png")
 knitr::include_graphics("img/install-guide-images/gitcreds-set.png")
 ```
 
-
 - In the RStudio Console, run: 
 
     `usethis::git_sitrep()`
@@ -106,6 +113,7 @@ Does it return information about your connected GitHub account that looks someth
 knitr::include_graphics("img/install-guide-images/git_sitrep.png")
 ```
 
+**One last important note:** Setting an expiration date on personal access tokens is highly recommended in order to keep your information secure. GitHub will send you an email when it's time to renew a token that's about to expire. When it does, follow the same steps above to regenerate your token.
 
 #### 7. Install Anaconda
 
@@ -118,16 +126,7 @@ knitr::include_graphics("img/install-guide-images/allow-program.png")
 
 Follow the installation steps to complete Anaconda installation.
 
-#### 8. Install Docker
-
-- Visit [docker.com/get-started](https://www.docker.com/get-started) and install Docker Desktop for your operating system. **Note: If you have a Mac, you must select either the Intel Chip or the more recent computers will have the Apple chip.** Once installed, drag & drop into Applications.
-
-
-```{r, echo = FALSE, fig.out="50%", fig.align="center"}
-knitr::include_graphics("img/install-guide-images/drag-docker.png")
-```
-
-#### 9. Create your Slack account and join MEDS 
+#### 8. Create your Slack account and join MEDS 
 
 - Click [here](https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw) to join our UCSB-MEDS Slack Workspace
 
@@ -137,7 +136,7 @@ knitr::include_graphics("img/install-guide-images/drag-docker.png")
 
 - Read through the [Slack Resource Guide](https://ucsb-meds.github.io/meds-slack.html)
 
-#### 10. Access Google apps through your @ucsb.edu account
+#### 9. Access Google apps through your @ucsb.edu account
 
 Once enrolled and your UCSBnetID is activated, you will have access to your [UCSB Connect Account](https://www.connect.ucsb.edu/usage) which provides email, calendaring, and collaboration services. *You must use this account (UCSBnetID@ucsb.edu) to log in and access all of your Google Apps (including Google Calendar, Google Drive, etc.).*
   

@@ -18,7 +18,6 @@ output:
 - git (configured)
 - GitHub account (with PAT setup)
 - Anaconda
-- Docker
 - Slack
 - Google Apps (Drive, Gmail, Calendar, Docs, Sheets, Slides, etc.)
 

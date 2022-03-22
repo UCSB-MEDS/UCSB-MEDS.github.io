@@ -1,0 +1,18 @@
+---
+title: "Before You Arrive"
+---
+
+We're so excited to have you here soon, both on campus at The Bren School and in downtown Santa Barbara at NCEAS! This page includes detailed instructions and suggestions on how to set yourself up for success as an incoming MEDS student. For more information, please visit the incoming MEDS student guide on the [Bren website](https://bren.ucsb.edu/incoming-meds-student-guide).
+
+### Computer requirements and software installation
+
+The MEDS program requires that all students have a personal laptop. We ask that you review our [Computer requirements & recommendations](computer_reqs.html) page to assess whether your current computer is appropriate and/or before you purchase a new computer.
+
+Throughout the coming year, you'll be working with a variety of data science tools, languages, and software. **Before arriving for summer orientation, please work through the [MEDS Installation Guide](meds-install-guide.html)**. There will be an troubleshooting session during summer orientation should you need additional help.
+
+### Optional things to do before starting MEDS
+
+Incoming students often ask “What can I do before I start the MEDS program to prepare?”
+
+There are **no required tasks** that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, [here are some completely optional things you can do](pre_meds_prep.html).
+  

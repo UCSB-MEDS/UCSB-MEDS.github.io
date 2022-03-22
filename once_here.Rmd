@@ -1,0 +1,19 @@
+---
+title: "Once You're Here"
+---
+
+This page provides resources for our current students. If you can't find what you are looking for, please visit the current student resources page on the [Bren website](https://bren.ucsb.edu/current-student-resources).
+
+### Find your communities and get involved
+
+There are lots of fun ways to get involved at Bren and meet other Bren students ([MESM](https://bren.ucsb.edu/people/masters-students), [PhD](https://bren.ucsb.edu/people/phd-students)). Learn more about the various Bren organizations and committees, and find your current MEDS committee representatives [here](bren-committees.html).
+
+### Discover your career in Environmental Data Science
+
+We want to see all of our students find (and land) jobs and opportunities in environmental data science that they are excited about. Learn about some of the ways we're making that happen on our [Career Services & Support page](career.html).
+
+### Miscellaneous 
+
+* [NCEAS Building Policies](docs/nceas-building-policies.html)
+
+
