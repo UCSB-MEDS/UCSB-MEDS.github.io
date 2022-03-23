@@ -2,6 +2,10 @@
 title: "NCEAS Building Policies"
 ---
 
+```{r, echo = FALSE, out.width = "100%", fig.align = 'center', fig.alt="The NCEAS building, located at 1021 Anacapa St. in downtown Santa Barbara."}
+knitr::include_graphics("img/nceas.png")
+```
+
 All students are subject to NCEAS’ [Code of Conduct](https://live-ncea-ucsb-edu-v01.pantheonsite.io/sites/default/files/2020-02/NCEAS_Code-of-Conduct_2019.pdf) while at NCEAS.
 
 ### Bikes
@@ -15,7 +19,7 @@ MEDS students may use the first floor kitchen. This kitchen is also shared with 
 Each month we ask a volunteer to do a refrigerator clean out, removing food that has expired and empty forgotten containers. Please sign up to volunteer on the sheet on the fridge.
 
 ### After hours access
-The NCEAS building is accessible from 7:45 am to 5:00 pm. Currently, students do not have the ability to get into the building outside of these hours and must rely on the presence of an instructor or staff member to let students in. This could change as we settle into the new space and figure out the best ways to manage student access. Your cooperation on this matter is appreciated!
+Students are currently able to access and use the NCEAS first floor space after hours and on weekends. Instructions on how to do so will be provided during orientation.
 
 ### Whiteboards
 Please erase and clean all whiteboards after use and leave markers in their designated spot.
@@ -30,5 +34,9 @@ The terrace has an occupancy limit of just 49 people. This unfortunately limits 
 
 ### Room Reservations
 
-The Sequoia Room (first floor, NCEAS) may be reserved via the Bren Scheduling system. Please visit **booking.bren.ucsb.edu** and sign in using your UCSBnetID credentials. For more information, check out this [Bren zendesk article](https://bren.zendesk.com/hc/en-us/articles/4407675987092-Bren-Scheduling-System-Instructions-RobinPowered-).
+The Sequoia Room (first floor, NCEAS #150) may be reserved via the Bren Scheduling system. Please visit **booking.bren.ucsb.edu** and sign in using your UCSBnetID credentials. For more information, check out this [Bren zendesk article](https://bren.zendesk.com/hc/en-us/articles/4407675987092-Bren-Scheduling-System-Instructions-RobinPowered-).
+
+```{r, echo = FALSE, out.width = "100%", fig.align = 'center', fig.alt="The Sequoia Room, which includes a meeting table that seats 7 people, a large computer monitor, and whiteboard."}
+knitr::include_graphics("img/sequoia_room.jpg")
+```
 

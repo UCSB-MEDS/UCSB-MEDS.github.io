@@ -40,6 +40,11 @@ For a complete list of staff and faculty, please see the [Bren](https://bren.ucs
 `r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` kyom@bren.ucsb.edu  
 <span style = 'font-size:95%;'>*As the Master of Environmental Data Science (MEDS) Admissions and Student Affairs Coordinator, Kimberly provides ancillary services for the MEDS program, handling outreach efforts for prospective students, managing applications and analyzing their data, and advising students on matters involving admissions, program logistics, course enrollment, and degree requirements.*</span>
 
+```{r, echo = FALSE, out.width = "80%", fig.align = 'center'}
+knitr::include_graphics("img/meds_staff.jpeg")
+```
+<p style="color:gray; font-size: 15px; style: italic; text-align: center;"><i>From left to right: Kat Le, Miya Scheble, Jamie Montgomery, Sam Csik, Dr. Allison Horst, Kimberly Yom, and Emily Case.</i></p>
+
 ## Email Request Queues
 
 Have a question about MEDS/Bren? The Bren School has established request queues for help, repairs, and frequently needed services. Please use the appropriate email queue so that your question/request can be properly directed and handled. The most commonly used request queues are listed below. For a full list, please visit Bren's [Administrative Services page](https://bren.ucsb.edu/administrative-services-current-students).
