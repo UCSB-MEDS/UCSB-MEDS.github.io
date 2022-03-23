@@ -28,6 +28,18 @@ The Master's of Environmental Data Science (MEDS) is a professional degree progr
 - Think critically about and incorporate ethics, bias, and data justice into data science projects
 - Communicate effectively with diverse stakeholders
 
+### The MEDS experience is a cohort experience
+
+We believe that building a strong sense of community is critical for success in learning and working within the data science space. Our summer intensive session is designed to foster this sense of community within a cohort from the start, while also preparing students with the fundamental math, programming, and analytical skills needed to complete the program. Students are encouraged to work and troubleshoot in pairs or groups for all exercises, promoting a collaborative work environment and establishing a support system that extends beyond the walls of the classroom. 
+
+>“Although the academics were intense at times, I enjoyed spending so much time with my cohort. It really helped us all bond this summer and thus gave us a strong support group for going into the rest of the year.” - Anonymous MEDS student
+
+Collaborative learning is woven throughout all aspects of MEDS, from group discussions and team-based class assignments to the 6-month long group [capstone projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects). Through these experiences, students learn to use tools and develop skills that are critical for all professionals who are expected to work on data science teams.
+
+Hear more from some of our students about their shared experiences on our [student advice page](student_advice.html)!
+
+<br>
+
 <p><i>For more information about the program, including how to apply, please visit the [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science).</i></p>
 
 

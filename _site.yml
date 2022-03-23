@@ -9,7 +9,7 @@ navbar:
   right:
     - text: "HOME"
       href: index.html
-    - text: "MEDS CURRICULUM"
+    - text: "CURRICULUM"
       menu:
         - text: "OVERVIEW"
           href: overview.html

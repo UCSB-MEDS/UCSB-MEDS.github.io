@@ -15,4 +15,7 @@ Throughout the coming year, you'll be working with a variety of data science too
 Incoming students often ask “What can I do before I start the MEDS program to prepare?”
 
 There are **no required tasks** that admitted MEDS students are expected to complete before starting the program. However, for those of you who are excited to explore the landscape of Environmental Data Science a bit more before MEDS Orientation, [here are some completely optional things you can do](pre_meds_prep.html).
-  
+
+### Advice from current MEDS students
+
+The best advice we can give to incoming and prospective students is advice from our current MEDS students themselves. Get the inside scoop [here](student_advice.html)!
