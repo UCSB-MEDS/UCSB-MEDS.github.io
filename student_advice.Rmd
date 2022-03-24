@@ -65,7 +65,7 @@ Want to learn more about the MEDS experience? Our students can offer some of the
 
 "<span style = 'color:#047C90;'>**Meal prepping is really helpful.**</span> I felt too tired to cook when I got home many days."
 
-"I would tell future cohorts to relax--<span style = 'color:#047C90;'>**it's OK if you little to no programming experience**</span>, I did not start this program with computing experience. However, I felt like I learned so many valuable skills in such a short amount of time."
+"<span style = 'color:#047C90;'>**It's OK if you have little to no programming experience**</span>, I did not start this program with computing experience. However, I felt like I learned so many valuable skills in such a short amount of time."
 
 # `r fontawesome::fa("star", fill = "#047C90", a11y = "sem")` And finally
 
