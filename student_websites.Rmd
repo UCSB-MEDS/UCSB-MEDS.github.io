@@ -8,7 +8,7 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Students learned how to build their own personal websites during summer session using the [`{distill}` package](https://rstudio.github.io/distill/), by RStudio. They have been customizing and growing their online profiles ever since. Learn a bit more about who they are and what they've been up to by exploring their websites, below!
+Students learn how to build their own personal websites during summer session using the [`{distill}` package](https://rstudio.github.io/distill/), by RStudio. They have been customizing and growing their online profiles ever since. Learn a bit more about who they are and what they've been up to by exploring their websites, below!
 
 ### MEDS Class of 2022
 

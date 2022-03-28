@@ -2315,6 +2315,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .d-contents nav a {
       font-size: 16px;
+  }
+
+  /* create columns */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
   }</style>
   <style type="text/css">
   /* base style */
@@ -2513,7 +2520,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html">HOME</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-MEDS CURRICULUM
+CURRICULUM
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
@@ -2535,7 +2542,18 @@ COMMUNITY
 <a href="blog.html">COMMUNITY BLOG</a>
 </div>
 </div>
-<a href="resources.html">RESOURCES</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+STUDENT RESOURCES
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="before_arrival.html">BEFORE YOU ARRIVE</a>
+<a href="once_here.html">ONCE YOU'RE HERE</a>
+<a href="meds-contacts.html">MEDS STAFF &amp; CONTACTS</a>
+</div>
+</div>
 <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science" class="nav-image">
 <img src="img/bren_white_icon.png"/>
 </a>
@@ -2594,6 +2612,11 @@ COMMUNITY
 <p><code>git config --list --global</code></p></li>
 </ul>
 <h4 id="store-your-github-personal-access-token-pat">6. Store your GitHub personal access token (PAT)</h4>
+<p><strong>First:</strong> What even is a personal access token? From GitHub’s documentation:</p>
+<blockquote>
+<p>Personal access tokens (PATs) are an alternative to using passwords for authentication to GitHub when using the <a href="https://docs.github.com/en/rest/overview/other-authentication-methods#via-oauth-and-personal-access-tokens">GitHub API</a> or the <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#using-a-token-on-the-command-line">command line</a>.</p>
+</blockquote>
+<p>This means that in order to push your work (files, scripts, etc.) from your laptop (or any other computer) to GitHub, you’ll need to first to generate a PAT. <strong>Importantly, you’ll need to generate a PAT for each computer you wish to work from.</strong> For example, we will complete the following steps to create a PAT for your personal laptop, but you’ll also need to create a PAT if/when you choose to work on any of the Bren servers. Good news is that you can follow these same steps when you’re ready to set up additional PATs on other machines. For now, let’s get a PAT our personal laptop squared away:</p>
 <ul>
 <li><p>Once you have git configured successfully, install the <code>usethis</code> package in R by running the following in the RStudio Console:</p>
 <p><code>install.packages(“usethis”)</code></p></li>
@@ -2605,13 +2628,14 @@ COMMUNITY
 <ul>
 <li><p>Run the following in the RStudio Console:</p>
 <p><code>usethis::create_github_token()</code></p></li>
-<li><p>Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this, with reasonable options already selected for you:</p></li>
+<li><p>Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this:</p></li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/new-pat.png" width="1000" style="display: block; margin: auto;" /></p>
 </div>
 <ul>
-<li>Do not change anything. Just scroll down to the bottom of that page and click the green ‘Generate token’ button:</li>
+<li><p>In the <strong>Note</strong> field, you should see some autopopulated text: <code>R:GITHUB_PAT</code>. We suggest changing this to something that signifies what machine it’s being used for. For example, if you are generating a PAT for your laptop, you might choose to rename it, <code>my_laptop</code>.</p></li>
+<li><p>Next, you’ll see a section called <strong>Select scopes</strong> with reasonable options already selected for you. Do not change anything. Just scroll down to the bottom of that page and click the green ‘Generate token’ button:</p></li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/generate-token.png" width="615" style="display: block; margin: auto;" /></p>
@@ -2631,6 +2655,7 @@ COMMUNITY
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/git_sitrep.png" width="469" style="display: block; margin: auto;" /></p>
 </div>
+<p><strong>One last important note:</strong> Setting an expiration date on personal access tokens is highly recommended in order to keep your information secure. GitHub will send you an email when it’s time to renew a token that’s about to expire. When it does, follow the same steps above to regenerate your token.</p>
 <h4 id="install-anaconda">7. Install Anaconda</h4>
 <ul>
 <li><a href="https://repo.anaconda.com/archive/Anaconda3-2021.05-MacOSX-x86_64.pkg">Click here to download 64-bit Graphical Installer</a>. This might pop open a new tab with a “redirecting you to…” phrase, but Anaconda should be downloading at the same time. It might take a couple minutes. After it’s downloaded, click it and hit Allow if you see the following:</li>
@@ -2646,13 +2671,10 @@ COMMUNITY
 <li><p>Join the summer course channels (#eds-212, #eds-221, #eds-214)</p></li>
 <li><p>Read through the <a href="https://ucsb-meds.github.io/meds-slack.html">Slack Resource Guide</a></p></li>
 </ul>
-<h4 id="install-docker">9. Install Docker</h4>
-<ul>
-<li>Visit <a href="https://www.docker.com/get-started">docker.com/get-started</a> and install Docker Desktop for your operating system. <strong>Note: If you have a Mac, you must select either the Intel Chip or the more recent computers will have the Apple chip.</strong> Once installed, drag &amp; drop into Applications.</li>
-</ul>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="img/install-guide-images/drag-docker.png" width="608" style="display: block; margin: auto;" /></p>
-</div>
+<h4 id="access-google-apps-through-your-ucsb.edu-account">9. Access Google apps through your <span class="citation" data-cites="ucsb.edu">@ucsb.edu</span> account</h4>
+<p>Once enrolled and your UCSBnetID is activated, you will have access to your <a href="https://www.connect.ucsb.edu/usage">UCSB Connect Account</a> which provides email, calendaring, and collaboration services. <em>You must use this account (<a href="mailto:UCSBnetID@ucsb.edu" class="email">UCSBnetID@ucsb.edu</a>) to log in and access all of your Google Apps (including Google Calendar, Google Drive, etc.).</em></p>
+<p>The <a href="https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&amp;ctz=America/Los_Angeles"><strong>MEDS Google Calendar</strong></a> contains all classes and events relevant for our MEDS students. Feel free to add this to your calendar if you find it helpful. To do so, log in to <a href="https://www.google.com/calendar">Google Calendar</a> using your <span class="citation" data-cites="ucsb.edu">@ucsb.edu</span> credentials &gt; Click on the <code>+</code> next to “Other calendars” on the left-hand side of your screen and choose “Browse resources” &gt; Click the drop down arrow next to “bren” and check the box next to “bren-calendar-meds”</p>
+<h3 id="end-meds-installation-guide">End MEDS Installation Guide</h3>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

@@ -2315,6 +2315,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .d-contents nav a {
       font-size: 16px;
+  }
+
+  /* create columns */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
   }</style>
   <style type="text/css">
   /* base style */
@@ -2513,7 +2520,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html">HOME</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-MEDS CURRICULUM
+CURRICULUM
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
@@ -2535,7 +2542,18 @@ COMMUNITY
 <a href="blog.html">COMMUNITY BLOG</a>
 </div>
 </div>
-<a href="resources.html">RESOURCES</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+STUDENT RESOURCES
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="before_arrival.html">BEFORE YOU ARRIVE</a>
+<a href="once_here.html">ONCE YOU'RE HERE</a>
+<a href="meds-contacts.html">MEDS STAFF &amp; CONTACTS</a>
+</div>
+</div>
 <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science" class="nav-image">
 <img src="img/bren_white_icon.png"/>
 </a>
@@ -2556,7 +2574,7 @@ COMMUNITY
 
 
 <div class="d-article">
-<p>Students learned how to build their own personal websites during summer session using the <a href="https://rstudio.github.io/distill/"><code>{distill}</code> package</a>, by RStudio. They have been customizing and growing their online profiles ever since. Learn a bit more about who they are and what they’ve been up to by exploring their websites, below!</p>
+<p>Students learn how to build their own personal websites during summer session using the <a href="https://rstudio.github.io/distill/"><code>{distill}</code> package</a>, by RStudio. They have been customizing and growing their online profiles ever since. Learn a bit more about who they are and what they’ve been up to by exploring their websites, below!</p>
 <h3 id="meds-class-of-2022">MEDS Class of 2022</h3>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/cohort_2022.jpg" width="80%" height="80%" style="display: block; margin: auto auto auto 0;" /></p>

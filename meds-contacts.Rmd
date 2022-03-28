@@ -1,0 +1,64 @@
+---
+title: "MEDS Staff & Contacts"
+editor_options: 
+  chunk_output_type: console
+---
+
+It takes a team to run any academic program smoothly, and we are grateful for ours! Get to know a bit more about our core MEDS staff and find their contact information below.
+
+For a complete list of staff and faculty, please see the [Bren](https://bren.ucsb.edu/people/staff) and [NCEAS](https://www.nceas.ucsb.edu/about-us/our-people) websites.
+
+## MEDS Staff
+
+#### `r fontawesome::fa("code", fill = "#047C90", a11y = "sem")` Programmatic & Training
+
+* [Jamie Montgomery](https://www.jamiecmontgomery.com/) (*she/her*) | **MEDS Program Coordinator** | Bren Hall 4402 & NCEAS 103  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` jmontgomery@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*As coordinator, Jamie oversees all aspects of the program and works closely with other Bren staff to guide admissions, recruitment, student affairs, academic programs and career development.*</span>
+
+* [Sam Csik](https://samanthacsik.github.io/) (*she/her*) | **Data Training Coordinator** | NCEAS 103  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` scsik@ucsb.edu  
+<span style = 'font-size:95%;'>*Sam develops and teaches data science workshops for MEDS students, which are meant to supplement the MEDS curriculum. She was once named one of the three “kooky data science aunts” (along with Jamie Montgomery and Allison Horst) by an anonymous MEDS student and she wears that title proudly. You will be seeing lots of her around NCEAS helping out where needed throughout the program. If you ever have any questions about data science, ecology, grad school, life in SB, etc. or have an idea for a workshop, stop by her office or send her an email at any time!*</span>
+
+#### `r fontawesome::fa("laptop", fill = "#047C90", a11y = "sem")` Compute  
+* [Kat Le](https://bren.ucsb.edu/people/kat-le) (*she/her*) | **Technical Applications Manager** | Bren Hall 3516 & NCEAS 104   
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` kat@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*Are you wondering what kind of computing resources that you have available to you at Bren or how you can utilize them? Are you having trouble installing the software that you need for class or connecting to our Bren servers? Is technology just not cooperating with you and you need a helping hand? Did you just bork your computer? Well, if you answered yes to any of the questions above, then you should try talking to Kat. Kat is here to help you with all your tech support needs. After many years of yelling at her computer to work, she has learned many tips and tricks that are more helpful than throwing your laptop out of the window. If she can’t fix it herself, she knows who to talk to in order to figure it out. She may not have all the answers, but you bet she’s happy to struggle through solving your tech problems with you.*</span>
+
+#### `r fontawesome::fa("pencil-alt", fill = "#047C90", a11y = "sem")` Capstone  
+* [Emily Case](https://bren.ucsb.edu/people/emily-case) (*she/her*) | **Academic Programs & Capstone Coordinator**| Bren Hall 2439  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` ecase@bren.ucsb.edu   
+<span style = 'font-size:95%;'>*As the Academic Programs and Capstone Coordinator for the Bren School, Emily is responsible for supporting academic programs, curriculum planning, Capstone and Master’s Group Projects, academic requirements, and various programmatic initiatives. She works closely with the Assistant Dean, as well as faculty and staff, in order to ensure educational effectiveness and program competitiveness.*</span>
+
+#### `r fontawesome::fa("handshake", fill = "#047C90", a11y = "sem")` Career
+* [Miya Scheble](https://bren.ucsb.edu/people/miya-scheble) (*she/her*) | **MEDS Career Development Program Manager** | Bren Hall 2522  
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` miya@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*Miya helps manage the Master of Environmental Data Science (MEDS) Career Development Program. She oversees day-to-day operations and provides career development advising services within a variety of areas, including career direction support, job search strategy, networking opportunities, and document review for MEDS students.*</span>
+
+#### `r fontawesome::fa("graduation-cap", fill = "#047C90", a11y = "sem")` Admissions & Student Affairs
+* [Kimberly Yom](https://bren.ucsb.edu/people/kimberly-yom) (*she/her*) | **MEDS Admissions & Student Affairs Coordinator** | Bren Hall 2512   
+`r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` kyom@bren.ucsb.edu  
+<span style = 'font-size:95%;'>*If you’ve ever wondered who, exactly, sat on the receiving end of your MEDS application - it was Kimberly. Kimberly works on the Admissions and Student Affairs team, which means that she processes applications and gets to know students well before they ever step foot in NCEAS or Bren Hall. Aside from getting to know them just on paper, Kimberly serves as a resource for MEDS students to help them with any issues they might encounter in graduate school, whether it’s questions about degree requirements, financial awards, or resources to help with personal matters. If you have any questions or just want to chat, swing by her office or drop her a line!*</span>
+
+```{r, echo = FALSE, out.width = "80%", fig.align = 'center'}
+knitr::include_graphics("img/meds_staff.jpeg")
+```
+<p style="color:gray; font-size: 15px; style: italic; text-align: center;"><i>From left to right: Kat Le, Miya Scheble, Jamie Montgomery, Sam Csik, Dr. Allison Horst, Kimberly Yom, and Emily Case.</i></p>
+
+## Email Request Queues
+
+Have a question about MEDS/Bren? The Bren School has established request queues for help, repairs, and frequently needed services. Please use the appropriate email queue so that your question/request can be properly directed and handled. The most commonly used request queues are listed below. For a full list, please visit Bren's [Administrative Services page](https://bren.ucsb.edu/administrative-services-current-students).
+
+* **academics@bren.ucsb.edu**: For current students to obtain information and/or request assistance in regards to registering for classes, grade reporting, book orders, approval codes, and other instructional support issues.*This is the most commonly used queue for current students and a great place to start if you don't know where to direct your request.*
+
+* **admissions@bren.ucsb.edu**: To obtain information about our academic programs, applying to one of our programs, open houses, and visiting the Bren School.
+ 
+* **brenhall@bren.ucsb.edu**: To submit trouble tickets for operational and building-related issues.
+
+* **medscareer@bren.ucsb.edu**: For current students to obtain information and/or request assistance from the career development staff, to submit a job opening for alumni.
+
+* **compute@bren.ucsb.edu**: To report issues relating to networks or computers or other hardware/software problems at the Bren school.
+
+* **finance@bren.ucsb.edu**: For inquiries related to accounts, budgets, late payments, general finance issues, etc.
+
+* **scheduling@bren.ucsb.edu**: For assistance booking/scheduling rooms and meeting spaces beyond what can be booked through booking.bren.ucsb.edu for Bren students, staff, and faculty. 

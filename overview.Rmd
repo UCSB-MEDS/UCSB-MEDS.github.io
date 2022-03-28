@@ -11,39 +11,13 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Here, we share a bit more information about what students can expect during the MEDS program.
+# Orientation
+
+Each student should plan to attend **two** orientations: (1) a 1.5-day MEDS-only orientation on the Thursday and Friday before the first day of summer classes, and (2) a 3-day campus-wide UCSB orientation the week that fall quarter begins.
+
+*More information on both the summer and fall orientations for our 2023 cohort coming soon!*
 
 # Summer
-
-## Orientation
-
-Each student should plan to attend a 1.5-day MEDS orientation on the Thursday and Friday before the first day of summer classes. Orientation for the MEDS Class of 2022 will be held at Bren Hall (July 29th) and NCEAS (July 30th). During orientation, incoming MEDS students will:
-
--   Meet the MEDS staff
--   Get set up with all necessary computer accounts, tools & software
--   Get to know your peers
--   Become familiar with the Bren & NCEAS space, + more!
-
-[Click here](https://ucsb.app.box.com/s/y1j1vvkgkvxfh8umjr3hpv0rw9kx0562) for a detailed orientation agenda.
-
-#### Thursday, July 29^th^ - Bren Hall
-
-| Time (PST)        | Activity                |
-|-------------------|-------------------------|
-| 9:00am - 9:30am   | Check-in & Breakfast    |
-| 9:30am - 10:00am  | Welcome & Introductions |
-| 10:00am - 11:00am | Bren 101 Presentation   |
-| 11:00am - 12:15pm | Team Building Exercise  |
-| 2:00pm - 4:00pm   | Mutual Respect Workshop |
-
-#### Friday, July 30^th^ - NCEAS
-
-| Time (PST)        | Activity                                                                |
-|-------------------|-------------------------------------------------------------------------|
-| 9:30am - 10:00am  | Welcome to NCEAS                                                        |
-| 10:00am - 10:30am | NCEAS Tour                                                              |
-| 10:30am - 12:00pm | Computer Orientation + [Software Installation](meds-install-guide.html) |
-| 12:00pm - 1:00pm  | Lunch Mixer with NCEAS Scientists on the Terrace                        |
 
 ## Summer Intensive Courses
 

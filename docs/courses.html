@@ -2315,6 +2315,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .d-contents nav a {
       font-size: 16px;
+  }
+
+  /* create columns */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
   }</style>
   <style type="text/css">
   /* base style */
@@ -2515,7 +2522,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html">HOME</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-MEDS CURRICULUM
+CURRICULUM
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
@@ -2537,7 +2544,18 @@ COMMUNITY
 <a href="blog.html">COMMUNITY BLOG</a>
 </div>
 </div>
-<a href="resources.html">RESOURCES</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+STUDENT RESOURCES
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="before_arrival.html">BEFORE YOU ARRIVE</a>
+<a href="once_here.html">ONCE YOU'RE HERE</a>
+<a href="meds-contacts.html">MEDS STAFF &amp; CONTACTS</a>
+</div>
+</div>
 <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science" class="nav-image">
 <img src="img/bren_white_icon.png"/>
 </a>
@@ -2834,7 +2852,7 @@ EDS 232
 4
 </td>
 <td style="text-align:left;border-bottom: 1px solid gainsboro">
-Machine learning enables predictions from big, complex data into actionable insights. It forms one of the foundations in data science. This course provides a broad introduction to machine learning and statistical pattern recognition with environmental data. Supervised learning (logistic regression, decision trees and neural networks) and unsupervised learning (clustering and ordination) techniques will be applied to the environmental tasks of mapping species distributions and ecological community analyses, respectively. Integer linear programming will be used to optimize biodiversity in planning a reserve. Deep learning techniques (convolutional neural networks) will enable species classification from photos and landcover classification from satellite imagery using Google Earth Engine. The first half of the course will use R and Rmarkdown on the desktop and second half will use Python and Jupyter notebooks in the cloud. This class teaches a broad sweep of advanced scientific programming skills for environmental problem solving.
+Machine learning can help process big/complex data and extract knowledge. It forms one of the foundations in data science. This course provides a broad introduction to machine learning and statistical pattern recognition. Topics include supervised learning (decision tree, random forest, support vector machines, neural networks) and unsupervised learning (clustering, dimensionality reduction, deep learning). Problems and exercises are framed within environmental science applications. The course will use programming languages like R and Python to support learning how to do advanced scientific programming to solve real environmental problems.
 </td>
 <td style="text-align:left;border-bottom: 1px solid gainsboro">
 Ben Best

@@ -9,7 +9,7 @@ navbar:
   right:
     - text: "HOME"
       href: index.html
-    - text: "MEDS CURRICULUM"
+    - text: "CURRICULUM"
       menu:
         - text: "OVERVIEW"
           href: overview.html
@@ -25,8 +25,14 @@ navbar:
           href: student_websites.html
         - text: "COMMUNITY BLOG"
           href: blog.html
-    - text: "RESOURCES"
-      href: resources.html
+    - text: "STUDENT RESOURCES"
+      menu:
+        - text: "BEFORE YOU ARRIVE"
+          href: before_arrival.html
+        - text: "ONCE YOU'RE HERE"
+          href: once_here.html
+        - text: "MEDS STAFF & CONTACTS"
+          href: meds-contacts.html
     - image: "img/bren_white_icon.png"
       href: "https://bren.ucsb.edu/masters-programs/master-environmental-data-science"
 output: distill::distill_article

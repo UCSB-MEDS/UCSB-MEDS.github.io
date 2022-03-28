@@ -1,0 +1,76 @@
+---
+title: "Advice from our MEDS Students"
+---
+
+Want to learn more about the MEDS experience? Our students can offer some of the best perspectives. Check out their advice below!
+
+# `r fontawesome::fa("sun", fill = "#047C90", a11y = "sem")` On summer session
+
+<br>
+
+"I would advise next year's MEDS students to prepare for summer session by starting to look for housing very early, moving to town a little early to hit the beach and do some hiking and surfing before your 9-4:30 schedule starts, planning on biking to NCEAS (parking is not great), and spend time getting to know your cohort from the beginning with activities outside of class! <span style = 'color:#047C90;'>**Summer is your time to get to know each other without the pressure of midterms and finals**</span>."
+
+"<span style = 'color:#047C90;'>**Be prepared to grind for those 6 weeks.**</span> They are long days but the weeks fly by. The amount of material you learn is massive."
+
+"<span style = 'color:#047C90;'>**Summer is intense but so fun**</span>, so just really give it your all and dive in, <span style = 'color:#047C90;'>**you will get the most out of it if you embrace the pace and the style of learning**</span>."
+
+"Don't feel intimidated if you feel like your coding skills are still at a beginner level after Summer Session. I think <span style = 'color:#047C90;'>**you'll be pleasantly surprised by how much you have actually learned**</span> by the end of the quarter."
+
+
+# `r fontawesome::fa("users", fill = "#047C90", a11y = "sem")` On socializing with your cohort
+
+<br>
+
+"Get excited for all of the fun social aspects in summer - everyone wants to get to know everyone and I really enjoyed the beach days, happy hours after class, etc. that helped me get out of my shell and make friendships with my cohort. It can be a little socially overwhelming at first and also exhausting when the work days are already so long, but <span style = 'color:#047C90;'>**investing in the social time makes the academic time that much more rewarding**</span>."
+
+"<span style = 'color:#047C90;'>**Make friends**</span> - you will have a much better time in and out of class if you have a close network of peers to rely on."
+
+"<span style = 'color:#047C90;'>**Find the people you live near**</span>, having them as a resource is great! For getting together socially, or for help with work, or for a back up in case you miss the bus!"  
+
+# `r fontawesome::fa("brain", fill = "#047C90", a11y = "sem")` On previous experiences
+
+<br>
+
+"<span style = 'color:#047C90;'>**Bring your work/school experiences to class with confidence**</span> because every one of my peers has taught me something new and interesting from their diverse backgrounds."
+
+# `r fontawesome::fa("people-carry", fill = "#047C90", a11y = "sem")` On collaboration
+
+<br>
+
+"If you are feeling overwhelmed with HWs or concepts, there will always be people in the cohort who are willing to tackle a problem you are having together. <span style = 'color:#047C90;'>**Everyone is so willing to collaborate**</span> and that was a crucial part to my understanding and completion of Fall courses. Don't be afraid to ask for help :)"
+
+"<span style = 'color:#047C90;'>**Use your classmates as a resource and work together through issues**</span>. There will be a wide variety of coding experience and there will be no dumb questions."
+
+"Start assignments early! <span style = 'color:#047C90;'>**Don't be afraid to ask profs for clarification**</span>, to slow the pace of the course, etc. They so far have been very receptive to our needs. <span style = 'color:#047C90;'>**When in doubt, collaborate**</span> - whether that be on Slack, in person, etc."
+
+# `r fontawesome::fa("home", fill = "#047C90", a11y = "sem")` On housing & commuting
+
+<br>
+
+"<span style = 'color:#047C90;'>**San Clemente is an ideal housing situation**</span> despite the commute because the 24x bus stops directly at the graduate housing and almost directly at NCEAS. Plus, <span style = 'color:#047C90;'>**commuters bond a lot**</span> while traveling back and forth every day."  
+
+"<span style = 'color:#047C90;'>**I LOVE living downtown and being able to bike to NCEAS**</span>, but it's been cool to see the on-campus San Clem crew bonding on bus rides. Also, they were able to study/ meet up in the evenings. I wouldn't move, but it was great to see that they were able to build community."
+
+"<span style = 'color:#047C90;'>**Live at San Clem**</span> if you're not planning to stay in SB after graduating."
+
+
+
+# `r fontawesome::fa("clipboard-list", fill = "#047C90", a11y = "sem")` On practical logistics
+
+<br>
+
+"<span style = 'color:#047C90;'>**Definitely upgrade your computer**</span> if it is more than 4 years old, it has made processing things much easier."
+
+"<span style = 'color:#047C90;'>**Don't TA your first quarter**</span> if you can avoid it. If you do, look for 25% time first. 50% was a little much given some of the time requirements for HW."
+
+"<span style = 'color:#047C90;'>**Meal prepping is really helpful.**</span> I felt too tired to cook when I got home many days."
+
+"<span style = 'color:#047C90;'>**It's OK if you have little to no programming experience**</span>, I did not start this program with computing experience. However, I felt like I learned so many valuable skills in such a short amount of time."
+
+# `r fontawesome::fa("star", fill = "#047C90", a11y = "sem")` And finally
+
+<br>
+
+"In the darkest of times, like when you have spent 15 hours collectively over the past week trying to choose a dataset for a project, or you are not familiar with programming in python but you are trying to wrangle spatial data and Jupyter notebook's kernel keeps crashing and your eyes are hurting from staring at a screen, <span style = 'color:#047C90;'>**remember that data is fun and interesting and you love it and that's why you're in that program!**</span> Just take a breather and get back to it. Choose data about a topic you are passionate about, even if it is more challenging, because that will inspire you to dive deeper into it than ever before. It can be hard to choose data, wrangle it, and realize it won't work for your project, but you still learned so much during that process! <span style = 'color:#047C90;'>**Use your classmates as resources because you are all in this together**</span> and they are probably struggling too and could use your help as well!"
+
+"Engage with the work early on. <span style = 'color:#047C90;'>**Embrace the struggle. It is SOOOO uncomfortable but it means you're learning new things and it will pay off.**</span> Ask for help when you need it -- ESPECIALLY from your cohort! -- re: assignments (they are so knowledgeable!), personal stuff (they are such a great support system; we are lucky)."

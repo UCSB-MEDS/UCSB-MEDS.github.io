@@ -2315,6 +2315,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .d-contents nav a {
       font-size: 16px;
+  }
+
+  /* create columns */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
   }</style>
   <style type="text/css">
   /* base style */
@@ -2513,7 +2520,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html">HOME</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-MEDS CURRICULUM
+CURRICULUM
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
@@ -2535,7 +2542,18 @@ COMMUNITY
 <a href="blog.html">COMMUNITY BLOG</a>
 </div>
 </div>
-<a href="resources.html">RESOURCES</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+STUDENT RESOURCES
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="before_arrival.html">BEFORE YOU ARRIVE</a>
+<a href="once_here.html">ONCE YOU'RE HERE</a>
+<a href="meds-contacts.html">MEDS STAFF &amp; CONTACTS</a>
+</div>
+</div>
 <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science" class="nav-image">
 <img src="img/bren_white_icon.png"/>
 </a>
@@ -2560,6 +2578,7 @@ COMMUNITY
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
+<li><a href="#orientation">Orientation</a></li>
 <li><a href="#summer">Summer</a></li>
 <li><a href="#fall">Fall</a></li>
 <li><a href="#winter">Winter</a></li>
@@ -2567,75 +2586,10 @@ COMMUNITY
 </ul>
 </nav>
 </div>
-<p>Here, we share a bit more information about what students can expect during the MEDS program.</p>
+<h1 id="orientation">Orientation</h1>
+<p>Each student should plan to attend <strong>two</strong> orientations: (1) a 1.5-day MEDS-only orientation on the Thursday and Friday before the first day of summer classes, and (2) a 3-day campus-wide UCSB orientation the week that fall quarter begins.</p>
+<p><em>More information on both the summer and fall orientations for our 2023 cohort coming soon!</em></p>
 <h1 id="summer">Summer</h1>
-<h2 id="orientation">Orientation</h2>
-<p>Each student should plan to attend a 1.5-day MEDS orientation on the Thursday and Friday before the first day of summer classes. Orientation for the MEDS Class of 2022 will be held at Bren Hall (July 29th) and NCEAS (July 30th). During orientation, incoming MEDS students will:</p>
-<ul>
-<li>Meet the MEDS staff</li>
-<li>Get set up with all necessary computer accounts, tools &amp; software</li>
-<li>Get to know your peers</li>
-<li>Become familiar with the Bren &amp; NCEAS space, + more!</li>
-</ul>
-<p><a href="https://ucsb.app.box.com/s/y1j1vvkgkvxfh8umjr3hpv0rw9kx0562">Click here</a> for a detailed orientation agenda.</p>
-<h4 id="thursday-july-29th---bren-hall">Thursday, July 29<sup>th</sup> - Bren Hall</h4>
-<table>
-<thead>
-<tr class="header">
-<th>Time (PST)</th>
-<th>Activity</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>9:00am - 9:30am</td>
-<td>Check-in &amp; Breakfast</td>
-</tr>
-<tr class="even">
-<td>9:30am - 10:00am</td>
-<td>Welcome &amp; Introductions</td>
-</tr>
-<tr class="odd">
-<td>10:00am - 11:00am</td>
-<td>Bren 101 Presentation</td>
-</tr>
-<tr class="even">
-<td>11:00am - 12:15pm</td>
-<td>Team Building Exercise</td>
-</tr>
-<tr class="odd">
-<td>2:00pm - 4:00pm</td>
-<td>Mutual Respect Workshop</td>
-</tr>
-</tbody>
-</table>
-<h4 id="friday-july-30th---nceas">Friday, July 30<sup>th</sup> - NCEAS</h4>
-<table>
-<thead>
-<tr class="header">
-<th>Time (PST)</th>
-<th>Activity</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>9:30am - 10:00am</td>
-<td>Welcome to NCEAS</td>
-</tr>
-<tr class="even">
-<td>10:00am - 10:30am</td>
-<td>NCEAS Tour</td>
-</tr>
-<tr class="odd">
-<td>10:30am - 12:00pm</td>
-<td>Computer Orientation + <a href="meds-install-guide.html">Software Installation</a></td>
-</tr>
-<tr class="even">
-<td>12:00pm - 1:00pm</td>
-<td>Lunch Mixer with NCEAS Scientists on the Terrace</td>
-</tr>
-</tbody>
-</table>
 <h2 id="summer-intensive-courses">Summer Intensive Courses</h2>
 <p>During the first 6 weeks of the MEDS program (August through mid-September), students will take 5 intensive courses:</p>
 <ul>

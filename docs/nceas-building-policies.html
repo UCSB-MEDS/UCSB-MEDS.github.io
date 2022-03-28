@@ -2315,6 +2315,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .d-contents nav a {
       font-size: 16px;
+  }
+
+  /* create columns */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
   }</style>
   <style type="text/css">
   /* base style */
@@ -2513,7 +2520,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html">HOME</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-MEDS CURRICULUM
+CURRICULUM
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
@@ -2535,7 +2542,18 @@ COMMUNITY
 <a href="blog.html">COMMUNITY BLOG</a>
 </div>
 </div>
-<a href="resources.html">RESOURCES</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+STUDENT RESOURCES
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="before_arrival.html">BEFORE YOU ARRIVE</a>
+<a href="once_here.html">ONCE YOU'RE HERE</a>
+<a href="meds-contacts.html">MEDS STAFF &amp; CONTACTS</a>
+</div>
+</div>
 <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science" class="nav-image">
 <img src="img/bren_white_icon.png"/>
 </a>
@@ -2556,6 +2574,9 @@ COMMUNITY
 
 
 <div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/nceas.png" title="The NCEAS building, located at 1021 Anacapa St. in downtown Santa Barbara." alt="The NCEAS building, located at 1021 Anacapa St. in downtown Santa Barbara." width="100%" style="display: block; margin: auto;" /></p>
+</div>
 <p>All students are subject to NCEAS’ <a href="https://live-ncea-ucsb-edu-v01.pantheonsite.io/sites/default/files/2020-02/NCEAS_Code-of-Conduct_2019.pdf">Code of Conduct</a> while at NCEAS.</p>
 <h3 id="bikes">Bikes</h3>
 <p>Do not bring your bike inside the building. All bikes must be kept outside of the building. There are a couple bike parking spots along Anacapa, and a couple in the covered parking garage at our building.</p>
@@ -2564,14 +2585,19 @@ COMMUNITY
 <p><strong>Students are only permitted to store food to be consumed that day in the fridge. No alcoholic beverages or long-term storage is allowed.</strong></p>
 <p>Each month we ask a volunteer to do a refrigerator clean out, removing food that has expired and empty forgotten containers. Please sign up to volunteer on the sheet on the fridge.</p>
 <h3 id="after-hours-access">After hours access</h3>
-<p>The NCEAS building is accessible from 7:45 am to 5:00 pm. Currently, students do not have the ability to get into the building outside of these hours and must rely on the presence of an instructor or staff member to let students in. This could change as we settle into the new space and figure out the best ways to manage student access. Your cooperation on this matter is appreciated!</p>
+<p>Students are currently able to access and use the NCEAS first floor space after hours and on weekends. Instructions on how to do so will be provided during orientation.</p>
 <h3 id="whiteboards">Whiteboards</h3>
 <p>Please erase and clean all whiteboards after use and leave markers in their designated spot.</p>
 <h3 id="pets">Pets</h3>
-<p>are not allowed. UCSB Campus does not permit dogs in buildings except for service dogs.</p>
+<p>Pets are not allowed. UCSB Campus does not permit dogs in buildings except for service dogs.</p>
 <h3 id="third-floor">Third Floor</h3>
 <p>The building’s third floor is home to many of the NCEAS staff and scientists, as well as our conference rooms and outdoor terrace. The conference rooms are not for student use. If you need private group meeting space, you can reserve the first floor room (#105).</p>
 <p>The terrace has an occupancy limit of just 49 people. This unfortunately limits the access we can provide our MEDS students to invited events only.</p>
+<h3 id="room-reservations">Room Reservations</h3>
+<p>The Sequoia Room (first floor, NCEAS #150) may be reserved via the Bren Scheduling system. Please visit <strong>booking.bren.ucsb.edu</strong> and sign in using your UCSBnetID credentials. For more information, check out this <a href="https://bren.zendesk.com/hc/en-us/articles/4407675987092-Bren-Scheduling-System-Instructions-RobinPowered-">Bren zendesk article</a>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/sequoia_room.jpg" title="The Sequoia Room, which includes a meeting table that seats 7 people, a large computer monitor, and whiteboard." alt="The Sequoia Room, which includes a meeting table that seats 7 people, a large computer monitor, and whiteboard." width="100%" style="display: block; margin: auto;" /></p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
