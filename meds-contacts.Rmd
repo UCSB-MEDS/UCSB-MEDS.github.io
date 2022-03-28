@@ -33,7 +33,7 @@ For a complete list of staff and faculty, please see the [Bren](https://bren.ucs
 #### `r fontawesome::fa("handshake", fill = "#047C90", a11y = "sem")` Career
 * [Miya Scheble](https://bren.ucsb.edu/people/miya-scheble) (*she/her*) | **MEDS Career Development Program Manager** | Bren Hall 2522  
 `r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` miya@bren.ucsb.edu  
-<span style = 'font-size:95%;'>*Miya manages the Master of Environmental Data Science (MEDS) Career Development Program. She oversees day-to-day operations and provides career development advising services within a variety of areas, including career direction support, job search strategy, networking opportunities, and document review for both MEDS and MESM students.*</span>
+<span style = 'font-size:95%;'>*Miya helps manage the Master of Environmental Data Science (MEDS) Career Development Program. She oversees day-to-day operations and provides career development advising services within a variety of areas, including career direction support, job search strategy, networking opportunities, and document review for MEDS students.*</span>
 
 #### `r fontawesome::fa("graduation-cap", fill = "#047C90", a11y = "sem")` Admissions & Student Affairs
 * [Kimberly Yom](https://bren.ucsb.edu/people/kimberly-yom) (*she/her*) | **MEDS Admissions & Student Affairs Coordinator** | Bren Hall 2512   
