@@ -103,9 +103,10 @@ fall %>%
 ## Winter Quarter
 
 ```{r, echo = FALSE}
-
+# Update 232 title cell (w/ link)
 winter[1,2] <- cell_spec("Machine Learning in Environmental Science",  "html", link = "https://bbest.github.io/eds232-ml/")
 
+# Update 411 title cell (w/ link)
 winter[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
 
 
@@ -121,8 +122,17 @@ winter %>%
 ## Spring Quarter
 
 ```{r, echo = FALSE}
+# Update 230 title cell (w/ link)
+spring[1,2] <- cell_spec("Modeling Environmental Systems", "html", link = "https://naomitague.github.io/ESM232_course/")
+
+# Update 231 title cell (w/ link)
+spring[2,2] <- cell_spec("Text and Sentiment Analysis for Environmental Problems", "html", link = "https://maro406.github.io/EDS_231-text-sentiment/")
+
+# Update 411 title cell (w/ link)
+spring[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
+
 spring %>% 
-  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor")) %>% 
+  kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
   kableExtra::kable_styling() %>% 
   kableExtra::row_spec(1:3, extra_css = "border-bottom: 1px solid gainsboro") %>% 
   scroll_box(width = "100%", height = "600px")
