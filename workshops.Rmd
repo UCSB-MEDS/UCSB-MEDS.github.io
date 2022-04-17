@@ -38,6 +38,10 @@ fall_workshops <- workshops %>%
 winter_workshops <- workshops %>% 
   filter(Quarter == "winter") %>% 
   select(-Quarter)
+
+spring_workshops <- workshops %>% 
+  filter(Quarter == "spring") %>% 
+  select(-Quarter)
 ```
 
 We are actively developing data science workshops, which are meant to supplement the MEDS curriculum and teach additional skills. Find links to our teaching materials below.
@@ -120,6 +124,28 @@ winter_workshops[3,6] <- cell_spec("link",  "html", link = "https://github.com/U
 ##############################
 
 winter_workshops %>% 
+  kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
+  kable_styling(bootstrap_options = "striped") %>% 
+  kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
+  #scroll_box(width = "100%", height = "400px") 
+```
+
+## Spring Workshops 
+
+```{r, echo = FALSE}
+##############################
+# add links
+##############################
+
+# Intro to Cloud Computing
+spring_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/cloud-computing/#1")
+spring_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/cloud-computing")
+
+##############################
+# build table 
+##############################
+
+spring_workshops %>% 
   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = "striped") %>% 
   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
