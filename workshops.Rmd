@@ -141,6 +141,10 @@ winter_workshops %>%
 spring_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/cloud-computing/#1")
 spring_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/cloud-computing")
 
+# Technical Interviews
+spring_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/technical-interviews/#1")
+spring_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/technical-interviews")
+
 ##############################
 # build table 
 ##############################
