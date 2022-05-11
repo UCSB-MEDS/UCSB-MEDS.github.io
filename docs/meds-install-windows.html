@@ -2478,7 +2478,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2575,67 +2575,124 @@ STUDENT RESOURCES
 
 <div class="d-article">
 <h4 id="install-or-update-r">1. Install or update R</h4>
-<p>To install R, visit <a href="https://cloud.r-project.org/">cloud.r-project.org</a> to download the most recent version for your operating system. You should have at least version 4.1.0 (released 2021-05-19) running when you start MEDS.</p>
+<p>To install R, visit <a
+href="https://cloud.r-project.org/">cloud.r-project.org</a> to download
+the most recent version for your operating system. You should have at
+least version 4.1.0 (released 2021-05-19) running when you start
+MEDS.</p>
 <h4 id="install-or-update-rstudio">2. Install or update RStudio</h4>
 <ul>
-<li><p>New install: To install RStudio, visit <a href="https://www.rstudio.com/products/rstudio/">rstudio.com/products/rstudio/</a>. Download the free Desktop version for your operating system. You should have at least version 1.4 (early 2021) installed to start MEDS.</p></li>
-<li><p>Update: If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.</p></li>
-<li><p>Open RStudio (logo you’ll click on shown below). <strong>If you are prompted to install Command Line Tools, do it.</strong></p></li>
+<li><p>New install: To install RStudio, visit <a
+href="https://www.rstudio.com/products/rstudio/">rstudio.com/products/rstudio/</a>.
+Download the free Desktop version for your operating system. You should
+have at least version 1.4 (early 2021) installed to start MEDS.</p></li>
+<li><p>Update: If you already have RStudio and need to update: Open
+RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’
+If you have the most recent release, it will return ‘No update
+available. You are running the most recent version of RStudio.’
+Otherwise, you should follow the instructions to install an updated
+version.</p></li>
+<li><p>Open RStudio (logo you’ll click on shown below). <strong>If you
+are prompted to install Command Line Tools, do it.</strong></p></li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/rstudio-logo.png" width="211" style="display: block; margin: auto;" /></p>
 </div>
 <h4 id="check-for-git">3. Check for git</h4>
-<p>You should already have git on your device, but let’s check for it anyway.</p>
+<p>You should already have git on your device, but let’s check for it
+anyway.</p>
 <ul>
 <li><p>Open RStudio</p></li>
 <li><p>In the Terminal, run the following command:</p>
 <p><code>where git</code></p></li>
-<li><p>If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): <code>/usr/local/bin/git</code>. If you instead get no response at all, you should download &amp; install git from here: <a href="https://git-scm.com/downloads">git-scm.com/downloads</a></p></li>
+<li><p>If after running that you get something that looks like a file
+path to git on your computer, then you have git installed. For example,
+that might return something like this (or it could differ a bit):
+<code>/usr/local/bin/git</code>. If you instead get no response at all,
+you should download &amp; install git from here: <a
+href="https://git-scm.com/downloads">git-scm.com/downloads</a></p></li>
 </ul>
 <h4 id="create-a-github-account">4. Create a GitHub account</h4>
 <ul>
-<li>If you don’t already have a GitHub account, go to github.com and create one. Here are helpful considerations for choosing a username: <a href="https://happygitwithr.com/github-acct.html">happygitwithr.com/github-acct.html</a>.</li>
+<li>If you don’t already have a GitHub account, go to github.com and
+create one. Here are helpful considerations for choosing a username: <a
+href="https://happygitwithr.com/github-acct.html">happygitwithr.com/github-acct.html</a>.</li>
 </ul>
 <h4 id="configure-git">5. Configure git</h4>
 <ul>
-<li><p>In RStudio, open the Terminal. Run the following commands (by pressing Enter after each line), replacing the username (keep the quotation marks!) and email with your username and email used for your GitHub account.</p>
-<p><code>git config --global user.name "Jane Doe"</code> <code>git config --global user.email janedoe@example.com</code></p></li>
-<li><p>Then, in the Terminal run the following, carefully checking that the name and email returned match your GitHub information:</p>
+<li><p>In RStudio, open the Terminal. Run the following commands (by
+pressing Enter after each line), replacing the username (keep the
+quotation marks!) and email with your username and email used for your
+GitHub account.</p>
+<p><code>git config --global user.name "Jane Doe"</code>
+<code>git config --global user.email janedoe@example.com</code></p></li>
+<li><p>Then, in the Terminal run the following, carefully checking that
+the name and email returned match your GitHub information:</p>
 <p><code>git config --list --global</code></p></li>
 </ul>
-<h4 id="store-your-github-personal-access-token-pat">6. Store your GitHub personal access token (PAT)</h4>
-<p><strong>First:</strong> What even is a personal access token? From GitHub’s documentation:</p>
+<h4 id="store-your-github-personal-access-token-pat">6. Store your
+GitHub personal access token (PAT)</h4>
+<p><strong>First:</strong> What even is a personal access token? From
+GitHub’s documentation:</p>
 <blockquote>
-<p>Personal access tokens (PATs) are an alternative to using passwords for authentication to GitHub when using the <a href="https://docs.github.com/en/rest/overview/other-authentication-methods#via-oauth-and-personal-access-tokens">GitHub API</a> or the <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#using-a-token-on-the-command-line">command line</a>.</p>
+<p>Personal access tokens (PATs) are an alternative to using passwords
+for authentication to GitHub when using the <a
+href="https://docs.github.com/en/rest/overview/other-authentication-methods#via-oauth-and-personal-access-tokens">GitHub
+API</a> or the <a
+href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#using-a-token-on-the-command-line">command
+line</a>.</p>
 </blockquote>
-<p>This means that in order to push your work (files, scripts, etc.) from your laptop (or any other computer) to GitHub, you’ll need to first to generate a PAT. <strong>Importantly, you’ll need to generate a PAT for each computer you wish to work from.</strong> For example, we will complete the following steps to create a PAT for your personal laptop, but you’ll also need to create a PAT if/when you choose to work on any of the Bren servers. Good news is that you can follow these same steps when you’re ready to set up additional PATs on other machines. For now, let’s get a PAT our personal laptop squared away:</p>
+<p>This means that in order to push your work (files, scripts, etc.)
+from your laptop (or any other computer) to GitHub, you’ll need to first
+to generate a PAT. <strong>Importantly, you’ll need to generate a PAT
+for each computer you wish to work from.</strong> For example, we will
+complete the following steps to create a PAT for your personal laptop,
+but you’ll also need to create a PAT if/when you choose to work on any
+of the Bren servers. Good news is that you can follow these same steps
+when you’re ready to set up additional PATs on other machines. For now,
+let’s get a PAT for our personal laptop squared away:</p>
 <ul>
-<li><p>Once you have git configured successfully, install the <code>usethis</code> package in R by running the following in the RStudio Console:</p>
+<li><p>Once you have git configured successfully, install the
+<code>usethis</code> package in R by running the following in the
+RStudio Console:</p>
 <p><code>install.packages(“usethis”)</code></p></li>
 </ul>
-<p>A lot of scary looking red text will show up while this is installing - don’t panic. If you get to the end and see something like below (with no error) it’s installed successfully.</p>
+<p>A lot of scary looking red text will show up while this is installing
+- don’t panic. If you get to the end and see something like below (with
+no error) it’s installed successfully.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/install-pkg-success.png" width="520" style="display: block; margin: auto;" /></p>
 </div>
 <ul>
 <li><p>Run the following in the RStudio Console:</p>
 <p><code>usethis::create_github_token()</code></p></li>
-<li><p>Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this:</p></li>
+<li><p>Enter your GitHub password when prompted. You’ll be taken to a
+screen that looks like this:</p></li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/new-pat.png" width="1000" style="display: block; margin: auto;" /></p>
 </div>
 <ul>
-<li><p>In the <strong>Note</strong> field, you should see some autopopulated text: <code>R:GITHUB_PAT</code>. We suggest changing this to something that signifies what machine it’s being used for. For example, if you are generating a PAT for your laptop, you might choose to rename it, <code>my_laptop</code>.</p></li>
-<li><p>Next, you’ll see a section called <strong>Select scopes</strong> with reasonable options already selected for you. Do not change anything. Just scroll down to the bottom of that page and click the green ‘Generate token’ button:</p></li>
+<li><p>In the <strong>Note</strong> field, you should see some
+autopopulated text: <code>R:GITHUB_PAT</code>. We suggest changing this
+to something that signifies what machine it’s being used for. For
+example, if you are generating a PAT for your laptop, you might choose
+to rename it, <code>my_laptop</code>.</p></li>
+<li><p>Next, you’ll see a section called <strong>Select scopes</strong>
+with reasonable options already selected for you. Do not change
+anything. Just scroll down to the bottom of that page and click the
+green ‘Generate token’ button:</p></li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/generate-token.png" width="615" style="display: block; margin: auto;" /></p>
 </div>
 <ul>
 <li><p>Copy the generated PAT to your clipboard</p></li>
-<li><p>Back in RStudio, in the console run <code>gitcreds::gitcreds_set()</code>. This will prompt you to paste the PAT you just copied from GitHub. Paste the PAT, press Enter to run. You should see something like this show up if all is well so far (you’ll have pasted your PAT where mine says “REDACTED”):</p></li>
+<li><p>Back in RStudio, in the console run
+<code>gitcreds::gitcreds_set()</code>. This will prompt you to paste the
+PAT you just copied from GitHub. Paste the PAT, press Enter to run. You
+should see something like this show up if all is well so far (you’ll
+have pasted your PAT where mine says “REDACTED”):</p></li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/gitcreds-set.png" width="489" style="display: block; margin: auto;" /></p>
@@ -2644,31 +2701,66 @@ STUDENT RESOURCES
 <li><p>In the RStudio Console, run:</p>
 <p><code>usethis::git_sitrep()</code></p></li>
 </ul>
-<p>Does it return information about your connected GitHub account that looks something like below? Great! You’ve configured git and successfully stored your PAT.</p>
+<p>Does it return information about your connected GitHub account that
+looks something like below? Great! You’ve configured git and
+successfully stored your PAT.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/git_sitrep.png" width="469" style="display: block; margin: auto;" /></p>
 </div>
-<p><strong>One last important note:</strong> Setting an expiration date on personal access tokens is highly recommended in order to keep your information secure. GitHub will send you an email when it’s time to renew a token that’s about to expire. When it does, follow the same steps above to regenerate your token.</p>
+<p><strong>One last important note:</strong> Setting an expiration date
+on personal access tokens is highly recommended in order to keep your
+information secure. GitHub will send you an email when it’s time to
+renew a token that’s about to expire. When it does, follow the same
+steps above to regenerate your token.</p>
 <h4 id="install-anaconda">7. Install Anaconda</h4>
 <ul>
-<li><a href="https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe">Click here to download 64-bit Graphical Installer</a>. This might pop open a new tab with a “redirecting you to…” phrase, but Anaconda should be downloading at the same time. It might take a couple minutes. After it’s downloaded, click it and hit Allow if you see the following:</li>
+<li><a
+href="https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe">Click
+here to download 64-bit Graphical Installer</a>. This might pop open a
+new tab with a “redirecting you to…” phrase, but Anaconda should be
+downloading at the same time. It might take a couple minutes. After it’s
+downloaded, click it and hit Allow if you see the following:</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/allow-program.png" width="264" style="display: block; margin: auto;" /></p>
 </div>
 <p>Follow the installation steps to complete Anaconda installation.</p>
-<h4 id="create-your-slack-account-and-join-meds">8. Create your Slack account and join MEDS</h4>
+<h4 id="create-your-slack-account-and-join-meds">8. Create your Slack
+account and join MEDS</h4>
 <ul>
-<li><p>Click <a href="https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw">here</a> to join our UCSB-MEDS Slack Workspace</p></li>
+<li><p>Click <a
+href="https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw">here</a>
+to join our UCSB-MEDS Slack Workspace</p></li>
 <li><p>Customize your profile with your name and photo.</p></li>
-<li><p>Join the summer course channels (#eds-212, #eds-221, #eds-214)</p></li>
-<li><p>Read through the <a href="https://ucsb-meds.github.io/meds-slack.html">Slack Resource Guide</a></p></li>
+<li><p>Join the summer course channels (#eds-212, #eds-221,
+#eds-214)</p></li>
+<li><p>Read through the <a
+href="https://ucsb-meds.github.io/meds-slack.html">Slack Resource
+Guide</a></p></li>
 </ul>
-<h4 id="access-google-apps-through-your-ucsb.edu-account">9. Access Google apps through your ucsb.edu account</h4>
-<p>Once enrolled and your UCSBnetID is activated, you will have access to your <a href="https://www.connect.ucsb.edu/usage">UCSB Connect Account</a> which provides email, calendaring, and collaboration services. <em>You must use this account (<a href="mailto:UCSBnetID@ucsb.edu" class="email">UCSBnetID@ucsb.edu</a>) to log in and access all of your Google Apps (including Google Calendar, Google Drive, etc.).</em></p>
-<p>The <a href="https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&amp;ctz=America/Los_Angeles"><strong>MEDS Google Calendar</strong></a> contains all classes and events relevant for our MEDS students. Feel free to add this to your calendar if you find it helpful. To do so, log in to <a href="https://www.google.com/calendar">Google Calendar</a> using your <span class="citation" data-cites="ucsb.edu">@ucsb.edu</span> credentials &gt; Click on the <code>+</code> next to “Other calendars” on the left-hand side of your screen and choose “Browse resources” &gt; Click the drop down arrow next to “bren” and check the box next to “bren-calendar-meds”</p>
+<h4 id="access-google-apps-through-your-ucsb.edu-account">9. Access
+Google apps through your ucsb.edu account</h4>
+<p>Once enrolled and your UCSBnetID is activated, you will have access
+to your <a href="https://www.connect.ucsb.edu/usage">UCSB Connect
+Account</a> which provides email, calendaring, and collaboration
+services. <em>You must use this account (<a
+href="mailto:UCSBnetID@ucsb.edu" class="email">UCSBnetID@ucsb.edu</a>)
+to log in and access all of your Google Apps (including Google Calendar,
+Google Drive, etc.).</em></p>
+<p>The <a
+href="https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&amp;ctz=America/Los_Angeles"><strong>MEDS
+Google Calendar</strong></a> contains all classes and events relevant
+for our MEDS students. Feel free to add this to your calendar if you
+find it helpful. To do so, log in to <a
+href="https://www.google.com/calendar">Google Calendar</a> using your
+<span class="citation" data-cites="ucsb.edu">@ucsb.edu</span>
+credentials &gt; Click on the <code>+</code> next to “Other calendars”
+on the left-hand side of your screen and choose “Browse resources” &gt;
+Click the drop down arrow next to “bren” and check the box next to
+“bren-calendar-meds”</p>
 <h3 id="end-meds-installation-guide">End MEDS Installation Guide</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
