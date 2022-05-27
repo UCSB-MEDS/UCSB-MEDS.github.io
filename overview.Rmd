@@ -66,11 +66,10 @@ Summer is a special time for our MEDS students to bond both in and outside of cl
 
 In Fall Quarter, MEDS students will complete 16 units of coursework. There are two 2-unit courses (EDS 213 and EDS 211) that only span 5 weeks, so in any week of the quarter students will be taking a total of 4 required courses.
 
--   **EDS 213:** Metadata Standards, Data Modeling and Data Semantics (2 units) - first 5 weeks
--   **EDS 211:** Team Science, Collaborative Analysis and Project Management (2 units) - second 5 weeks
 -   **EDS 220:** Working with Environmental Data (4 units)
 -   **EDS 222:** Statistics for Environmental Data Science (4 units)
 -   **EDS 223:** Geospatial Analysis & Remote Sensing (4 units)
+-   **EDS 242:** Ethics & Bias in Environmental Data Science (2 units)
 
 ## Schedule
 
@@ -106,6 +105,7 @@ For example, a week in Fall Quarter might look something like this:
 
 In Winter Quarter, students will complete 16 units of coursework, three traditional academic courses and one 4 unit capstone project course.
 
+-   **EDS 211:** Team Science, Collaborative Analysis & Project Management (2 units)
 -   **EDS 232:** Machine Learning in Environmental Science (4 units)
 -   **EDS 240:** Data Visualization and Communication (4 units)
 -   **EDS 241:** Environmental Policy Evaluation (4 units)
@@ -115,7 +115,7 @@ In Winter Quarter, students will complete 16 units of coursework, three traditio
 
 In Spring Quarter, students will complete 12 units of coursework, three traditional academic courses and one 4 unit capstone project course.
 
+-   **EDS 213:** Databases and Data Management (4 units)
 -   **EDS 230:** Modeling Environmental Systems (4 units)
 -   **EDS 231:** Text and Sentiment Analysis for Environmental Problems (2 units)
--   **EDS 242:** Ethics & Bias in Environmental Data Science (2 units)
 -   **EDS 411B:** Capstone Group Project B (4 units)
