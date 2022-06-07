@@ -76,7 +76,7 @@ summer %>%
 
 ```{r, echo = FALSE}
 # Update 220 title cell (w/ link)
-fall[1,2] <- cell_spec("Working with Environmental Data",  "html", link = "https://samanthastevenson.github.io/EDS220_site/")
+fall[1,2] <- cell_spec("Working with Environmental Datasets",  "html", link = "https://samanthastevenson.github.io/EDS220_site/")
 
 # Update 222 title cell (w/ link)
 fall[2,2] <- cell_spec("Statistics for Environmental Data Science",  "html", link = "https://tcarleton.github.io/EDS-222-stats/")
