@@ -64,7 +64,7 @@ Summer is a special time for our MEDS students to bond both in and outside of cl
 
 # Fall
 
-In Fall Quarter, MEDS students will complete 16 units of coursework. There are two 2-unit courses (EDS 213 and EDS 211) that only span 5 weeks, so in any week of the quarter students will be taking a total of 4 required courses.
+In Fall Quarter, MEDS students will complete 14 units of coursework.
 
 -   **EDS 220:** Working with Environmental Data (4 units)
 -   **EDS 222:** Statistics for Environmental Data Science (4 units)
@@ -80,27 +80,26 @@ For example, a week in Fall Quarter might look something like this:
 +-----------+------------------------------------------------------------------+------------+
 | **Day**   | Activities                                                       | **Campus** |
 +===========+==================================================================+============+
-| Monday    | -   8:00am - 9:15am: EDS 213 (weeks 1-5) or EDS 211 (weeks 6-10) | NCEAS      |
-|           |                                                                  |            |
-|           | -   9:30am - 10:45am: EDS 220                                    |            |
+| Monday    | -   9:30am - 10:45am: EDS 223                                    | NCEAS      |
 |           |                                                                  |            |
 |           | -   11:00am - 12:00pm: Livestream Bren Seminar                   |            |
+|           |                                                                  |            |
+|           | -   3:30pm - 4:45pm: EDS 242                                     |            |
 +-----------+------------------------------------------------------------------+------------+
 | Tuesday   | -   9:30am - 10:45am: EDS 222                                    | Bren Hall  |
+|           |                                                                  |            |
+|           | -   12:30pm - 1:45pm: EDS 220                                    |            |
 +-----------+------------------------------------------------------------------+------------+
-| Wednesday | -   8:00am - 9:15am: EDS 213 (weeks 1-5) or EDS 211 (weeks 6-10) | NCEAS      |
+| Wednesday | -   9:30am - 10:45am: EDS 223                                    | NCEAS      |
 |           |                                                                  |            |
-|           | -   9:30am - 10:45am: EDS 220                                    |            |
-|           |                                                                  |            |
-|           | -   11:30pm - 12:30 pm: NCEAS Roundtable                         |            |
+|           | -   12:00 - 12:45pm: NCEAS Roundtable                            |            |
 +-----------+------------------------------------------------------------------+------------+
 | Thursday  | -   8:15am - 9:15am: Career workshop                             | Bren Hall  |
 |           |                                                                  |            |
 |           | -   9:30am - 10:45am: EDS 222                                    |            |
+|           |                                                                  |            |
+|           | -   12:30pm - 1:45pm: EDS 220                                    |            |
 +-----------+------------------------------------------------------------------+------------+
-| Friday    | -   9:00am - 12:00pm: EDS 223                                    | Bren Hall  |
-+-----------+------------------------------------------------------------------+------------+
-
 # Winter
 
 In Winter Quarter, students will complete 16 units of coursework, three traditional academic courses and one 4 unit capstone project course.
