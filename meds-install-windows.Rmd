@@ -8,14 +8,22 @@ output:
 ---
 
 #### 1. Install or update R
-To install R, visit [cloud.r-project.org](https://cloud.r-project.org/) to download the most recent version for your operating system. You should have at least version 4.1.0 (released 2021-05-19) running when you start MEDS.
 
+To install R, visit [cloud.r-project.org](https://cloud.r-project.org/) to download the most recent version for your operating system. You should have *at least* version 4.1.0 (released 2021-05-19) running when you start MEDS.
 
 #### 2. Install or update RStudio
 
-- New install: To install RStudio, visit [rstudio.com/products/rstudio/](https://www.rstudio.com/products/rstudio/). Download the free Desktop version for your operating system. You should have at least version 1.4 (early 2021) installed to start MEDS. 
+While R is a programming language, RStudio is a software (often referred to as an IDE, **I**ntegrated **D**evelopment **E**nvironment) that provides R programmers with a neat, easy-to-use interface for coding in R. There are a number of IDEs out there, but RStudio is arguably the best and definitely most popular among R programmers.
 
-- Update: If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.
+**Note:** RStudio will not work without R installed, and you won't particularly enjoy using R without having RStudio installed. Be sure to install *both*!
+
+```{r, echo = FALSE, fig.align="center", fig.cap = "Image Credit: Manny Gimond | Accessible at https://mgimond.github.io/ES218/R_vs_RStudio.html"}
+knitr::include_graphics("img/install-guide-images/R_RStudio.png")
+```
+
+- **New install:** To install RStudio, visit [rstudio.com/products/rstudio/](https://www.rstudio.com/products/rstudio/). Download the free (“Open Source Edition”) Desktop version for your operating system. You should have at least [v2022.02](https://rstudio.com/products/rstudio/download/) installed to start MEDS. 
+
+- **Update:** If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.
 
 - Open RStudio (logo you'll click on shown below). **If you are prompted to install Command Line Tools, do it.**
 
@@ -23,8 +31,15 @@ To install R, visit [cloud.r-project.org](https://cloud.r-project.org/) to downl
 knitr::include_graphics("img/install-guide-images/rstudio-logo.png")
 ```
 
+#### 3. Install Quarto
 
-#### 3. Check for git
+Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more. 
+
+- Download Quarto [here](https://quarto.org/docs/get-started/) and install
+
+- To use Quarto through the RStudio IDE, be sure to have at least version v2022.02 installed (see directions in step 2, above)
+
+#### 4. Check for git
 
 You should already have git on your device, but let’s check for it anyway. 
 
@@ -36,11 +51,11 @@ You should already have git on your device, but let’s check for it anyway.
 
 - If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): `/usr/local/bin/git`. If you instead get no response at all, you should download & install git from here: [git-scm.com/downloads](https://git-scm.com/downloads)
 
-#### 4. Create a GitHub account 
+#### 5. Create a GitHub account 
 
-- If you don’t already have a GitHub account, go to github.com and create one. Here are helpful considerations for choosing a username: [happygitwithr.com/github-acct.html](https://happygitwithr.com/github-acct.html).
+- If you don’t already have a GitHub account, go to github.com and create one. Here are helpful considerations for choosing a username: [happygitwithr.com/github-acct.html](https://happygitwithr.com/github-acct.html). We suggest that you **do not** use your *@ucsb.edu email* when setting up your account, as that email will be deactivated soon after graduating. Instead, a *personal email* or your *@bren.ucsb.edu* email is best.
 
-#### 5. Configure git
+#### 6. Configure git
 
 - In RStudio, open the Terminal. Run the following commands (by pressing Enter after each line), replacing the username (keep the quotation marks!) and email with your username and email used for your GitHub account. 
 
@@ -51,7 +66,7 @@ You should already have git on your device, but let’s check for it anyway.
 
     `git config --list --global` 
 
-#### 6. Store your GitHub personal access token (PAT)
+#### 7. Store your GitHub personal access token (PAT)
 
 **First:** What even is a personal access token? From GitHub's documentation:
 
@@ -107,7 +122,7 @@ knitr::include_graphics("img/install-guide-images/git_sitrep.png")
 
 **One last important note:** Setting an expiration date on personal access tokens is highly recommended in order to keep your information secure. GitHub will send you an email when it's time to renew a token that's about to expire. When it does, follow the same steps above to regenerate your token.
 
-#### 7. Install Anaconda
+#### 8. Install Anaconda
 
 - [Click here to download 64-bit Graphical Installer](https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe). This might pop open a new tab with a “redirecting you to…” phrase, but Anaconda should be downloading at the same time. It might take a couple minutes. After it’s downloaded, click it and hit Allow if you see the following:
 
@@ -117,7 +132,17 @@ knitr::include_graphics("img/install-guide-images/allow-program.png")
 
 Follow the installation steps to complete Anaconda installation.
 
-#### 8. Create your Slack account and join MEDS 
+#### 9. Install Cyberduck
+
+Cyberduck is a program that allows you to browse files on a remote server. Download [here](https://cyberduck.io/).
+
+#### 10. Install UCSB's Pulse Secure Campus VPN (Virtual Private Network)
+
+For secure remote access to the UCSB's campus network when you're not physically present on campus, you'll need to download and install the Pulse Secure VPN client. This will allow you to access UCSB's technology resources (including servers, journal subscriptions, etc.) anytime and from anywhere.
+
+See this [Bren Zendesk article](https://www.ets.ucsb.edu/network-infrastructure-services/pulse-secure-campus-vpn) for directions on how to get started.
+
+#### 11. Create your Slack account and join MEDS 
 
 - Click [here](https://join.slack.com/t/ucsb-meds/shared_invite/zt-so8oh7xf-w41bSnbBWAiMOXKPf5j_qw) to join our UCSB-MEDS Slack Workspace
 
@@ -127,7 +152,7 @@ Follow the installation steps to complete Anaconda installation.
 
 - Read through the [Slack Resource Guide](https://ucsb-meds.github.io/meds-slack.html)
 
-#### 9. Access Google apps through your ucsb.edu account
+#### 12. Access Google apps through your ucsb.edu account
 
 Once enrolled and your UCSBnetID is activated, you will have access to your [UCSB Connect Account](https://www.connect.ucsb.edu/usage) which provides email, calendaring, and collaboration services. *You must use this account (UCSBnetID@ucsb.edu) to log in and access all of your Google Apps (including Google Calendar, Google Drive, etc.).*
   
