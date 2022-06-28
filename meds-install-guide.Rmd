@@ -13,9 +13,12 @@ output:
 
 - R
 - RStudio
+- Quarto
 - git (configured)
 - GitHub account (with PAT setup)
 - Anaconda
+- Cyberduck
+- UCSB Pulse Secure (VPN)
 - Slack
 - Google Apps (Drive, Gmail, Calendar, Docs, Sheets, Slides, etc.)
 
