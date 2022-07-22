@@ -9,7 +9,7 @@ Below are some highlights of the career support you will get to take advantage o
 ## Career workshops & various speaker events
 
 * **Develop lifelong career development skills through Career Team workshops.** You’ll learn how to navigate your search for your dream job, grow your network, refine your application documents, and gain confidence in interviewing, evaluating offers, and yes, negotiating!
-* **Build and customize your own personal professional website in R** with instruction and guidance from MEDS professor Allison Horst and Data Training Coordinator Sam Csik.
+* **Build and customize your own personal professional website in R** with instruction and guidance from MEDS lecturer Allison Horst and Data Training Coordinator Sam Csik.
 * **Hear from and connect with various speakers in the environmental and/or data science fields** during [Bren Seminars](https://bren.ucsb.edu/upcoming-events?f%5B0%5D=upcoming-event-category%3A55), [NCEAS Roundtables](https://www.nceas.ucsb.edu/roundtable), class panels, and career talks.
 
 ## Example career workshops include: 
