@@ -19,7 +19,8 @@ knitr::include_graphics("img/team_building.jpg")
 We want to see all of our students find (and land) jobs and opportunities in environmental data science that they are excited about. Learn about some of the ways we're making that happen on our [Career Services & Support page](career.html).
 
 ### Miscellaneous 
-
+  
+* [Getting to NCEAS](getting_to_nceas.html)
 * [NCEAS Building Policies](nceas-building-policies.html)
 
 
