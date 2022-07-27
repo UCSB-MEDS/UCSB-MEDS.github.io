@@ -13,7 +13,7 @@ The MEDS program requires all students to have a personal laptop to use during t
 
 If you have a Mac, be sure to update macOS to the newest supported version, as indicated by *System Preferences&rarr;Software Update*.   
 
-If you have a PC, you should have Windows 10 installed. If you don't, you can [purchase Windows 10 Education for $14.99 from UCSB](https://ucsb.onthehub.com/WebStore/OfferingDetails.aspx?o=14f7e678-4731-e511-940e-b8ca3a5db7a1). 
+If you have a PC, you should have Windows 10 installed but if you don't, you can [purchase Windows 10 Education for $14.99 from UCSB](https://ucsb.onthehub.com/WebStore/OfferingDetails.aspx?o=14f7e678-4731-e511-940e-b8ca3a5db7a1). 
 
 ### New Computers 
 

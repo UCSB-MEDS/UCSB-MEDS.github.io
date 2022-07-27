@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Each student should plan to attend **two** orientations: (1) a 1.5-day MEDS-only orientation on Thursday 7/28/2022 (at Bren) and Friday 7/29/2022 (at NCEAS) before summer classes begin on Monday 8/1/2022, and (2) a 3-day campus-wide UCSB orientation from Monday 9/19/2022 - Wednesday 9/21/2022.
 
-*For more information on the incoming MEDS student orientation, please visit the [Bren Website](https://bren.ucsb.edu/incoming-meds-student-orientation).*
+*[Click here for the full Orientation Schedule](https://docs.google.com/document/d/1YdUTVRKE25oxb7QkqBfeyjoFxA9BvU_1/edit)* For more information on the incoming MEDS student orientation, please visit the [Bren Website](https://bren.ucsb.edu/incoming-meds-student-orientation).
 
 # Summer
 
