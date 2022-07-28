@@ -21,7 +21,7 @@ While R is a programming language, RStudio is a software (often referred to as a
 knitr::include_graphics("img/install-guide-images/R_RStudio.png")
 ```
 
-- **New install:** To install RStudio, visit [rstudio.com/products/rstudio/](https://www.rstudio.com/products/rstudio/). Download the free (“Open Source Edition”) Desktop version for your operating system. You should have at least [v2022.02](https://rstudio.com/products/rstudio/download/) installed to start MEDS. 
+- **New install:** To install RStudio, visit [rstudio.com/products/rstudio/](https://www.rstudio.com/products/rstudio/). Download the free (“Open Source Edition”) Desktop version for your operating system. You should have at least v2022.02 installed to start MEDS (but we recommend installing the most up-to-date version available!).
 
 - **Update:** If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.
 
@@ -36,13 +36,13 @@ knitr::include_graphics("img/install-guide-images/rstudio-logo.png")
   - To install command line tools (if you’re not automatically prompted), run in the Terminal tab in RStudio: `xcode-select --install` 
   - Visit [xquartz.org](https://www.xquartz.org/) to download & install XQuartz
 
-#### 3. Install Quarto
+#### 3. Install Quarto (*if necessary - update as of 07/28/2022)
 
-Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more. 
+Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more.  
 
-- Download Quarto [here](https://quarto.org/docs/get-started/) and install
+*Quarto is now included with RStudio v2022.07.1+ so no need for a separate download/install if you have the latest version of RStudio!  
 
-- To use Quarto through the RStudio IDE, be sure to have at least version v2022.02 installed (see directions in step 2, above)
+Quarto will work with RStudio v2022.02+, but you’ll need to install Quarto separately [here](https://quarto.org/docs/get-started/) (we recommend just installing the most up to date version of RStudio).
 
 #### 4. Check for git
 
