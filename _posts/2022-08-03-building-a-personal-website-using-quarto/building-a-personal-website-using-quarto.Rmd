@@ -1,0 +1,45 @@
+---
+title: "Building a personal website using Quarto"
+description: |
+  Only 5 days of programming experience? No problem! Quarto makes building and customizing websites fun and easy for new R (and other programming language) learners.
+author: 
+  - name: Samantha Csik
+    url: https://samanthacsik.github.io/
+    affiliation: National Center for Ecological Analysis and Synthesis
+    affiliation_url: https://www.nceas.ucsb.edu/
+date: 2022-08-05
+draft: true
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Hi! My name is [Sam Csik](https://samanthacsik.github.io/), and I'm the Data Training Coordinator at the National Center for Ecological Analysis and Synthesis (NCEAS). I have the awesome job of developing and teaching data science workshops to supplement MEDS curricula -- which means I get to spend lots of my time learning new tools and skills and sharing them with our students (IMHO, it's pretty much the data science dream job `r fontawesome::fa("star", fill = "#64605F", a11y = "sem")`).
+
+We welcomed our second cohort of 31 MEDS students to NCEAS just one week ago! They spent much of their first few days not only reviewing a whole lot of math, but also started learning how to navigate the RStudio IDE, were introduced to using git/GitHub for version control, began a bit of function writing, data exploration, and data visualization, and created their first reproducible reports using RMarkdown (so a pretty jam-packed week to start off our year!).
+
+As we neared the end of this first week, Dr. Allison Horst introduced the class to [Quarto](www.quarto.org), a scientific publishing tool that feels and looks a whole lot like RMarkdown -- something that allows users to combine prose, code, and outputs into a single rendered (and importantly, reproducible) document. These can be standalone documents, or users can combine multiple documents to form books, websites, slides and more.
+
+```{r echo = FALSE, fig.alt = "One penguin standing on another penguin's shoulders in a snowscape, looking through a telescope at a Quarto logo 'moon' in the night sky.", fig.cap = "Art by [Allison Horst](https://github.com/allisonhorst/stats-illustrations): One penguin standing on another penguin's shoulders in a snowscape, looking through a telescope at a Quarto logo 'moon' in the night sky."}
+knitr::include_graphics("penguins_telescope_2.png")
+```
+
+We closed out week 1 learning how to use Quarto to build personal websites. While a large part of the MEDS program is focused on learning data science tools and workflows, an equally important part is professional development. Personal websites are just one way to grow your professional online presence -- they can be a creative, informative, and fun outlet for data scientists to showcase their skills and interests in one place, as well as a platform to help connect with colleagues, community members, and potential employers.
+
+If you're interested in building your own personal website, check out our [tutorial](https://ucsb-meds.github.io/creating-quarto-websites/), explore MEDS student websites [here](https://ucsb-meds.github.io/student_websites.html) for inspiration, and stay tuned for more workshops on website customization!
+
+```{r}
+#| echo: false
+knitr::include_url("https://ucsb-meds.github.io/creating-quarto-websites/")
+```
+
+
+
+
+
+
