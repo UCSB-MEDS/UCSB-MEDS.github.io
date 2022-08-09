@@ -1,180 +1,220 @@
 ---
-title: "Past MEDS Workshops"
-author: "sam"
-date: "2022-08-09"
-output: html_document
+title: "Past Workshop Materials"
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Past Workshops
-
-Workshops from past years, which are likely to be updated soon!
+Workshops from past years, which are likely to be updated soon! For workshops held during this current academic year, check out our [Workshops page](workshops.html).
 
 ---
 
-`r fontawesome::fa("css3-alt", fill = "#003660", a11y = "sem")` **Customizing Your Personal Website with CSS (and some other stuff)** | August 31, 2021 | ~1 hour
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+August 31, 2021
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("css3-alt", fill = "#333333", a11y = "sem")` **Customizing Your Personal Website with CSS (and some other stuff)**</span>
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/customizing-websites-css/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/customizing-websites-css)</span> 
 
-<span style = 'font-size:95%; color:#959599;'>*A brief introduction to using CSS to customize {distill} websites. Topics include (a) an intro to HTML & CSS, (b) changing default element styling (fonts, colors, sizes), (c) creating custom CSS rules, (d) finding inspiration from other distill websites & adapting their open source code, (d) adding a CV to your personal site.*</span>
+<span style = 'font-size:95%; color:#959599;'>*A brief introduction to using CSS to customize {distill} websites. Topics include (a) an intro to HTML & CSS, (b) changing default element styling (fonts, colors, sizes), (c) creating custom CSS rules, (d) finding inspiration from other distill websites & adapting their open source code, (d) adding a CV to your personal site. [Approx Duration: 1.5 hours]*</span>
+
+:::
+
+::::
 
 ---
 
-`r fontawesome::fa("blog", fill = "#003660", a11y = "sem")` **Writing data science-related blog posts for your personal website** | September 29, 2021 | ~1 hour
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+September 29, 2021
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("blog", fill = "#333333", a11y = "sem")` **Writing data science-related blog posts for your personal website**</span>
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("blog", fill = "#64605F", a11y = "sem")` blog post](https://samanthacsik.github.io/posts/2021-09-21-my-first-test-post/)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/writing-blogposts)</span> 
 
-<span style = 'font-size:95%; color:#959599;'>*Take your blog posts further with some additional training on post customization! You may be asked to create blog posts as part of your course assignments, so this workshop is designed to give you some more tools in writing good blog posts.*</span>
+<span style = 'font-size:95%; color:#959599;'>*Take your blog posts further with some additional training on post customization! You may be asked to create blog posts as part of your course assignments, so this workshop is designed to give you some more tools in writing good blog posts. [Approx. Duration: 1 hour]*</span>
+
+:::
+
+::::
 
 ---
 
-`r fontawesome::fa("google", fill = "#003660", a11y = "sem")` **Teach Me How to Google** | October 11, 2021 | ~1 hour
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+October 11, 2021
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("google", fill = "#333333", a11y = "sem")` **Teach Me How to Google**</span>
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/teach-me-how-to-google/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/teach-me-how-to-google)</span> 
 
-<span style = 'font-size:95%; color:#959599;'>*Googling for code help is something that all data scientists (at all career stages) do. But figuring out how to get the information you need back can be incredibly challenging, particularly for new coders. In this workshop, we’ll discuss strategies for refining your queries to increase your chances of finding informative solutions.*</span>
+<span style = 'font-size:95%; color:#959599;'>*Googling for code help is something that all data scientists (at all career stages) do. But figuring out how to get the information you need back can be incredibly challenging, particularly for new coders. In this workshop, we’ll discuss strategies for refining your queries to increase your chances of finding informative solutions. [Approx. Duration: 1 hour]*</span>
+
+:::
+
+::::
 
 ---
 
-`r fontawesome::fa("google", fill = "#003660", a11y = "sem")` **RStudio Tips & Tricks (and other keyboard shortcuts to make you a more efficient coder)** | November 15, 2021 | ~1 hour
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+November 15, 2021
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("keyboard", fill = "#333333", a11y = "sem")` **RStudio Tips & Tricks (and other keyboard shortcuts to make you a more efficient coder)**</span>
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/R-tips-and-tricks/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/R-tips-and-tricks)</span> 
 
-<span style = 'font-size:95%; color:#959599;'>*As environmental data scientists, we spend a lot of time in RStudio. Taking some time to learn how you can customize your RStudio IDE (Integrated Development Environment) and the keyboard shortcuts used to navigate around that IDE can make you a more efficient (and happier) hacker!*</span>
+<span style = 'font-size:95%; color:#959599;'>*As environmental data scientists, we spend a lot of time in RStudio. Taking some time to learn how you can customize your RStudio IDE (Integrated Development Environment) and the keyboard shortcuts used to navigate around that IDE can make you a more efficient (and happier) hacker! [Approx. Duration: 1 hour]*</span>
+
+:::
+
+::::
 
 ---
 
-`r fontawesome::fa("google", fill = "#003660", a11y = "sem")` **Programming with Python & Intro to Webscraping** | January 4, 2022 | ~8 hour
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+January 4, 2022
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("python", fill = "#333333", a11y = "sem")` **Programming with Python & Intro to Webscraping**</span>
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsbcarpentry.github.io/2022-01-04-ucsb-python/)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSBCarpentry/2022-01-04-ucsb-python)</span> 
 
-<span style = 'font-size:95%; color:#959599;'>*This workshop, presented by Data Carpentries instructors, Greg Janée and Amanda Ho, provides an introduction to programming with Python and covers data wrangling with Pandas, writing loops and functions, data visualization with plotnine, and webscraping with Pandas.*</span>
+<span style = 'font-size:95%; color:#959599;'>*This workshop, presented by Data Carpentries instructors, Greg Janée and Amanda Ho, provides an introduction to programming with Python and covers data wrangling with Pandas, writing loops and functions, data visualization with `plotnine`, and webscraping with Pandas. [Approx. Duration: 8 hours]*</span>
+
+:::
+
+::::
+
+---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+February 4, 2022
+
+:::
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("server", fill = "#333333", a11y = "sem")` **Relational databases and SQL**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsbcarpentry.github.io/2022-02-04-ucsb-sql-online/)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSBCarpentry/2022-02-04-ucsb-sql-online)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*This workshop, presented by Data Carpentries instructors, Greg Janée and Amanda Ho, is an example-driven workshop covering the basics of SQL for data management. Short tutorials alternate with hands-on practical exercises, and participants are encouraged both to help one another, and to try applying what they have learned to their own work. This workshop will also instruct on how to access a database from R. [Approx. Duration: 3 hours]*</span>
+
+:::
+
+::::
+
+---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+February 18, 2022
+
+:::
 
 
+::: {}
 
-```{r icon-links, eval=TRUE, echo=FALSE}
-# distilltools::icon_link(
-#     icon = "fas fa-tv",
-#     text = "slides",
-#     url = "https://ucsb-meds.github.io/cloud-computing/#1")
-# 
-# 
-# distilltools::icon_link(
-#   icon = "fas fa-github",
-#   text = "source code",
-#   url = "https://github.com/UCSB-MEDS/cloud-computing")
-```
+<span style = 'font-size:110%;'>`r fontawesome::fa("star", fill = "#333333", a11y = "sem")` **Intro to Shiny**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/shiny-workshop/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/shiny-workshop)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*Ever take a look at that beautiful data visualization you’ve worked so hard on and think, “How awesome would it be if my audience could interact with my data??” If so, building a shiny app might be just what you’re looking for. `{shiny}` allows you to build interactive web pages and dashboards from R. In this workshop, we’ll learn how to transform your data into reactive outputs that you can share via a web browser. [Approx. Duration: 4 hours]*</span>
+
+:::
+
+::::
+
+---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+April 18, 2022
+
+:::
 
 
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("cloud", fill = "#333333", a11y = "sem")` **An Intro to Cloud Computing for Data Science**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/cloud-computing/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/cloud-computing)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*“The Cloud” is a buzzword we often hear, but maybe don’t quite understand. In this workshop, we’ll learn a bit about what cloud computing means and can look like, how to launch a virtual machine (i.e. an instance) using Amazon Web Services (AWS), and how we can leverage more powerful computers (e.g. the cloud) to run computationally-intensive processes in less time. [Approx. Duration: 1 hour]*</span>
+
+:::
+
+::::
+
+---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+May 9, 2022
+
+:::
 
 
-```{r, echo = FALSE}
-# Summer
+::: {}
 
-# ##############################
-# # add links
-# ##############################
-# 
-# # CSS
-# summer_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/customizing-websites-css/#1")
-# summer_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/customizing-websites-css")
-# 
-# ##############################
-# # build table 
-# ##############################
-# 
-# summer_workshops %>% 
-#   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
-#   kable_styling(bootstrap_options = "striped") %>% 
-#   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
-#   #scroll_box(width = "100%", height = "400px") 
-```
+<span style = 'font-size:110%;'>`r fontawesome::fa("laptop-code", fill = "#333333", a11y = "sem")` **Demystifying the Technical Interview**</span>
 
-```{r, echo = FALSE}
-## Fall Workshops 
+<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/technical-interviews/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/technical-interviews)</span> 
 
-# ##############################
-# # add links
-# ##############################\
-# 
-# # Blog
-# fall_workshops[1,5] <- cell_spec("link",  "html", link = "https://samanthacsik.github.io/posts/2021-09-21-my-first-test-post/")
-# fall_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/writing-blogposts")
-# 
-# # Google
-# fall_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/teach-me-how-to-google/#1")
-# fall_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/teach-me-how-to-google")
-# 
-# # RStudio Tips & Tricks
-# fall_workshops[3,5] <- cell_spec("link", "html", link = "https://ucsb-meds.github.io/R-tips-and-tricks/#1")
-# fall_workshops[3,6] <- cell_spec("link", "html", link = "https://github.com/UCSB-MEDS/R-tips-and-tricks")
-# 
-# ##############################
-# # build table 
-# ##############################
-# 
-# fall_workshops %>% 
-#   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
-#   kable_styling(bootstrap_options = "striped") %>% 
-#   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
-#   #scroll_box(width = "100%", height = "400px") 
-```
+<span style = 'font-size:95%; color:#959599;'>*Technical interviews can be intimidating, but you’ve been training for this moment! We’ll first spend some time sharing personal experiences answering technical interview questions, giving presentations, and tackling coding challenges. Afterwards, we’ll practice reasoning and problem solving out loud using fun mock interview questions. [Approx. Duration: 1 hour]*</span>
 
-```{r, echo = FALSE}
-## Winter Workshops
+:::
 
-# ##############################
-# # add links
-# ##############################
-# 
-# # Python (by Data Carpentries)
-# winter_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsbcarpentry.github.io/2022-01-04-ucsb-python/")
-# winter_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSBCarpentry/2022-01-04-ucsb-python")
-# 
-# # SQL (by Data Carpentries)
-# winter_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsbcarpentry.github.io/2022-02-04-ucsb-sql-online/")
-# winter_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSBCarpentry/2022-02-04-ucsb-sql-online")
-# 
-# # Intro to Shiny
-# winter_workshops[3,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/shiny-workshop/#1")
-# winter_workshops[3,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/shiny-workshop")
-# 
-# ##############################
-# # build table 
-# ##############################
-# 
-# winter_workshops %>% 
-#   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
-#   kable_styling(bootstrap_options = "striped") %>% 
-#   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
-#   #scroll_box(width = "100%", height = "400px") 
-```
+::::
 
-```{r, echo = FALSE}
-## Spring Workshops
 
-# ##############################
-# # add links
-# ##############################
-# 
-# # Intro to Cloud Computing
-# spring_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/cloud-computing/#1")
-# spring_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/cloud-computing")
-# 
-# # Technical Interviews
-# spring_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/technical-interviews/#1")
-# spring_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/technical-interviews")
-# 
-# ##############################
-# # build table 
-# ##############################
-# 
-# spring_workshops %>% 
-#   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
-#   kable_styling(bootstrap_options = "striped") %>% 
-#   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
-#   #scroll_box(width = "100%", height = "400px") 
-```
