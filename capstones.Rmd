@@ -4,28 +4,28 @@ title: "MEDS Capstone Projects"
 
 The MEDS program ends with a group Capstone project where students work in teams of 3-4 to design, develop and share a deliverable that helps a client to gain insights, answer questions, and/or create communication materials using environmental data. The goal of the MEDS Capstone is to help students build real-world data science and professional skills while working with a client to complete a project using environmental data. 
 
-The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/request-proposals-meds) oens in the Spring for the following year. For more information about Capstone projects please visit the Bren School [MEDS Capstone Projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects).
+The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/request-proposals-meds) opens in the Spring for the following year. For more information about Capstone projects please visit the Bren School [MEDS Capstone Projects](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects).
 
 ## Timeline
 
-|Summer 2021        | Activity                |
+|Summer 2022        | Activity                |
 |-------------------|-------------------------|
-| August 9          | [Capstone project kickoff](https://docs.google.com/presentation/d/e/2PACX-1vR-gEjOhtKUQy3_QjzrwXMm_5m-XZ32XshM700BIF2GWUwtNm4TabxmEpcdJv73WShIV8gQDMjnC3A9/pub?start=false&loop=false&delayms=3000)  |
-| August 26         | [Writing a capstone project proposal](https://docs.google.com/presentation/d/e/2PACX-1vSHw6u3DZ0okI3GD4NBsoeFRkqA5MhHI9rY3cEc9CnG2Y-6MAUq-KppcPBFkTbc1Aq2rkfLYMm-Ss07/pub?start=false&loop=false&delayms=3000&slide=id.ge6b7f452cd_0_6982) |
+| August 11          | [Capstone project kickoff](https://docs.google.com/presentation/d/1LZCSsSWMCEL2dKqM2RzIjGJWAxC18S6jSpXQGyTDL9Q/edit#slide=id.ge6b7f452cd_0_6982)  |
+| August 19         | Writing a capstone project proposal |
 | Week 5            | Student nominations for capstone committee  |
 | Week 6            | Student elections for capstone committee  |
 | **Fall 2021**
-| October 15        | Proposals Due           |
-| November 17       | Capstone Project Reveal & voting begins |
-| December 1        | Capstone project assignments announced |
+| October 14        | Proposals Due           |
+| November 16       | Capstone Project Reveal & voting begins |
+| Week 10(ish)      | Capstone project assignments announced |
 | **Winter 2022**
-| February 11       | Draft Design & Implementation plan due   |
-| March 2           | Design Plan Presentation |
-| March 11          | Final Design & Implementation plan due |
+| February 17       | Draft Design & Implementation plan due   |
+| March 8           | Design Plan Presentation |
+| March 17          | Final Design & Implementation plan due |
 | **Spring 2022**
-| April 29          | Draft technical documentation & repository due |
-| May 26            | Final Presentations |
-| June 3            | Final project materials due |
+| May 5             | Draft technical documentation & repository due |
+| June 2            | Final Presentations |
+| June 9            | Final project materials due |
 
 
 ## Resources

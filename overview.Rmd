@@ -78,7 +78,7 @@ In Fall, Winter and Spring quarters, MEDS courses will be held at both the Bren 
 For example, a week in Fall Quarter might look something like this:
 
 +-----------+------------------------------------------------------------------+------------+
-| **Day**   | Activities                                                       | **Campus** |
+| **Day**   | Activities                                                       | **Location** |
 +===========+==================================================================+============+
 | Monday    | -   9:30am - 10:45am: EDS 223                                    | NCEAS      |
 |           |                                                                  |            |
