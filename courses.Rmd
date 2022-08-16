@@ -57,6 +57,9 @@ summer[2,2] <- cell_spec("Scientific Programming Essentials",  "html", link = "h
 # Update 212 title cell (w/ link)
 summer[3,2] <- cell_spec("Analytical Workflows and Scientific Reproducibility",  "html", link = "https://brunj7.github.io/EDS-214-analytical-workflows/")
 
+# Update 217 title cell (w/ link)
+summer[4,2] <- cell_spec("Python for Environmental Data Science",  "html", link = "https://github.com/environmental-data-science/eds-217")
+
 # NO LONGER IN SUMMER FOR 2022
 # summer[4,2] <- cell_spec("Introduction to Data Storage and Management",  "html", link = "https://jamesfrew.github.io/EDS_215_data_management/")
 # summer[5,2] <- cell_spec("Meta-analysis and Systematic Reviews",  "html", link = "https://ucsbhydro.github.io/EDS_216_meta-analysis/")
