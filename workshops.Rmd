@@ -35,6 +35,29 @@ August 5, 2022
 
 ---
 
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+August 18, 2022
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("google", fill = "#333333", a11y = "sem")` **Teach Me How to Google**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/teach-me-how-to-google/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/teach-me-how-to-google)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*Googling for code help is something that all data scientists (at all career stages) do. But figuring out how to get the information you need back can be incredibly challenging, particularly for new coders. In this workshop, we’ll discuss strategies for refining your queries to increase your chances of finding informative solutions. [Approx. Duration: 1.5 hours]*</span>
+
+:::
+
+::::
+
+---
+
 <h2 align="center">[Find past workshop materials here!](past_workshops.html)</h2>
 
 
