@@ -60,10 +60,6 @@ summer[3,2] <- cell_spec("Analytical Workflows and Scientific Reproducibility", 
 # Update 217 title cell (w/ link)
 summer[4,2] <- cell_spec("Python for Environmental Data Science",  "html", link = "https://github.com/environmental-data-science/eds-217")
 
-# NO LONGER IN SUMMER FOR 2022
-# summer[4,2] <- cell_spec("Introduction to Data Storage and Management",  "html", link = "https://jamesfrew.github.io/EDS_215_data_management/")
-# summer[5,2] <- cell_spec("Meta-analysis and Systematic Reviews",  "html", link = "https://ucsbhydro.github.io/EDS_216_meta-analysis/")
-
 summer %>%
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>%
   kable_styling(bootstrap_options = "striped") %>%
@@ -85,11 +81,7 @@ fall[1,2] <- cell_spec("Working with Environmental Datasets",  "html", link = "h
 fall[2,2] <- cell_spec("Statistics for Environmental Data Science",  "html", link = "https://tcarleton.github.io/EDS-222-stats/")
 
 # Update 223 title cell (w/ link) - REMOVED LINK FOR NOW (5/27/2022) BC RUTH TAKING OVER
-# fall[3,2] <- cell_spec("Geospatial Analysis & Remote Sensing",  "html", link = "https://jamesfrew.github.io/EDS_223_spatial_analysis/")
-
-# NO LONGER IN FALL 2022
-# Update 213 title cell (w/ link)
-# fall[1,2] <- cell_spec("Metadata Standards, Data Modeling and Data Semantics",  "html", link = "https://brunj7.github.io/EDS-213-metadata/")
+ fall[3,2] <- cell_spec("Geospatial Analysis & Remote Sensing",  "html", link = "https://ryoliver.github.io/EDS_223_spatial_analysis/")
 
 
 fall %>% 
