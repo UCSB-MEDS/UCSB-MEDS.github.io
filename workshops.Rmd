@@ -58,6 +58,31 @@ August 18, 2022
 
 ---
 
+---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+November 15, 2021
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("keyboard", fill = "#333333", a11y = "sem")` **IDE Tips & Tricks (and other keyboard shortcuts to make you a more efficient programmer)**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/IDE-tips-and-tricks/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/IDE-tips-and-tricks)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*As environmental data scientists, we spend a lot of time writing code in different IDEs (**I**ntegrated **D**evelopment **E**nvironments), like RStudio, VS Code, and Jupyter Notebooks via Anaconda Navigator. Taking some time to learn keyboard shortcuts (and customization tips) can make you a more efficient (and happier) hacker! [Approx. Duration: 1 hour]*</span>
+
+:::
+
+::::
+
+---
+
 <h2 align="center">[Find past workshop materials here!](past_workshops.html)</h2>
 
 

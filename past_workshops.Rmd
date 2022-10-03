@@ -62,29 +62,6 @@ September 29, 2021
 
 ::: {}
 
-November 15, 2021
-
-:::
-
-
-::: {}
-
-<span style = 'font-size:110%;'>`r fontawesome::fa("keyboard", fill = "#333333", a11y = "sem")` **RStudio Tips & Tricks (and other keyboard shortcuts to make you a more efficient coder)**</span>
-
-<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/R-tips-and-tricks/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/R-tips-and-tricks)</span> 
-
-<span style = 'font-size:95%; color:#959599;'>*As environmental data scientists, we spend a lot of time in RStudio. Taking some time to learn how you can customize your RStudio IDE (Integrated Development Environment) and the keyboard shortcuts used to navigate around that IDE can make you a more efficient (and happier) hacker! [Approx. Duration: 1 hour]*</span>
-
-:::
-
-::::
-
----
-
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
-
-::: {}
-
 January 4, 2022
 
 :::
