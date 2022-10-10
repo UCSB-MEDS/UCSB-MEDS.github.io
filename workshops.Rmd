@@ -58,13 +58,11 @@ August 18, 2022
 
 ---
 
----
-
 :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
 
 ::: {}
 
-November 15, 2021
+October 3, 2022
 
 :::
 
@@ -76,6 +74,29 @@ November 15, 2021
 <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/IDE-tips-and-tricks/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/IDE-tips-and-tricks)</span> 
 
 <span style = 'font-size:95%; color:#959599;'>*As environmental data scientists, we spend a lot of time writing code in different IDEs (**I**ntegrated **D**evelopment **E**nvironments), like RStudio, VS Code, and Jupyter Notebooks via Anaconda Navigator. Taking some time to learn keyboard shortcuts (and customization tips) can make you a more efficient (and happier) hacker! [Approx. Duration: 1 hour]*</span>
+
+:::
+
+::::
+
+---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+October 10, 2022
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("sass", fill = "#333333", a11y = "sem")``r fontawesome::fa("css3-alt", fill = "#333333", a11y = "sem")` **Customizing Quarto Websites: Make your website stand out using Sass & CSS**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/customizing-quarto-websites)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*Quarto provides a user-friendly framework for creating your personal website -- but adding your own creative touch can help make yours stand out from the rest. In this workshop, we learn how to (a) add a template to our landing page and update the `_quarto.yml` file to quickly add fun features/update the overall layout of our website, (b) create a stylesheet and define Sass variables to start modifying the overall theme (colors, fonts, etc) of our site, and (c) define CSS rules to make fine-tuned adjustments to our site's appearance. [Approx. Duration: 2 hours]*</span>
 
 :::
 
