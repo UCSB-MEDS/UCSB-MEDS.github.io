@@ -1,5 +1,5 @@
 ---
-title: "UCSB Master's of Environmental Data Science (MEDS)"
+title: "UCSB Master of Environmental Data Science (MEDS)"
 description: |
   This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science).
 site: distill::distill_website
@@ -15,7 +15,7 @@ knitr::include_graphics("img/meds-site-quote.png")
 <p style="color:gray; font-size: 15px; style: italic;"><i>Text: <a href="https://www.nceas.ucsb.edu/news/next-generation-environmental-scientists-are-data-scientists">The Next Generation of Environmental Scientists are Data Scientists</a>, NCEAS post by Jenny Seifert and Kathryn Meyer (June 2018). Background photo: aerial image of ocean and shoreline, by <a href="https://unsplash.com/@sotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shifaaz shamoon</a> on <a href="https://unsplash.com/s/photos/ocean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i></p>
 
 
-The Master's of Environmental Data Science (MEDS) is a professional degree program at UC Santa Barbara, administered by the [Bren School of Environmental Science & Management](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) in partnership with the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/). The 11-month program is designed to train environmental professionals in data science skills. Coursework includes scientific programming, machine learning, remote sensing, spatial analysis, data visualization and much more. The program ends with a 6-month group Capstone project. These projects are proposed by clients with a need for data science solutions to solve their environmental problems or answer environmentally-related questions. Students work in groups of 3-4 during the Winter and Spring quarter and present final results at the end of the year. 
+The Master of Environmental Data Science (MEDS) is a professional degree program at UC Santa Barbara, administered by the [Bren School of Environmental Science & Management](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) in partnership with the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/). The 11-month program is designed to train environmental professionals in data science skills. Coursework includes scientific programming, machine learning, remote sensing, spatial analysis, data visualization and much more. The program ends with a 6-month group Capstone project. These projects are proposed by clients with a need for data science solutions to solve their environmental problems or answer environmentally-related questions. Students work in groups of 3-4 during the Winter and Spring quarter and present final results at the end of the year. 
 
 ### In the MEDS program, students build skills to:
 
