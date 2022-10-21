@@ -1,0 +1,29 @@
+---
+title: "Alumni Websites"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### MEDS Class of 2022
+
+```{r, echo = FALSE, out.width = "80%", out.height = "80%", fig.align = 'left'}
+knitr::include_graphics("img/cohort_2022.jpg")
+```
+
+- [Clarissa Boyajian](https://cboyajian.github.io/)
+- [Paloma Cartwright](https://palomacartwright.github.io/)
+- [Juliet Cohen](https://julietcohen.github.io/)
+- [Felicia Cruz](https://fmcruz23.github.io/)
+- [Joe DeCesaro](https://joedecesaro.github.io/)
+- [Halina Do-Linh](https://hdolinh.github.io/)
+- [Jake Eisaguirre](https://jake-eisaguirre.github.io/)
+- [Mia Forsline](https://miaforsline.github.io/)
+- [Wylie Hampson](https://wyliehampson.github.io/)
+- [Scout Leonard](https://scoutcleonard.github.io/)
+- [Peter Menzies](https://petermenzies.github.io/)
+- [Cullen Molitor](https://cullen-molitor.github.io/)
+- [Julia Parish](https://juliaparish.github.io/)
+- [Marie Rivers](https://marierivers.github.io/)
+

@@ -8,26 +8,29 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Students learn how to build their own personal websites during summer session using the [`{distill}` package](https://rstudio.github.io/distill/), by RStudio. They have been customizing and growing their online profiles ever since. Learn a bit more about who they are and what they've been up to by exploring their websites, below!
+Students learn how to build their own personal websites during their very first week of summer session and continue the process of customizing and adding content throughout the year. Take a peek at their Quarto sites, below, and remember to check back throughout the year to see how they evolve!
 
-### MEDS Class of 2022
+### MEDS Class of 2023
 
 ```{r, echo = FALSE, out.width = "80%", out.height = "80%", fig.align = 'left'}
-knitr::include_graphics("img/cohort_2022.jpg")
+knitr::include_graphics("img/cohort_2023.jpg")
 ```
 
-- [Clarissa Boyajian](https://cboyajian.github.io/)
-- [Paloma Cartwright](https://palomacartwright.github.io/)
-- [Juliet Cohen](https://julietcohen.github.io/)
-- [Felicia Cruz](https://fmcruz23.github.io/)
-- [Joe DeCesaro](https://joedecesaro.github.io/)
-- [Halina Do-Linh](https://hdolinh.github.io/)
-- [Jake Eisaguirre](https://jake-eisaguirre.github.io/)
-- [Mia Forsline](https://miaforsline.github.io/)
-- [Wylie Hampson](https://wyliehampson.github.io/)
-- [Scout Leonard](https://scoutcleonard.github.io/)
-- [Peter Menzies](https://petermenzies.github.io/)
-- [Cullen Molitor](https://cullen-molitor.github.io/)
-- [Julia Parish](https://juliaparish.github.io/)
-- [Marie Rivers](https://marierivers.github.io/)
+<br>
 
+- [Andrew Bartnik](https://andrewbartnik.github.io/andrew_bartnik/)
+- [Guillermo Romero](https://romero61.github.io/)
+
+---
+
+### Interested in building your own Quarto website?
+ 
+Here are a few resources to get you started:
+
+`r fontawesome::fa("window-maximize", fill = "#047C90", a11y = "sem")` [Creating your personal website using Quarto](https://ucsb-meds.github.io/creating-quarto-websites/)
+
+`r fontawesome::fa("palette", fill = "#047C90", a11y = "sem")` [Customizing Quarto Websites: Make your website stand out using Sass & CSS](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide)
+
+---
+
+<h2 align="center">[Explore MEDS alumni websites here!](alumni_websites.html)</h2>
