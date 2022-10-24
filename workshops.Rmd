@@ -104,6 +104,29 @@ October 10, 2022
 
 ---
 
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+October 10, 2022
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("blog", fill = "#333333", a11y = "sem")` **Data Science Blogs: How to start one, and what to write about**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("blog", fill = "#64605F", a11y = "sem")` blog post](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/samanthacsik/samanthacsik.github.io/blob/main/posts/2022-10-24-quarto-blogs/index.qmd)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*Blogging about your data science adventures has **a lot** of benefits -- it can help you to build your online profile/portfolio, practice your writing and communication skills, stay atop data science trends, solicit feedback from the community, network, learn new skills and/or solidify understanding, combat imposter syndrome, etc. In this workshop, we'll learn how to add a blog to our Quarto website, customize posts, and (hopefully) get inspired to begin our blogging journeys! [Approx. Duration: 2 hours]*</span>
+
+:::
+
+::::
+
+---
+
 <h2 align="center">[Find past workshop materials here!](past_workshops.html)</h2>
 
 
