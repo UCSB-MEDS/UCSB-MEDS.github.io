@@ -31,6 +31,8 @@ Here are a few resources to get you started:
 
 `r fontawesome::fa("palette", fill = "#047C90", a11y = "sem")` [Customizing Quarto Websites: Make your website stand out using Sass & CSS](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide)
 
+`r fontawesome::fa("blog", fill = "#047C90", a11y = "sem")` [Adding a blog to your existing Quarto website](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/)
+
 ---
 
 <h2 align="center">[Explore MEDS alumni websites here!](alumni_websites.html)</h2>
