@@ -19,6 +19,7 @@ knitr::include_graphics("img/cohort_2023.jpg")
 <br>
 
 - [Andrew Bartnik](https://andrewbartnik.github.io/andrew_bartnik/)
+- [Meagan Brown](https://meaganbrown.github.io/)
 - [Guillermo Romero](https://romero61.github.io/)
 
 ---
