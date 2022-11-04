@@ -22,6 +22,7 @@ knitr::include_graphics("img/cohort_2023.jpg")
 - [Meagan Brown](https://meaganbrown.github.io/)
 - [Alex Reed](https://reedalexandria.github.io/)
 - [Guillermo Romero](https://romero61.github.io/)
+- [Elke Windschitl](https://elkewind.github.io/)
 
 ---
 
