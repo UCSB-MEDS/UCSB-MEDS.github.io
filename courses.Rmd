@@ -103,7 +103,7 @@ fall %>%
 # winter[2,2] <- cell_spec("Machine Learning in Environmental Science",  "html", link = "https://bbest.github.io/eds232-ml/")
 
 # Update 411 title cell (w/ link)
-winter[5,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
+#winter[5,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
 
 winter %>% 
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
@@ -124,7 +124,7 @@ spring[2,2] <- cell_spec("Modeling Environmental Systems", "html", link = "https
 spring[3,2] <- cell_spec("Text and Sentiment Analysis for Environmental Problems", "html", link = "https://maro406.github.io/EDS_231-text-sentiment/")
 
 # Update 411 title cell (w/ link)
-spring[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
+#spring[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
 
 spring %>% 
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
