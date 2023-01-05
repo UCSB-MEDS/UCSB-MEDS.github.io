@@ -100,10 +100,10 @@ fall %>%
 # winter[1,2] <- cell_spec("Team Science, Collaborative Analysis and Project Management",  "html", link = "https://bbest.github.io/eds211-team/")
 
 # Update 232 title cell (w/ link)
-# winter[2,2] <- cell_spec("Machine Learning in Environmental Science",  "html", link = "https://bbest.github.io/eds232-ml/")
+ winter[2,2] <- cell_spec("Machine Learning in Environmental Science",  "html", link = "https://maro406.github.io/eds-232-machine-learning/")
 
 # Update 411 title cell (w/ link)
-#winter[5,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
+winter[5,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://naomitague.github.io/EDS_411A_meds-capstone/")
 
 winter %>% 
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
