@@ -20,6 +20,7 @@ knitr::include_graphics("img/cohort_2023.jpg")
 
 - [Andrew Bartnik](https://andrewbartnik.github.io/)
 - [Meagan Brown](https://meaganbrown.github.io/)
+- [Erica Dale](https://ericamarie9016.github.io/)
 - [Colleen McCamy](https://colleenmccamy.github.io/)
 - [Javier Patrón](https://javipatron.github.io/)
 - [Alex Reed](https://reedalexandria.github.io/)
