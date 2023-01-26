@@ -50,17 +50,16 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  { color: #00769e; background-color: #f1f3f5; }
+  {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #657422; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #00769e; } /* ControlFlow */
+code span.cf { color: #007ba5; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -74,9 +73,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #00769e; } /* Keyword */
+code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #00769e; } /* Other */
+code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -789,7 +788,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1031,6 +1029,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
   }
 
   .figure .caption {
@@ -1862,21 +1864,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
-          $(this).html(fn.shadowRoot.querySelector("sup"))
-          $(this).id = fn.id
-          fn.remove()
-        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1888,31 +1878,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
-
-      // fix footnotes in tables (#411)
-      // replacing broken distill.pub feature
-      $('table d-footnote').each(function() {
-        // we replace internal showAtNode methode which is triggered when hovering a footnote
-        this.hoverBox.showAtNode = function(node) {
-          // ported from https://github.com/distillpub/template/pull/105/files
-          calcOffset = function(elem) {
-              let x = elem.offsetLeft;
-              let y = elem.offsetTop;
-              // Traverse upwards until an `absolute` element is found or `elem`
-              // becomes null.
-              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
-                  x += elem.offsetLeft;
-                  y += elem.offsetTop;
-              }
-
-              return { left: x, top: y };
-          }
-          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
-          const bbox = node.getBoundingClientRect();
-          const offset = calcOffset(node);
-          this.show([offset.left + bbox.width, offset.top + bbox.height]);
-        }
-      })
 
       // clear polling timer
       clearInterval(tid);
@@ -2012,8 +1977,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
-      // ignore leaflet img layers (#106)
-      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -2036,7 +1999,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
       });
     }
 
@@ -2546,7 +2509,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2637,7 +2600,11 @@ STUDENT RESOURCES
 <h1>UCSB Master of Environmental Data Science (MEDS)</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>This website provides program information for current MEDS students, staff and faculty. More information about the program can be found on the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren website</a>.</p></p>
+<p><p>This website provides program information for current MEDS
+students, staff and faculty. More information about the program can be
+found on the <a
+href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren
+website</a>.</p></p>
 </div>
 
 
@@ -2646,32 +2613,81 @@ STUDENT RESOURCES
 <p><img src="img/meds-site-quote.png" width="100%" /></p>
 </div>
 <p style="color:gray; font-size: 15px; style: italic;">
-<i>Text: <a href="https://www.nceas.ucsb.edu/news/next-generation-environmental-scientists-are-data-scientists">The Next Generation of Environmental Scientists are Data Scientists</a>, NCEAS post by Jenny Seifert and Kathryn Meyer (June 2018). Background photo: aerial image of ocean and shoreline, by <a href="https://unsplash.com/@sotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shifaaz shamoon</a> on <a href="https://unsplash.com/s/photos/ocean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i>
+<i>Text:
+<a href="https://www.nceas.ucsb.edu/news/next-generation-environmental-scientists-are-data-scientists">The
+Next Generation of Environmental Scientists are Data Scientists</a>,
+NCEAS post by Jenny Seifert and Kathryn Meyer (June 2018). Background
+photo: aerial image of ocean and shoreline, by
+<a href="https://unsplash.com/@sotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shifaaz
+shamoon</a> on
+<a href="https://unsplash.com/s/photos/ocean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i>
 </p>
-<p>The Master of Environmental Data Science (MEDS) is a professional degree program at UC Santa Barbara, administered by the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren School of Environmental Science &amp; Management</a> in partnership with the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis</a>. The 11-month program is designed to train environmental professionals in data science skills. Coursework includes scientific programming, machine learning, remote sensing, spatial analysis, data visualization and much more. The program ends with a 6-month group Capstone project. These projects are proposed by clients with a need for data science solutions to solve their environmental problems or answer environmentally-related questions. Students work in groups of 3-4 during the Winter and Spring quarter and present final results at the end of the year.</p>
-<h3 id="in-the-meds-program-students-build-skills-to">In the MEDS program, students build skills to:</h3>
+<p>The Master of Environmental Data Science (MEDS) is a professional
+degree program at UC Santa Barbara, administered by the <a
+href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren
+School of Environmental Science &amp; Management</a> in partnership with
+the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological
+Analysis and Synthesis</a>. The 11-month program is designed to train
+environmental professionals in data science skills. Coursework includes
+scientific programming, machine learning, remote sensing, spatial
+analysis, data visualization and much more. The program ends with a
+6-month group Capstone project. These projects are proposed by clients
+with a need for data science solutions to solve their environmental
+problems or answer environmentally-related questions. Students work in
+groups of 3-4 during the Winter and Spring quarter and present final
+results at the end of the year.</p>
+<h3 id="in-the-meds-program-students-build-skills-to">In the MEDS
+program, students build skills to:</h3>
 <ul>
 <li>Work in multiple programming languages (e.g. R, Python, SQL)</li>
-<li>Collaborate and manage data science projects, including with version control using git and GitHub</li>
-<li>Use open science methods and tools for reproducible data science</li>
-<li>Access, clean, explore, and analyze a range of common environmental data formats</li>
-<li>Understand and employ modern standards for data management, storage, and archiving</li>
+<li>Collaborate and manage data science projects, including with version
+control using git and GitHub</li>
+<li>Use open science methods and tools for reproducible data
+science</li>
+<li>Access, clean, explore, and analyze a range of common environmental
+data formats</li>
+<li>Understand and employ modern standards for data management, storage,
+and archiving</li>
 <li>Work with a team to complete a capstone project</li>
-<li>Think critically about and incorporate ethics, bias, and data justice into data science projects</li>
+<li>Think critically about and incorporate ethics, bias, and data
+justice into data science projects</li>
 <li>Communicate effectively with diverse stakeholders</li>
 </ul>
-<h3 id="the-meds-experience-is-a-cohort-experience">The MEDS experience is a cohort experience</h3>
-<p>We believe that building a strong sense of community is critical for success in learning and working within the data science space. Our summer intensive session is designed to foster this sense of community within a cohort from the start, while also preparing students with the fundamental math, programming, and analytical skills needed to complete the program. Students are encouraged to work and troubleshoot in pairs or groups for all exercises, promoting a collaborative work environment and establishing a support system that extends beyond the walls of the classroom.</p>
+<h3 id="the-meds-experience-is-a-cohort-experience">The MEDS experience
+is a cohort experience</h3>
+<p>We believe that building a strong sense of community is critical for
+success in learning and working within the data science space. Our
+summer intensive session is designed to foster this sense of community
+within a cohort from the start, while also preparing students with the
+fundamental math, programming, and analytical skills needed to complete
+the program. Students are encouraged to work and troubleshoot in pairs
+or groups for all exercises, promoting a collaborative work environment
+and establishing a support system that extends beyond the walls of the
+classroom.</p>
 <blockquote>
-<p>“Although the academics were intense at times, I enjoyed spending so much time with my cohort. It really helped us all bond this summer and thus gave us a strong support group for going into the rest of the year.” - Anonymous MEDS student</p>
+<p>“Although the academics were intense at times, I enjoyed spending so
+much time with my cohort. It really helped us all bond this summer and
+thus gave us a strong support group for going into the rest of the
+year.” - Anonymous MEDS student</p>
 </blockquote>
-<p>Collaborative learning is woven throughout all aspects of MEDS, from group discussions and team-based class assignments to the 6-month long group <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects">capstone projects</a>. Through these experiences, students learn to use tools and develop skills that are critical for all professionals who are expected to work on data science teams.</p>
-<p>Hear more from some of our students about their shared experiences on our <a href="student_advice.html">student advice page</a>!</p>
+<p>Collaborative learning is woven throughout all aspects of MEDS, from
+group discussions and team-based class assignments to the 6-month long
+group <a
+href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science/meds-capstone-projects">capstone
+projects</a>. Through these experiences, students learn to use tools and
+develop skills that are critical for all professionals who are expected
+to work on data science teams.</p>
+<p>Hear more from some of our students about their shared experiences on
+our <a href="student_advice.html">student advice page</a>!</p>
 <p><br></p>
 <p>
-<i>For more information about the program, including how to apply, please visit the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren website</a>.</i>
+<i>For more information about the program, including how to apply,
+please visit the <a
+href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Bren
+website</a>.</i>
 </p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

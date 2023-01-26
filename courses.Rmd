@@ -97,7 +97,7 @@ fall %>%
 
 ```{r, echo = FALSE}
 # Update 211 title cell (w/ link)
-# winter[1,2] <- cell_spec("Team Science, Collaborative Analysis and Project Management",  "html", link = "https://bbest.github.io/eds211-team/")
+winter[1,2] <- cell_spec("Team Science, Collaborative Analysis and Project Management",  "html", link = "https://oharascience.com/eds211_site/")
 
 # Update 232 title cell (w/ link)
  winter[2,2] <- cell_spec("Machine Learning in Environmental Science",  "html", link = "https://maro406.github.io/eds-232-machine-learning/")

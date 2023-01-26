@@ -50,17 +50,16 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  { color: #00769e; background-color: #f1f3f5; }
+  {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #657422; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #00769e; } /* ControlFlow */
+code span.cf { color: #007ba5; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -74,9 +73,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #00769e; } /* Keyword */
+code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #00769e; } /* Other */
+code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -786,7 +785,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1028,6 +1026,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
   }
 
   .figure .caption {
@@ -1859,21 +1861,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
-          $(this).html(fn.shadowRoot.querySelector("sup"))
-          $(this).id = fn.id
-          fn.remove()
-        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1885,31 +1875,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
-
-      // fix footnotes in tables (#411)
-      // replacing broken distill.pub feature
-      $('table d-footnote').each(function() {
-        // we replace internal showAtNode methode which is triggered when hovering a footnote
-        this.hoverBox.showAtNode = function(node) {
-          // ported from https://github.com/distillpub/template/pull/105/files
-          calcOffset = function(elem) {
-              let x = elem.offsetLeft;
-              let y = elem.offsetTop;
-              // Traverse upwards until an `absolute` element is found or `elem`
-              // becomes null.
-              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
-                  x += elem.offsetLeft;
-                  y += elem.offsetTop;
-              }
-
-              return { left: x, top: y };
-          }
-          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
-          const bbox = node.getBoundingClientRect();
-          const offset = calcOffset(node);
-          this.show([offset.left + bbox.width, offset.top + bbox.height]);
-        }
-      })
 
       // clear polling timer
       clearInterval(tid);
@@ -2009,8 +1974,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
-      // ignore leaflet img layers (#106)
-      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -2033,7 +1996,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
       });
     }
 
@@ -2543,7 +2506,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2639,36 +2602,66 @@ STUDENT RESOURCES
 
 
 <div class="d-article">
-<p>The MEDS program requires all students to have a personal laptop to use during the program. Our curriculum is designed to work across different operating systems and computers, as long as they meet some minimum requirements.</p>
-<h3 id="specifically-your-computer-should">Specifically, your computer should:</h3>
+<p>The MEDS program requires all students to have a personal laptop to
+use during the program. Our curriculum is designed to work across
+different operating systems and computers, as long as they meet some
+minimum requirements.</p>
+<h3 id="specifically-your-computer-should">Specifically, your computer
+should:</h3>
 <ul>
-<li>be no more than 4 years old, and in any case be fully supported by the manufacturer. For example, <a href="https://support.apple.com/en-us/HT201624">Apple won’t repair anything that’s more than 7 years old</a><br />
+<li>be no more than 4 years old, and in any case be fully supported by
+the manufacturer. For example, <a
+href="https://support.apple.com/en-us/HT201624">Apple won’t repair
+anything that’s more than 7 years old</a><br />
 </li>
-<li>be running Windows, macOS or Linux. (Please note that we offer limited support for Linux)<br />
+<li>be running Windows, macOS or Linux. (Please note that we offer
+limited support for Linux)<br />
 </li>
-<li>have at least 50 GB storage space available for MEDS applications and coursework<br />
+<li>have at least 50 GB storage space available for MEDS applications
+and coursework<br />
 </li>
 <li>have at least 8 GB of RAM (the more the better!)<br />
 </li>
 <li>have a 64-bit CPU</li>
 </ul>
-<p>If you have a Mac, be sure to update macOS to the newest supported version, as indicated by <em>System Preferences→Software Update</em>.</p>
-<p>If you have a PC, you should have Windows 10 installed but if you don’t, you can <a href="https://ucsb.onthehub.com/WebStore/OfferingDetails.aspx?o=14f7e678-4731-e511-940e-b8ca3a5db7a1">purchase Windows 10 Education for $14.99 from UCSB</a>.</p>
+<p>If you have a Mac, be sure to update macOS to the newest supported
+version, as indicated by <em>System Preferences→Software
+Update</em>.</p>
+<p>If you have a PC, you should have Windows 10 installed but if you
+don’t, you can <a
+href="https://ucsb.onthehub.com/WebStore/OfferingDetails.aspx?o=14f7e678-4731-e511-940e-b8ca3a5db7a1">purchase
+Windows 10 Education for $14.99 from UCSB</a>.</p>
 <h3 id="new-computers">New Computers</h3>
 <p>If you are purchasing a new computer, we recommend:</p>
 <ul>
 <li>at least 16 GB of RAM</li>
 <li>at least 512 GB of SSD (not “disk”!) storage</li>
-<li>the manucafturer’s extended warranty or service plan (e.g., <a href="https://www.apple.com/support/products/mac/">AppleCare+</a>).</li>
+<li>the manucafturer’s extended warranty or service plan (e.g., <a
+href="https://www.apple.com/support/products/mac/">AppleCare+</a>).</li>
 </ul>
-<p>If you are trying to decide between Mac and Windows we would recommend a Mac, but if you purchase or already have a Windows PC, don’t worry that will be just fine as long as it meets our minimum requirements.</p>
-<p>You can <a href="https://www.apple.com/us-hed/shop">purchase a Macbook Air using the higher education discount</a> for $899 before tax and AppleCare. A PC can cost anywhere from $500 to more than $3,000; you generally get what you pay for.</p>
+<p>If you are trying to decide between Mac and Windows we would
+recommend a Mac, but if you purchase or already have a Windows PC, don’t
+worry that will be just fine as long as it meets our minimum
+requirements.</p>
+<p>You can <a href="https://www.apple.com/us-hed/shop">purchase a
+Macbook Air using the higher education discount</a> for $899 before tax
+and AppleCare. A PC can cost anywhere from $500 to more than $3,000; you
+generally get what you pay for.</p>
 <h3 id="loaner-equipment">Loaner equipment</h3>
-<p>If your computer breaks or dies, we can usually loan you a Windows laptop for up to a month, which should be long enough to have your computer repaired or buy a new one.</p>
+<p>If your computer breaks or dies, we can usually loan you a Windows
+laptop for up to a month, which should be long enough to have your
+computer repaired or buy a new one.</p>
 <h3 id="home-setup">Home setup</h3>
-<p>At home you may want to have a dedicated computer setup that includes an external monitor (or 2!), keyboard, and mouse.</p>
-<p>A stable at-home Wifi connection is necessary for completing work remotely (i.e. off-campus). UCSB offers a hotspot/wifi grant to support hotspot setup and wifi connection for one academic year (9 months) for qualifying students. Learn more about UCSB’s technology resources and apply <a href="https://food.ucsb.edu/resources/technology-resources">here</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>At home you may want to have a dedicated computer setup that includes
+an external monitor (or 2!), keyboard, and mouse.</p>
+<p>A stable at-home Wifi connection is necessary for completing work
+remotely (i.e. off-campus). UCSB offers a hotspot/wifi grant to support
+hotspot setup and wifi connection for one academic year (9 months) for
+qualifying students. Learn more about UCSB’s technology resources and
+apply <a
+href="https://food.ucsb.edu/resources/technology-resources">here</a>.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
