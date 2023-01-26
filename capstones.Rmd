@@ -14,15 +14,16 @@ The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/requ
 | August 19         | Writing a capstone project proposal |
 | Week 5            | Student nominations for capstone committee  |
 | Week 6            | Student elections for capstone committee  |
-| **Fall 2021**
+| **Fall 2022**
 | October 14        | Proposals Due           |
 | November 16       | Capstone Project Reveal & voting begins |
 | Week 10(ish)      | Capstone project assignments announced |
-| **Winter 2022**
-| February 17       | Draft Design & Implementation plan due   |
-| March 8           | Design Plan Presentation |
+| **Winter 2023**
+| February 10       | Draft Design & Implementation plan due   |
+| March 8           | Faculty Reviews |
 | March 17          | Final Design & Implementation plan due |
-| **Spring 2022**
+| **Spring 2023**
+| April 14          | Submit outline of Technical Documentation|
 | May 5             | Draft technical documentation & repository due |
 | June 2            | Final Presentations |
 | June 9            | Final project materials due |
@@ -30,7 +31,7 @@ The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/requ
 
 ## Resources
 
-[Capstone Project Guidelines](https://bren.ucsb.edu/media/3557/download)  
-[Peer & Self Evaluation Form](https://bren.ucsb.edu/media/3556/download)  
-[EDS 411A/B Website](https://allisonhorst.github.io/EDS_411AB_meds-capstone/)  
+[Capstone Project Guidelines](https://bren.ucsb.edu/media/4294/download)  
+[Peer & Self Evaluation Form](https://bren.ucsb.edu/media/3922/download)  
+[EDS 411A/B Website](https://naomitague.github.io/EDS_411A_meds-capstone/)  
 [Compute guide for your google group](https://bren.zendesk.com/hc/en-us/articles/4415068315156-Google-Group-Guide-for-Capstone-Projects)

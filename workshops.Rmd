@@ -127,6 +127,29 @@ October 24, 2022
 
 ---
 
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+January 20 & 27, 2022
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("star", fill = "#333333", a11y = "sem")` **EDS 430: Intro to Shiny**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/EDS430-Shiny/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/EDS430-Shiny)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*In this workshop, students will learn how to build and deploy Shiny applications. The `{shiny}` package provides a framework that allows R users to build interactive web applications and dashboards, and has become a popular tool for sharing data analyses and data-derived outputs with broad audiences. In this two-part short course, students will learn the fundamentals of reactivity, how to customize an application user interface (UI), best practices and workflows for developing shiny apps, how to deploy their apps online via RStudio’s hosting service, shinyapps.io, and more. [Approx. Duration: 10 hours]*</span>
+
+:::
+
+::::
+
+---
+
 <h2 align="center">[Find past workshop materials here!](past_workshops.html)</h2>
 
 
@@ -134,151 +157,3 @@ October 24, 2022
 
 
 
-
-```{r, echo = FALSE}
-# OLD
-
-# ##############################
-# # load packages
-# ##############################
-# 
-# library(googledrive)
-# library(googlesheets4)
-# library(kableExtra)
-# library(tidyverse)
-# library(here)
-# 
-# ##############################
-# # load in google sheet - REQUEST ACCESS FROM SAM TO UPDATE THIS SHEET
-# ##############################
-# 
-# workshops <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1SQ2IL8VP4McfCzvEeHjl0K6844j5l_5BfUTcS9_y4C4/edit?usp=sharing")
-# 
-# ##############################
-# # filter for quarter
-# ##############################
-# 
-# summer_workshops <- workshops %>% 
-#   filter(Quarter == "summer") %>% 
-#   select(-Quarter)
-# 
-# fall_workshops <- workshops %>% 
-#   filter(Quarter == "fall") %>% 
-#   select(-Quarter)
-# 
-# winter_workshops <- workshops %>% 
-#   filter(Quarter == "winter") %>% 
-#   select(-Quarter)
-# 
-# spring_workshops <- workshops %>% 
-#   filter(Quarter == "spring") %>% 
-#   select(-Quarter)
-```
-
-```{r, echo = FALSE}
-# Summer
-
-# ##############################
-# # add links
-# ##############################
-# 
-# # CSS
-# summer_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/customizing-websites-css/#1")
-# summer_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/customizing-websites-css")
-# 
-# ##############################
-# # build table 
-# ##############################
-# 
-# summer_workshops %>% 
-#   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
-#   kable_styling(bootstrap_options = "striped") %>% 
-#   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
-#   #scroll_box(width = "100%", height = "400px") 
-```
-
-```{r, echo = FALSE}
-## Fall Workshops 
-
-# ##############################
-# # add links
-# ##############################\
-# 
-# # Blog
-# fall_workshops[1,5] <- cell_spec("link",  "html", link = "https://samanthacsik.github.io/posts/2021-09-21-my-first-test-post/")
-# fall_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/writing-blogposts")
-# 
-# # Google
-# fall_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/teach-me-how-to-google/#1")
-# fall_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/teach-me-how-to-google")
-# 
-# # RStudio Tips & Tricks
-# fall_workshops[3,5] <- cell_spec("link", "html", link = "https://ucsb-meds.github.io/R-tips-and-tricks/#1")
-# fall_workshops[3,6] <- cell_spec("link", "html", link = "https://github.com/UCSB-MEDS/R-tips-and-tricks")
-# 
-# ##############################
-# # build table 
-# ##############################
-# 
-# fall_workshops %>% 
-#   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
-#   kable_styling(bootstrap_options = "striped") %>% 
-#   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
-#   #scroll_box(width = "100%", height = "400px") 
-```
-
-```{r, echo = FALSE}
-## Winter Workshops
-
-# ##############################
-# # add links
-# ##############################
-# 
-# # Python (by Data Carpentries)
-# winter_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsbcarpentry.github.io/2022-01-04-ucsb-python/")
-# winter_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSBCarpentry/2022-01-04-ucsb-python")
-# 
-# # SQL (by Data Carpentries)
-# winter_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsbcarpentry.github.io/2022-02-04-ucsb-sql-online/")
-# winter_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSBCarpentry/2022-02-04-ucsb-sql-online")
-# 
-# # Intro to Shiny
-# winter_workshops[3,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/shiny-workshop/#1")
-# winter_workshops[3,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/shiny-workshop")
-# 
-# ##############################
-# # build table 
-# ##############################
-# 
-# winter_workshops %>% 
-#   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
-#   kable_styling(bootstrap_options = "striped") %>% 
-#   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
-#   #scroll_box(width = "100%", height = "400px") 
-```
-
-```{r, echo = FALSE}
-## Spring Workshops
-
-# ##############################
-# # add links
-# ##############################
-# 
-# # Intro to Cloud Computing
-# spring_workshops[1,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/cloud-computing/#1")
-# spring_workshops[1,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/cloud-computing")
-# 
-# # Technical Interviews
-# spring_workshops[2,5] <- cell_spec("link",  "html", link = "https://ucsb-meds.github.io/technical-interviews/#1")
-# spring_workshops[2,6] <- cell_spec("link",  "html", link = "https://github.com/UCSB-MEDS/technical-interviews")
-# 
-# ##############################
-# # build table 
-# ##############################
-# 
-# spring_workshops %>% 
-#   kable(col.names = c("Date", "Workshop title", "Description", "Approximate duration", "Presentation materials", "GitHub repo"), format = "html", escape = FALSE) %>% 
-#   kable_styling(bootstrap_options = "striped") %>% 
-#   kableExtra::row_spec(1, extra_css = "border-bottom: 1px solid gainsboro") # %>% 
-#   #scroll_box(width = "100%", height = "400px") 
-```
