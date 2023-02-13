@@ -25,6 +25,7 @@ knitr::include_graphics("img/cohort_2023.jpg")
 - [Javier Patrón](https://javipatron.github.io/)
 - [Alex Reed](https://reedalexandria.github.io/)
 - [Guillermo Romero](https://romero61.github.io/)
+- [Lewis White](https://lewis-r-white.github.io/)
 - [Elke Windschitl](https://elkewind.github.io/)
 
 ---
