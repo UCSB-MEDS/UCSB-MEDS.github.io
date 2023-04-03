@@ -117,14 +117,18 @@ winter %>%
 ## Spring Quarter
 
 ```{r, echo = FALSE}
+
+# Update 213 title cell (w/ link)
+spring[1,2] <- cell_spec("Databases and Data Management", "html", link = "https://ucsb.instructure.com/courses/5844")
+
 # Update 230 title cell (w/ link)
 spring[2,2] <- cell_spec("Modeling Environmental Systems", "html", link = "https://naomitague.github.io/ESM232_course/")
 
 # Update 231 title cell (w/ link)
-spring[3,2] <- cell_spec("Text and Sentiment Analysis for Environmental Problems", "html", link = "https://maro406.github.io/EDS_231-text-sentiment/")
+spring[3,2] <- cell_spec("Text and Sentiment Analysis for Environmental Problems", "html", link = "https://maro406.github.io/EDS-231-text-sentiment/")
 
 # Update 411 title cell (w/ link)
-#spring[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://allisonhorst.github.io/EDS_411AB_meds-capstone/")
+spring[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://ryoliver.github.io/EDS_411B/")
 
 spring %>% 
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
