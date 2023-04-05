@@ -150,6 +150,29 @@ January 20 & 27, 2022
 
 ---
 
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+January 20 & 27, 2022
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("chart-line", fill = "#333333", a11y = "sem")` **One workflow for building effective (and pretty) `{ggplot2}` data visualizations**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/ggplot2-workflow/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/ggplot2-workflow)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*`{ggplot2}` has, in many ways, become the de facto tool for data visualization in R. And with the many extension packages available, there's hardly a limit to what you can create. Building effective and visually-pleasing data visualizations is a skill that gets easier with practice, and following a somewhat structured workflow -- at least at the start -- can help you get there faster. This workshop covers one approach for doing so, though you'll find what works best for you with time.*</span>
+
+:::
+
+::::
+
+---
+
 <h2 align="center">[Find past workshop materials here!](past_workshops.html)</h2>
 
 

@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -785,6 +786,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1026,10 +1028,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1861,9 +1859,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1875,6 +1885,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1974,6 +2009,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1996,7 +2033,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2506,7 +2543,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2602,95 +2639,36 @@ STUDENT RESOURCES
 
 
 <div class="d-article">
-<p>During the MEDS program we will maintain a dedicated <a
-href="https://slack.com/">Slack workspace</a> for students, staff and
-instructors. Staff and instructors will be added by the MEDS coordinator
-and students will join during the second day of Orientation.</p>
+<p>During the MEDS program we will maintain a dedicated <a href="https://slack.com/">Slack workspace</a> for students, staff and instructors. Staff and instructors will be added by the MEDS coordinator and students will join during the second day of Orientation.</p>
 <h3 id="what-is-slack">What is Slack?</h3>
-<p>It is a communication tool for teams. In its simplest form, it is a
-platform for live chat. Slack provides users with direct messaging and
-chat rooms to enable remote collaboration and community exchanges.</p>
+<p>It is a communication tool for teams. In its simplest form, it is a platform for live chat. Slack provides users with direct messaging and chat rooms to enable remote collaboration and community exchanges.</p>
 <h3 id="slack-desktop-app">Slack Desktop App</h3>
-<p>The best way to use Slack is through the Desktop application. At
-first when you sign up, you may be put into a Slack window in your
-browser. We recommend downloading the app after joining and setting up
-your workspace there. This way you can have multiple workspaces open at
-once. You can find the appropriate download for your operating system <a
-href="https://slack.com/help/categories/360000049043-Getting-started#download-slack">here</a>.</p>
+<p>The best way to use Slack is through the Desktop application. At first when you sign up, you may be put into a Slack window in your browser. We recommend downloading the app after joining and setting up your workspace there. This way you can have multiple workspaces open at once. You can find the appropriate download for your operating system <a href="https://slack.com/help/categories/360000049043-Getting-started#download-slack">here</a>.</p>
 <h3 id="channels">Channels</h3>
-<p>Communication in Slack is done either through direct messages with
-other Slack members, or through Channels.</p>
-<p>Channels are organized by topic and usually have a hashtag (#) in
-front of them. Our Slack workspace, UCSB-MEDS, contains many channels
-for conversation. If the instructor agrees, each class will have it’s
-own channel for course-specific discussion. There are also more general
-channels for announcements,</p>
-<p>You can join any public channel. You can see what channels are public
-by using the Channel Browser. You can also create your own public
-channel.</p>
+<p>Communication in Slack is done either through direct messages with other Slack members, or through Channels.</p>
+<p>Channels are organized by topic and usually have a hashtag (#) in front of them. Our Slack workspace, UCSB-MEDS, contains many channels for conversation. If the instructor agrees, each class will have it’s own channel for course-specific discussion. There are also more general channels for announcements,</p>
+<p>You can join any public channel. You can see what channels are public by using the Channel Browser. You can also create your own public channel.</p>
 <p><strong>Private Channels</strong></p>
-<p>Anyone in the UCSB-MEDS workspace has the ability to create their own
-private channels that allow you to determine who can be in that channel.
-This is really useful for projects that only concern a few team members.
-We also encourage each cohort to create a single private channel for all
-students to join.</p>
-<p>You can not see private channels that you are not a member of. If you
-need to join a private channel that you know exists, you can contact the
-admin team.</p>
+<p>Anyone in the UCSB-MEDS workspace has the ability to create their own private channels that allow you to determine who can be in that channel. This is really useful for projects that only concern a few team members. We also encourage each cohort to create a single private channel for all students to join.</p>
+<p>You can not see private channels that you are not a member of. If you need to join a private channel that you know exists, you can contact the admin team.</p>
 <h3 id="direct-messages">Direct Messages</h3>
-<p>A direct message thread is different from a private channel. To open
-a direct message, go to “Direct Messages” on the left-hand sidebar and
-click on the plus (+) sign. Then, type in the names of the people who
-should be part of the direct message thread.</p>
+<p>A direct message thread is different from a private channel. To open a direct message, go to “Direct Messages” on the left-hand sidebar and click on the plus (+) sign. Then, type in the names of the people who should be part of the direct message thread.</p>
 <h3 id="notifications">Notifications</h3>
-<p>Depending how active a channel is, you might receive a lot of
-notifications. To lower distractions, Slack lets you customize the level
-of notifications you want to receive. This can be customized across all
-channels and direct messages by clicking on the “UCSB-MEDS” in the
-upper-left and selecting “Preferences”. From here you can set up your
-notifications and decide how often, and by what method, you’d like to be
-notified. The Do Not Disturb period is very useful in setting up
-“off-hours” where you won’t get any notifications.</p>
+<p>Depending how active a channel is, you might receive a lot of notifications. To lower distractions, Slack lets you customize the level of notifications you want to receive. This can be customized across all channels and direct messages by clicking on the “UCSB-MEDS” in the upper-left and selecting “Preferences”. From here you can set up your notifications and decide how often, and by what method, you’d like to be notified. The Do Not Disturb period is very useful in setting up “off-hours” where you won’t get any notifications.</p>
 <h3 id="reactions">Reactions</h3>
-<p>Another feature of Slack is the reactions. Anyone can react to a
-message with an emoji reaction. This is different from sending a message
-containing that emoji in that it doesn’t trigger notifications. This is
-hugely helpful. For example, if someone tells you something and you just
-want to say “OK” or “thanks”, try a reaction instead of a new message,
-since you don’t really need to notify the person of your response – they
-will see it next time they are on Slack.</p>
+<p>Another feature of Slack is the reactions. Anyone can react to a message with an emoji reaction. This is different from sending a message containing that emoji in that it doesn’t trigger notifications. This is hugely helpful. For example, if someone tells you something and you just want to say “OK” or “thanks”, try a reaction instead of a new message, since you don’t really need to notify the person of your response – they will see it next time they are on Slack.</p>
 <h3 id="edits-and-deletion">Edits and deletion</h3>
-<p>If you want to change something you wrote in Slack, you can always
-edit the message afterwards. You can also delete messages, for example
-if you wrote something by accident.</p>
+<p>If you want to change something you wrote in Slack, you can always edit the message afterwards. You can also delete messages, for example if you wrote something by accident.</p>
 <h3 id="message-retention">Message retention</h3>
-<p>We maintain a Free Slack workspace, which means messages will be
-deleted after we reach 10,000 messages across all channels. If you think
-that your conversation should be saved for future reference, we
-encourage you to move that conversation to email or GitHub issues.</p>
+<p>We maintain a Free Slack workspace, which means messages will be deleted after we reach 10,000 messages across all channels. If you think that your conversation should be saved for future reference, we encourage you to move that conversation to email or GitHub issues.</p>
 <h3 id="professionalism">Professionalism</h3>
-<p>We want to maintain a welcoming, inclusive environment both in the
-classroom and online, including our Slack community. We encourage
-participation in all private, public and direct messaging channels,
-however, we ask that you do so respectfully.</p>
-<p>Although Slack is a great tool and is constantly available, we expect
-you to maintain a respectful and professional relationship with your
-peers, instructors, TA’s, and staff. You should not rely on Slack for
-communication between your instructors and/or TA’s unless they have
-elected to operate their class in that manner.</p>
-<p>By joining and using the Bren Slack workspace you are accepting the
-<a
-href="https://www.policy.ucsb.edu/files/docs/policies/ecp.pdf">University
-of California Electronic Communications Policy</a>.</p>
+<p>We want to maintain a welcoming, inclusive environment both in the classroom and online, including our Slack community. We encourage participation in all private, public and direct messaging channels, however, we ask that you do so respectfully.</p>
+<p>Although Slack is a great tool and is constantly available, we expect you to maintain a respectful and professional relationship with your peers, instructors, TA’s, and staff. You should not rely on Slack for communication between your instructors and/or TA’s unless they have elected to operate their class in that manner.</p>
+<p>By joining and using the Bren Slack workspace you are accepting the <a href="https://www.policy.ucsb.edu/files/docs/policies/ecp.pdf">University of California Electronic Communications Policy</a>.</p>
 <h3 id="privacy">Privacy</h3>
-<p>Direct messages can only be read by the people involved. Admin can
-not view private messages between users or in private channels where
-they are not a member.</p>
-<p><em>Parts of this guide were borrowed from the <a
-href="https://ubc-mds.github.io/resources_pages/slack/">UBC-MDS Slack
-Help page</a></em></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Direct messages can only be read by the people involved. Admin can not view private messages between users or in private channels where they are not a member.</p>
+<p><em>Parts of this guide were borrowed from the <a href="https://ubc-mds.github.io/resources_pages/slack/">UBC-MDS Slack Help page</a></em></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
