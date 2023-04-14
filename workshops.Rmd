@@ -165,13 +165,37 @@ March 16, 2023
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/ggplot2-workflow/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/ggplot2-workflow)</span> 
 
-<span style = 'font-size:95%; color:#959599;'>*`{ggplot2}` has, in many ways, become the de facto tool for data visualization in R. And with the many extension packages available, there's hardly a limit to what you can create. Building effective and visually-pleasing data visualizations is a skill that gets easier with practice, and following a somewhat structured workflow -- at least at the start -- can help you get there faster. This workshop covers one approach for doing so, though you'll find what works best for you with time.*</span>
+<span style = 'font-size:95%; color:#959599;'>*`{ggplot2}` has, in many ways, become the de facto tool for data visualization in R. And with the many extension packages available, there's hardly a limit to what you can create. Building effective and visually-pleasing data visualizations is a skill that gets easier with practice, and following a somewhat structured workflow -- at least at the start -- can help you get there faster. This workshop covers one approach for doing so, though you'll find what works best for you with time. [Approx. Duration: 2 hours]*</span>
 
 :::
 
 ::::
 
 ---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
+April 14, 2023
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("rocket", fill = "#333333", a11y = "sem")` **An iterative approach to streamlining analytical workflows using functions and for loops**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/functions-workshop/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/functions-workshop)</span> 
+
+<span style = 'font-size:95%; color:#959599;'>*As your data processing and analyses get longer and more complex, the chances that you’ll benefit from writing functions and/or for loops will also increase. However, whether you're a new learner or seasoned programmer, it can sometimes feel overwhelming to know exactly where to start -- especially when you have an end goal that builds additional complexity/flexibility into your functions and for loops. Taking an iterative approach to building out your code can help make this process clearer, less daunting, and more fun. In this workshop, we'll use one case study to practice breaking down the function and for loop writing process into manageable, bite-sized steps. [Approx. Duration: 2 hours]*</span>
+
+:::
+
+::::
+
+---
+
 
 <h2 align="center">[Find past workshop materials here!](past_workshops.html)</h2>
 
