@@ -8,196 +8,194 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-We are actively developing data science workshops, which are meant to supplement the MEDS curriculum and teach additional skills. Below are our most up-to-date materials, presented to our current cohort of students. Find older workshop materials on our [Past Workshop Materials page](past_workshops.html).
+We are actively developing data science workshops, which are meant to supplement the MEDS curriculum and teach additional skills. Below are our most up-to-date materials, presented to our current cohort of students. Materials for all workshops, including those that are no longer taught/maintained, can be found on the [UCSB-MEDS GitHub Organization](https://github.com/UCSB-MEDS).
 
 ---
 
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+<center><span style="font-size:200%; color:#047C91;">Workshop materials for the 2023-2024 academic year coming soon!</span></center>
 
-::: {}
+<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
 
-August 5, 2022 
+<!-- ::: {} -->
 
-:::
+<!-- August 5, 2022  -->
 
+<!-- ::: -->
 
-::: {}
 
-`r fontawesome::fa("window-maximize", fill = "#333333", a11y = "sem")` **Creating your personal website using Quarto**  
+<!-- ::: {} -->
 
-<span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/creating-quarto-websites/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/creating-quarto-websites)</span> 
+<!-- `r fontawesome::fa("window-maximize", fill = "#333333", a11y = "sem")` **Creating your personal website using Quarto**   -->
 
-<span style = 'font-size:95%; color:#959599;'>*A personal website is not only a great way to showcase your experiences and skills, but also gives people (potential employers included!) a better sense of who you are as a person. There are lots of great ways to build websites using R (e.g. `{distill}`, `{blogdown}`) -- this year, we'll be using [Quarto](https://quarto.org/), an exciting, new, and versatile publishing tool that supports R, Python, Julia, and ObservableJS.*</span>
+<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/creating-quarto-websites/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/creating-quarto-websites)</span>  -->
 
-:::
+<!-- <span style = 'font-size:95%; color:#959599;'>*A personal website is not only a great way to showcase your experiences and skills, but also gives people (potential employers included!) a better sense of who you are as a person. There are lots of great ways to build websites using R (e.g. `{distill}`, `{blogdown}`) -- this year, we'll be using [Quarto](https://quarto.org/), an exciting, new, and versatile publishing tool that supports R, Python, Julia, and ObservableJS.*</span> -->
 
-::::
+<!-- ::: -->
 
----
+<!-- :::: -->
 
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+<!-- --- -->
 
-::: {}
+<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
 
-August 18, 2022
+<!-- ::: {} -->
 
-:::
+<!-- August 18, 2022 -->
 
+<!-- ::: -->
 
-::: {}
 
-<span style = 'font-size:110%;'>`r fontawesome::fa("google", fill = "#333333", a11y = "sem")` **Teach Me How to Google**</span>
+<!-- ::: {} -->
 
-<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/teach-me-how-to-google/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/teach-me-how-to-google)</span> 
+<!-- <span style = 'font-size:110%;'>`r fontawesome::fa("google", fill = "#333333", a11y = "sem")` **Teach Me How to Google**</span> -->
 
-<span style = 'font-size:95%; color:#959599;'>*Googling for code help is something that all data scientists (at all career stages) do. But figuring out how to get the information you need back can be incredibly challenging, particularly for new coders. In this workshop, we’ll discuss strategies for refining your queries to increase your chances of finding informative solutions. [Approx. Duration: 1.5 hours]*</span>
+<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/teach-me-how-to-google/#1)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/teach-me-how-to-google)</span>  -->
 
-:::
+<!-- <span style = 'font-size:95%; color:#959599;'>*Googling for code help is something that all data scientists (at all career stages) do. But figuring out how to get the information you need back can be incredibly challenging, particularly for new coders. In this workshop, we’ll discuss strategies for refining your queries to increase your chances of finding informative solutions. [Approx. Duration: 1.5 hours]*</span> -->
 
-::::
+<!-- ::: -->
 
----
+<!-- :::: -->
 
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+<!-- --- -->
 
-::: {}
+<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
 
-October 3, 2022
+<!-- ::: {} -->
 
-:::
+<!-- October 3, 2022 -->
 
+<!-- ::: -->
 
-::: {}
 
-<span style = 'font-size:110%;'>`r fontawesome::fa("keyboard", fill = "#333333", a11y = "sem")` **IDE Tips & Tricks (and other keyboard shortcuts to make you a more efficient programmer)**</span>
+<!-- ::: {} -->
 
-<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/IDE-tips-and-tricks/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/IDE-tips-and-tricks)</span> 
+<!-- <span style = 'font-size:110%;'>`r fontawesome::fa("keyboard", fill = "#333333", a11y = "sem")` **IDE Tips & Tricks (and other keyboard shortcuts to make you a more efficient programmer)**</span> -->
 
-<span style = 'font-size:95%; color:#959599;'>*As environmental data scientists, we spend a lot of time writing code in different IDEs (**I**ntegrated **D**evelopment **E**nvironments), like RStudio, VS Code, and Jupyter Notebooks via Anaconda Navigator. Taking some time to learn keyboard shortcuts (and customization tips) can make you a more efficient (and happier) hacker! [Approx. Duration: 1 hour]*</span>
+<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/IDE-tips-and-tricks/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/IDE-tips-and-tricks)</span>  -->
 
-:::
+<!-- <span style = 'font-size:95%; color:#959599;'>*As environmental data scientists, we spend a lot of time writing code in different IDEs (**I**ntegrated **D**evelopment **E**nvironments), like RStudio, VS Code, and Jupyter Notebooks via Anaconda Navigator. Taking some time to learn keyboard shortcuts (and customization tips) can make you a more efficient (and happier) hacker! [Approx. Duration: 1 hour]*</span> -->
 
-::::
+<!-- ::: -->
 
----
+<!-- :::: -->
 
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+<!-- --- -->
 
-::: {}
+<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
 
-October 10, 2022
+<!-- ::: {} -->
 
-:::
+<!-- October 10, 2022 -->
 
+<!-- ::: -->
 
-::: {}
 
-<span style = 'font-size:110%;'>`r fontawesome::fa("sass", fill = "#333333", a11y = "sem")``r fontawesome::fa("css3-alt", fill = "#333333", a11y = "sem")` **Customizing Quarto Websites: Make your website stand out using Sass & CSS**</span>
+<!-- ::: {} -->
 
-<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/customizing-quarto-websites)</span> 
+<!-- <span style = 'font-size:110%;'>`r fontawesome::fa("sass", fill = "#333333", a11y = "sem")``r fontawesome::fa("css3-alt", fill = "#333333", a11y = "sem")` **Customizing Quarto Websites: Make your website stand out using Sass & CSS**</span> -->
 
-<span style = 'font-size:95%; color:#959599;'>*Quarto provides a user-friendly framework for creating your personal website -- but adding your own creative touch can help make yours stand out from the rest. In this workshop, we learn how to (a) add a template to our landing page and update the `_quarto.yml` file to quickly add fun features/update the overall layout of our website, (b) create a stylesheet and define Sass variables to start modifying the overall theme (colors, fonts, etc) of our site, and (c) define CSS rules to make fine-tuned adjustments to our site's appearance. [Approx. Duration: 2 hours]*</span>
+<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/customizing-quarto-websites)</span>  -->
 
-:::
+<!-- <span style = 'font-size:95%; color:#959599;'>*Quarto provides a user-friendly framework for creating your personal website -- but adding your own creative touch can help make yours stand out from the rest. In this workshop, we learn how to (a) add a template to our landing page and update the `_quarto.yml` file to quickly add fun features/update the overall layout of our website, (b) create a stylesheet and define Sass variables to start modifying the overall theme (colors, fonts, etc) of our site, and (c) define CSS rules to make fine-tuned adjustments to our site's appearance. [Approx. Duration: 2 hours]*</span> -->
 
-::::
+<!-- ::: -->
 
----
+<!-- :::: -->
 
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+<!-- --- -->
 
-::: {}
+<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
 
-October 24, 2022
+<!-- ::: {} -->
 
-:::
+<!-- October 24, 2022 -->
 
+<!-- ::: -->
 
-::: {}
 
-<span style = 'font-size:110%;'>`r fontawesome::fa("blog", fill = "#333333", a11y = "sem")` **Data Science Blogs: How to start one, and what to write about**</span>
+<!-- ::: {} -->
 
-<span style = 'font-size:95%;'>[`r fontawesome::fa("blog", fill = "#64605F", a11y = "sem")` blog post](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/samanthacsik/samanthacsik.github.io/blob/main/posts/2022-10-24-quarto-blogs/index.qmd)</span> 
+<!-- <span style = 'font-size:110%;'>`r fontawesome::fa("blog", fill = "#333333", a11y = "sem")` **Data Science Blogs: How to start one, and what to write about**</span> -->
 
-<span style = 'font-size:95%; color:#959599;'>*Blogging about your data science adventures has **a lot** of benefits -- it can help you to build your online profile/portfolio, practice your writing and communication skills, stay atop data science trends, solicit feedback from the community, network, learn new skills and/or solidify understanding, combat imposter syndrome, etc. In this workshop, we'll learn how to add a blog to our Quarto website, customize posts, and (hopefully) get inspired to begin our blogging journeys! [Approx. Duration: 2 hours]*</span>
+<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("blog", fill = "#64605F", a11y = "sem")` blog post](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/samanthacsik/samanthacsik.github.io/blob/main/posts/2022-10-24-quarto-blogs/index.qmd)</span>  -->
 
-:::
+<!-- <span style = 'font-size:95%; color:#959599;'>*Blogging about your data science adventures has **a lot** of benefits -- it can help you to build your online profile/portfolio, practice your writing and communication skills, stay atop data science trends, solicit feedback from the community, network, learn new skills and/or solidify understanding, combat imposter syndrome, etc. In this workshop, we'll learn how to add a blog to our Quarto website, customize posts, and (hopefully) get inspired to begin our blogging journeys! [Approx. Duration: 2 hours]*</span> -->
 
-::::
+<!-- ::: -->
 
----
+<!-- :::: -->
 
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+<!-- --- -->
 
-::: {}
+<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
 
-January 20 & 27, 2023
+<!-- ::: {} -->
 
-:::
+<!-- January 20 & 27, 2023 -->
 
+<!-- ::: -->
 
-::: {}
 
-<span style = 'font-size:110%;'>`r fontawesome::fa("star", fill = "#333333", a11y = "sem")` **EDS 430: Intro to Shiny**</span>
+<!-- ::: {} -->
 
-<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/EDS430-Shiny/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/EDS430-Shiny)</span> 
+<!-- <span style = 'font-size:110%;'>`r fontawesome::fa("star", fill = "#333333", a11y = "sem")` **EDS 430: Intro to Shiny**</span> -->
 
-<span style = 'font-size:95%; color:#959599;'>*In this workshop, students will learn how to build and deploy Shiny applications. The `{shiny}` package provides a framework that allows R users to build interactive web applications and dashboards, and has become a popular tool for sharing data analyses and data-derived outputs with broad audiences. In this two-part short course, students will learn the fundamentals of reactivity, how to customize an application user interface (UI), best practices and workflows for developing shiny apps, how to deploy their apps online via RStudio’s hosting service, shinyapps.io, and more. [Approx. Duration: 10 hours]*</span>
+<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/EDS430-Shiny/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/EDS430-Shiny)</span>  -->
 
-:::
+<!-- <span style = 'font-size:95%; color:#959599;'>*In this workshop, students will learn how to build and deploy Shiny applications. The `{shiny}` package provides a framework that allows R users to build interactive web applications and dashboards, and has become a popular tool for sharing data analyses and data-derived outputs with broad audiences. In this two-part short course, students will learn the fundamentals of reactivity, how to customize an application user interface (UI), best practices and workflows for developing shiny apps, how to deploy their apps online via RStudio’s hosting service, shinyapps.io, and more. [Approx. Duration: 10 hours]*</span> -->
 
-::::
+<!-- ::: -->
 
----
+<!-- :::: -->
 
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+<!-- --- -->
 
-::: {}
+<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
 
-March 16, 2023
+<!-- ::: {} -->
 
-:::
+<!-- March 16, 2023 -->
 
+<!-- ::: -->
 
-::: {}
 
-<span style = 'font-size:110%;'>`r fontawesome::fa("chart-line", fill = "#333333", a11y = "sem")` **One workflow for building effective (and pretty) `{ggplot2}` data visualizations**</span>
+<!-- ::: {} -->
 
-<span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/ggplot2-workflow/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/ggplot2-workflow)</span> 
+<!-- <span style = 'font-size:110%;'>`r fontawesome::fa("chart-line", fill = "#333333", a11y = "sem")` **One workflow for building effective (and pretty) `{ggplot2}` data visualizations**</span> -->
 
-<span style = 'font-size:95%; color:#959599;'>*`{ggplot2}` has, in many ways, become the de facto tool for data visualization in R. And with the many extension packages available, there's hardly a limit to what you can create. Building effective and visually-pleasing data visualizations is a skill that gets easier with practice, and following a somewhat structured workflow -- at least at the start -- can help you get there faster. This workshop covers one approach for doing so, though you'll find what works best for you with time. [Approx. Duration: 2 hours]*</span>
+<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/ggplot2-workflow/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/ggplot2-workflow)</span>  -->
 
-:::
+<!-- <span style = 'font-size:95%; color:#959599;'>*`{ggplot2}` has, in many ways, become the de facto tool for data visualization in R. And with the many extension packages available, there's hardly a limit to what you can create. Building effective and visually-pleasing data visualizations is a skill that gets easier with practice, and following a somewhat structured workflow -- at least at the start -- can help you get there faster. This workshop covers one approach for doing so, though you'll find what works best for you with time. [Approx. Duration: 2 hours]*</span> -->
 
-::::
+<!-- ::: -->
 
----
+<!-- :::: -->
 
-:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+<!-- --- -->
 
-::: {}
+<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
 
-April 14, 2023
+<!-- ::: {} -->
 
-:::
+<!-- April 14, 2023 -->
 
+<!-- ::: -->
 
-::: {}
 
-<span style = 'font-size:110%;'>`r fontawesome::fa("rocket", fill = "#333333", a11y = "sem")` **An iterative approach to streamlining analytical workflows using functions and for loops**</span>
+<!-- ::: {} -->
 
-<span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/functions-workshop/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/functions-workshop)</span> 
+<!-- <span style = 'font-size:110%;'>`r fontawesome::fa("rocket", fill = "#333333", a11y = "sem")` **An iterative approach to streamlining analytical workflows using functions and for loops**</span> -->
 
-<span style = 'font-size:95%; color:#959599;'>*As your data processing and analyses get longer and more complex, the chances that you’ll benefit from writing functions and/or for loops will also increase. However, whether you're a new learner or seasoned programmer, it can sometimes feel overwhelming to know exactly where to start -- especially when you have an end goal that builds additional complexity/flexibility into your functions and for loops. Taking an iterative approach to building out your code can help make this process clearer, less daunting, and more fun. In this workshop, we'll use one case study to practice breaking down the function and for loop writing process into manageable, bite-sized steps. [Approx. Duration: 2 hours]*</span>
+<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/functions-workshop/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/functions-workshop)</span>  -->
 
-:::
+<!-- <span style = 'font-size:95%; color:#959599;'>*As your data processing and analyses get longer and more complex, the chances that you’ll benefit from writing functions and/or for loops will also increase. However, whether you're a new learner or seasoned programmer, it can sometimes feel overwhelming to know exactly where to start -- especially when you have an end goal that builds additional complexity/flexibility into your functions and for loops. Taking an iterative approach to building out your code can help make this process clearer, less daunting, and more fun. In this workshop, we'll use one case study to practice breaking down the function and for loop writing process into manageable, bite-sized steps. [Approx. Duration: 2 hours]*</span> -->
 
-::::
+<!-- ::: -->
 
----
+<!-- :::: -->
 
-
-<h2 align="center">[Find past workshop materials here!](past_workshops.html)</h2>
 
 
 
