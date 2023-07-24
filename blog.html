@@ -88,27 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>UCSB MEDS: NCEAS Building Policies</title>
+  <title>UCSB MEDS: MEDS Blog</title>
 
 
   <link rel="icon" type="image/png" href="img/meds_hex.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="UCSB MEDS: NCEAS Building Policies"/>
+  <meta property="og:title" content="UCSB MEDS: MEDS Blog"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="UCSB MEDS"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="UCSB MEDS: NCEAS Building Policies"/>
+  <meta property="twitter:title" content="UCSB MEDS: MEDS Blog"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["NCEAS Building Policies"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["MEDS Blog"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2565,12 +2565,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"NCEAS Building Policies","authors":[]}
+{"title":"MEDS Blog","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2631,9 +2631,254 @@ STUDENT RESOURCES
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).on("load", function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      page_category = decodeURIComponent(page_category)
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-apply-limit l-page">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="MEDS Blog">MEDS Blog</h1>
+<a href="posts/2023-06-22-capstones2023/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">June 22, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">NCEAS Communications</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2023-06-22-capstones2023/capstone_class_2023.jpeg"/>
+</div>
+<div class="description">
+<h2>A Powerful Sequel: Masters Capstone Projects in Environmental Data Science</h2>
+<div class="dt-tags"></div>
+<p>The second cohort of the NCEAS Masters of Environmental Data Science (MEDS) graduates present their eight client-facing environmental data science projects to the public.</p>
+</div>
+</a>
+<a href="posts/2022-08-05-building-a-personal-website-using-quarto/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Aug. 8, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Samantha Csik</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2022-08-05-building-a-personal-website-using-quarto/quarto_share.png"/>
+</div>
+<div class="description">
+<h2>Building a personal website using Quarto</h2>
+<div class="dt-tags"></div>
+<p>Only 5 days of programming experience? No problem! Quarto makes building and customizing websites fun and easy for new R (and other programming language) learners.</p>
+</div>
+</a>
+<a href="posts/2022-01-06-capstone-proposal/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 7, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Halina Do-Linh and Clarissa Boyajian</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2022-01-06-capstone-proposal/j-kelly-brito-PeUJyoylfe4-unsplash.jpeg"/>
+</div>
+<div class="description">
+<h2>Capstone Reflections Part 1: Writing a Proposal</h2>
+<div class="dt-tags"></div>
+<p></p>
+</div>
+</a>
+<a href="posts/2021-09-24-summery-summary/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 24, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Juliet Cohen and Scout Leonard</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-09-24-summery-summary/preview_image.jpg"/>
+</div>
+<div class="description">
+<h2>A Summer-y Summary of MEDS Quarter 1</h2>
+<div class="dt-tags"></div>
+<p></p>
+</div>
+</a>
+<a href="posts/2021-07-15-nceas-orientation/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">July 15, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Kimberly Yom</div>
+</div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Orientation Logistics</h2>
+<div class="dt-tags"></div>
+<p>How to Get to NCEAS</p>
+</div>
+</a>
+<a href="posts/2021-04-04-countdown-to-meds/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">April 15, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Allison Horst</div>
+<div class="dt-author">Jamie Montgomery</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts/2021-04-04-countdown-to-meds/images/toy_truck.jpg"/>
+</div>
+<div class="description">
+<h2>Countdown to MEDS: 105 days out</h2>
+<div class="dt-tags"></div>
+<p>What we're up to with 4 months to go</p>
+</div>
+</a>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>NCEAS Building Policies</h1>
+<h1>MEDS Blog</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2641,32 +2886,6 @@ STUDENT RESOURCES
 
 
 <div class="d-article">
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="img/nceas.png" alt="The NCEAS building, located at 1021 Anacapa St. in downtown Santa Barbara." width="100%" style="display: block; margin: auto;" /></p>
-</div>
-<p>All students are subject to NCEAS’ <a href="https://live-ncea-ucsb-edu-v01.pantheonsite.io/sites/default/files/2020-02/NCEAS_Code-of-Conduct_2019.pdf">Code of Conduct</a> while at NCEAS.</p>
-<h3 id="bikes">Bikes</h3>
-<p>Do not bring your bike inside the building. All bikes must be kept outside of the building. There are a couple bike parking spots along Anacapa, and a few in the covered parking garage at our building.</p>
-<h3 id="skateboards">Skateboards</h3>
-<p>Skateboards are permitted in the first floor as long as they are not ridden inside. They must be laid flat on the ground, not against walls to avoid marking up the walls.</p>
-<h3 id="kitchen">Kitchen</h3>
-<p>MEDS students may use the first floor kitchen. This kitchen is also shared with NCEAS. Please be respectful and keep the kitchen clean. This includes washing your dishes, drying and putting them away. Do not leave dishes in the sink. The refrigerator is a shared space that must be kept clean and smell-free. Kitchen privileges can and will be revoked at any time if policies are not followed.</p>
-<p><strong>Students are only permitted to store food to be consumed that day in the fridge. No alcoholic beverages or long-term storage is allowed.</strong></p>
-<p>Each month we assign 2 students to do a refrigerator clean out, removing food that has expired and empty forgotten containers. This is assigned during summer session.</p>
-<h3 id="after-hours-access">After hours access</h3>
-<p>Students are currently able to access and use the NCEAS first floor space after hours and on weekends. Instructions on how to do so will be provided during orientation.</p>
-<h3 id="whiteboards">Whiteboards</h3>
-<p>Please erase and clean all whiteboards after use and leave markers in their designated spot.</p>
-<h3 id="pets">Pets</h3>
-<p>Pets are not allowed. UCSB Campus does not permit dogs in buildings except for service dogs.</p>
-<h3 id="third-floor">Third Floor</h3>
-<p>The building’s third floor is home to many of the NCEAS staff and scientists, as well as our conference rooms and outdoor terrace. The conference rooms are not for student use. If you need private group meeting space, you can reserve the first floor room (#105).</p>
-<p>The terrace has an occupancy limit of just 49 people. This unfortunately limits the access we can provide our MEDS students to invited events only.</p>
-<h3 id="room-reservations">Room Reservations</h3>
-<p>The Sequoia Room (first floor, NCEAS #150) may be reserved via the Bren Scheduling system. Please visit <strong>booking.bren.ucsb.edu</strong> and sign in using your UCSBnetID credentials. For more information, check out this <a href="https://bren.zendesk.com/hc/en-us/articles/4407675987092-Bren-Scheduling-System-Instructions-RobinPowered-">Bren zendesk article</a>.</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="img/sequoia_room.jpg" alt="The Sequoia Room, which includes a meeting table that seats 7 people, a large computer monitor, and whiteboard." width="100%" style="display: block; margin: auto;" /></p>
-</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

@@ -14,9 +14,17 @@ knitr::include_graphics("img/nceas-logo.png")
 
 ## Getting to NCEAS
 
+### Finding us
+
+NCEAS is located at 1021 Anacapa St. and occupies the 1st and 3rd floors of the building. MEDS students will primarily use the 1st floor space, which includes the classroom, co-working spaces, a reservable meeting room, and more. Find the building entrance off Santa Barbara City Lot #8:
+
+```{r, echo = FALSE, out.width = "100%", fig.align = 'center', fig.alt="The NCEAS building, located at 1021 Anacapa St. in downtown Santa Barbara."}
+knitr::include_graphics("img/1021_Anacapa.jpg")
+```
+
 ### Parking
 
-There is a city lot ([Lot 8](https://www.google.com/maps/place/City+of+Santa+Barbara+Downtown+Parking+Lot+%238/@34.4229813,-119.7039768,17z/data=!3m1!4b1!4m6!3m5!1s0x80e9153598183b1f:0x89c0e3f26a29a394!8m2!3d34.4229813!4d-119.7014019!16s%2Fg%2F11ns2hn1mb?entry=ttu)) attached to the building. It is free for the first 75 minutes and $2.50 per hour after that. Most people opt to find free street parking a few blocks away -- just make sure to look for street sweeping restrictions.
+There is a city lot ([Lot 8](https://www.google.com/maps/place/City+of+Santa+Barbara+Downtown+Parking+Lot+%238/@34.4229813,-119.7039768,17z/data=!3m1!4b1!4m6!3m5!1s0x80e9153598183b1f:0x89c0e3f26a29a394!8m2!3d34.4229813!4d-119.7014019!16s%2Fg%2F11ns2hn1mb?entry=ttu)) attached to the building. It is free for the first 75 minutes and $3.00 per hour after that. Most people opt to find free street parking a few blocks away -- just make sure to look for street sweeping restrictions.
 
 There is limited bike parking available in the parking garage, accessed from Lot 8.
 
@@ -31,7 +39,7 @@ If you have any questions, we can be reached at academics@bren.ucsb.edu.
 All students are subject to NCEAS’ [Code of Conduct](https://live-ncea-ucsb-edu-v01.pantheonsite.io/sites/default/files/2020-02/NCEAS_Code-of-Conduct_2019.pdf) while at NCEAS.
 
 ### Bikes
-Do not bring your bike inside the building. All bikes must be kept outside of the building. There are a couple bike parking spots along Anacapa, and a couple in the covered parking garage at our building.
+Do not bring your bike inside the building. All bikes must be kept outside of the building. There are a couple bike parking spots along Anacapa, and a few in the covered parking garage at our building.
 
 ### Skateboards 
 Skateboards are permitted in the first floor as long as they are not ridden inside. They must be laid flat on the ground, not against walls to avoid marking up the walls.
