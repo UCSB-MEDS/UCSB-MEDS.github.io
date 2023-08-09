@@ -49,6 +49,9 @@ You should already have git on your device, but let’s check for it anyway.
 
 - If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): `/usr/local/bin/git`. If you instead get no response at all, you should download & install git from here: [git-scm.com/downloads](https://git-scm.com/downloads)
 
+<center><span style="color: #003660; font-size:20px;">**An aside:** We'll be using git *a lot* throughout MEDS. GitHub's [Git Guides](https://github.com/git-guides) are a really wonderful resource to refer to!</span></center>
+
+
 #### 5. Create a GitHub account 
 
 - If you don’t already have a GitHub account, go to github.com and create one. Here are helpful considerations for choosing a username: [happygitwithr.com/github-acct.html](https://happygitwithr.com/github-acct.html). We suggest that you **do not** use your *@ucsb.edu email* when setting up your account, as that email will be deactivated soon after graduating. Instead, a *personal email* or your *@bren.ucsb.edu* email is best.

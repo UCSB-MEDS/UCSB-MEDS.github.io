@@ -54,6 +54,8 @@ You should already have git on your device, but let’s check for it anyway.
 
 - If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): `/usr/local/bin/git`. If you instead get no response at all, you should download & install git from here: [git-scm.com/downloads](https://git-scm.com/downloads)
 
+<center><span style="color: #003660; font-size:20px;">**An aside:** We'll be using git *a lot* throughout MEDS. GitHub's [Git Guides](https://github.com/git-guides) are a really wonderful resource to refer to!</span></center>
+
 
 #### 5. Create a GitHub account 
 
