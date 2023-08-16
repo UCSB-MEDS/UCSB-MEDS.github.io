@@ -36,7 +36,7 @@ For a complete list of staff and faculty, please see the [Bren](https://bren.ucs
 <span style = 'font-size:95%;'>*Miya helps manage the Master of Environmental Data Science (MEDS) Career Development Program. She oversees day-to-day operations and provides career development advising services within a variety of areas, including career direction support, job search strategy, networking opportunities, and document review for MEDS students.*</span>
 
 #### `r fontawesome::fa("graduation-cap", fill = "#047C90", a11y = "sem")` Admissions & Student Affairs
-* [Kimberly Yom](https://bren.ucsb.edu/people/kimberly-yom) (*she/her*) | **MEDS Admissions & Student Affairs Coordinator** | Bren Hall 2512   
+* [Kimberly Yom](https://bren.ucsb.edu/people/kimberly-yom) | **MEDS Admissions & Student Affairs Coordinator** | Bren Hall 2512   
 `r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` kyom@bren.ucsb.edu  
 <span style = 'font-size:95%;'>*If you’ve ever wondered who, exactly, sat on the receiving end of your MEDS application - it was Kimberly. Kimberly works on the Admissions and Student Affairs team, which means that she processes applications and gets to know students well before they ever step foot in NCEAS or Bren Hall. Aside from getting to know them just on paper, Kimberly serves as a resource for MEDS students to help them with any issues they might encounter in graduate school, whether it’s questions about degree requirements, financial awards, or resources to help with personal matters. If you have any questions or just want to chat, swing by her office or drop her a line!*</span>
 
