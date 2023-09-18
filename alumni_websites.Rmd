@@ -6,6 +6,27 @@ title: "Alumni Websites"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+### MEDS Class of 2023
+
+```{r, echo = FALSE, out.width = "80%", out.height = "80%", fig.align = 'left'}
+knitr::include_graphics("img/cohort_2023.jpg")
+```
+
+<br>
+
+- [Andrew Bartnik](https://andrewbartnik.github.io/)
+- [Meagan Brown](https://meaganbrown.github.io/)
+- [Victoria Cutler](https://victoriacutler.github.io/)
+- [Erica Dale](https://ericamarie9016.github.io/)
+- [Kiran Favre](https://kiranfavre.github.io/)
+- [Dalila Lara](https://dalilalara.github.io/)
+- [Colleen McCamy](https://colleenmccamy.github.io/)
+- [Javier Patrón](https://javipatron.github.io/)
+- [Alex Reed](https://reedalexandria.github.io/)
+- [Guillermo Romero](https://romero61.github.io/)
+- [Lewis White](https://lewis-r-white.github.io/)
+- [Elke Windschitl](https://elkewind.github.io/)
+
 ### MEDS Class of 2022
 
 ```{r, echo = FALSE, out.width = "80%", out.height = "80%", fig.align = 'left'}
