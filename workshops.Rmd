@@ -12,28 +12,28 @@ We are actively developing data science workshops, which are meant to supplement
 
 ---
 
-<center><span style="font-size:200%; color:#047C91;">Workshop materials for the 2023-2024 academic year coming soon!</span></center>
+<!-- <center><span style="font-size:200%; color:#047C91;">Workshop materials for the 2023-2024 academic year coming soon!</span></center> -->
 
-<!-- :::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"} -->
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
 
-<!-- ::: {} -->
+::: {}
 
-<!-- August 5, 2022  -->
+September 25, 2023
 
-<!-- ::: -->
+:::
 
 
-<!-- ::: {} -->
+::: {}
 
-<!-- `r fontawesome::fa("window-maximize", fill = "#333333", a11y = "sem")` **Creating your personal website using Quarto**   -->
+`r fontawesome::fa("window-maximize", fill = "#333333", a11y = "sem")` **Creating your personal website using Quarto**
 
-<!-- <span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/creating-quarto-websites/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/creating-quarto-websites)</span>  -->
+<span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/creating-quarto-websites/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/creating-quarto-websites)</span>
 
-<!-- <span style = 'font-size:95%; color:#959599;'>*A personal website is not only a great way to showcase your experiences and skills, but also gives people (potential employers included!) a better sense of who you are as a person. There are lots of great ways to build websites using R (e.g. `{distill}`, `{blogdown}`) -- this year, we'll be using [Quarto](https://quarto.org/), an exciting, new, and versatile publishing tool that supports R, Python, Julia, and ObservableJS.*</span> -->
+<span style = 'font-size:95%; color:#959599;'>*A personal website is not only a great way to showcase your experiences and skills, but also gives people (potential employers included!) a better sense of who you are as a person. There are lots of great ways to build websites using R (e.g. `{distill}`, `{blogdown}`) -- this year, we'll be using [Quarto](https://quarto.org/), an exciting, new, and versatile publishing tool that supports R, Python, Julia, and ObservableJS.*</span>
 
-<!-- ::: -->
+:::
 
-<!-- :::: -->
+::::
 
 <!-- --- -->
 
