@@ -75,12 +75,12 @@ summer %>%
 
 ```{r, echo = FALSE}
 # Update 220 title cell (w/ link)
-fall[1,2] <- cell_spec("Working with Environmental Datasets",  "html", link = "https://samanthastevenson.github.io/EDS220_Fall2022_site/")
+fall[1,2] <- cell_spec("Working with Environmental Datasets",  "html", link = "https://carmengg.github.io/eds-220-book/")
 
 # Update 222 title cell (w/ link)
 fall[2,2] <- cell_spec("Statistics for Environmental Data Science",  "html", link = "https://tcarleton.github.io/EDS-222-stats/")
 
-# Update 223 title cell (w/ link) - REMOVED LINK FOR NOW (5/27/2022) BC RUTH TAKING OVER
+# Update 223 title cell (w/ link) 
  fall[3,2] <- cell_spec("Geospatial Analysis & Remote Sensing",  "html", link = "https://ryoliver.github.io/EDS_223_spatial_analysis/")
 
 
