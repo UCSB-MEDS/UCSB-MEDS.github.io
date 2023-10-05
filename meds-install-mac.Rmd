@@ -56,7 +56,7 @@ which git
 
 - If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): `/usr/local/bin/git`. If you instead get no response at all, you should download & install git from here: [git-scm.com/downloads](https://git-scm.com/downloads)
 
-<center><span style="color: #003660; font-size:20px;">**An aside:** We'll be using git *a lot* throughout MEDS. GitHub's [Git Guides](https://github.com/git-guides) are a really wonderful resource to refer to!</span></center>
+**An aside:** We'll be using git *a lot* throughout MEDS. GitHub's [Git Guides](https://github.com/git-guides) are a really wonderful resource to refer to!
 
 #### 5. Create a GitHub account 
 
@@ -77,6 +77,14 @@ git config --global user.email janedoe@example.com
 git config --list --global
 ```
 
+<span style="color: #003660; font-size:20px;">**IMPORTANT:** If you're configuring git on a **Bren server** (e.g. Taylor or Tsosie), you must also run the following in the Terminal: 
+
+```{bash eval=FALSE}
+git config --global credential.helper 'cache --timeout=10000000'
+```
+
+<span style="color: #003660; font-size:20px;">This prevents important credentials (e.g. a GitHub Personal Access Token, PAT, which you'll set in step #7) from being removed from the server's memory. You **do not** need to complete this step when configuring git on your local computer.</span>
+
 #### 7. Store your GitHub personal access token (PAT)
 
 **First:** What even is a personal access token? From GitHub's documentation:
@@ -96,7 +104,6 @@ A lot of scary looking red text will show up while this is installing - don’t 
 ```{r, echo = FALSE, fig.out="60%", fig.align="center"}
 knitr::include_graphics("img/install-guide-images/install-pkg-success.png")
 ```
-
 
 - Run the following in the RStudio Console: 
 
@@ -145,14 +152,6 @@ knitr::include_graphics("img/install-guide-images/git_sitrep.png")
 ```
 
 **A note on expiring tokens:** Setting an expiration date on personal access tokens is highly recommended in order to keep your information secure. GitHub will send you an email when it's time to renew a token that's about to expire. When it does, follow the same steps above to regenerate your token.
-
-<span style="color: #003660; font-size:20px;">**ATTENTION:** If you're setting your PAT for a Bren server (e.g. Taylor or Tsosie), you must also run the following in the Terminal: 
-
-```{bash eval=FALSE}
-git config --global credential.helper 'cache --timeout=10000000'
-```
-
-<span style="color: #003660; font-size:20px;">If you *do not*, your PAT will be removed from the server's memory and you'll have to reset your PAT (over and over and over again, even if your PAT has not expired on GitHub):</span>
 
 #### 8. Install Anaconda
 

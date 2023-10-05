@@ -2677,9 +2677,7 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 <ul>
 <li>If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): <code>/usr/local/bin/git</code>. If you instead get no response at all, you should download &amp; install git from here: <a href="https://git-scm.com/downloads">git-scm.com/downloads</a></li>
 </ul>
-<center>
-<span style="color: #003660; font-size:20px;"><strong>An aside:</strong> We’ll be using git <em>a lot</em> throughout MEDS. GitHub’s <a href="https://github.com/git-guides">Git Guides</a> are a really wonderful resource to refer to!</span>
-</center>
+<p><strong>An aside:</strong> We’ll be using git <em>a lot</em> throughout MEDS. GitHub’s <a href="https://github.com/git-guides">Git Guides</a> are a really wonderful resource to refer to!</p>
 <h4 id="create-a-github-account">5. Create a GitHub account</h4>
 <ul>
 <li>If you don’t already have a GitHub account, go to github.com and create one. Here are helpful considerations for choosing a username: <a href="https://happygitwithr.com/github-acct.html">happygitwithr.com/github-acct.html</a>. We suggest that you <strong>do not</strong> use your <em><span class="citation" data-cites="ucsb.edu">@ucsb.edu</span> email</em> when setting up your account, as that email will be deactivated soon after graduating. Instead, a <em>personal email</em> or your <em><span class="citation" data-cites="bren.ucsb.edu">@bren.ucsb.edu</span></em> email is best.</li>
@@ -2698,6 +2696,11 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--list</span> <span class="at">--global</span></span></code></pre></div>
 </div>
+<p><span style="color: #003660; font-size:20px;"><strong>IMPORTANT:</strong> If you’re configuring git on a <strong>Bren server</strong> (e.g. Taylor or Tsosie), you must also run the following in the Terminal:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> credential.helper <span class="st">&#39;cache --timeout=10000000&#39;</span></span></code></pre></div>
+</div>
+<p><span style="color: #003660; font-size:20px;">This prevents important credentials (e.g. a GitHub Personal Access Token, PAT, which you’ll set in step #7) from being removed from the server’s memory. You <strong>do not</strong> need to complete this step when configuring git on your local computer.</span></p>
 <h4 id="store-your-github-personal-access-token-pat">7. Store your GitHub personal access token (PAT)</h4>
 <p><strong>First:</strong> What even is a personal access token? From GitHub’s documentation:</p>
 <blockquote>
@@ -2708,7 +2711,7 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 <li>Once you have git configured successfully, install the <code>usethis</code> package in R by running the following in the RStudio Console:</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(“usethis”)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(“usethis”)</span></code></pre></div>
 </div>
 <p>A lot of scary looking red text will show up while this is installing - don’t panic. If you get to the end and see something like below (with no error) it’s installed successfully.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2761,11 +2764,6 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 <p><img src="img/install-guide-images/git_sitrep.png" width="469" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong>A note on expiring tokens:</strong> Setting an expiration date on personal access tokens is highly recommended in order to keep your information secure. GitHub will send you an email when it’s time to renew a token that’s about to expire. When it does, follow the same steps above to regenerate your token.</p>
-<p><span style="color: #003660; font-size:20px;"><strong>ATTENTION:</strong> If you’re setting your PAT for a Bren server (e.g. Taylor or Tsosie), you must also run the following in the Terminal:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> credential.helper <span class="st">&#39;cache --timeout=10000000&#39;</span></span></code></pre></div>
-</div>
-<p><span style="color: #003660; font-size:20px;">If you <em>do not</em>, your PAT will be removed from the server’s memory and you’ll have to reset your PAT (over and over and over again, even if your PAT has not expired on GitHub):</span></p>
 <h4 id="install-anaconda">8. Install Anaconda</h4>
 <ul>
 <li><a href="https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe">Click here to download 64-bit Graphical Installer</a>. This might pop open a new tab with a “redirecting you to…” phrase, but Anaconda should be downloading at the same time. It might take a couple minutes. After it’s downloaded, click it and hit Allow if you see the following:</li>
