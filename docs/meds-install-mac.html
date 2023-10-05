@@ -2676,9 +2676,13 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 <p>You should already have git on your device, but let’s check for it anyway.</p>
 <ul>
 <li><p>Open RStudio</p></li>
-<li><p>In the Terminal, run the following command:</p>
-<p><code>which git</code></p></li>
-<li><p>If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): <code>/usr/local/bin/git</code>. If you instead get no response at all, you should download &amp; install git from here: <a href="https://git-scm.com/downloads">git-scm.com/downloads</a></p></li>
+<li><p>In the Terminal, run the following command:</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">which</span> git</span></code></pre></div>
+</div>
+<ul>
+<li>If after running that you get something that looks like a file path to git on your computer, then you have git installed. For example, that might return something like this (or it could differ a bit): <code>/usr/local/bin/git</code>. If you instead get no response at all, you should download &amp; install git from here: <a href="https://git-scm.com/downloads">git-scm.com/downloads</a></li>
 </ul>
 <center>
 <span style="color: #003660; font-size:20px;"><strong>An aside:</strong> We’ll be using git <em>a lot</em> throughout MEDS. GitHub’s <a href="https://github.com/git-guides">Git Guides</a> are a really wonderful resource to refer to!</span>
@@ -2689,12 +2693,18 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 </ul>
 <h4 id="configure-git">6. Configure git</h4>
 <ul>
-<li><p>In RStudio, open the Terminal. Run the following commands (by pressing Enter after each line), replacing the username (keep the quotation marks!) and email with your username and email used for your GitHub account.</p>
-<p><code>git config --global user.name "Jane Doe"</code>
-<code>git config --global user.email janedoe@example.com</code></p></li>
-<li><p>Then, in the Terminal run the following, carefully checking that the name and email returned match your GitHub information:</p>
-<p><code>git config --list --global</code></p></li>
+<li>In RStudio, open the Terminal. Run the following commands (by pressing Enter after each line), replacing the username (keep the quotation marks!) and email with your username and email used for your GitHub account.</li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">&quot;Jane Doe&quot;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email janedoe@example.com</span></code></pre></div>
+</div>
+<ul>
+<li>Then, in the Terminal run the following, carefully checking that the name and email returned match your GitHub information:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--list</span> <span class="at">--global</span></span></code></pre></div>
+</div>
 <h4 id="store-your-github-personal-access-token-pat">7. Store your GitHub personal access token (PAT)</h4>
 <p><strong>First:</strong> What even is a personal access token? From GitHub’s documentation:</p>
 <blockquote>
@@ -2702,17 +2712,25 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 </blockquote>
 <p>This means that in order to push your work (files, scripts, etc.) from your laptop (or any other computer) to GitHub, you’ll need to first to generate a PAT. <strong>Importantly, you’ll need to generate a PAT for each computer you wish to work from.</strong> For example, we will complete the following steps to create a PAT for your personal laptop, but you’ll also need to create a PAT if/when you choose to work on any of the Bren servers. Good news is that you can follow these same steps when you’re ready to set up additional PATs on other machines. For now, let’s get a PAT for our personal laptop squared away:</p>
 <ul>
-<li><p>Once you have git configured successfully, install the <code>usethis</code> package in R by running the following in the RStudio Console:</p>
-<p><code>install.packages(“usethis”)</code></p></li>
+<li>Once you have git configured successfully, install the <code>usethis</code> package in R by running the following in the RStudio Console:</li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(“usethis”)</span></code></pre></div>
+</div>
 <p>A lot of scary looking red text will show up while this is installing - don’t panic. If you get to the end and see something like below (with no error) it’s installed successfully.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/install-pkg-success.png" width="520" style="display: block; margin: auto;" /></p>
 </div>
 <ul>
-<li><p>Run the following in the RStudio Console:</p>
-<p><code>usethis::create_github_token()</code></p></li>
-<li><p>Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this:</p></li>
+<li>Run the following in the RStudio Console:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/github-token.html'>create_github_token</a></span><span class='op'>(</span><span class='op'>)</span> </span></code></pre>
+</div>
+</div>
+<ul>
+<li>Enter your GitHub password when prompted. You’ll be taken to a screen that looks like this:</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/new-pat.png" width="1000" style="display: block; margin: auto;" /></p>
@@ -2726,20 +2744,35 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 </div>
 <ul>
 <li><p>Copy the generated PAT to your clipboard</p></li>
-<li><p>Back in RStudio, in the console run <code>gitcreds::gitcreds_set()</code>. This will prompt you to paste the PAT you just copied from GitHub. Paste the PAT, press Enter to run. You should see something like this show up if all is well so far (you’ll have pasted your PAT where mine says “REDACTED”):</p></li>
+<li><p>Back in RStudio, in the console run:</p></li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>gitcreds</span><span class='fu'>::</span><span class='fu'><a href='https://gitcreds.r-lib.org/reference/gitcreds_get.html'>gitcreds_set</a></span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<p>This will prompt you to paste the PAT you just copied from GitHub. Paste the PAT, press Enter to run. You should see something like this show up if all is well so far (you’ll have pasted your PAT where mine says “REDACTED”):</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/gitcreds-set.png" width="489" style="display: block; margin: auto;" /></p>
 </div>
 <ul>
-<li><p>In the RStudio Console, run:</p>
-<p><code>usethis::git_sitrep()</code></p></li>
+<li>In the RStudio Console, run:</li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/git_sitrep.html'>git_sitrep</a></span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
 <p>Does it return information about your connected GitHub account that looks something like below? Great! You’ve configured git and successfully stored your PAT.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/install-guide-images/git_sitrep.png" width="469" style="display: block; margin: auto;" /></p>
 </div>
-<p><strong>One last important note:</strong> Setting an expiration date on personal access tokens is highly recommended in order to keep your information secure. GitHub will send you an email when it’s time to renew a token that’s about to expire. When it does, follow the same steps above to regenerate your token.</p>
+<p><strong>A note on expiring tokens:</strong> Setting an expiration date on personal access tokens is highly recommended in order to keep your information secure. GitHub will send you an email when it’s time to renew a token that’s about to expire. When it does, follow the same steps above to regenerate your token.</p>
+<p><span style="color: #003660; font-size:20px;"><strong>ATTENTION:</strong> If you’re setting your PAT for a Bren server (e.g. Taylor or Tsosie), you must also run the following in the Terminal:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> credential.helper <span class="st">&#39;cache --timeout=10000000&#39;</span></span></code></pre></div>
+</div>
+<p><span style="color: #003660; font-size:20px;">If you <em>do not</em>, your PAT will be removed from the server’s memory and you’ll have to reset your PAT (over and over and over again, even if your PAT has not expired on GitHub):</span></p>
 <h4 id="install-anaconda">8. Install Anaconda</h4>
 <ul>
 <li><a href="https://repo.anaconda.com/archive/Anaconda3-2021.05-MacOSX-x86_64.pkg">Click here to download 64-bit Graphical Installer</a>. This might pop open a new tab with a “redirecting you to…” phrase, but Anaconda should be downloading at the same time. It might take a couple minutes. After it’s downloaded, click it and hit Allow if you see the following:</li>
@@ -2764,7 +2797,7 @@ Figure 1: Image Credit: Manny Gimond | Accessible at <a href="https://mgimond.gi
 <p>Once enrolled and your UCSBnetID is activated, you will have access to your <a href="https://www.connect.ucsb.edu/usage">UCSB Connect Account</a> which provides email, calendaring, and collaboration services. <em>You must use this account (<a href="mailto:UCSBnetID@ucsb.edu" class="email">UCSBnetID@ucsb.edu</a>) to log in and access all of your Google Apps (including Google Calendar, Google Drive, etc.).</em></p>
 <p>The <a href="https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&amp;ctz=America/Los_Angeles"><strong>MEDS Google Calendar</strong></a> contains all classes and events relevant for our MEDS students. Feel free to add this to your calendar if you find it helpful. To do so, log in to <a href="https://www.google.com/calendar">Google Calendar</a> using your <span class="citation" data-cites="ucsb.edu">@ucsb.edu</span> credentials &gt; Click on the <code>+</code> next to “Other calendars” on the left-hand side of your screen and choose “Browse resources” &gt; Click the drop down arrow next to “bren” and check the box next to “bren-calendar-meds”</p>
 <h3 id="end-meds-installation-guide">End MEDS Installation Guide</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
