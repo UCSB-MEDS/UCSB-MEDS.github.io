@@ -8,25 +8,41 @@ The [Request for Proposals](https://bren.ucsb.edu/research/masters-research/requ
 
 ## Timeline
 
-|Summer 2022        | Activity                |
-|-------------------|-------------------------|
-| August 11          | [Capstone project kickoff](https://docs.google.com/presentation/d/1LZCSsSWMCEL2dKqM2RzIjGJWAxC18S6jSpXQGyTDL9Q/edit#slide=id.ge6b7f452cd_0_6982)  |
-| August 19         | Writing a capstone project proposal |
-| Week 5            | Student nominations for capstone committee  |
-| Week 6            | Student elections for capstone committee  |
-| **Fall 2022**
-| October 14        | Proposals Due           |
-| November 16       | Capstone Project Reveal & voting begins |
-| Week 10(ish)      | Capstone project assignments announced |
-| **Winter 2023**
-| February 10       | Draft Design & Implementation plan due   |
-| March 8           | Faculty Reviews |
-| March 17          | Final Design & Implementation plan due |
-| **Spring 2023**
-| April 14          | Submit outline of Technical Documentation|
-| May 5             | Draft technical documentation & repository due |
-| June 2            | Final Presentations |
-| June 9            | Final project materials due |
+### Summer
+
+Bren School releases a MEDS [Request for Proposals](https://bren.ucsb.edu/research/masters-research/request-proposals-meds). Proposals for MEDS Capstone Projects may be submitted by faculty, students, and prospective clients.
+
+### Fall
+
+Submission period for new proposals ends. A committee of students, faculty, and staff selects appropriate projects. Students vote on and join project teams at the end of Fall Quarter.
+
+### Winter
+
+Students meet clients, refine project objectives, develop a design and implementation plan, host a meeting with the client and advisors, and begin preliminary product development.
+
+### Spring
+
+Students complete data science products, write technical documentation, host a meeting with the client and advisors, and present their work in a final product demonstration or visualization.
+
+<!-- |Summer 2022        | Activity                | -->
+<!-- |-------------------|-------------------------| -->
+<!-- | August 11          | [Capstone project kickoff](https://docs.google.com/presentation/d/1LZCSsSWMCEL2dKqM2RzIjGJWAxC18S6jSpXQGyTDL9Q/edit#slide=id.ge6b7f452cd_0_6982)  | -->
+<!-- | August 19         | Writing a capstone project proposal | -->
+<!-- | Week 5            | Student nominations for capstone committee  | -->
+<!-- | Week 6            | Student elections for capstone committee  | -->
+<!-- | **Fall 2022** -->
+<!-- | October 14        | Proposals Due           | -->
+<!-- | November 16       | Capstone Project Reveal & voting begins | -->
+<!-- | Week 10(ish)      | Capstone project assignments announced | -->
+<!-- | **Winter 2023** -->
+<!-- | February 10       | Draft Design & Implementation plan due   | -->
+<!-- | March 8           | Faculty Reviews | -->
+<!-- | March 17          | Final Design & Implementation plan due | -->
+<!-- | **Spring 2023** -->
+<!-- | April 14          | Submit outline of Technical Documentation| -->
+<!-- | May 5             | Draft technical documentation & repository due | -->
+<!-- | June 2            | Final Presentations | -->
+<!-- | June 9            | Final project materials due | -->
 
 
 ## Resources
