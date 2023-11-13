@@ -18,6 +18,31 @@ We are actively developing data science workshops, which are meant to supplement
 
 ::: {}
 
+November 13, 2023
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("comments", fill = "#333333", a11y = "sem")` **Intro to Inclusive Science Communication**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://docs.google.com/presentation/d/1uroMfR20sLj3VDNLD5dAJZVQLs65g7DF/edit?usp=sharing&ouid=103292946495291407556&rtpof=true&sd=true) </span>
+
+**Instructor:** [Jessica Tran](https://tran1185.wixsite.com/jessica)  
+
+<span style = 'font-size:95%; color:#959599;'>*Studying environmental data science is one thing, but communicating your work to broad audiences can be a challenge in itself. Perhaps you want your work to speak to policy makers, members of the public, youth, or more. Whoever your audience is, we can use inclusive science communication as a way to expand the reach of our work. In this workshop we will think about our goals, audiences, and formats for science communication in context of your fall course projects or your capstone projects. We will go through a few reflection writing activities, so please bring something to write on like a notepad or laptop.*</span>
+
+:::
+
+::::
+
+---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
 October 23, 2023
 
 :::
@@ -28,6 +53,8 @@ October 23, 2023
 <span style = 'font-size:110%;'>`r fontawesome::fa("blog", fill = "#333333", a11y = "sem")` **Adding a blog to your existing Quarto website**</span>
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("blog", fill = "#64605F", a11y = "sem")` blog post](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/samanthacsik/samanthacsik.github.io/blob/main/posts/2022-10-24-quarto-blogs/index.qmd)</span>
+
+**Instructor:** [Sam Csik](https://samanthacsik.github.io/)   
 
 <span style = 'font-size:95%; color:#959599;'>*Blogging about your data science adventures has **a lot** of benefits -- it can help you to build your online profile/portfolio, practice your writing and communication skills, stay atop data science trends, solicit feedback from the community, network, learn new skills and/or solidify understanding, combat imposter syndrome, etc. In this workshop, we'll learn how to add a blog to our Quarto website, customize posts, and (hopefully) get inspired to begin our blogging journeys!*</span>
 
@@ -52,7 +79,9 @@ October 16, 2023
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("tv", fill = "#64605F", a11y = "sem")` slides](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide)  |  [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/customizing-quarto-websites)</span>
 
-<span style = 'font-size:95%; color:#959599;'>*Quarto provides a user-friendly framework for creating your personal website -- but adding your own creative touch can help make yours stand out from the rest. In this workshop, we learn how to (a) add a template to our landing page and update the `_quarto.yml` file to quickly add fun features/update the overall layout of our website, (b) create a stylesheet and define Sass variables to start modifying the overall theme (colors, fonts, etc) of our site, and (c) define CSS rules to make fine-tuned adjustments to our site's appearance.</span>
+**Instructor:** [Sam Csik](https://samanthacsik.github.io/)   
+
+<span style = 'font-size:95%; color:#959599;'>*Quarto provides a user-friendly framework for creating your personal website -- but adding your own creative touch can help make yours stand out from the rest. In this workshop, we learn how to (a) add a template to our landing page and update the `_quarto.yml` file to quickly add fun features/update the overall layout of our website, (b) create a stylesheet and define Sass variables to start modifying the overall theme (colors, fonts, etc) of our site, and (c) define CSS rules to make fine-tuned adjustments to our site's appearance.*</span>
 
 :::
 
@@ -74,6 +103,8 @@ September 25, 2023
 `r fontawesome::fa("window-maximize", fill = "#333333", a11y = "sem")` **Creating your personal website using Quarto**
 
 <span style = 'font-size:95%;'>[`r fontawesome::fa("file-alt", fill = "#64605F", a11y = "sem")` instructional documentation](https://ucsb-meds.github.io/creating-quarto-websites/) | [`r fontawesome::fa("github-square", fill = "#64605F", a11y = "sem")` source code](https://github.com/UCSB-MEDS/creating-quarto-websites)</span>
+
+**Instructor:** [Sam Csik](https://samanthacsik.github.io/)    
 
 <span style = 'font-size:95%; color:#959599;'>*A personal website is not only a great way to showcase your experiences and skills, but also gives people (potential employers included!) a better sense of who you are as a person. There are lots of great ways to build websites using R (e.g. `{distill}`, `{blogdown}`) -- this year, we'll be using [Quarto](https://quarto.org/), an exciting, new, and versatile publishing tool that supports R, Python, Julia, and ObservableJS.*</span>
 
