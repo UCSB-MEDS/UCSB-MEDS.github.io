@@ -47,7 +47,7 @@ Students complete data science products, write technical documentation, host a m
 
 ## Resources
 
-[Capstone Project Guidelines](capstone-project-guidelines-2024.pdf)  
+[Capstone Project Guidelines](https://bren.ucsb.edu/media/5090)  
 [Peer & Self Evaluation Form](https://bren.ucsb.edu/media/3922/download)  
 [EDS 411A/B Website](https://naomitague.github.io/EDS_411A_meds-capstone/)  
 [Compute guide for your google group](https://bren.zendesk.com/hc/en-us/articles/4415068315156-Google-Group-Guide-for-Capstone-Projects)
