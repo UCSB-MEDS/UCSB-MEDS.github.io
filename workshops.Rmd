@@ -18,6 +18,31 @@ We are actively developing data science workshops, which are meant to supplement
 
 ::: {}
 
+January 26 & February 02, 2024
+
+:::
+
+
+::: {}
+
+<span style = 'font-size:110%;'>`r fontawesome::fa("star", fill = "#333333", a11y = "sem")` **EDS 430: Intro to Shiny**</span>
+
+<span style = 'font-size:95%;'>[`r fontawesome::fa("window-maximize", fill = "#64605F", a11y = "sem")` course website](https://ucsb-meds.github.io/EDS-430-Intro-to-Shiny/)  |  [`r fontawesome::fa("school", fill = "#64605F", a11y = "sem")` course catalog](https://bren.ucsb.edu/courses/eds-430)</span>
+
+**Instructor:** [Sam Csik](https://samanthacsik.github.io/)   
+
+<span style = 'font-size:95%; color:#959599;'>*In this workshop, students will learn how to build and deploy Shiny applications. The `{shiny}` package provides a framework that allows R users to build interactive web applications and dashboards, and has become a popular tool for sharing data analyses and data-derived outputs with broad audiences. In this two-part short course, students will learn the fundamentals of reactivity, how to customize an application user interface (UI), best practices and workflows for developing shiny apps, how to deploy their apps online via RStudio’s hosting service, shinyapps.io, and more.*</span>
+
+:::
+
+::::
+
+---
+
+:::: {style="display: grid; grid-template-columns: 0.5fr 2fr; grid-column-gap: 10px;"}
+
+::: {}
+
 November 13, 2023
 
 :::
