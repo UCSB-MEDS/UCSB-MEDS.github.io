@@ -456,8 +456,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -827,9 +827,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: none !important;
   }
 
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
+    border-top: none;
   }
 
   d-appendix {
@@ -924,6 +936,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
   }
 
   d-article pre {
@@ -1685,6 +1702,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // create d-title
     $('.d-title').changeElementType('d-title');
 
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
@@ -1762,8 +1785,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('.distill-force-highlighting-css').parent().remove();
 
     // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
 
     // load distill framework
     load_distill_framework();
@@ -1789,12 +1813,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
         if (orcid_id) {
           var a = $('<a></a>');
           a.attr('href', 'https://orcid.org/' + orcid_id);
           var img = $('<img></img>');
           img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
           img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
           a.append(img);
           $(this).append(a);
@@ -2634,6 +2659,7 @@ STUDENT RESOURCES
 
 <div class="d-title">
 <h1>What can I do before I start?</h1>
+
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2658,41 +2684,13 @@ STUDENT RESOURCES
 <p>Joining and engaging with data science communities is a great way to build your Environmental Data Science network, stay up to date on new tools, methods, events, and initiatives, learn about professional opportunities, and to get support of all flavors (technical, emotional, etc.).</p>
 <p>Here are some places to start:</p>
 <h3 class="unlisted unnumbered" id="eco-data-science">Eco-Data-Science</h3>
-<p><a href="https://eco-data-science.github.io/">Eco-Data-Science</a>, founded by MEDS Coordinator <a href="https://www.jamiecmontgomery.com/">Jamie Montgomery</a> in 2015, is a volunteer-driven learning group that has become a model for coding clubs and communities around the world. During the academic year, Eco-Data-Science offers monthly workshops on wide-ranging topics in environmental data science topics from text analysis to high performance computing to basic data wrangling in R and Python.</p>
-<ul>
-<li><a href="https://eco-data-science.github.io/">Join Eco-Data-Science</a> - click ‘Talk to Us!’ to join the Google group to receive updates, session alerts, and more</li>
-<li>Join the <a href="ecodatascience.slack.com">Eco-Data-Science Slack workspace</a> - a great place to meet other members, see shared job postings, learn about upcoming events in Environmental Data Science, etc.</li>
-</ul>
+<p><a href="https://ecodatascience.github.io/">Eco-Data-Science</a> is a volunteer-driven learning group that has become a model for coding clubs and communities around the world. During the academic year, Eco-Data-Science offers workshops at UCSB on wide-ranging topics in environmental data science topics from text analysis to high performance computing to basic data wrangling in R and Python.</p>
 <h3 class="unlisted unnumbered" id="santa-barbara-r-ladies">Santa Barbara R-Ladies</h3>
-<p><a href="https://www.meetup.com/rladies-santa-barbara/">Santa Barbara R-Ladies</a> is our local chapter of <a href="https://rladies.org/">R-Ladies</a>, “a world-wide organization to promote gender diversity in the R community.” SB R-Ladies hosts ~5 - 6 events per year, including skill-building workshops, guest speakers, networking events, and more. All are welcome to join and participate, with the understanding that this group prioritizes supporting members from underrepresented genders in the R community.</p>
-<ul>
-<li><a href="https://www.meetup.com/rladies-santa-barbara/">Join SB R-Ladies Meetup group</a></li>
-<li>Follow <a href="https://twitter.com/RLadiesSB">SB R-Ladies on Twitter</a></li>
-</ul>
-<h3 class="unlisted unnumbered" id="santa-barbara-r-users-group">Santa Barbara R-Users Group</h3>
-<p>The <a href="https://www.meetup.com/Santa-Barbara-R-Users-Group/">Santa Barbara R-Users Group</a> is a local group that hosts sessions throughout the year to “bring Santa Barbara R users together to exchange information and ideas.” Users and learners of all levels are welcome to join! Past sessions have included guest speakers and visitors, lightning talks, active coding lessons, and much more!</p>
-<ul>
-<li><a href="https://www.meetup.com/Santa-Barbara-R-Users-Group/">Join the Santa Barbara R-Users Group</a></li>
-</ul>
+<p><a href="https://www.meetup.com/rladies-santa-barbara/">Santa Barbara R-Ladies</a> is our local chapter of <a href="https://rladies.org/">R-Ladies</a>, “a world-wide organization to promote gender diversity in the R community.” SB R-Ladies hosts ~2-3 events per year, including skill-building workshops, guest speakers, networking events, and more. All are welcome to join and participate, with the understanding that this group prioritizes supporting members from underrepresented genders in the R community.</p>
+<h3 class="unlisted unnumbered" id="central-coast-r-users-group">Central Coast R-Users Group</h3>
+<p>The <a href="https://www.meetup.com/Santa-Barbara-R-Users-Group/">Central Coast R-Users Group</a> is a local group that hosts sessions throughout the year to “bring Santa Barbara R users together to exchange information and ideas.” Users and learners of all levels are welcome to join! Past sessions have included guest speakers and visitors, lightning talks, active coding lessons, and much more!</p>
 <h3 class="unlisted unnumbered" id="r-for-data-science-online-learning-community">R for Data Science Online Learning Community</h3>
 <p>The <a href="https://www.rfordatasci.com/">R for Data Science Online Learning Community</a> is a supportive place where you can join groups, ask for help, learn about events and jobs, and network with other learners, teachers, and practitioners in the R community.</p>
-<h3 class="unlisted unnumbered" id="twitter">Twitter</h3>
-<p>We know, it seems like a weird suggestion - but Twitter is <em>the</em> place where the R community members get and share information. It is a treasure trove of resources, support, and direct access to data scientists across fields. Many data scientists use Twitter as a professional tool to share their work, ask questions, request feedback, and build collaborations. Give it a try!</p>
-<ul>
-<li><p>Make a twitter account</p></li>
-<li><p>Follow a few groups &amp; people Twitter:</p>
-<ul>
-<li>R for Data Science Learning Community: <a href="https://twitter.com/R4DScommunity">@R4DScommunity</a>.</li>
-<li>WeAreRLadies (rotating curator, R-Ladies): <a href="https://twitter.com/WeAreRLadies">@WeAreRLadies</a>.</li>
-<li>Mi-R (a space of belonging and support for people who identify as underrepresented minority R users): <a href="https://twitter.com/miR_community">@miR_Commmunity</a>.</li>
-<li>PyLadies: <a href="https://twitter.com/pyladies">@pyladies</a></li>
-<li>Real Python: <a href="https://twitter.com/realpython">@realpython</a></li>
-<li>UCSB Eco-Data-Science: <a href="https://twitter.com/ecodatasci">@ecodatasci</a></li>
-<li>R-Ladies Santa Barbara: <a href="https://twitter.com/RLadiesSB">@RLadiesSB</a></li>
-<li>National Center for Ecological Analysis and Synthesis: <a href="https://twitter.com/nceas">@nceas</a></li>
-</ul></li>
-<li><p>Not sure how to engage on Twitter? We know it can be weird &amp; overwhelming at first! Check out the free book <a href="https://www.t4rstats.com/">Twitter for R Programmers</a> by <a href="https://twitter.com/OscarBaruffa">Oscar Baruffa</a> and <a href="https://twitter.com/veerlevanson">Veerle van Son</a> for useful guidance.</p></li>
-</ul>
 <h2 id="stretch-your-quantitative-brain">2. Stretch your quantitative brain</h2>
 <p>If your brain is feeling a bit rusty on numbers &amp; equations, you may want to stretch out your math muscles a bit before MEDS starts. Again: this is absolutely <strong>not</strong> required. We will do some warm-up stretches in EDS 212 (Essential Math in Environmental Data Science), the first course you’ll take in MEDS. However, if you’re really inspired to refresh some math skills before then, focus on algebra basics (e.g. the first four sessions in <a href="https://www.khanacademy.org/math/algebra">Khan Academy’s Algebra 1 module</a>).</p>
 <p>We will do <em>all of this</em> in EDS 212, but if you’re feeling especially nervous about math in the MEDS program, bringing algebra basics back to the forefront of your brain is a good place to start.</p>

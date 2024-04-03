@@ -456,8 +456,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -827,9 +827,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: none !important;
   }
 
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
+    border-top: none;
   }
 
   d-appendix {
@@ -924,6 +936,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
   }
 
   d-article pre {
@@ -1685,6 +1702,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // create d-title
     $('.d-title').changeElementType('d-title');
 
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
@@ -1762,8 +1785,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('.distill-force-highlighting-css').parent().remove();
 
     // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
 
     // load distill framework
     load_distill_framework();
@@ -1789,12 +1813,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
         if (orcid_id) {
           var a = $('<a></a>');
           a.attr('href', 'https://orcid.org/' + orcid_id);
           var img = $('<img></img>');
           img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
           img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
           a.append(img);
           $(this).append(a);
@@ -2634,6 +2659,7 @@ STUDENT RESOURCES
 
 <div class="d-title">
 <h1>Program Overview</h1>
+
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2653,7 +2679,7 @@ STUDENT RESOURCES
 </nav>
 </div>
 <h1 id="orientation">Orientation</h1>
-<p>Each student should plan to attend <strong>two</strong> orientations: (1) a 1.5-day MEDS-only orientation on Thursday 8/03/2023 (at Bren) and Friday 8/04/2023 (at NCEAS) before summer classes begin on Monday 8/07/2023, and (2) a 3-day campus-wide UCSB orientation from Monday 9/25/2023 - Wednesday 9/27/2023.</p>
+<p>Each student should plan to attend <strong>two</strong> orientations: (1) a 2-day MEDS-only orientation on Thursday 8/01/2024 (at Bren) and Friday 8/02/2024 (at NCEAS) before summer classes begin on Monday 8/05/2024, and (2) a 3-day campus-wide UCSB orientation from Monday 9/23/2024 - Wednesday 9/25/2024.</p>
 <p><em><a href="https://docs.google.com/document/d/17Xa6pqvEY3I4kZttbdqMCLiDJvNmVyEG/edit">Click here for the full Summer Orientation Schedule</a></em>. For more information on the incoming MEDS student orientation, please visit the <a href="https://bren.ucsb.edu/incoming-meds-student-orientation">Bren Website</a>.</p>
 <h1 id="summer">Summer</h1>
 <h2 id="summer-intensive-courses">Summer Intensive Courses</h2>
@@ -2666,7 +2692,7 @@ STUDENT RESOURCES
 </ul>
 <p>For more detailed descriptions of the summer courses, see our <a href="https://ucsb-meds.github.io/courses.html">Courses</a> page.</p>
 <h2 id="location">Location</h2>
-<p>All Summer courses will be held at the new <a href="https://www.nceas.ucsb.edu/">NCEAS</a> building (and new designated MEDS learning space!) in downtown Santa Barbara. The address is 1021 Anacapa Street.</p>
+<p>All Summer courses will be held at <a href="https://www.nceas.ucsb.edu/">NCEAS</a> in downtown Santa Barbara. The address is 1021 Anacapa Street (<a href="https://ucsb-meds.github.io/nceas.html#getting-to-nceas">click here for directions</a>).</p>
 <p>NCEAS is ~11 miles (a 15 minute drive, without traffic) from the UC Santa Barbara campus, or a ~35 minute bus ride on the <a href="https://sbmtd.gov/routes/route-24x/">24x line</a>. The transit center downtown is ~3 blocks from NCEAS (a &lt;10 minute walk).</p>
 <h2 id="a-day-in-a-summer-course">A day in a Summer course</h2>
 <p>The Summer intensive session is designed to prepare MEDS students with the fundamental coding and computational skills necessary for all subsequent courses. These are full days of learning, running from 10:00am - 4:00pm Mondays, Tuesdays, Thursdays, Fridays, and from 9:00am - 4:00pm on Wednesdays. Students generally <strong>should not expect</strong> additional assignments or MEDS-related work outside of these hours. In other words, courses will be structured so that all course requirements can be completed within the 9:00/10:00am - 4:00pm window while at NCEAS.</p>
@@ -2684,34 +2710,8 @@ STUDENT RESOURCES
 <!-- | 2:15pm - 3:15pm   | *Interactive Session 2 (45 min)*                        | -->
 <!-- | 3:15pm - 5:00pm   | *Group & individual tasks (90 min)*                     | -->
 <!-- With built-in breaks for coffee and lunch, interactive sessions for hands-on learning, and flex time for activities that change daily, we on the MEDS Team are working to make these days dynamic and fun while you build fundamental skills in environmental data science. -->
-<h2 id="class-activities">Class activities</h2>
-<p>Summer is a special time for our MEDS students to bond both in and outside of class. While the coursework will be rigorous, we will also have dedicated breaks and events for relaxing, mingling and socializing. Thursday Happy Hour on the third floor terrace is a great opportunity to not only get to know your classmates, but also other MEDS and NCEAS staff, researchers, and faculty. We also look forward to celebrating important MEDS milestones, like both the halfway-point and completion of summer session.</p>
 <h1 id="fallwinterspring">Fall/Winter/Spring</h1>
-<p>In Fall, Winter, and Spring quarters, MEDS courses will be held at both the Bren School (UCSB campus) and downtown at NCEAS. Students will <em>only have required courses / events at a single campus on any given day</em> - i.e., to minimize travel, we will not schedule required MEDS events at both campuses on the same day. Students can expect a more traditional academic class schedule (e.g. 2-3 classes/discussion sections/seminars a day). <strong>You can add the MEDS <a href="https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&amp;ctz=America/Los_Angeles">google calendar here</a></strong>.</p>
-<!-- For example, a week in Fall Quarter might look something like this: -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
-<!-- | **Day**   | Activities                                                       | **Location** | -->
-<!-- +===========+==================================================================+============+ -->
-<!-- | Monday    | -   9:30am - 10:45am: EDS 223                                    | NCEAS      | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   11:00am - 12:00pm: Livestream Bren Seminar                   |            | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   3:30pm - 4:45pm: EDS 242                                     |            | -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
-<!-- | Tuesday   | -   9:30am - 10:45am: EDS 222                                    | Bren Hall  | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   12:30pm - 1:45pm: EDS 220                                    |            | -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
-<!-- | Wednesday | -   9:30am - 10:45am: EDS 223                                    | NCEAS      | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   12:00 - 12:45pm: NCEAS Roundtable                            |            | -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
-<!-- | Thursday  | -   8:15am - 9:15am: Career workshop                             | Bren Hall  | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   9:30am - 10:45am: EDS 222                                    |            | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   12:30pm - 1:45pm: EDS 220                                    |            | -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
+<p>In Fall, Winter, and Spring quarters, core MEDS courses will be held at the Bren School (UCSB campus), with elective courses and some events held at NCEAS. Students can expect a more traditional academic class schedule (e.g. 2-3 classes/discussion sections/seminars a day). <strong>You can add the MEDS <a href="https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&amp;ctz=America/Los_Angeles">google calendar here</a></strong>.</p>
 <h2 id="fall">Fall</h2>
 <p>In Fall Quarter, MEDS students will complete 14 units of coursework.</p>
 <ul>
@@ -2720,6 +2720,7 @@ STUDENT RESOURCES
 <li><strong>EDS 223:</strong> Geospatial Analysis &amp; Remote Sensing (4 units)</li>
 <li><strong>EDS 242:</strong> Ethics &amp; Bias in Environmental Data Science (2 units)</li>
 </ul>
+<p>You should also sign up for <strong>EDS 296</strong> which will take place on Fridays at NCEAS.</p>
 <h2 id="winter">Winter</h2>
 <p>In Winter Quarter, students will complete 14 units of coursework, three traditional academic courses and one 4-unit capstone project course.</p>
 <ul>

@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Orientation
 
-Each student should plan to attend **two** orientations: (1) a 2-day MEDS-only orientation on Thursday 8/01/2024 (at Bren) and Friday 8/02/2023 (at NCEAS) before summer classes begin on Monday 8/05/2023, and (2) a 3-day campus-wide UCSB orientation from Monday 9/23/2023 - Wednesday 9/25/2023.
+Each student should plan to attend **two** orientations: (1) a 2-day MEDS-only orientation on Thursday 8/01/2024 (at Bren) and Friday 8/02/2024 (at NCEAS) before summer classes begin on Monday 8/05/2024, and (2) a 3-day campus-wide UCSB orientation from Monday 9/23/2024 - Wednesday 9/25/2024.
 
 *[Click here for the full Summer Orientation Schedule](https://docs.google.com/document/d/17Xa6pqvEY3I4kZttbdqMCLiDJvNmVyEG/edit)*. For more information on the incoming MEDS student orientation, please visit the [Bren Website](https://bren.ucsb.edu/incoming-meds-student-orientation).
 
@@ -58,9 +58,6 @@ That doesn't mean you'll be watching lectures all day! Summer session days will 
 
 <!-- With built-in breaks for coffee and lunch, interactive sessions for hands-on learning, and flex time for activities that change daily, we on the MEDS Team are working to make these days dynamic and fun while you build fundamental skills in environmental data science. -->
 
-## Class activities
-
-Summer is a special time for our MEDS students to bond both in and outside of class. While the coursework will be rigorous, we will also have dedicated breaks and events for relaxing, mingling and socializing. Thursday Happy Hour on the third floor terrace is a great opportunity to not only get to know your classmates, but also other MEDS and NCEAS staff, researchers, and faculty. We also look forward to celebrating important MEDS milestones, like both the halfway-point and completion of summer session.
 
 # Fall/Winter/Spring
 
@@ -74,6 +71,8 @@ In Fall Quarter, MEDS students will complete 14 units of coursework.
 -   **EDS 222:** Statistics for Environmental Data Science (4 units)
 -   **EDS 223:** Geospatial Analysis & Remote Sensing (4 units)
 -   **EDS 242:** Ethics & Bias in Environmental Data Science (2 units)
+
+You should also sign up for **EDS 296** which will take place on Fridays at NCEAS.
 
 ## Winter
 
