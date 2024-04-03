@@ -19,45 +19,19 @@ Here are some places to start:
 
 ### Eco-Data-Science {.unlisted .unnumbered}
 
-[Eco-Data-Science](https://eco-data-science.github.io/), founded by MEDS Coordinator [Jamie Montgomery](https://www.jamiecmontgomery.com/) in 2015, is a volunteer-driven learning group that has become a model for coding clubs and communities around the world. During the academic year, Eco-Data-Science offers monthly workshops on wide-ranging topics in environmental data science topics from text analysis to high performance computing to basic data wrangling in R and Python. 
-
-- [Join Eco-Data-Science](https://eco-data-science.github.io/) - click 'Talk to Us!' to join the Google group to receive updates, session alerts, and more
-- Join the [Eco-Data-Science Slack workspace](ecodatascience.slack.com) - a great place to meet other members, see shared job postings, learn about upcoming events in Environmental Data Science, etc.
+[Eco-Data-Science](https://ecodatascience.github.io/) is a volunteer-driven learning group that has become a model for coding clubs and communities around the world. During the academic year, Eco-Data-Science offers workshops at UCSB on wide-ranging topics in environmental data science topics from text analysis to high performance computing to basic data wrangling in R and Python. 
 
 ### Santa Barbara R-Ladies {.unlisted .unnumbered}
 
-[Santa Barbara R-Ladies](https://www.meetup.com/rladies-santa-barbara/) is our local chapter of [R-Ladies](https://rladies.org/), "a world-wide organization to promote gender diversity in the R community." SB R-Ladies hosts ~5 - 6 events per year, including skill-building workshops, guest speakers, networking events, and more. All are welcome to join and participate, with the understanding that this group prioritizes supporting members from underrepresented genders in the R community. 
+[Santa Barbara R-Ladies](https://www.meetup.com/rladies-santa-barbara/) is our local chapter of [R-Ladies](https://rladies.org/), "a world-wide organization to promote gender diversity in the R community." SB R-Ladies hosts ~2-3 events per year, including skill-building workshops, guest speakers, networking events, and more. All are welcome to join and participate, with the understanding that this group prioritizes supporting members from underrepresented genders in the R community. 
 
-- [Join SB R-Ladies Meetup group](https://www.meetup.com/rladies-santa-barbara/)
-- Follow [SB R-Ladies on Twitter](https://twitter.com/RLadiesSB)
+### Central Coast R-Users Group {.unlisted .unnumbered}
 
-### Santa Barbara R-Users Group {.unlisted .unnumbered}
-
-The [Santa Barbara R-Users Group](https://www.meetup.com/Santa-Barbara-R-Users-Group/) is a local group that hosts sessions throughout the year to "bring Santa Barbara R users together to exchange information and ideas." Users and learners of all levels are welcome to join! Past sessions have included guest speakers and visitors, lightning talks, active coding lessons, and much more! 
-
-- [Join the Santa Barbara R-Users Group](https://www.meetup.com/Santa-Barbara-R-Users-Group/)
+The [Central Coast R-Users Group](https://www.meetup.com/Santa-Barbara-R-Users-Group/) is a local group that hosts sessions throughout the year to "bring Santa Barbara R users together to exchange information and ideas." Users and learners of all levels are welcome to join! Past sessions have included guest speakers and visitors, lightning talks, active coding lessons, and much more! 
 
 ### R for Data Science Online Learning Community {.unlisted .unnumbered}
 
 The [R for Data Science Online Learning Community](https://www.rfordatasci.com/) is a supportive place where you can join groups, ask for help, learn about events and jobs, and network with other learners, teachers, and practitioners in the R community.
-
-### Twitter {.unlisted .unnumbered}
-
-We know, it seems like a weird suggestion - but Twitter is *the* place where the R community members get and share information. It is a treasure trove of resources, support, and direct access to data scientists across fields. Many data scientists use Twitter as a professional tool to share their work, ask questions, request feedback, and build collaborations. Give it a try! 
-
-- Make a twitter account
-- Follow a few groups & people Twitter: 
-
-  - R for Data Science Learning Community: [\@R4DScommunity](https://twitter.com/R4DScommunity). 
-  - WeAreRLadies (rotating curator, R-Ladies): [\@WeAreRLadies](https://twitter.com/WeAreRLadies). 
-  - Mi-R (a space of belonging and support for people who identify as underrepresented minority R users): [\@miR_Commmunity](https://twitter.com/miR_community). 
-  - PyLadies: [\@pyladies](https://twitter.com/pyladies)
-  - Real Python: [\@realpython](https://twitter.com/realpython)
-  - UCSB Eco-Data-Science: [\@ecodatasci](https://twitter.com/ecodatasci)
-  - R-Ladies Santa Barbara: [\@RLadiesSB](https://twitter.com/RLadiesSB)
-  - National Center for Ecological Analysis and Synthesis: [\@nceas](https://twitter.com/nceas)
-        
-- Not sure how to engage on Twitter? We know it can be weird & overwhelming at first! Check out the free book [Twitter for R Programmers](https://www.t4rstats.com/) by [Oscar Baruffa](https://twitter.com/OscarBaruffa) and [Veerle van Son](https://twitter.com/veerlevanson) for useful guidance.
 
 ## 2. Stretch your quantitative brain
 

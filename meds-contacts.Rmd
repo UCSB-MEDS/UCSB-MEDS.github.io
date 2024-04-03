@@ -18,7 +18,7 @@ For a complete list of staff and faculty, please see the [Bren](https://bren.ucs
 
 * [Sam Csik](https://samanthacsik.github.io/) (*she/her*) | **Data Training Coordinator** | NCEAS 103  
 `r fontawesome::fa("envelope", fill = "#047C90", a11y = "sem")` scsik@ucsb.edu  
-<span style = 'font-size:95%;'>*Sam develops and teaches data science workshops for MEDS students, which are meant to supplement the MEDS curriculum. She was once named one of the three “kooky data science aunts” (along with Jamie Montgomery and Allison Horst) by an anonymous MEDS student and she wears that title proudly. You will be seeing lots of her around NCEAS helping out where needed throughout the program. If you ever have any questions about data science, ecology, grad school, life in SB, etc. or have an idea for a workshop, stop by her office or send her an email at any time!*</span>
+<span style = 'font-size:95%;'>*Sam develops and teaches data science workshops for MEDS students, which are meant to supplement the MEDS curriculum. You will be seeing lots of her around NCEAS helping out where needed throughout the program. If you ever have any questions about data science, ecology, grad school, life in SB, etc. or have an idea for a workshop, stop by her office or send her an email at any time!*</span>
 
 #### `r fontawesome::fa("laptop", fill = "#047C90", a11y = "sem")` Compute  
 * [Kat Le](https://bren.ucsb.edu/people/kat-le) (*she/they*) | **Technical Applications Manager** | Bren Hall 3516 & NCEAS 104   

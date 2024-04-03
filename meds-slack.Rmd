@@ -37,7 +37,9 @@ Another feature of Slack is the reactions. Anyone can react to a message with an
 If you want to change something you wrote in Slack, you can always edit the message afterwards. You can also delete messages, for example if you wrote something by accident.
 
 ### Message retention
-We maintain a Free Slack workspace, which means messages will be deleted after we reach 10,000 messages across all channels. If you think that your conversation should be saved for future reference, we encourage you to move that conversation to email or GitHub issues.
+For short term retention of messages, you can click the save icon in the top right corner of a message. Your saved messages will be accessible from the “Saved items” section in the left sidebar (above the “Channels” section). You can also click the three dots in the top right corner of a message to schedule a reminder about that message, so that you remember to read it later.
+
+All UCSB-MEDS Slack messages (including your saved items) will be deleted at the end of each year (at least, all the messages in public channels, which are the ones we can control). If you see something on Slack that you would like to save for after the MEDS program, it is your responsibility to make a copy of it and save it outside Slack.
 
 ### Professionalism
 We want to maintain a welcoming, inclusive environment both in the classroom and online, including our Slack community. We encourage participation in all private, public and direct messaging channels, however, we ask that you do so respectfully.

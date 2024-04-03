@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Orientation
 
-Each student should plan to attend **two** orientations: (1) a 1.5-day MEDS-only orientation on Thursday 8/03/2023 (at Bren) and Friday 8/04/2023 (at NCEAS) before summer classes begin on Monday 8/07/2023, and (2) a 3-day campus-wide UCSB orientation from Monday 9/25/2023 - Wednesday 9/27/2023.
+Each student should plan to attend **two** orientations: (1) a 2-day MEDS-only orientation on Thursday 8/01/2024 (at Bren) and Friday 8/02/2023 (at NCEAS) before summer classes begin on Monday 8/05/2023, and (2) a 3-day campus-wide UCSB orientation from Monday 9/23/2023 - Wednesday 9/25/2023.
 
 *[Click here for the full Summer Orientation Schedule](https://docs.google.com/document/d/17Xa6pqvEY3I4kZttbdqMCLiDJvNmVyEG/edit)*. For more information on the incoming MEDS student orientation, please visit the [Bren Website](https://bren.ucsb.edu/incoming-meds-student-orientation).
 
@@ -32,7 +32,7 @@ For more detailed descriptions of the summer courses, see our [Courses](https://
 
 ## Location
 
-All Summer courses will be held at the new [NCEAS](https://www.nceas.ucsb.edu/) building (and new designated MEDS learning space!) in downtown Santa Barbara. The address is 1021 Anacapa Street.
+All Summer courses will be held at [NCEAS](https://www.nceas.ucsb.edu/) in downtown Santa Barbara. The address is 1021 Anacapa Street ([click here for directions](https://ucsb-meds.github.io/nceas.html#getting-to-nceas)).
 
 NCEAS is \~11 miles (a 15 minute drive, without traffic) from the UC Santa Barbara campus, or a \~35 minute bus ride on the [24x line](https://sbmtd.gov/routes/route-24x/). The transit center downtown is \~3 blocks from NCEAS (a \<10 minute walk).
 
@@ -64,33 +64,7 @@ Summer is a special time for our MEDS students to bond both in and outside of cl
 
 # Fall/Winter/Spring
 
-In Fall, Winter, and Spring quarters, MEDS courses will be held at both the Bren School (UCSB campus) and downtown at NCEAS. Students will *only have required courses / events at a single campus on any given day* - i.e., to minimize travel, we will not schedule required MEDS events at both campuses on the same day. Students can expect a more traditional academic class schedule (e.g. 2-3 classes/discussion sections/seminars a day). **You can add the MEDS [google calendar here](https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&ctz=America/Los_Angeles)**.
-
-<!-- For example, a week in Fall Quarter might look something like this: -->
-
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
-<!-- | **Day**   | Activities                                                       | **Location** | -->
-<!-- +===========+==================================================================+============+ -->
-<!-- | Monday    | -   9:30am - 10:45am: EDS 223                                    | NCEAS      | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   11:00am - 12:00pm: Livestream Bren Seminar                   |            | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   3:30pm - 4:45pm: EDS 242                                     |            | -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
-<!-- | Tuesday   | -   9:30am - 10:45am: EDS 222                                    | Bren Hall  | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   12:30pm - 1:45pm: EDS 220                                    |            | -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
-<!-- | Wednesday | -   9:30am - 10:45am: EDS 223                                    | NCEAS      | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   12:00 - 12:45pm: NCEAS Roundtable                            |            | -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
-<!-- | Thursday  | -   8:15am - 9:15am: Career workshop                             | Bren Hall  | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   9:30am - 10:45am: EDS 222                                    |            | -->
-<!-- |           |                                                                  |            | -->
-<!-- |           | -   12:30pm - 1:45pm: EDS 220                                    |            | -->
-<!-- +-----------+------------------------------------------------------------------+------------+ -->
+In Fall, Winter, and Spring quarters, core MEDS courses will be held at the Bren School (UCSB campus), with elective courses and some events held at NCEAS. Students can expect a more traditional academic class schedule (e.g. 2-3 classes/discussion sections/seminars a day). **You can add the MEDS [google calendar here](https://calendar.google.com/calendar/u/0/embed?src=c_1886ai526iqschc9mnpj6cu753n60@resource.calendar.google.com&ctz=America/Los_Angeles)**.
 
 ## Fall
 
