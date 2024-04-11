@@ -20,6 +20,10 @@ knitr::include_graphics("img/cohort_2024.jpg")
 
 - [Annie Adams](https://annieradams.github.io/)
 - [Briana Barajas](https://briana-barajas.github.io/)
+- [Carly Caswell](https://ccaswell25.github.io/)
+- [Amanda Herbst](https://amandaherbst.github.io/)
+- [Maxwell Patterson](https://maxwellpatt.github.io/)
+- [Anna Ramji](https://annaramji.github.io/)
 - [Melissa Widas](https://mwidas.github.io/)
 
 ---
