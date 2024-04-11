@@ -8,22 +8,19 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Students learn how to build their own personal websites during their very first week of summer session and continue the process of customizing and adding content throughout the year. Take a peek at their Quarto sites, below, and remember to check back throughout the year to see how they evolve!
+Students learn how to build their own personal websites in Fall Quarter during and continue the process of customizing and adding content throughout the year. Take a peek at their Quarto sites, below, and remember to check back throughout the year to see how they evolve!
 
 ### MEDS Class of 2024
 
-Coming soon!
-
 ```{r, echo = FALSE, out.width = "80%", out.height = "80%", fig.align = 'left'}
-# knitr::include_graphics("img/cohort_2023.jpg")
+knitr::include_graphics("img/cohort_2024.jpg")
 ```
 
-<!-- <br> -->
+<br>
 
-<!-- - [name](url) -->
-<!-- - [name](url) -->
-<!-- - [name](url) -->
-<!-- - [name](url) -->
+- [Annie Adams](https://annieradams.github.io/)
+- [Briana Barajas](https://briana-barajas.github.io/)
+- [Melissa Widas](https://mwidas.github.io/)
 
 ---
 
