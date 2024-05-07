@@ -128,7 +128,7 @@ spring[2,2] <- cell_spec("Modeling Environmental Systems", "html", link = "https
 spring[3,2] <- cell_spec("Text and Sentiment Analysis for Environmental Problems", "html", link = "https://maro406.github.io/EDS-231-text-sentiment/")
 
 # Update 411 title cell (w/ link)
-spring[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://ryoliver.github.io/EDS_411B/")
+spring[4,2] <- cell_spec("MEDS Capstone Course", "html", link = "https://carmengg.github.io/eds-411-website/")
 
 spring %>% 
   kable(col.names = c("Course number", "Course title", "Units", "Description", "Instructor"), format = "html", escape = FALSE) %>% 
