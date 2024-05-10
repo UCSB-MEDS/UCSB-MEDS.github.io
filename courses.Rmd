@@ -119,7 +119,7 @@ winter %>%
 ```{r, echo = FALSE}
 
 # Update 213 title cell (w/ link)
-spring[1,2] <- cell_spec("Databases and Data Management", "html", link = "https://ucsb.instructure.com/courses/5844")
+spring[1,2] <- cell_spec("Databases and Data Management", "html", link = "https://ucsb-library-research-data-services.github.io/bren-meds213-spring-2024/")
 
 # Update 230 title cell (w/ link)
 spring[2,2] <- cell_spec("Modeling Environmental Systems", "html", link = "https://naomitague.github.io/ESM232_course/")
