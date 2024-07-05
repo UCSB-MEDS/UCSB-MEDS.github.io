@@ -13,8 +13,8 @@ navbar:
       menu:
         - text: "OVERVIEW"
           href: overview.html
-        - text: "COURSES"
-          href: courses.html
+        # - text: "COURSES"
+        #   href: courses.html
         - text: "CAPSTONES"
           href: capstones.html
         - text: "WORKSHOPS"
@@ -32,7 +32,7 @@ navbar:
         #- text: "ONCE YOU'RE HERE"
           #href: once_here.html
         - text: "SOFTWARE INSTALLATION GUIDE"
-          href: meds-install-guide.html
+          href: https://ucsb-meds.github.io/MEDS-installation-guide/
         - text: "CAREER SERVICES & SUPPORT"
           href: career.html
         - text: "MEDS STAFF & CONTACTS"
