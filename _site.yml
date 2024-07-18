@@ -31,12 +31,12 @@ navbar:
           href: before_arrival.html
         #- text: "ONCE YOU'RE HERE"
           #href: once_here.html
-        - text: "SOFTWARE INSTALLATION GUIDE"
-          href: https://ucsb-meds.github.io/MEDS-installation-guide/
-        - text: "CAREER SERVICES & SUPPORT"
-          href: career.html
-        - text: "MEDS STAFF & CONTACTS"
-          href: meds-contacts.html
+        # - text: "SOFTWARE INSTALLATION GUIDE"
+        #   href: https://ucsb-meds.github.io/MEDS-installation-guide/
+        # - text: "CAREER SERVICES & SUPPORT"
+        #   href: career.html
+        # - text: "MEDS STAFF & CONTACTS"
+        #   href: meds-contacts.html
         - text: "NCEAS RESOURCES"
           href: nceas.html
     - image: "img/bren_white_icon.png"

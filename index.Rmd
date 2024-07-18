@@ -9,6 +9,10 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+### **Important Update:** We are in the process of decommisioning this website and transitioning all content to the official [Bren website](https://bren.ucsb.edu/masters-programs/master-environmental-data-science). Find us, and all MEDS-related content over there moving forward!
+
+<br>
+
 ```{r, echo = FALSE, out.width = "100%"}
 knitr::include_graphics("img/meds-site-quote.png")
 ```

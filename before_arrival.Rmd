@@ -10,7 +10,7 @@ The MEDS program requires that all students have a personal laptop. We ask that 
 
 ## 2. Install / configure all necessary software (required)
 
-Throughout the coming year, you'll be working with a variety of data science tools, languages, and software. **Before arriving for summer orientation, please work through the [MEDS Installation Guide](meds-install-guide.html)**. There will be an troubleshooting session during summer orientation should you need additional help.
+Throughout the coming year, you'll be working with a variety of data science tools, languages, and software. **Before arriving for summer orientation, please work through the [MEDS Installation Guide](https://ucsb-meds.github.io/MEDS-installation-guide/)**. There will be an troubleshooting session during summer orientation should you need additional help.
 
 ```{r, echo = FALSE, out.width = "80%", fig.align = 'center', fig.alt = "A student works on her laptop to install R."}
 knitr::include_graphics("img/R_installation.jpg")
