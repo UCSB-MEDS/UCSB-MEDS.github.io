@@ -5,15 +5,14 @@ title: "Computer requirements & recommendations"
 The MEDS program requires all students to have a personal laptop to use during the program. Our curriculum is designed to work across different operating systems and computers, as long as they meet some minimum requirements.  
 
 ### Specifically, your computer should:  
-- be no more than 4 years old, and in any case be fully supported by the manufacturer. For example, [Apple won't repair anything that's more than 7 years old](https://support.apple.com/en-us/HT201624)   
+- be no more than 8 years old, and in any case be fully supported by the manufacturer. For example, [Apple won't repair anything that's more than 7 years old](https://support.apple.com/en-us/HT201624)   
 - be running Windows, macOS or Linux. (Please note that we offer limited support for Linux)  
 - have at least 50 GB storage space available for MEDS applications and coursework  
-- have at least 8 GB of RAM (the more the better!)  
-- have a 64-bit CPU  
+- have at least 16 GB of RAM (the more the better!)  
 
 If you have a Mac, be sure to update macOS to the newest supported version, as indicated by *System Preferences&rarr;Software Update*.   
 
-If you have a PC, you should have Windows 10 installed but if you don't, you can [purchase Windows 10 Education for $14.99 from UCSB](https://ucsb.onthehub.com/WebStore/OfferingDetails.aspx?o=14f7e678-4731-e511-940e-b8ca3a5db7a1). 
+If you have a PC, you should have Windows 11 installed.
 
 ### New Computers 
 
@@ -21,11 +20,11 @@ If you are purchasing a new computer, we recommend:
 
 - at least 16 GB of RAM 
 - at least 512 GB of SSD (not "disk"!) storage 
-- the manucafturer's extended warranty or service plan (e.g., [AppleCare+](https://www.apple.com/support/products/mac/)). 
+- the manufacturer's extended warranty or service plan (e.g., [AppleCare+](https://www.apple.com/support/products/mac/)). 
 
 If you are trying to decide between Mac and Windows we would recommend a Mac, but if you purchase or already have a Windows PC, don’t worry that will be just fine as long as it meets our minimum requirements.
   
-You can [purchase a Macbook Air using the higher education discount](https://www.apple.com/us-hed/shop) for \$899 before tax and AppleCare. A PC can cost anywhere from \$500 to more than $3,000; you generally get what you pay for.
+You can [purchase a Macbook Air using the higher education discount](https://www.apple.com/us-hed/shop) for \$999 before tax and AppleCare. The new Macbook Neo ($499-599) could also work. Since it is a newer model, we have not tested it through an entire curriculum yet. A PC can cost anywhere from \$500 to more than $3,000; you generally get what you pay for.
 
 ### Loaner equipment   
 If your computer breaks or dies, we can usually loan you a Windows laptop for up to a month, which should be long enough to have your computer repaired or buy a new one.
